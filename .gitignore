@@ -1,2 +1,6 @@
-﻿#.idea
-#nav
+﻿.idea
+nav.txt
+css/*
+!css/uikit.css
+fonts/*
+!fonts/Roboto-Regular.ttf
