@@ -30,11 +30,54 @@
     background-size: cover;
 }
 
-.banner .top_menu {
+
+/**/
+
+.banner .strip_top_menu {
     max-width: 1400px;
     min-height: 37px;
     background-color: #616161;
 }
+
+.banner .strip_top_menu nav {
+    max-width: 1130px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.ul_top_menu{
+    text-align: center;
+}
+
+ul.ul_top_menu li{
+    display: inline-block;
+}
+
+ul.ul_top_menu li a{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    font-family: "robotoregular";
+    font-size: 19.17px;
+    padding: 0 17px 0 17px;
+    
+}
+
+ul.ul_top_menu li a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+
+/**/
 
 .banner .header_top {
 /*    max-width: 1130px;*/
@@ -84,12 +127,6 @@
     max-width: 1130px;
     margin: 0;
     padding: 0;
-}
-
-ul.list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 ul.ul_main_menu{
