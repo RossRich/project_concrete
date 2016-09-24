@@ -82,12 +82,6 @@ ul.list {
 }
 
 
-/*
-ul.ul_top_menu{
-    text-align: center;
-}
-*/
-
 ul.ul_top_menu li {
     display: inline-block;
 }
@@ -250,3 +244,65 @@ ul.ul_main_menu li a:hover {
     font-style: normal;
 */
 }
+.dev-h3-correct {
+    text-transform: uppercase;
+    margin: 80px 0 60px 0;
+    color: #616161;
+}
+
+.dev-container-correct {
+    max-width: 1130px;
+}
+
+.dev-img-correct {
+    margin: 30px 20px;
+}
+
+
+
+
+ul.uk-grid li {
+    padding: 0 18px 36px 18px;
+}
+
+.dev-panel-correct {
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    padding: 20px 20px;
+}
+
+a.dev-but-order-correct {
+    color: #ff9700;
+    text-transform: uppercase;
+    font-size: 16px;
+/*    margin-right: 44px;*/
+}
+
+
+
+
+
+a.dev-but-about-correct {
+    color: #616161;
+    font-size: 12px;
+    text-transform: uppercase;
+    float: right;
+}
+
+
+
+.dev-line-correct {
+    width: 100%;
+}
+
+.dev-panel-correct:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    transition: 0.8s;
+}
+
+.dev-container-concreate {
+    max-width: 1400px;
+    background: #dfdfdf;
+}
+
+
