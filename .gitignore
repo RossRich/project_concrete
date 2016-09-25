@@ -1,7 +1,6 @@
 ﻿.idea
 nav.txt
 css/components/*
-!css/uikit.css
 index_v1_1200.jpg
 index_v1_1200_.psd
 .gitignore
