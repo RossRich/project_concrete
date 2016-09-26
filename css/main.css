@@ -423,8 +423,9 @@ li>div[class="input-item"]{
 
 .dev-material-panel-head-correct {
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     margin: 15px 15px;
+    text-transform: uppercase;
 }
 
 .dev-material-panel-img-correct {
@@ -442,4 +443,28 @@ li>div[class="input-item"]{
 
 .dev-material-panel-but-correct {
     margin: 15px 15px;
+}
+
+.dev-material-panel-head-font-size-correct {
+    font-size: 12px;
+}
+
+.dev-consumer-about-us {
+    max-width: 1400px;
+    background-image: url(/images/bg-consumer.png);
+    background-size: 1400px 528px;
+    background-repeat: no-repeat;
+}
+
+.dev-consumer-about-us-head-correct {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.dev-consumer-icon {
+    position: relative;
+    float: right;
+    margin: 75px -0px 0 13px;
+    
 }
