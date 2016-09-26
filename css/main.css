@@ -103,6 +103,7 @@ body {
 .banner {
     /*    max-width: 1400px;*/
     max-width: 1400px;
+    max-height: 640px;
     min-height: 640px;
     margin: 0 auto;
     padding-top: 0px;
@@ -166,7 +167,8 @@ ul.ul_top_menu li a:hover {
 
 .strip_top_menu .on_map {
     float: right;
-    font-size: 13.73px;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .strip_top_menu .on_map a {
@@ -178,7 +180,9 @@ ul.ul_top_menu li a:hover {
     text-decoration: none;
 }
 
-
+.strip_top_menu .on_map img {
+    margin: 0 10px;
+}
 
 
 /*ШАПКА С ЛОГО*/
@@ -192,41 +196,80 @@ ul.ul_top_menu li a:hover {
 }
 
 .banner .header_top .header_top_block {
-    min-height: 64px;
-    /*    background-color: pink;*/
-    padding: 33px 0 33px 0;
+/*    min-height: 64px;*/
+    padding: 33px 0 0 0;
 }
 
 .header_top .left {
     float: left;
 }
 
+.header_top .left .logo {
+    float: left;
+    margin: 0 35px 0 20px;
+}
+
+/*
 .header_top .left img {
     position: relative;
     top: -15px;
+    left: 20px;
+    right: 35px;
 }
+*/
 
 .header_top .left .text_logo {
     display: inline-block;
+}
+
+.header_top .left .text_logo .p1 {
+    display: inline-block;
+    font-size: 19.44px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.header_top .left .text_logo span {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.header_top .left .text_logo .p2 {
+    display: inline-block;
+    font-size: 16.67px;
+    margin: 0;
 }
 
 .header_top .right {
     float: right;
     display: block;
     text-align: right;
+    position: relative;
+    top: -5px;
 }
 
+
 .header_top .right .free_numb {
+     display: inline-block;
+    margin-bottom: 7px;
     font-size: 13.89px;
 }
 
 .header_top .right .phone {
+    display: inline-block;
+    margin-bottom: 8px;
     font-size: 25px;
     color: #f5f5f5;
 }
 
 .header_top .right .phone:hover {
     text-decoration: none;
+}
+
+.header_top .right .free_numb, .phone {
+    position: relative;
+    right: -4px;
 }
 
 .header_top .right .call {
@@ -299,9 +342,15 @@ ul.ul_main_menu li a:hover {
 
 
 
+/*
 .banner .sliden {
-    /*    max-width: 1130px;*/
+        max-width: 1130px;
     min-height: 415px;
+}
+*/
+
+.banner .sliden {
+    margin-top: 106px;
 }
 
 .banner .sliden .slogan h1 {
@@ -310,6 +359,8 @@ ul.ul_main_menu li a:hover {
     font-family: Roboto;
     font-weight: 300;
     font-style: normal;
+    font-size: 41.67px;
+    margin-bottom: 17px;
 }
 
 .banner .sliden .slogan p {
@@ -317,8 +368,34 @@ ul.ul_main_menu li a:hover {
     font-family: Roboto;
     font-weight: 500;
     font-style: normal;
+    font-size: 23.61px;
+    margin-bottom: 29px;
 }
 
+.banner .sliden .slogan .orders {
+    display: inline-block;
+    font-size: 22.22px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 4px;
+}
+
+.banner .sliden .slogan img {
+    margin: 0 5px;
+}
+
+.banner .sliden .slogan .orders :last-child {
+    margin-right: 0;
+}
+
+.banner .sliden .slogan .phone_orders {
+    font-size: 41.67px;
+    color: #ff9700;
+}
+
+.banner .sliden .slogan .phone_orders:hover {
+    text-decoration: none;
+}
 
 
 
