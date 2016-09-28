@@ -6,3 +6,5 @@ index_v1_1200.psd
 .gitignore
 media-queries.css
 beton_v1_1200 .psd
+*.orig
+css/*.orig

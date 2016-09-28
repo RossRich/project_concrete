@@ -81,17 +81,22 @@
 
 
 
-body {
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+/*    background-color: #000000;*/
     font-family: Roboto;
     font-weight: normal;
     font-style: normal;
 }
 
-.uk-container {
+
+
+.uk-container2 {
     padding: 0;
     max-width: 1130px;
 }
-
 
 
 
@@ -101,9 +106,7 @@ body {
 
 
 .banner {
-    /*    max-width: 1400px;*/
     max-width: 1400px;
-/*    max-height: 640px;*/
     min-height: 640px;
     margin: 0 auto;
     padding-top: 0px;
@@ -125,10 +128,7 @@ body {
 }
 
 .banner .strip_top_menu {
-    max-width: 1400px;
     min-height: 37px;
-    background-color: #616161;
-    /*    padding: 0 auto;*/
 }
 
 .banner .strip_top_menu nav {
@@ -208,15 +208,6 @@ ul.ul_top_menu li a:hover {
     float: left;
     margin: 0 35px 0 20px;
 }
-
-/*
-.header_top .left img {
-    position: relative;
-    top: -15px;
-    left: 20px;
-    right: 35px;
-}
-*/
 
 .header_top .left .text_logo {
     display: inline-block;
@@ -342,13 +333,6 @@ ul.ul_main_menu li a:hover {
 
 
 
-/*
-.banner .sliden {
-        max-width: 1130px;
-    min-height: 415px;
-}
-*/
-
 .banner .sliden {
     margin-top: 106px;
 }
@@ -413,7 +397,7 @@ ul.ul_main_menu li a:hover {
 
 .dev-h3-correct {
     text-transform: uppercase;
-    margin: 80px 0 60px 0;
+    margin: 0 0 60px 0;
     color: #616161;
     font-size: 27.78px;
     font-family: Roboto;
@@ -423,6 +407,7 @@ ul.ul_main_menu li a:hover {
 
 .dev-container-correct {
     max-width: 1130px;
+    padding-top: 80px;
 }
 
 .dev-img-correct {
@@ -464,16 +449,72 @@ a.dev-but-about-correct {
 }
 
 .dev-container-order {
-    max-width: 1400px;
     background: #fdaa31;
 }
 
 .dev-container-concreate {
-    max-width: 1400px;
     background: #dfdfdf;
 }
 
-<<<<<<< HEAD
+
+
+
+/*БЛОК ПРЕИМУЩЕСТВА*/
+
+
+
+
+.advantages_full {
+    min-height: 529px;
+    background-color: #f5f5f5;
+/*    max-width: 1400px;*/
+}
+
+.advantages {
+    padding-top: 80px;
+}
+
+.advantages h3{
+    text-transform: uppercase;
+    color: #616161;
+    font-size: 27.78px;
+    margin: 0 0 38px 0;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.advantages ul li {
+    padding: 0 ;
+}
+
+.advantages .ad_panel {
+    padding-bottom: 3px;
+}
+
+.advantages .ad_logo {
+    float: left;
+    margin-right: 20px;
+}
+
+.advantages .ad_text {
+  overflow: hidden;
+}
+
+.advantages .ad_panel h4 {
+    text-transform: uppercase;
+    font-size: 22.22px;  
+    color: #212121;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;    
+    margin-bottom: 21px;
+}
+
+.advantages .ad_panel p {
+    font-size: 16.67px;    
+}
+
 .dev-order-head {
     text-transform: uppercase;
     color: #f5f5f5;
@@ -586,14 +627,14 @@ a.dev-but-about-correct {
     color: #fff;
 }
 
-/*для центровки элементов*/
+
 li>div[class="input-item"]{
     margin-left: auto;
     margin-right: auto;
 }
 
 .dev-container-material {
-    max-width: 1400px;
+/*    max-width: 1400px;*/
     background: #f5f5f5;
 }
 
@@ -614,7 +655,7 @@ li>div[class="input-item"]{
 }
 
 .dev-material-panel-correct {
-    padding: 0 0 15px 0;
+    padding: 0 0 20px 0;
 }
 
 .dev-material-panel-but-correct {
@@ -626,77 +667,139 @@ li>div[class="input-item"]{
 }
 
 .dev-consumer-about-us {
+<<<<<<< HEAD
     max-width: 1400px;
+    background: url(../images/bgpotreb.jpg);
+=======
     background-image: url(/images/bg-consumer.png);
+>>>>>>> b56e1e8611c14a8d482b7b2b3714014bb8576cc8
     background-size: 1400px 528px;
     background-repeat: no-repeat;
 }
 
 .dev-consumer-about-us-head-correct {
-    font-weight: bold;
+    font-weight: regular;
     text-align: center;
+    margin: 80px 0 0 0;
 }
 
 
 .dev-consumer-icon {
     position: relative;
-    float: right;
-    margin: 75px -0px 0 13px;
+    padding: 0 13px 35px 0;
+    float: right;  
+}
+
+.dev-consumer-about-us-panel-correct {
+    max-height: 266px;
+    max-width: 355px;
+    padding: 0 0;
+}
+
+.dev-consumer-about-us-panel-head-correct {
+    margin: 20px 20px;
+    font-weight: medium;
+    text-transform: inherit;
+    font-size: 19px;
+}
+
+.dev-consumer-about-us-panel-description-correct {
+    margin: 20px 20px;
+    font-weight: 400;
+    font-size: 16px;
     
+}
+
+<<<<<<< HEAD
+.dev-consumer-about-us-panel-authot {
+    margin-left: 20px;
+}
+
+.dev-consumer-about-us-panel-authot span {
+    color: #9e9e9e;
+}
+
+.dev-consumer-about-us-slider-correct {
+    margin-bottom: 120px;
+    padding: 10px 0 50px 10px;
+}
+
+.dev-consumer-about-us-panel-img-correct {
+    max-height: 100px;
+    max-width: 100px;
+    position: absolute;
+    margin: -58px 0 0 200px;
+}
+
+.dev-consumer-about-us-panel-correct:hover {
+    box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*НАШИ ПАРТНЕРЫ*/
+
+.dev-contauner-our-partner {
+    
+}
+
+.dev-contauner-our-partner-correct h3 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.dev-our-partner-panel-img-correct {
+    
+}
+
+.dev-our-partner-panel-img-correct img {
+    height: 80%;
+    width: 80;
+    margin: auto auto auto auto;
+}
+
+.dev-partner-ico-img-correct {
+    height: 15px;
+    width: 6px;
+}
+
+.dev-our-partner-correct {
+    padding: 35px 0 80px 0;
 }
 =======
 
 
-
-/*БЛОК ПРЕИМУЩЕСТВА*/
-
+/*БЛОК ДОКУМЕНТЫ*/
 
 
 
-.advantages_full {
-    min-height: 529px;
+.documents_full {
+    min-height: 393px;
     background-color: #f5f5f5;
-    max-width: 1400px;
+    background-image: linear-gradient(to right, #bdbdbd 50%, #fea018 50%);
 }
 
-.advantages h3{
-    text-transform: uppercase;
-    color: #616161;
-    font-size: 27.78px;
-    margin: 80px 0 38px 0;
-    font-family: Roboto;
-    font-weight: normal;
-    font-style: normal;
+.documents {
+    padding: 40px;
 }
 
-.advantages ul li {
-    padding: 0 ;
+.documents .doc_div_1 h5 {
+    color: #f5f5f5;
+    font: 400 20px Roboto;
+    margin-bottom: 30px;
 }
 
-.advantages .ad_panel {
-    padding-bottom: 3px;
+.documents .doc_div_1 span {
+    color: #f5f5f5;
+    font: 400 16.67px Roboto;
 }
 
-.advantages .ad_logo {
-    float: left;
-    margin-right: 20px;
+.documents .doc_div_1 li {
+    padding: 0;
 }
 
-.advantages .ad_text {
-  overflow: hidden;
-}
-
-.advantages .ad_panel h4 {
-    text-transform: uppercase;
-    font-size: 22.22px;  
-    color: #212121;
-    font-family: Roboto;
-    font-weight: normal;
-    font-style: normal;    
-    margin-bottom: 21px;
-}
-
-.advantages .ad_panel p {
-    font-size: 16.67px;    
-}
->>>>>>> e9134d3c8a9184a6a4cd9086de6b4fb276377a3b
+>>>>>>> b56e1e8611c14a8d482b7b2b3714014bb8576cc8
