@@ -285,6 +285,7 @@ ul.ul_top_menu a:hover {
 .uk-sticky-placeholder {
     background-color: rgba(0, 0, 0, 0.5);
     /*    min-height: 55px;*/
+    
 }
 
 .banner .main_menu {
@@ -327,6 +328,7 @@ ul.ul_main_menu li:hover {
 .hr_menu {
     margin: 0;
     padding: 0;
+    height: 5px;
 }
 
 
