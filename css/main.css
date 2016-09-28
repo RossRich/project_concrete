@@ -75,7 +75,12 @@
 }
 
 
+
+
 /*ОБЩЕЕ*/
+
+
+
 
 .wrapper {
     height: 100%;
@@ -92,7 +97,12 @@
 }
 
 
+
+
 /*БЛОК БАННЕР*/
+
+
+
 
 .banner {
     max-width: 1400px;
@@ -105,7 +115,12 @@
 }
 
 
+
+
 /*СЕРАЯ ПОЛОСА МЕНЮ*/
+
+
+
 
 .banner .top_cont {
     padding-top: 7px;
@@ -260,7 +275,12 @@ ul.ul_top_menu a:hover {
 }
 
 
+
+
 /*ПЛАВАЮЩЕЕ МЕНЮ*/
+
+
+
 
 .uk-sticky-placeholder {
     background-color: rgba(0, 0, 0, 0.5);
@@ -310,7 +330,12 @@ ul.ul_main_menu li:hover {
 }
 
 
+
+
 /*СЛАЙДЕН*/
+
+
+
 
 .banner .sliden {
     margin-top: 106px;
@@ -361,6 +386,8 @@ ul.ul_main_menu li:hover {
 .banner .sliden .slogan .phone_orders:hover {
     text-decoration: none;
 }
+
+
 
 
 /*БЛОК ПРЕИМУЩЕСТВА*/
@@ -423,6 +450,10 @@ ul.ul_main_menu li:hover {
 
 
 /*БЛОК ТОВАРЫ*/
+
+
+
+
 .dev-h3-correct {
     text-transform: uppercase;
     padding: 0 0 60px 0;
@@ -612,6 +643,14 @@ li>div[class="input-item"] {
     margin-right: auto;
 }
 
+
+
+
+/*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
+
+
+
+
 .dev-container-material {
     /*    max-width: 1400px;*/
     background: #f5f5f5;
@@ -644,6 +683,14 @@ li>div[class="input-item"] {
 .dev-material-panel-head-font-size-correct {
     font-size: 12px;
 }
+
+
+
+
+/*БЛОК КЛИЕНТЫ*/
+
+
+
 
 .dev-consumer-about-us {
     background: url(../images/bgpotreb.jpg);
@@ -707,7 +754,9 @@ li>div[class="input-item"] {
 
 
 
-/*НАШИ ПАРТНЕРЫ*/
+
+/*БЛОК НАШИ ПАРТНЕРЫ*/
+
 
 
 
@@ -735,7 +784,12 @@ li>div[class="input-item"] {
 }
 
 
+
+
 /*БЛОК ДОКУМЕНТЫ*/
+
+
+
 
 .documents_full {
     min-height: 393px;
@@ -839,7 +893,16 @@ li>div[class="input-item"] {
 .documents .doc_div_2 button:hover {
     box-shadow: 6px 11px 18.8px 1.20px rgba(0, 0, 0, 0.24);
    background-color: #eeeeee;
-/*    color: #fea018;*/
+}
+
+
+
+
+/*БЛОК НАШИ ПАРТНЕРЫ ПРОДОЛЖЕНИЕ*/
+
+ 
+
+
 .img_neom {
     background: url(/images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
 }
@@ -871,6 +934,14 @@ li>div[class="input-item"] {
 .dev-partner-slider-index-height-correct {
     margin-top: -70px !important;
 }
+
+
+
+
+/*БЛОК ФУТЕР*/
+
+
+
 
 .dev-contauner-footer {
     background: #f5f5f5;
