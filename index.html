@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="css/components/sticky.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/components/slider.min.css">
-    <link rel="stylesheet" href="css/components/slidenav.min.css">
+    <link rel="stylesheet" href="css/components/slider.gradient.min.css">
+    <link rel="stylesheet" href="css/components/slidenav.gradient.css">
 
     <script src="jquery/jquery-3.1.0.js"></script>
     <script src="js/uikit.min.js"></script>
@@ -44,7 +44,7 @@
                     <div class="left">
                         <div class="logo">
                             <a href="#"><img src="images/logo.png" alt=""></a>
-                        </div>    
+                        </div>
                         <div class="text_logo">
                             <p class="p1">
                                 <span>К</span>раснодар
@@ -53,7 +53,7 @@
                             </p>
                             <br>
                             <p class="p2">Лидер Краснодарского рынка по производству
-                           <br>бетона и стоительных материалов</p>
+                                <br>бетона и стоительных материалов</p>
                         </div>
                     </div>
                     <div class="right">
@@ -87,9 +87,9 @@
                     <p>бетон, раствор, строительные материалы всегда дешевле и быстрее</p>
                     <span class="orders">Принимаем заказы:  <img src="images/Shape-1.png" alt="">
                     <img src="images/Shape-2.png" alt="">
-                    <img src="images/Shape-3.png" alt=""></span>                    
-                    <br>                                
-                    <a href="tel:8 918 44 99 703" class="phone_orders">8 (918) 44-99-703</a>            
+                    <img src="images/Shape-3.png" alt=""></span>
+                    <br>
+                    <a href="tel:8 918 44 99 703" class="phone_orders">8 (918) 44-99-703</a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
                                 <img src="images/ad1.png" alt="">
-                            </div>    
+                            </div>
                             <div class="ad_text">
                                 <h4>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h4>
                                 <p>Глубокий цикл отчистки компонентов бетона</p>
@@ -114,7 +114,7 @@
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
                                 <img src="images/ad2.png" alt="">
-                            </div>    
+                            </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННЫЙ ПАРК СПЕЦТЕХНИКИ</h4>
                                 <p>GPS контроль доставки в каждой машине</p>
@@ -127,7 +127,7 @@
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
                                 <img src="images/ad3.png" alt="">
-                            </div>    
+                            </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННАЯ ЛАБОРАТОРИЯ ЗАВОДА</h4>
                                 <p>Предоставление полной технической документации</p>
@@ -140,7 +140,7 @@
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
                                 <img src="images/ad4.png" alt="">
-                            </div>    
+                            </div>
                             <div class="ad_text">
                                 <h4>ГАРАНТИЯ НИЗКОЙ ЦЕНЫ</h4>
                                 <p>У нас всегда дешевле на 10%</p>
@@ -149,11 +149,11 @@
                             </div>
                         </div>
                     </li>
-                
-                </ul>                
+
+                </ul>
             </div>
         </div>
-        
+
         <div class="uk-container uk-container-center dev-container-concreate">
             <div class="uk-container uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct">Бетон и раствор</h3>
@@ -380,72 +380,119 @@
         </div>
         <div class="uk-container uk-container-center dev-consumer-about-us" data-uk-parallax="{bg: '-200'}">
             <div class="uk-container uk-container-center dev-container-correct">
-                <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_right18dp.png" alt="">
-                <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" alt="">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct">КЛИЕНТЫ О НАС</h3>
-                <div class="uk-slidenav-position" data-uk-slider="{center:true}">
-                    <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid-width-medium-1-4 uk-grid-large">
+                <div class="uk-slidenav-position" data-uk-slider="center:true">
+                    <div class="dev-consumer-slader-navigation uk-clearfix">
+                        <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                        <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                    </div>
+                    <div class="uk-slider-container dev-consumer-about-us-slider-correct">
+                        <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
                             <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                                    <h3 class="dev-material-panel-head-correct">инертные материалы</h3>
-                                    <div class="dev-material-panel-img-correct">
-                                        <img src="images/sheben-granitniy-5-20.png" class="dev-material-panel-img-correct" alt="ИНЕРТНЫЕ МАТЕРИАЛЫ">
-                                    </div>
-                                    <p class="dev-material-panel-description">
-                                        Гранитный щебень, гранитный отсев, песок, керамзит
+                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct dev-consumer-about-us-panel-correct">
+                                    <h3 class="dev-material-panel-head-correct dev-consumer-about-us-panel-head-correct">Благодарю компанию</h3>
+                                    <p class="dev-consumer-about-us-panel-description-correct ">
+                                        Капитал Бетон за качество продукта и сервис. Уже долгое время сотрудничаем и построили совместно более 5 объектов. Всем советую не пожалеете
                                     </p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-material-panel-but-correct dev-but-order-correct">подробнее</a>
+                                    <p class="dev-consumer-about-us-panel-authot">
+                                        Антон Васильев
+                                        <br>
+                                        <span>Прораб КСК Строй</span>
+                                    </p>
+                                    <div class="dev-consumer-about-us-panel-img-correct">
+                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                                    <h3 class="dev-material-panel-head-correct">АРЕНДА СПЕЦТЕХНИКИ</h3>
-                                    <div class="dev-material-panel-img-correct">
-                                        <img src="images/specteh.jpg" class="dev-material-panel-img-correct" alt="аренда спецтехники">
-                                    </div>
-                                    <p class="dev-material-panel-description">
-                                        Бетононасосов, бетоносмесите- лей и спецтехники
+                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct dev-consumer-about-us-panel-correct">
+                                    <h3 class="dev-material-panel-head-correct dev-consumer-about-us-panel-head-correct">Благодарю компанию</h3>
+                                    <p class="dev-consumer-about-us-panel-description-correct ">
+                                        Капитал Бетон за качество продукта и сервис. Уже долгое время сотрудничаем и построили совместно более 5 объектов. Всем советую не пожалеете
                                     </p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-material-panel-but-correct dev-but-order-correct">подробнее</a>
+                                    <p class="dev-consumer-about-us-panel-authot">
+                                        Антон Васильев
+                                        <br>
+                                        <span>Прораб КСК Строй</span>
+                                    </p>
+                                    <div class="dev-consumer-about-us-panel-img-correct">
+                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                                    <h3 class="dev-material-panel-head-correct">ФБС</h3>
-                                    <div class="dev-material-panel-img-correct">
-                                        <img src="images/fbs.jpg" class="dev-material-panel-img-correct" alt="фбс">
-                                    </div>
-                                    <p class="dev-material-panel-description">
-                                        Стеновые фундаментные блоки разных размеров
+                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct dev-consumer-about-us-panel-correct">
+                                    <h3 class="dev-material-panel-head-correct dev-consumer-about-us-panel-head-correct">Благодарю компанию</h3>
+                                    <p class="dev-consumer-about-us-panel-description-correct ">
+                                        Капитал Бетон за качество продукта и сервис. Уже долгое время сотрудничаем и построили совместно более 5 объектов. Всем советую не пожалеете
                                     </p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-material-panel-but-correct dev-but-order-correct">подробнее</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                                    <h3 class="dev-material-panel-head-correct dev-material-panel-head-font-size-correct">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</h3>
-                                    <div class="dev-material-panel-img-correct">
-                                        <img src="images/stroimater.jpg" class="dev-material-panel-img-correct" alt="строительные материалы">
-                                    </div>
-                                    <p class="dev-material-panel-description">
-                                        Керпичи, блоки, и еще что-то самое нужное
+                                    <p class="dev-consumer-about-us-panel-authot">
+                                        Антон Васильев
+                                        <br>
+                                        <span>Прораб КСК Строй</span>
                                     </p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-material-panel-but-correct dev-but-order-correct">подробнее</a>
+                                    <div class="dev-consumer-about-us-panel-img-correct">
+                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
-                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
                 </div>
             </div>
         </div>
 
+        <hr class="uk-grid-divider">
+
+        <div class="dev-contauner-our-partner dev-container-material uk-container-center">
+
+            <div class="uk-container uk-container-center dev-contauner-our-partner-correct">
+
+
+
+                <h3 class="dev-h3-correct">НАШИ ПАРТНЕРЫ</h3>
+
+
+
+                <div class="uk-slidenav-position" data-uk-slider="center:true">
+
+
+                    <div class="uk-slider-container dev-our-partner-correct">
+                        <ul class="uk-slider uk-grid-width-large-1-5 uk-grid-width-medium-1-4 uk-grid-width-small-1-3">
+                            <li>
+                                <div class="dev-our-partner-panel-img-correct">
+                                    <img src="images/896ff0029059a66571a724317b4812d3.png" class="" alt="неометрия">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dev-our-partner-panel-img-correct">
+                                    <img src="images/ask_logo_text_150.png" class="" alt="АСК">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dev-our-partner-panel-img-correct">
+                                    <img src="images/unnamed.png" class="" alt="ИСМ">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dev-our-partner-panel-img-correct">
+                                    <img src="images/family_logo.png" class="" alt="СЕМЬЯ">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dev-our-partner-panel-img-correct">
+                                    <img src="images/D000008.png" class="" alt="СМ">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next dev-partner-ico-img-correct" data-uk-slider-item="next" src="/images/ic_keyboard_arrow_right18dp.png">
+                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-ico-img-correct" data-uk-slider-item="previous" src="images/ic_keyboard_arrow_left_18dp.png">
+
+                </div>
+            </div>
+        </div>
         <hr class="uk-grid-divider">
 
     </div>
