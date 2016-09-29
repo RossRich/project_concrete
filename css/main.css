@@ -541,15 +541,23 @@ a.dev-but-about-correct {
 .dev-but-submit-correct {
     text-transform: uppercase;
     border: 2px solid;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #fdaa31;
-    padding: 13px 65px;
-    width: 250px;
+    padding: 7px 65px;
+    width: 342px;
     margin: 21px auto 0 40px;
+    color: #212121;
+    font: 400 22.22px Roboto;
+    
 }
 
 .dev-but-submit-correct:hover {
-    background-color: #f5f5f5;
+    background-color: #212121;
+    color: #fdaa31;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: #212121;
+    transition: 0.7s;
 }
 
 .input-item {
@@ -561,7 +569,7 @@ a.dev-but-about-correct {
 .input-item::after {
     background: #FFF;
     transform: scaleX(0);
-    transition: transform 0.5s;
+    transition: transform 0.7s;
 }
 
 .input-item::after,
@@ -857,6 +865,7 @@ li>div[class="input-item"] {
 .documents .doc_div_1 button:hover {
     background-color: #616161;
     color: #f5f5f5;
+    transition: 0.7s;
 }
 
 .documents .li_doc_div2 {
@@ -892,7 +901,8 @@ li>div[class="input-item"] {
 
 .documents .doc_div_2 button:hover {
     box-shadow: 6px 11px 18.8px 1.20px rgba(0, 0, 0, 0.24);
-   background-color: #eeeeee;
+    background-color: #eeeeee;
+    transition: 0.7s;
 }
 
 
@@ -904,23 +914,23 @@ li>div[class="input-item"] {
 
 
 .img_neom {
-    background: url(/images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
+    background: url(../images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
 }
 
 .imgASC {
-    background: url(/images/ask_logo_text_150.png) no-repeat center center;
+    background: url(../images/ask_logo_text_150.png) no-repeat center center;
 }
 
 .imgISM {
-    background: url(/images/unnamed.png) no-repeat center center;
+    background: url(../images/unnamed.png) no-repeat center center;
 }
 
 .imgFAMILY {
-    background: url(/images/family_logo.png) no-repeat center center;
+    background: url(../images/family_logo.png) no-repeat center center;
 }
 
 .imgCM {
-    background: url(/images/D000008.png) no-repeat center center;
+    background: url(../images/D000008.png) no-repeat center center;
 }
 
 .uk-slidenav-position .uk-slidenav .dev-partner-slider-height-index-correct {
