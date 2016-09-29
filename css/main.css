@@ -450,7 +450,7 @@ ul.ul_main_menu > li:hover > a:before {
 }
 
 .advantages .ad_panel {
-    padding-bottom: 3px;
+    padding: 0;
 }
 
 .advantages .ad_logo {
@@ -712,12 +712,7 @@ li>div[class="input-item"] {
 }
 
 
-
-
 /*БЛОК КЛИЕНТЫ*/
-
-
-
 
 .dev-consumer-about-us {
     background: url(../images/bgpotreb.jpg);
