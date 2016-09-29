@@ -33,49 +33,45 @@
 
 */
 
-
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Medium.eot');
-	src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Medium.woff') format('woff'),
-		url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Medium.eot');
+    src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Medium.woff') format('woff'), url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Light.eot');
-	src: url('/fonts/subset-Roboto-Light.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Light.woff') format('woff'),
-		url('/fonts/subset-Roboto-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Light.eot');
+    src: url('/fonts/subset-Roboto-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Light.woff') format('woff'), url('/fonts/subset-Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Bold.eot');
-	src: url('/fonts/subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Bold.woff') format('woff'),
-		url('/fonts/subset-Roboto-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Bold.eot');
+    src: url('/fonts/subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Bold.woff') format('woff'), url('/fonts/subset-Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Regular.eot');
-	src: url('/fonts/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Regular.woff') format('woff'),
-		url('/fonts/subset-Roboto-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Regular.eot');
+    src: url('/fonts/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Regular.woff') format('woff'), url('/fonts/subset-Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 
 
 /*ОБЩЕЕ*/
+
+
+
 
 .wrapper {
     height: 100%;
@@ -92,7 +88,12 @@
 }
 
 
+
+
 /*БЛОК БАННЕР*/
+
+
+
 
 .banner {
     max-width: 1400px;
@@ -105,7 +106,12 @@
 }
 
 
+
+
 /*СЕРАЯ ПОЛОСА МЕНЮ*/
+
+
+
 
 .banner .top_cont {
     padding-top: 7px;
@@ -124,14 +130,46 @@
 */
 }
 
+
+/*подчеркивание li*/
+
+ul.ul_top_menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.ul_top_menu > li > a {
+    border-bottom: none;
+}
+
+ul.ul_top_menu > li > a:before {
+    background-color: #ff9700;
+    bottom: -5px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+ul.ul_top_menu > li:hover > a:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/*подчеркивание*/
+
 ul.list {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-ul.ul_top_menu li {
-    display: inline-block;
 }
 
 ul.ul_top_menu li a {
@@ -141,11 +179,6 @@ ul.ul_top_menu li a {
     opacity: 0.9;
     font-size: 12.5px;
     padding: 0 13px 0 13px;
-}
-
-ul.ul_top_menu li:hover {
-    opacity: 1;
-    border-bottom: 2px solid #ff9700;
 }
 
 ul.ul_top_menu a:hover {
@@ -300,11 +333,38 @@ ul.ul_main_menu a:hover {
     color: #ff9700;
 }
 
-ul.ul_main_menu li:hover {
-    border-bottom: 2px solid #ff9700;
+ul.ul_main_menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.ul_main_menu > li > a {
+    border-bottom: none;
+}
+
+ul.ul_main_menu > li > a:before {
+    background-color: #ff9700;
+    bottom: -17px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+ul.ul_main_menu > li:hover > a:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .hr_menu {
+    opacity: 0.5;
     margin: 0;
     padding: 0;
 }
@@ -365,20 +425,17 @@ ul.ul_main_menu li:hover {
 
 /*БЛОК ПРЕИМУЩЕСТВА*/
 
-
-
-
 .advantages_full {
     min-height: 529px;
     background-color: #f5f5f5;
-/*    max-width: 1400px;*/
+    /*    max-width: 1400px;*/
 }
 
 .advantages {
     padding-top: 80px;
 }
 
-.advantages h3{
+.advantages h3 {
     text-transform: uppercase;
     color: #616161;
     font-size: 27.78px;
@@ -389,7 +446,7 @@ ul.ul_main_menu li:hover {
 }
 
 .advantages ul li {
-    padding: 0 ;
+    padding: 0;
 }
 
 .advantages .ad_panel {
@@ -402,27 +459,26 @@ ul.ul_main_menu li:hover {
 }
 
 .advantages .ad_text {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .advantages .ad_panel h4 {
     text-transform: uppercase;
-    font-size: 22.22px;  
+    font-size: 22.22px;
     color: #212121;
     font-family: Roboto;
     font-weight: normal;
-    font-style: normal;    
+    font-style: normal;
     margin-bottom: 21px;
 }
 
 .advantages .ad_panel p {
-    font-size: 16.67px;    
+    font-size: 16.67px;
 }
 
 
-
-
 /*БЛОК ТОВАРЫ*/
+
 .dev-h3-correct {
     text-transform: uppercase;
     padding: 0 0 60px 0;
@@ -485,12 +541,7 @@ a.dev-but-about-correct {
 }
 
 
-
-
 /*БЛОК СКИДКА*/
-
-
-
 
 .dev-order-head {
     text-transform: uppercase;
@@ -510,15 +561,22 @@ a.dev-but-about-correct {
 .dev-but-submit-correct {
     text-transform: uppercase;
     border: 2px solid;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #fdaa31;
-    padding: 13px 65px;
-    width: 250px;
+    padding: 7px 65px;
+    width: 342px;
     margin: 21px auto 0 40px;
+    color: #212121;
+    font: 400 22.22px Roboto;
 }
 
 .dev-but-submit-correct:hover {
-    background-color: #f5f5f5;
+    background-color: #212121;
+    color: #fdaa31;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: #212121;
+    transition: 0.7s;
 }
 
 .input-item {
@@ -574,6 +632,7 @@ a.dev-but-about-correct {
     transform: translateY(0) scale(1);
     font-size: 12px;
     color: #FFF;
+    transition: transform 0.5s;
 }
 
 .has-label.input-item::after {
@@ -612,6 +671,14 @@ li>div[class="input-item"] {
     margin-right: auto;
 }
 
+
+
+
+/*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
+
+
+
+
 .dev-container-material {
     /*    max-width: 1400px;*/
     background: #f5f5f5;
@@ -644,6 +711,14 @@ li>div[class="input-item"] {
 .dev-material-panel-head-font-size-correct {
     font-size: 12px;
 }
+
+
+
+
+/*БЛОК КЛИЕНТЫ*/
+
+
+
 
 .dev-consumer-about-us {
     background: url(../images/bgpotreb.jpg);
@@ -706,14 +781,9 @@ li>div[class="input-item"] {
 }
 
 
-
 /*НАШИ ПАРТНЕРЫ*/
 
-
-
-.dev-contauner-our-partner {
-    
-}
+.dev-contauner-our-partner {}
 
 .dev-contauner-our-partner-correct h3 {
     text-align: center;
@@ -775,7 +845,7 @@ li>div[class="input-item"] {
 .documents .doc_div_1 ul img {
     position: relative;
     top: -2px;
-    margin-right: 5px;    
+    margin-right: 5px;
 }
 
 .documents .doc_div_1 span {
@@ -803,6 +873,7 @@ li>div[class="input-item"] {
 .documents .doc_div_1 button:hover {
     background-color: #616161;
     color: #f5f5f5;
+    transition: 0.7s;
 }
 
 .documents .li_doc_div2 {
@@ -833,35 +904,42 @@ li>div[class="input-item"] {
     border-radius: 2px;    
     box-shadow: 1px 3px 4.7px 0.30px rgba(0, 0, 0, 0.24);
     margin-top: 27px;
-    
 }
 
 .documents .doc_div_2 button:hover {
     box-shadow: 6px 11px 18.8px 1.20px rgba(0, 0, 0, 0.24);
-   background-color: #eeeeee;
-/*    color: #fea018;*/
+    background-color: #eeeeee;
+    transition: 0.7s;
+}
+
+
+
+
+
+/*БЛОК НАШИ ПАРТНЕРЫ ПРОДОЛЖЕНИЕ*/
+
+ 
+
+
+
 .img_neom {
-    background: url(/images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
+    background: url(../images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
 }
 
 .imgASC {
-    background: url(/images/ask_logo_text_150.png) no-repeat center center;
+    background: url(../images/ask_logo_text_150.png) no-repeat center center;
 }
 
 .imgISM {
-    background: url(/images/unnamed.png) no-repeat center center;
+    background: url(../images/unnamed.png) no-repeat center center;
 }
 
 .imgFAMILY {
-    background: url(/images/family_logo.png) no-repeat center center;
+    background: url(../images/family_logo.png) no-repeat center center;
 }
 
 .imgCM {
-    background: url(/images/D000008.png) no-repeat center center;
-}
-
-.uk-slidenav-position .uk-slidenav .dev-partner-slider-height-index-correct {
-    margin-top: -70px;
+    background: url(../images/D000008.png) no-repeat center center;
 }
 
 .dev-partner-slider-index-right-correct {
@@ -871,6 +949,13 @@ li>div[class="input-item"] {
 .dev-partner-slider-index-height-correct {
     margin-top: -70px !important;
 }
+
+
+
+/*БЛОК ФУТЕР*/
+
+
+
 
 .dev-contauner-footer {
     background: #f5f5f5;
@@ -883,20 +968,165 @@ li>div[class="input-item"] {
 }
 
 .dev-footer-content {
-    padding: -40px 0 35px 0;
+    padding: 0 0 35px 0;
 }
 
 .dev-footer-container-correct {
-    margin: 0;
+    margin: auto;
+    padding: 0;
 }
 
-.dev-footer-container-correct p{
+.dev-footer-container-correct p {
     font-size: 16px;
     color: #e7e7e7;
     padding: 17px 0 17px 0;
 }
-.dev-footer-container-correct a{
+
+.dev-footer-container-correct a {
     font-size: 16px;
     color: #e7e7e7;
     padding-top: 17px;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.dev-footer-correcr span {
+    font-weight: medium;
+    font-size: 19px;
+    color: #f5f5f5;
+    padding: 20px 0 15px 0;
+}
+
+.dev-footer-correcr a>span {
+    font-weight: regular;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.dev-correct-color {
+    color: #bdbdbd;
+}
+
+.dev-but-footer {
+    padding: 7px 14px;
+    background: #212121;
+    color: #ff9700;
+    border-radius: 2px;
+    border: 2px solid #ff9700;
+    text-transform: uppercase;
+    font-weight: regular;
+    font-size: 13px;
+    float: right;
+    margin-top: 25px;
+    
+}
+
+.dev-footer-label-correct {
+    margin: 0;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #bdbdbd;
+    
+}
+
+.dev-footer-textarea {
+    overflow: auto;
+    background: #212121;
+    border: 0;
+    border-bottom: 2px solid #bdbdbd;
+    font-size: 16px;
+    color: #f5f5f5;
+    float: right;
+}
+
+
+
+.input-footer {
+    position: relative;
+    height: 72px;
+}
+
+.input-footer::after {
+    background: #f69201;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.input-footer::after,
+.input-footer::before {
+    content: '';
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    background-color: #bdbdbd;
+}
+
+.dev-footer-input {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 32px;
+    padding: 8px 0;
+    line-height: 16px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    color: #f5f5f5;  
+}
+
+.dev-footer-label {
+    position: relative;
+    margin: 0;
+    color: #bdbdbd;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    transform: translateY(40px);
+}
+
+.has-label .dev-footer-label {
+    transform: translateY(0) scale(1);
+    font-size: 12px;
+    color: #f69201;
+    transition: transform 0.5s;
+}
+
+.has-label.input-footer::after {
+    background: #f69201;
+    transform: scaleX(1);
+}
+
+
+.is-focused.input-footer::after {
+    background: #f69201;
+    transform: scaleX(1);
+    transition: transform 0.5s;
+}
+
+
+.is-focused .dev-footer-label {
+    transform: translateY(0) scale(1);
+    font-size: 12px;
+    color: #f69201;
+}
+
+
+.dev-footer-img-correct {
+    margin: auto 0;
+    padding: 15px 16px 0 0;
+}
+
+.dev-footer-textarea-correct {
+    display: block;
 }
