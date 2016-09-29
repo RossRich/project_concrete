@@ -26,6 +26,7 @@ jQuery(function($) {
             $parent.removeClass('is-focused has-label');
         }
         $parent.removeClass('is-focused');
-    })
+    }) 
+    
     
 })
