@@ -79,7 +79,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="hr"></div>
+                <hr class="hr_menu">
             </div>
             <div class="uk-container uk-container-center uk-text-center sliden">
                 <div class="slogan">
@@ -468,60 +468,78 @@
                             </li>
                         </ul>
                     </div>
-                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next dev-partner-slider-index-right-correct dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="next" src="images/for_slider_nav_right.png">
+                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next dev-partner-slider-index-right-correct dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="next" src="/images/for_slider_nav_right.png">
                     <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="previous" src="images/for_slider_nav_left.png">
                 </div>
             </div>
         </div>
         <div class="documents_full">
             <div class="uk-container2 uk-container-center documents">
-                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2 main_ul">
-                    <li class="li_doc_div li_doc_div1">
+<<<<<<< HEAD
+                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
+                    <li>
                         <div class="doc_div_1">
                             <h5>ПРЕДОСТАВЛЯЕМ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</h5>
                             <ul class="uk-grid uk-grid-collapse">
+=======
+                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2 main_ul">
+                    <li class="li_doc_div li_doc_div1">
+                       <div class="doc_div_1">
+                            <h5>ПРЕДОСТАВЛЯЕМ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</h5>
+                            <ul class="uk-grid uk-grid-collapse " >
+>>>>>>> 3807f19afc3a655e308f2c1c44a71b73cdc16c76
                                 <li class="uk-width-1-5">
-                                    <a href="">
+                                   <a href="">
                                         <img src="images/ic_description.png" alt="">
                                         <span>Рапорт</span>
                                     </a>
                                 </li>
                                 <li class="uk-width-3-10">
-                                    <a href="">
+                                    <a href="">   
                                         <img src="images/ic_description.png" alt="">
                                         <span>Путевой лист</span>
-                                    </a>
+                                    </a>    
                                 </li>
                                 <li class="uk-width-1-2">
-                                    <a href="">
+                                    <a href="">   
                                         <img src="images/ic_description.png" alt="">
                                         <span>Справка — ЭСМ 7</span>
-                                    </a>
+                                    </a>    
                                 </li>
                                 <li class="uk-width-1-5">
-                                    <a href="">
+                                    <a href="">   
                                         <img src="images/ic_description.png" alt="">
                                         <span>Счет</span>
-                                    </a>
+                                    </a>    
                                 </li>
                                 <li class="uk-width-3-10">
-                                    <a href="">
+                                    <a href="">   
                                         <img src="images/ic_description.png" alt="">
                                         <span>Счет-фактуру</span>
-                                    </a>
+                                    </a>    
                                 </li>
                                 <li class="uk-width-1-2">
-                                    <a href="">
+                                    <a href="">   
                                         <img src="images/ic_description.png" alt="">
                                         <span>Акт выполненных работ</span>
-                                    </a>
+                                    </a>    
                                 </li>
+<<<<<<< HEAD
                             </ul>
-                            <a href="">
-                                <button>Скачать образцы</button>
-                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doc_div_2">
+
+                        </div>
+                    </li>
+                </ul>
+
+=======
+                           </ul>
+                            <a href=""><button>Скачать образцы</button></a>
                             <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>
-                            <ul class="uk-grid uk-grid-collapse">
+                            <ul class="uk-grid uk-grid-collapse" >
                                 <li class="uk-width-1-2">
                                     <img src="images/ic_monetization.png" alt="">
                                     <span>Наличный расчет</span>
@@ -539,20 +557,18 @@
                                     <span>Безналичный расчет с НДС</span>
                                 </li>
                             </ul>
-                        </div>
+                       </div>                        
                     </li>
                     <li class="li_doc_div li_doc_div2">
-                        <div class="doc_div_2">
+                       <div class="doc_div_2">
                             <h4>Отдел продаж</h4>
                             <a href="tel:8 918 44 99 703" class="phone_dep">8 (918) 44-99-703</a>
                             <br>
-                            <a href="">
-                                <button>Вызов менеджера</button>
-                            </a>
-                        </div>
+                            <a href=""><button>Вызов менеджера</button></a>
+                       </div>                        
                     </li>
-                </ul>
-
+                </ul>                   
+>>>>>>> 3807f19afc3a655e308f2c1c44a71b73cdc16c76
             </div>
         </div>
         <footer class="uk-container-center dev-contauner-footer">
@@ -570,9 +586,9 @@
                                         <a href="">Сотрудничество</a>
                                         <a href="">Контакты</a>
                                         <div class="uk-flex">
-                                            <a href="#"><img src="images/vk-social-logotype.png" alt=""></a>
-                                            <a href="#"><img src="images/odnoklassniki-logo.png" alt=""></a>
-                                            <a href="#"><img src="images/facebook-logo.png" alt=""></a>
+                                            <a href="#"><img src="/images/vk-social-logotype.png" alt=""></a>
+                                            <a href="#"><img src="/images/odnoklassniki-logo.png" alt=""></a>
+                                            <a href="#"><img src="/images/facebook-logo.png" alt=""></a>
                                         </div>
                                     </div>
                                 </div>
@@ -589,62 +605,36 @@
                             <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
                         </div>
                         <div class="uk-width-1-2">
-
+                            
                             <div class="uk-grid">
                                 <div class="uk-width-1-2">
                                     <div class="uk-flex uk-flex-column">
-
-                                        <span>Остались вопросы?</span>
-
-                                        <form action="handler.php">
-
-                                            <div class="input-item dev-correct-color">
-                                                <!--<img class="dev-img-ico-correct" src="images/ic_person_outline_black_48dp.png" alt="">-->
-                                                <label for="name" class="dev-order-label">Ваше Имя</label>
-                                                <input type="text" name="name" class="dev-order-input dev-footer-input">
-                                            </div>
-
-                                            <div class="input-item input-footer dev-correct-color">
-                                                <!--<img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">-->
-                                                <label for="tel" class="dev-order-label">Email или Телефон</label>
-                                                <input type="tel" name="tel" class="dev-order-input" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
-                                            </div>
-
-
-                                            <label class="dev-footer-label-correct" for="text">Ваше сообщение</label>
-
-                                            <textarea class="dev-footer-textarea" rows="3" cols="27" name="text"></textarea>
-
-                                            <input type="submit" class="dev-but-footer uk-clearfix" value="отправить">
-
-                                        </form>
+                                        <a href="">О компании</a>
+                                        <a href="">Наши объекты</a>
+                                        <a href="">Отзывы клиентов</a>
+                                        <a href="">Корпоративный блог</a>
+                                        <a href="">Сотрудничество</a>
+                                        <a href="">Контакты</a>
+                                        <div class="uk-flex">
+                                            <a href="#"><img src="/images/vk-social-logotype.png" alt=""></a>
+                                            <a href="#"><img src="/images/odnoklassniki-logo.png" alt=""></a>
+                                            <a href="#"><img src="/images/facebook-logo.png" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2">
                                     <div class="uk-flex uk-flex-column">
-                                        <span>Главный офис</span>
-                                        <a href="">
-                                            <img src="images/ic_place.png" alt="">
-                                            <span>35000, г. Краснодар, ул. Московская 91/2</span>
-                                        </a>
-                                        <span>Отдел продаж:</span>
-                                        <a href="">
-                                            <img src="images/ic_local_phone_black_18dp.png" alt="">
-                                            <span>8-918-44-99-703</span>
-                                        </a>
-                                        <span>Бухгалтерия:</span>
-                                        <a href="">
-                                            <img src="images/ic_local_phone_black_18dp.png" alt="">
-                                            <span>8-989-265-65-90</span>
-                                        </a>
-                                        <span>Производство:</span>
-                                        <a href="">
-                                            <img src="images/ic_place.png" alt="">
-                                            <span>35000, г. Краснодар, ул. Калинина</span>
-                                        </a>
+                                        <a href="">Продажа бетона</a>
+                                        <a href="">Инертные материалы</a>
+                                        <a href="">Аренда спецтехники</a>
+                                        <a href="">ФБС</a>
+                                        <a href="">Строительные материалы</a>
                                     </div>
                                 </div>
                             </div>
+                            <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
+                        </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -652,4 +642,5 @@
         </footer>
     </div>
 </body>
+
 </html>
