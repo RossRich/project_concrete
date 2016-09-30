@@ -540,16 +540,20 @@ a.dev-but-about-correct {
     transition: 0.7s;
 }
 
-.dev-container-order {
-    background: #fdaa31;
-}
 
 .dev-container-concreate {
     background: #dfdfdf;
 }
 
 
+
 /*БЛОК СКИДКА*/
+
+
+
+.dev-container-order {
+    background: #fdaa31;
+}
 
 .dev-order-head {
     text-transform: uppercase;
@@ -788,7 +792,10 @@ li>div[class="input-item"] {
 }
 
 
+
 /*НАШИ ПАРТНЕРЫ*/
+
+
 
 .dev-contauner-our-partner {}
 
@@ -812,11 +819,14 @@ li>div[class="input-item"] {
 }
 
 
+
 /*БЛОК ДОКУМЕНТЫ*/
+
+
 
 .documents_full {
     min-height: 393px;
-    background-color: #f5f5f5;
+/*    background-color: #f5f5f5;*/
     background-image: linear-gradient(to right, #bdbdbd 50%, #fea018 50%);
 }
 
