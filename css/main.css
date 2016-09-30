@@ -104,7 +104,7 @@
 
 
 .banner {
-    max-width: 1400px;
+/*    max-width: 1400px;*/
     min-height: 640px;
     margin: 0 auto;
     padding-top: 0px;
@@ -303,9 +303,9 @@ ul.ul_top_menu a:hover {
 
 /*ПЛАВАЮЩЕЕ МЕНЮ*/
 
-.uk-sticky-placeholder {
+.main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
-    /*    min-height: 55px;*/
+/*    min-height: 55px;*/
 }
 
 .banner .main_menu {
@@ -428,6 +428,20 @@ ul.ul_main_menu > li:hover > a:before {
 
 .banner .sliden .slogan .phone_orders:hover {
     text-decoration: none;
+}
+
+
+
+/*БЛОК ХЕДЕР ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ*/
+
+.header {
+    min-height: 225px;
+    background-color: #212121;
+    background-image: none;
+}
+
+.main_menu_full_header {
+     background-color: rgba(33, 33, 33, 0.5);
 }
 
 
