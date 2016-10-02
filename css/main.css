@@ -352,7 +352,7 @@ ul.ul_main_menu > li > a {
 
 ul.ul_main_menu > li > a:before {
     background-color: #ff9700;
-    bottom: -17px;
+    bottom: -16px;
     content: '';
     display: inline-block;
     height: 2px;
@@ -535,14 +535,16 @@ a.dev-but-order-correct {
     color: #ff9700;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: 400;
     /*    margin-right: 44px;*/
 }
 
 a.dev-but-about-correct {
     color: #616161;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
     float: right;
+    font-weight: 400;
 }
 
 .dev-line-correct {
@@ -1173,4 +1175,17 @@ dev-footer-textarea:hover{
 
 .dev-footer-textarea-correct {
     display: block;
+}
+
+
+.des-correct-slider-position {
+    padding-top: 80px;
+}
+
+.des-correct-sleder-main-container {
+    position: absolute;
+    top: -42px;
+}
+.des-footer-correct {
+    padding-left: 0;
 }
