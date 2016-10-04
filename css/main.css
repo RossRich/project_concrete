@@ -34,52 +34,39 @@
 */
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Medium.eot');
-	src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Medium.woff') format('woff'),
-		url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Medium.eot');
+    src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Medium.woff') format('woff'), url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Light.eot');
-	src: url('/fonts/subset-Roboto-Light.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Light.woff') format('woff'),
-		url('/fonts/subset-Roboto-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Light.eot');
+    src: url('/fonts/subset-Roboto-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Light.woff') format('woff'), url('/fonts/subset-Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Bold.eot');
-	src: url('/fonts/subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Bold.woff') format('woff'),
-		url('/fonts/subset-Roboto-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Bold.eot');
+    src: url('/fonts/subset-Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Bold.woff') format('woff'), url('/fonts/subset-Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Regular.eot');
-	src: url('/fonts/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Regular.woff') format('woff'),
-		url('/fonts/subset-Roboto-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Regular.eot');
+    src: url('/fonts/subset-Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Regular.woff') format('woff'), url('/fonts/subset-Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
-
 
 
 /*ОБЩЕЕ*/
-
-
-
 
 .wrapper {
     height: 100%;
@@ -96,15 +83,10 @@
 }
 
 
-
-
 /*БЛОК БАННЕР*/
 
-
-
-
 .banner {
-/*    max-width: 1400px;*/
+    /*    max-width: 1400px;*/
     min-height: 640px;
     margin: 0 auto;
     padding-top: 0px;
@@ -114,12 +96,7 @@
 }
 
 
-
-
 /*СЕРАЯ ПОЛОСА МЕНЮ*/
-
-
-
 
 .banner .top_cont {
     padding-top: 7px;
@@ -305,7 +282,7 @@ ul.ul_top_menu a:hover {
 
 .main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
-/*    min-height: 55px;*/
+    /*    min-height: 55px;*/
 }
 
 .banner .main_menu {
@@ -431,7 +408,6 @@ ul.ul_main_menu > li:hover > a:before {
 }
 
 
-
 /*БЛОК ХЕДЕР ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ*/
 
 .header {
@@ -441,7 +417,7 @@ ul.ul_main_menu > li:hover > a:before {
 }
 
 .main_menu_full_header {
-     background-color: rgba(33, 33, 33, 0.5);
+    background-color: rgba(33, 33, 33, 0.5);
 }
 
 
@@ -556,16 +532,12 @@ a.dev-but-about-correct {
     transition: 0.7s;
 }
 
-
 .dev-container-concreate {
     background: #dfdfdf;
 }
 
 
-
 /*БЛОК СКИДКА*/
-
-
 
 .dev-container-order {
     background: #fdaa31;
@@ -700,12 +672,7 @@ li>div[class="input-item"] {
 }
 
 
-
-
 /*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
-
-
-
 
 .dev-container-material {
     /*    max-width: 1400px;*/
@@ -741,11 +708,7 @@ li>div[class="input-item"] {
 }
 
 
-
 /*БЛОК КЛИЕНТЫ*/
-
-
-
 
 .dev-consumer-about-us {
     background: url(../images/bgpotreb.jpg);
@@ -808,10 +771,7 @@ li>div[class="input-item"] {
 }
 
 
-
 /*НАШИ ПАРТНЕРЫ*/
-
-
 
 .dev-contauner-our-partner {}
 
@@ -835,14 +795,11 @@ li>div[class="input-item"] {
 }
 
 
-
 /*БЛОК ДОКУМЕНТЫ*/
-
-
 
 .documents_full {
     min-height: 393px;
-/*    background-color: #f5f5f5;*/
+    /*    background-color: #f5f5f5;*/
     background-image: linear-gradient(to right, #bdbdbd 50%, #fea018 50%);
 }
 
@@ -934,7 +891,7 @@ li>div[class="input-item"] {
     padding: 8px 16px;
     background-color: #f5f5f5;
     border: 0;
-    border-radius: 2px;    
+    border-radius: 2px;
     box-shadow: 1px 3px 4.7px 0.30px rgba(0, 0, 0, 0.24);
     margin-top: 27px;
 }
@@ -946,14 +903,7 @@ li>div[class="input-item"] {
 }
 
 
-
-
-
 /*БЛОК НАШИ ПАРТНЕРЫ ПРОДОЛЖЕНИЕ*/
-
- 
-
-
 
 .img_neom {
     background: url(../images/896ff0029059a66571a724317b4812d3.png) no-repeat center center;
@@ -984,11 +934,7 @@ li>div[class="input-item"] {
 }
 
 
-
 /*БЛОК ФУТЕР*/
-
-
-
 
 .dev-contauner-footer {
     background: #f5f5f5;
@@ -1057,7 +1003,6 @@ li>div[class="input-item"] {
     font-size: 13px;
     float: right;
     margin-top: 25px;
-    
 }
 
 .dev-but-footer:hover {
@@ -1075,7 +1020,6 @@ li>div[class="input-item"] {
     font-size: 16px;
     font-weight: 400;
     color: #bdbdbd;
-    
 }
 
 .dev-footer-textarea {
@@ -1088,11 +1032,9 @@ li>div[class="input-item"] {
     float: right;
 }
 
-dev-footer-textarea:hover{
+dev-footer-textarea:hover {
     border-bottom: 2px solid #f69201;
 }
-
-
 
 .input-footer {
     position: relative;
@@ -1128,7 +1070,7 @@ dev-footer-textarea:hover{
     border: none;
     -webkit-appearance: none;
     outline: none;
-    color: #f5f5f5;  
+    color: #f5f5f5;
 }
 
 .dev-footer-label {
@@ -1154,20 +1096,17 @@ dev-footer-textarea:hover{
     transform: scaleX(1);
 }
 
-
 .is-focused.input-footer::after {
     background: #f69201;
     transform: scaleX(1);
     transition: transform 0.5s;
 }
 
-
 .is-focused .dev-footer-label {
     transform: translateY(0) scale(1);
     font-size: 12px;
     color: #f69201;
 }
-
 
 .dev-footer-img-correct {
     margin: auto 0;
@@ -1185,7 +1124,6 @@ dev-footer-textarea:hover{
     margin-right: 22px;
 }
 
-
 .des-correct-slider-position {
     padding-top: 80px;
 }
@@ -1194,6 +1132,7 @@ dev-footer-textarea:hover{
     position: absolute;
     top: -42px;
 }
+
 .des-footer-correct {
     padding-left: 0;
 }
@@ -1206,6 +1145,14 @@ dev-footer-textarea:hover{
     margin-right: 20px;
 }
 
-.dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img{
+.dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img {
     margin-right: 20px;
+}
+
+.i {
+    background-image: url(/images/ic_local_offer_black_18dp.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
 }

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/concrete_product.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pie-chart-master.css">
+    <link rel="stylesheet" href="css/simple-ripple-effect.css" />
+
 
     <script src="jquery/jquery-3.1.0.js"></script>
     <script src="js/easyPieChart/jquery.plugin.js"></script>
@@ -22,9 +24,13 @@
     <script src="js/components/lightbox.min.js"></script>
     <script src="js/concrete_product.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/simple-ripple-effect.js"></script>
+
+
 
     <title>Наш продукт</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="banner header">
@@ -95,7 +101,7 @@
                     <li class="uk-active"><span>Бетон М-100 - П3</span></li>
                 </ul>
                 <h3>ДОСТАВКА БЕТОНА М 100-П3 ПО КРАСНОДАРУ И КРАЮ</h3>
-                <div class="des-content-panel">
+                <div class="des-content-panel box-wrapper">
                     <div class="uk-grid uk-grid-collapse">
                         <div class="uk-width-1-2 uk-hidden-small uk-hidden-medium">
                             <div class="des-panel-img"></div>
@@ -142,27 +148,91 @@
                                     <div class="des-panel-discription">
                                         <h3>Бетон M 100 - П 3 </h3>
                                         <h4>2500 руб. м3</h4>
-                                        <ul class="uk-tab" data-uk-tab="{connect:'#des-panel-id'}">
-                                            <li class="uk-active"><a href="">ХАРАКТЕРИСТИКИ</a></li>
-                                            <li><a href="">ПРИМЕНЕНИЕ</a></li>
-                                        </ul>
-                                        <ul id="des-panel-id" class="uk-switcher">
-                                            <li class="des-panel-li-fix">
-                                                <p>
-                                                    Удобоукладываемость у места укладки 10-15см Класс (марка) бетона по прочности на сжатие в возрасте М-100, В 7,5 Коэффициент вариации прочности бетона, % 1,8 Проектная марка по средней плотности, кг/м3 2360-2390 Наименование / масса (обьем) добавки, кг(л) Ф-1 — 1,5 кг
-                                                </p>
-                                            </li>
-                                            <li class="des-panel-li-fix">
-                                                <p>
-                                                    Применяют бла бла бла
-                                                </p>
-                                            </li>
-                                        </ul>
+
+                                        <div class="des-test-visible">
+
+
+
+                                            <ul class="uk-tab" data-uk-tab="{connect:'#des-panel-id'}">
+                                                <li class="uk-active"><a href="">ХАРАКТЕРИСТИКИ</a></li>
+                                                <li><a href="">ПРИМЕНЕНИЕ</a></li>
+                                            </ul>
+                                            <ul id="des-panel-id" class="uk-switcher">
+                                                <li class="des-panel-li-fix">
+                                                    <p>
+                                                        Удобоукладываемость у места укладки 10-15см Класс (марка) бетона по прочности на сжатие в возрасте М-100, В 7,5 Коэффициент вариации прочности бетона, % 1,8 Проектная марка по средней плотности, кг/м3 2360-2390 Наименование / масса (обьем) добавки, кг(л) Ф-1 — 1,5 кг
+                                                    </p>
+                                                </li>
+                                                <li class="des-panel-li-fix">
+                                                    <p>
+                                                        Применяют бла бла бла
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="des-test-invisible">
+
+                                            <h4>Для заказа товара пожалуйста заполните данные</h4>
+
+                                            <form action="handler.php">
+                                                <ul class="uk-grid uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-small-1-1">
+                                                    <li>
+                                                        <div class="uk-flex">
+                                                            <img class="dev-img-ico-correct" src="images/ic_person_outline_black_48dp_ORDER.png" alt="">
+                                                            <div class="input-item-consumer-order-panel">
+                                                                <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
+                                                                <input type="text" name="name" class="input-item-consumer-order-panel">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="uk-flex">
+                                                            <img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">
+                                                            <div class="input-item-consumer-order-panel">
+                                                                <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
+                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="uk-flex">
+                                                            <img class="dev-img-ico-correct" src="images/ic_local_offer_black_18dp.png" alt="">
+                                                            <div class="input-item-consumer-order-panel">
+                                                                <label for="tel" class="dev-consumer-order-panel-label">Марка бетона</label>
+                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="uk-flex">
+                                                            <img class="dev-img-ico-correct" src="images/ic_layers_black_18dp.png" alt="">
+                                                            <div class="input-item-consumer-order-panel">
+                                                                <label for="tel" class="dev-consumer-order-panel-label">Объем</label>
+                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="uk-flex">
+                                                            <img class="dev-img-ico-correct" src="images/ic_place_black_18dp.png" alt="">
+                                                            <div class="input-item-consumer-order-panel">
+                                                                <label for="tel" class="dev-consumer-order-panel-label">Адрес объекта</label>
+                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </form>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-bottom">
-                                        <button class="dev-but-submit-correct uk-clearfix" name="butOrder" value="">ЗАКАЗАТЬ</button>
+                                        <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
+                                        </button>
+                                        <!--                                        <button type="submit" class="dev-but-submit-correct-invisible uk-clearfix">ОТПРАВИТЬ</button>-->
                                         <p><span>отдел продаж</span>
                                             <br>8 (918) 44 99 703</p>
                                     </div>
@@ -191,7 +261,6 @@
                             <div class="uk-flex">
                                 <img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">
                                 <div class="input-item">
-
                                     <label for="tel" class="dev-order-label">Ваш Телефон</label>
                                     <input type="tel" name="tel" class="dev-order-input" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
                                 </div>
@@ -577,4 +646,5 @@
         </footer>
     </div>
 </body>
+
 </html>
