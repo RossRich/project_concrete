@@ -34,11 +34,13 @@
 */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/subset-Roboto-Medium.eot');
-    src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Medium.woff') format('woff'), url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Roboto';
+	src: url('/fonts/subset-Roboto-Medium.eot');
+	src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/subset-Roboto-Medium.woff') format('woff'),
+		url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
@@ -282,6 +284,7 @@ ul.ul_top_menu a:hover {
 
 .main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
+    height: 55px;
     /*    min-height: 55px;*/
 }
 
@@ -431,13 +434,14 @@ ul.ul_main_menu > li:hover > a:before {
 
 .advantages {
     padding-top: 80px;
+    padding-bottom: 29px;
 }
 
 .advantages h3 {
     text-transform: uppercase;
     color: #616161;
     font-size: 27.78px;
-    margin: 0 0 38px 0;
+    margin: 0 0 55px 0;
     font-family: Roboto;
     font-weight: normal;
     font-style: normal;
@@ -717,7 +721,7 @@ li>div[class="input-item"] {
 }
 
 .dev-consumer-about-us-head-correct {
-    font-weight: regular;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 0;
 }
@@ -1147,12 +1151,4 @@ dev-footer-textarea:hover {
 
 .dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img {
     margin-right: 20px;
-}
-
-.i {
-    background-image: url(/images/ic_local_offer_black_18dp.png);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: bottom;
 }

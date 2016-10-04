@@ -1,0 +1,189 @@
+/*БЛОК ХЕДЕР*/
+
+/*-*/
+
+/*БЛОК О КОМПАНИИ*/
+
+.about_us_full {
+    background-color: #f5f5f5;
+}
+
+.about_us {
+    padding-top: 75px;
+}
+
+.about_us h3 {
+    text-transform: uppercase;
+    color: #212121;
+    font: 400 27.78px Roboto;
+}
+
+.about_us ul li {
+    padding: 0;
+}
+
+.au_panel {
+    padding: 10px;
+}
+
+.about_us h4 {
+    color: #616161;
+    font: 500 25px Roboto;
+/*    margin-bottom: 11px;*/
+}
+
+.about_us p {
+    color: #616161;
+    font: 400 19.44px / 30px Roboto;
+}
+
+.about_us img {
+    position: relative;
+    top: 6px;
+}
+
+
+
+/*БЛОК ПРЕИМУЩЕСТВА - ДОВЕРИЕ*/
+
+/*-*/
+
+/*БЛОК ПАРАЛЛАКС ЛОГО УСЛУГИ*/
+
+.uslugi_full_au {
+/*
+    min-height: 525px;
+    max-height: 600px;
+*/
+    height: 525px;
+    overflow: hidden;
+/*
+    position: relative;
+    top: 0;
+*/
+}
+
+.uslugi_parallax_au {
+    background: url(../images/tunnel.jpg) no-repeat center center;
+    height: 500px;
+    width: 100%;
+/*
+    position: relative;
+    top: 0;
+*/
+    z-index: 1;
+}
+
+.uslugi_au {
+    padding-top: 60px;
+    position: relative;
+    top:-500px;
+    z-index: 2;
+}
+
+.uslugi_h3_au {
+    text-transform: none;
+    color: #f5f5f5;
+    margin-bottom: 35px;
+}
+
+.us_block_au {
+    margin-bottom: 31px;
+}
+
+.us_logo_au {
+    text-align: center;
+}
+
+.us_logo_au img {
+    margin: 17% 0;    
+}
+
+.us_textblock_au {
+    margin-bottom: 18px
+}
+
+.us_textblock_au h4 {
+    text-transform: capitalize;
+    color: #f5f5f5;
+    font: 500 19.44px Roboto;
+    margin-bottom: 4px;
+}
+
+.us_textblock_au p {
+    color: #e0e0e0;
+    font: 400 16.67px / 31px Roboto;
+    margin: 0;
+    
+/*
+    margin-bottom: 18px;
+    margin-top: 18px;
+*/
+}
+
+.us_text1 {
+    text-align: right;
+    overflow: hidden;
+}
+
+.us_text2 {
+/*    text-align: right;*/
+    overflow: hidden;
+}
+
+.us_block_au1 img {
+    float:right;
+    position: relative;
+    left: 15px;
+    top: 6px;
+}
+
+.us_block_au2 img {
+    float:left;
+    position: relative;
+    right: 15px;
+    top: 6px;
+}
+
+
+
+/*БЛОК НАШИ ДОСТИЖЕНИЯ*/
+
+.achievements_full {
+    background-color: #f5f5f5;
+}
+
+.achievements {
+    padding-top: 75px;
+    padding-left: 19px;
+}
+
+.achievements h3 {
+    text-transform: uppercase;
+    color: #212121;
+    font: 400 27.78px Roboto;
+}
+
+.achievements span {
+    color: #212121;
+    font: 300 66.67px / 41.667px Roboto;
+}
+
+.achievements p {
+    color: #616161;
+    font: 400 19.44px / 33.333px Roboto;
+}
+
+/*БЛОК КЛИЕНТЫ О НАС*/
+
+/*-*/
+
+/*БЛОК НАШИ ПАРТНЕРЫ*/
+
+/*-*/
+
+/*БЛОК ФУТЕР*/
+
+.dev-footer-correcr {
+    margin-top: 0;
+}
