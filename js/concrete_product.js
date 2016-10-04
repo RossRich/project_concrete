@@ -18,5 +18,18 @@ jQuery(function($) {
         });
 
     });
+    
+    
+    $('.input-item-consumer-order-panel').focus(function() {
+        $(this).parent().addClass('is-focused has-label');
+    })
+
+    $('.input-item-consumer-order-panel').blur(function() {
+        $parent = $(this).parent();
+        if ($(this).val() == "") {
+            $parent.removeClass('is-focused has-label');
+        }
+        $parent.removeClass('is-focused');
+    })
 
 });
