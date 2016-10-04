@@ -999,6 +999,7 @@ li>div[class="input-item"] {
 
 .dev-footer-correcr {
     margin-top: 80px;
+    margin-bottom: 40px;
     background: #212121;
 }
 
@@ -1172,11 +1173,18 @@ dev-footer-textarea:hover{
 
 .dev-footer-img-correct {
     margin: auto 0;
-    padding: 15px 16px 0 0;
+    padding: 20px 16px 0 0;
+}
+
+.dev-footer-img-correct: {
+    margin: auto 0;
+    padding: 25px 16px 0 0;
 }
 
 .dev-footer-textarea-correct {
     display: block;
+    padding-top: 25px;
+    margin-right: 22px;
 }
 
 
@@ -1190,4 +1198,16 @@ dev-footer-textarea:hover{
 }
 .des-footer-correct {
     padding-left: 0;
+}
+
+.des-footer-img-crutch {
+    padding-top: 0;
+}
+
+.dev-contauner-footer .dev-footer-container-correct .uk-flex a img {
+    margin-right: 20px;
+}
+
+.dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img{
+    margin-right: 20px;
 }
