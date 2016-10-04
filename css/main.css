@@ -305,6 +305,7 @@ ul.ul_top_menu a:hover {
 
 .main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
+    height: 55px;
 /*    min-height: 55px;*/
 }
 
@@ -455,13 +456,14 @@ ul.ul_main_menu > li:hover > a:before {
 
 .advantages {
     padding-top: 80px;
+    padding-bottom: 29px;
 }
 
 .advantages h3 {
     text-transform: uppercase;
     color: #616161;
     font-size: 27.78px;
-    margin: 0 0 38px 0;
+    margin: 0 0 55px 0;
     font-family: Roboto;
     font-weight: normal;
     font-style: normal;
@@ -754,7 +756,7 @@ li>div[class="input-item"] {
 }
 
 .dev-consumer-about-us-head-correct {
-    font-weight: regular;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 0;
 }
