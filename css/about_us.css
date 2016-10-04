@@ -66,11 +66,6 @@
 .uslugi_parallax_au {
     background: url(../images/tunnel.jpg) no-repeat center center;
     height: 500px;
-    width: 100%;
-/*
-    position: relative;
-    top: 0;
-*/
     z-index: 1;
 }
 
