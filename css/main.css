@@ -288,13 +288,13 @@ ul.ul_top_menu a:hover {
     /*    min-height: 55px;*/
 }
 
-.banner .main_menu {
+.main_menu {
     max-width: 1130px;
     min-height: 18px;
-    padding: 20px 0 15px 0;
+    padding: 17px 0 15px 0;
 }
 
-.banner .main_menu nav {
+.main_menu nav {
     max-width: 1130px;
     margin: 0;
     padding: 0;
@@ -332,7 +332,7 @@ ul.ul_main_menu > li > a {
 
 ul.ul_main_menu > li > a:before {
     background-color: #ff9700;
-    bottom: -16px;
+    bottom: -17px;
     content: '';
     display: inline-block;
     height: 2px;
@@ -355,6 +355,14 @@ ul.ul_main_menu > li:hover > a:before {
     opacity: 0.5;
     margin: 0;
     padding: 0;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+/*    margin: 0;*/
 }
 
 
@@ -414,7 +422,7 @@ ul.ul_main_menu > li:hover > a:before {
 /*БЛОК ХЕДЕР ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ*/
 
 .header {
-    min-height: 225px;
+    min-height: 223px;
     background-color: #212121;
     background-image: none;
 }
@@ -679,7 +687,6 @@ li>div[class="input-item"] {
 /*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
 
 .dev-container-material {
-    /*    max-width: 1400px;*/
     background: #f5f5f5;
 }
 
@@ -970,13 +977,6 @@ li>div[class="input-item"] {
     font-size: 16px;
     color: #e7e7e7;
     padding-top: 17px;
-}
-
-.hr {
-    width: 100%;
-    height: 2px;
-    display: block;
-    background: rgba(255, 255, 255, 0.5);
 }
 
 .dev-footer-correcr span {
