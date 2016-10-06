@@ -55,10 +55,17 @@
 }
 
 
-
 /*БЛОК ФУТЕР*/
 
+/*ПРИЖАТИЕ ФУТЕРА*/
+
+/*
+.clr {
+    height: 420px;
+}
 
 .dev-footer-correcr {
-    margin-top: 0;
+    margin-top: -420px;
+    clear: both;
 }
+*/
