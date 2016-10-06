@@ -34,13 +34,11 @@
 */
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('/fonts/subset-Roboto-Medium.eot');
-	src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/subset-Roboto-Medium.woff') format('woff'),
-		url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+    font-family: 'Roboto';
+    src: url('/fonts/subset-Roboto-Medium.eot');
+    src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Medium.woff') format('woff'), url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
@@ -284,8 +282,12 @@ ul.ul_top_menu a:hover {
 
 .main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 55px;
+<<<<<<< HEAD
     /*    min-height: 55px;*/
+=======
+    height: 55px;
+/*    min-height: 55px;*/
+>>>>>>> b43ad2f0f2d0455f8735a80978c52fa3c616d6d1
 }
 
 .banner .main_menu {
@@ -947,27 +949,29 @@ li>div[class="input-item"] {
 
 .dev-footer-correcr {
     margin-top: 80px;
+    margin-bottom: 40px;
     background: #212121;
-    padding-bottom: 20px;
 }
 
 .dev-footer-content {
-    padding: 40px;
+    padding: 0 0 35px 0;
 }
 
 .dev-footer-container-correct {
-    padding-left: 40px;
+    margin: auto;
+    padding: 0;
 }
 
 .dev-footer-container-correct p {
-    font-size: 15px;
+    font-size: 16px;
     color: #e7e7e7;
+    padding: 17px 0 17px 0;
 }
 
 .dev-footer-container-correct a {
     font-size: 16px;
     color: #e7e7e7;
-    padding-bottom: 20px;
+    padding-top: 17px;
 }
 
 .hr {
@@ -978,38 +982,16 @@ li>div[class="input-item"] {
 }
 
 .dev-footer-correcr span {
-    font-weight: 500;
+    font-weight: medium;
     font-size: 19px;
     color: #f5f5f5;
-/*    padding: 0 0 20px 0;*/
-    line-height: 30px;
+    padding: 20px 0 15px 0;
 }
 
 .dev-footer-correcr a>span {
-    font-weight: 400;
+    font-weight: regular;
     font-size: 16px;
-/*    overflow: hidden;*/
-}
-
-.dev-footer-container-correct ul{
-    padding: 0;
-}
-
-.dev-footer-container-correct ul>li{
-    position: relative;
-    list-style: none;
-    display: inline-block;
-    padding-top: 20px;
-}
-
-.dev-contauner-footer .dev-footer-container-correct .uk-flex ul>li>a>img {
-    position: absolute;
-    left: -28px;
-    top: 25px;
-}
-
-.dev-contauner-footer .dev-footer-container-correct .uk-flex a img {
-    margin-right: 18px;
+    overflow: hidden;
 }
 
 .dev-correct-color {
@@ -1023,11 +1005,10 @@ li>div[class="input-item"] {
     border-radius: 2px;
     border: 2px solid #ff9700;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: regular;
     font-size: 13px;
     float: right;
     margin-top: 25px;
-    margin-right: 20px;
 }
 
 .dev-but-footer:hover {
@@ -1076,7 +1057,7 @@ dev-footer-textarea:hover {
 .input-footer::before {
     content: '';
     height: 2px;
-    width: 240px;
+    width: 250px;
     position: absolute;
     bottom: 6px;
     left: 0;
@@ -1086,7 +1067,7 @@ dev-footer-textarea:hover {
 .dev-footer-input {
     position: relative;
     display: block;
-    width: 240px;
+    width: 250px;
     height: 32px;
     padding: 8px 0;
     line-height: 16px;
@@ -1138,6 +1119,11 @@ dev-footer-textarea:hover {
     padding: 20px 16px 0 0;
 }
 
+.dev-footer-img-correct: {
+    margin: auto 0;
+    padding: 25px 16px 0 0;
+}
+
 .dev-footer-textarea-correct {
     display: block;
     padding-top: 25px;
@@ -1154,13 +1140,25 @@ dev-footer-textarea:hover {
 }
 
 .des-footer-correct {
-/*    padding-left: 0;*/
+    padding-left: 0;
 }
 
 .des-footer-img-crutch {
     padding-top: 0;
 }
 
+.dev-contauner-footer .dev-footer-container-correct .uk-flex a img {
+    margin-right: 20px;
+}
+
 .dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img {
     margin-right: 20px;
+}
+
+.i {
+    background-image: url(/images/ic_local_offer_black_18dp.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
 }

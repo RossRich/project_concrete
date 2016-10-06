@@ -102,6 +102,7 @@ jQuery(document).ready(function($) {
                 "color":"#000",
                 "border":0
             });
+            $('.des-panel-discription h4.des-unique-h4').css("color","#FFF");
         }, 501);
 
         // Remove rippling component after half second

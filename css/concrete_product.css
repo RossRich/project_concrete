@@ -172,7 +172,7 @@
 .des-panel-bottom input:hover{
     box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.2);
     transition: 0.7s;
-    background: #ff9700;
+    background: #fdaa31;
     color: #000;
     border: none;
 }
@@ -211,10 +211,12 @@
     height: 130px;
 }
 
+/*
 .des-content-panel:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .2);
     transition: 0.7s;
 }
+*/
 
 .des-get-concrete-pomp {
     background: #c8c8c8;
@@ -393,6 +395,7 @@
     text-transform: inherit;
     font-size: 19px;
     font-weight: 400;
+    color: #212121;
 }
 
 

@@ -2475,7 +2475,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   padding: 8px 12px 8px 12px;
   border: 1px solid transparent;
   border-bottom-width: 0;
-  color: #07D;
+  color: #616161;
+/* des-correct color: #07D;*/
   text-decoration: none;
 }
 .uk-tab > li:nth-child(n+2) > a {
@@ -2507,7 +2508,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-color: #ddd;
   border-bottom-color: transparent;
   background: #fff;
-  color: #444;
+/*  color: #444;  des-correct*/
+  color: #000;
+    font-weight: 500;
 }
 /* Disabled */
 .uk-tab > li.uk-disabled > a {
