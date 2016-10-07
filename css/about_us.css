@@ -55,29 +55,28 @@
     min-height: 525px;
     max-height: 600px;
 */
-    height: 525px;
+    min-height: 525px;
     overflow: hidden;
-/*
     position: relative;
-    top: 0;
-*/
+/*    top: 0;*/
 }
 
 .uslugi_parallax_au {
-    background: url(../images/tunnel.jpg) no-repeat center center;
-    height: 500px;
-    width: 100%;
-/*
-    position: relative;
+    background: url(../images/tunnel.jpg) no-repeat center center ;
+/*    height: 500px;*/
+    background-size: cover;
+    position: absolute;
     top: 0;
-*/
+    bottom: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
 }
 
 .uslugi_au {
     padding-top: 60px;
     position: relative;
-    top:-500px;
+/*    top:-500px;*/
     z-index: 2;
 }
 

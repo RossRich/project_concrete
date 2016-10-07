@@ -34,11 +34,13 @@
 */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/subset-Roboto-Medium.eot');
-    src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/subset-Roboto-Medium.woff') format('woff'), url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Roboto';
+	src: url('/fonts/subset-Roboto-Medium.eot');
+	src: url('/fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/subset-Roboto-Medium.woff') format('woff'),
+		url('/fonts/subset-Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
@@ -68,10 +70,14 @@
 
 /*ОБЩЕЕ*/
 
+html , body { 
+    height: 100%;
+}
+
 .wrapper {
     height: 100%;
     width: 100%;
-    /*    background-color: #000000;*/
+    background-color: #f5f5f5;
     font-family: Roboto;
     font-weight: normal;
     font-style: normal;
@@ -282,21 +288,17 @@ ul.ul_top_menu a:hover {
 
 .main_menu_full {
     background-color: rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-    /*    min-height: 55px;*/
-=======
     height: 55px;
-/*    min-height: 55px;*/
->>>>>>> b43ad2f0f2d0455f8735a80978c52fa3c616d6d1
+    /*    min-height: 55px;*/
 }
 
-.banner .main_menu {
+.main_menu {
     max-width: 1130px;
     min-height: 18px;
-    padding: 20px 0 15px 0;
+    padding: 17px 0 15px 0;
 }
 
-.banner .main_menu nav {
+.main_menu nav {
     max-width: 1130px;
     margin: 0;
     padding: 0;
@@ -323,6 +325,8 @@ ul.ul_main_menu a:hover {
     color: #ff9700;
 }
 
+
+
 ul.ul_main_menu > li {
     display: inline-block;
     position: relative;
@@ -334,7 +338,7 @@ ul.ul_main_menu > li > a {
 
 ul.ul_main_menu > li > a:before {
     background-color: #ff9700;
-    bottom: -16px;
+    bottom: -17px;
     content: '';
     display: inline-block;
     height: 2px;
@@ -357,6 +361,14 @@ ul.ul_main_menu > li:hover > a:before {
     opacity: 0.5;
     margin: 0;
     padding: 0;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+/*    margin: 0;*/
 }
 
 
@@ -416,7 +428,7 @@ ul.ul_main_menu > li:hover > a:before {
 /*БЛОК ХЕДЕР ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ*/
 
 .header {
-    min-height: 225px;
+    min-height: 223px;
     background-color: #212121;
     background-image: none;
 }
@@ -516,7 +528,7 @@ ul.uk-grid li {
 a.dev-but-order-correct {
     color: #ff9700;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 16.75px;
     font-weight: 400;
     /*    margin-right: 44px;*/
 }
@@ -681,15 +693,15 @@ li>div[class="input-item"] {
 /*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
 
 .dev-container-material {
-    /*    max-width: 1400px;*/
     background: #f5f5f5;
 }
 
 .dev-material-panel-head-correct {
-    font-size: 15px;
     text-align: left;
     margin: 15px 15px;
     text-transform: uppercase;
+    color: #212121;
+    font: 400 16.67px Roboto;
 }
 
 .dev-material-panel-img-correct {
@@ -699,10 +711,12 @@ li>div[class="input-item"] {
 
 .dev-material-panel-description {
     margin: 15px 15px;
+    color: #616161;
+    font: 400 13.89px / 22.222px Roboto;
 }
 
 .dev-material-panel-correct {
-    padding: 0 0 20px 0;
+    padding: 0 0 14px 0;
 }
 
 .dev-material-panel-but-correct {
@@ -710,7 +724,8 @@ li>div[class="input-item"] {
 }
 
 .dev-material-panel-head-font-size-correct {
-    font-size: 12px;
+    font-size: 14.58px;
+    line-height: 22px;
 }
 
 
@@ -940,6 +955,13 @@ li>div[class="input-item"] {
 }
 
 
+/*БЛОК ПЕРЕД ФУТЕРОМ*/
+
+.prefooter {
+    height: 80px;
+    background-color: #f5f5f5;
+}
+
 /*БЛОК ФУТЕР*/
 
 .dev-contauner-footer {
@@ -948,50 +970,69 @@ li>div[class="input-item"] {
 }
 
 .dev-footer-correcr {
+/*
     margin-top: 80px;
+<<<<<<< HEAD
+=======
     margin-bottom: 40px;
+*/
+>>>>>>> 3dd3d25b91a4b533c7896bc59c0848c111a49ad3
     background: #212121;
+    padding-bottom: 20px;
 }
 
 .dev-footer-content {
-    padding: 0 0 35px 0;
+    padding: 40px;
 }
 
 .dev-footer-container-correct {
-    margin: auto;
-    padding: 0;
+    padding-left: 40px;
 }
 
 .dev-footer-container-correct p {
-    font-size: 16px;
+    font-size: 15px;
     color: #e7e7e7;
-    padding: 17px 0 17px 0;
 }
 
 .dev-footer-container-correct a {
     font-size: 16px;
     color: #e7e7e7;
-    padding-top: 17px;
-}
-
-.hr {
-    width: 100%;
-    height: 2px;
-    display: block;
-    background: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
 }
 
 .dev-footer-correcr span {
-    font-weight: medium;
+    font-weight: 500;
     font-size: 19px;
     color: #f5f5f5;
-    padding: 20px 0 15px 0;
+/*    padding: 0 0 20px 0;*/
+    line-height: 30px;
 }
 
 .dev-footer-correcr a>span {
-    font-weight: regular;
+    font-weight: 400;
     font-size: 16px;
-    overflow: hidden;
+/*    overflow: hidden;*/
+}
+
+.dev-footer-container-correct ul{
+    padding: 0;
+}
+
+.dev-footer-container-correct ul>li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.dev-contauner-footer .dev-footer-container-correct .uk-flex ul>li>a>img {
+    position: absolute;
+    left: -28px;
+    top: 25px;
+}
+
+.dev-contauner-footer .dev-footer-container-correct .uk-flex a img {
+    margin-right: 18px;
 }
 
 .dev-correct-color {
@@ -1005,10 +1046,11 @@ li>div[class="input-item"] {
     border-radius: 2px;
     border: 2px solid #ff9700;
     text-transform: uppercase;
-    font-weight: regular;
+    font-weight: 400;
     font-size: 13px;
     float: right;
     margin-top: 25px;
+    margin-right: 20px;
 }
 
 .dev-but-footer:hover {
@@ -1057,7 +1099,7 @@ dev-footer-textarea:hover {
 .input-footer::before {
     content: '';
     height: 2px;
-    width: 250px;
+    width: 240px;
     position: absolute;
     bottom: 6px;
     left: 0;
@@ -1067,7 +1109,7 @@ dev-footer-textarea:hover {
 .dev-footer-input {
     position: relative;
     display: block;
-    width: 250px;
+    width: 240px;
     height: 32px;
     padding: 8px 0;
     line-height: 16px;
@@ -1119,11 +1161,6 @@ dev-footer-textarea:hover {
     padding: 20px 16px 0 0;
 }
 
-.dev-footer-img-correct: {
-    margin: auto 0;
-    padding: 25px 16px 0 0;
-}
-
 .dev-footer-textarea-correct {
     display: block;
     padding-top: 25px;
@@ -1140,25 +1177,23 @@ dev-footer-textarea:hover {
 }
 
 .des-footer-correct {
-    padding-left: 0;
+/*    padding-left: 0;*/
 }
 
 .des-footer-img-crutch {
     padding-top: 0;
 }
 
-.dev-contauner-footer .dev-footer-container-correct .uk-flex a img {
-    margin-right: 20px;
-}
-
 .dev-contauner-footer .dev-footer-correcr .dev-footer-container-correct p img {
     margin-right: 20px;
 }
 
-.i {
-    background-image: url(/images/ic_local_offer_black_18dp.png);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: bottom;
-}
+
+
+
+
+
+
+
+
+
