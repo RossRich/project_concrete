@@ -739,6 +739,11 @@ li>div[class="input-item"] {
     padding-bottom: 0;
 }
 
+.slider_consumer {
+    position: relative;
+    top: -42px;
+}
+
 .dev-consumer-icon {
     position: relative;
     padding: 0 13px 35px 0;
@@ -966,7 +971,7 @@ li>div[class="input-item"] {
 }
 
 .dev-footer-correcr {
-    margin-top: 80px;
+/*    margin-top: 80px;*/
     background: #212121;
     padding-bottom: 20px;
 }

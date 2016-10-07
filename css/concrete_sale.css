@@ -45,7 +45,6 @@
 /*БЛОК ОБЪЕКТЫ*/
 
 .facilities_full {
-    background-color: honeydew;
     background-image: none;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .facilities_slidenav_cs {
-    position: absolute;
+    position: relative;
     top: -42px;
 }
 
