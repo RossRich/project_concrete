@@ -81,8 +81,13 @@
 }
 
 .facilities_panel_top_cs {
+/*
     height: 285px;
     width: 320px;
+*/
+    
+    height: 100%;
+    width: 100%;
     background-color: rgba(255, 151, 0, 0.5);
     position: absolute;
     top: 0px;
