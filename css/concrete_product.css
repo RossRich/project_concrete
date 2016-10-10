@@ -262,6 +262,11 @@
     padding: 80px 0 80px 0;
 }
 
+.slider_our_app {
+    position: relative;
+    top: -42px;
+}
+
 .des-our-app .uk-slider-container {
     padding: 12px;
 }
@@ -402,7 +407,6 @@
     font-weight: 400;
     color: #212121;
 }
-
 
 .input-item-consumer-order-panel{
     position: relative;

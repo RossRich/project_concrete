@@ -200,6 +200,10 @@
     float: left;
 }
 
+.des-blog-slider ul>li>div.uk-panel a:hover{
+    text-decoration: none;
+}
+
 .des-blog-slider ul>li>div.uk-panel span{
     font-size: 15px;
     font-weight: 400;
@@ -220,5 +224,5 @@
 
 .slider_blog {
     position: relative;
-    top: -25px;
+    top: -28px;
 }

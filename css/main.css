@@ -526,7 +526,10 @@ a.dev-but-order-correct {
     text-transform: uppercase;
     font-size: 16.75px;
     font-weight: 400;
-    /*    margin-right: 44px;*/
+}
+
+a.dev-but-order-correct:hover {
+    text-decoration: none;
 }
 
 a.dev-but-about-correct {
@@ -535,6 +538,10 @@ a.dev-but-about-correct {
     text-transform: uppercase;
     float: right;
     font-weight: 400;
+}
+
+a.dev-but-about-correct:hover {
+    text-decoration: none;
 }
 
 .dev-line-correct {
@@ -596,7 +603,6 @@ a.dev-but-about-correct {
 .input-item {
     position: relative;
     height: 72px;
-    /*    padding: 16px 0 8px 0;*/
 }
 
 .input-item::after {
@@ -741,7 +747,7 @@ li>div[class="input-item"] {
 
 .slider_consumer {
     position: relative;
-    top: -42px;
+    top: -44px;
 }
 
 .dev-consumer-icon {
