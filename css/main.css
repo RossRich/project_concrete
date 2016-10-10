@@ -701,6 +701,10 @@ li>div[class="input-item"] {
     background: #f5f5f5;
 }
 
+.dev-container-material .mat {
+    padding-bottom: 44px;
+}
+
 .dev-material-panel-head-correct {
     text-align: left;
     margin: 15px 15px;
