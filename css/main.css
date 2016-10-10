@@ -710,7 +710,7 @@ li>div[class="input-item"] {
     margin: 15px 15px;
     text-transform: uppercase;
     color: #212121;
-    font: 400 16.67px Roboto;
+    font: 400 15px Roboto;
 }
 
 .dev-material-panel-img-correct {
@@ -732,10 +732,12 @@ li>div[class="input-item"] {
     margin: 15px 15px;
 }
 
+/*
 .dev-material-panel-head-font-size-correct {
     font-size: 14.58px;
     line-height: 22px;
 }
+*/
 
 
 /*БЛОК КЛИЕНТЫ*/
