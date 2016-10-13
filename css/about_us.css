@@ -102,11 +102,16 @@
     margin-bottom: 18px
 }
 
-.us_textblock_au h4 {
+.us_textblock_au h4 a {
     text-transform: capitalize;
     color: #f5f5f5;
     font: 500 19.44px Roboto;
     margin-bottom: 4px;
+}
+
+.us_textblock_au h4 a:hover {
+    text-decoration: none;
+    color: #ff9700;
 }
 
 .us_textblock_au p {
@@ -155,6 +160,7 @@
 .achievements {
     padding-top: 75px;
     padding-left: 19px;
+    padding-bottom: 25px;
 }
 
 .achievements h3 {

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+    <title>Страница товара | КраснодарСтройСервис</title>
     <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="css/components/slider.gradient.min.css">
     <link rel="stylesheet" href="css/components/slidenav.gradient.css">
@@ -11,7 +13,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pie-chart-master.css">
     <link rel="stylesheet" href="css/simple-ripple-effect.css" />
-
 
     <script src="jquery/jquery-3.1.0.js"></script>
     <script src="js/easyPieChart/jquery.plugin.js"></script>
@@ -25,10 +26,6 @@
     <script src="js/concrete_product.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="js/simple-ripple-effect.js"></script>
-
-
-
-    <title>Наш продукт</title>
 </head>
 
 <body>
@@ -38,17 +35,17 @@
                 <div class="uk-container uk-container-center uk-clearfix top_cont">
                     <nav>
                         <ul class="ul_top_menu list">
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="about_us.html">О компании</a></li>
                             <li><a href="#">Наши объекты</a></li>
                             <li><a href="#">Отзывы клиентов</a></li>
-                            <li><a href="#">Корпоративный блог</a></li>
+                            <li><a href="blog_all.html">Корпоративный блог</a></li>
                             <li><a href="#">Сотрудничество</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="on_map">
-                        <a href="#"><img src="images/ic_place.png" alt=""></a>
-                        <span>Краснодар, ул. Московская 91/2 (<a href="#">На карте</a>)</span>
+                        <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="images/ic_place.png" alt=""></a>
+                        <span>Краснодар, ул. Московская 91/2 (<a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a>)</span>
                     </div>
                 </div>
             </div>
@@ -79,10 +76,12 @@
                 </div>
             </div>
             <div class="uk-sticky-placeholder main_menu_full main_menu_full_header" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39;}" style="margin: 0px;">
+                <!--                <div data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39;}" style="margin: 0px;" class="sticky_placeholder">-->
+
                 <div class="uk-container uk-container-center uk-clearfix main_menu">
                     <nav>
                         <ul class="ul_main_menu list">
-                            <li><a href="#" data-uk-smooth-scroll="{offset: 0}">Продажа бетона</a></li>
+                            <li><a href="concrete_sale.html" data-uk-smooth-scroll="{offset: 0}">Продажа бетона</a></li>
                             <li><a href="#">Инертные материалы</a></li>
                             <li><a href="#" data-uk-smooth-scroll="">Аренда спецтехники</a></li>
                             <li><a href="#">ФБС</a></li>
@@ -116,7 +115,6 @@
                                         </div>
                                     </li>
                                     <li>
-
                                         <div class="chart" data-percent="100" data-scale-color="#ffb400">
                                             <span class="percent"><p><span>5</span>
                                             <br>щебень</p>
@@ -124,7 +122,6 @@
                                         </div>
                                     </li>
                                     <li>
-
                                         <div class="chart" data-percent="80" data-scale-color="#ffb400">
                                             <span class="percent"><p><span>4</span>
                                             <br>песок</p>
@@ -132,7 +129,6 @@
                                         </div>
                                     </li>
                                     <li>
-
                                         <div class="chart" data-percent="20" data-scale-color="#ffb400">
                                             <span class="percent"><p><span>1</span>
                                             <br>вода</p>
@@ -148,11 +144,7 @@
                                     <div class="des-panel-discription">
                                         <h3>Бетон M 100 - П 3 </h3>
                                         <h4 class="des-unique-h4">2500 руб. М<sup><small>3</small></sup></h4>
-
                                         <div class="des-test-visible">
-
-
-
                                             <ul class="uk-tab" data-uk-tab="{connect:'#des-panel-id'}">
                                                 <li class="uk-active"><a href="">ХАРАКТЕРИСТИКИ</a></li>
                                                 <li><a href="">ПРИМЕНЕНИЕ</a></li>
@@ -169,13 +161,9 @@
                                                     </p>
                                                 </li>
                                             </ul>
-
                                         </div>
-
                                         <div class="des-test-invisible">
-
                                             <h4>Для заказа товара пожалуйста заполните данные</h4>
-
                                             <form action="handler.php">
                                                 <ul class="uk-grid uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-small-1-1">
                                                     <li>
@@ -231,10 +219,9 @@
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-bottom">
                                         <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
-                                        </button>
-                                        <!--                                        <button type="submit" class="dev-but-submit-correct-invisible uk-clearfix">ОТПРАВИТЬ</button>-->
+                                        <!--<button type="submit" class="dev-but-submit-correct-invisible uk-clearfix">ОТПРАВИТЬ</button>-->
                                         <p><span>отдел продаж</span>
-                                            <br>8 (918) 44 99 703</p>
+                                        <br>8 (918) 44 99 703</p>
                                     </div>
                                 </li>
                             </ul>
@@ -277,7 +264,7 @@
         <div class="des-our-app">
             <div class="des-our-app-content des-container-correct">
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
-                <div class="uk-slidenav-position" data-uk-slider>
+                <div class="uk-slidenav-position slider_our_app" data-uk-slider>
                     <div class="dev-consumer-slader-navigation uk-clearfix">
                         <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                         <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
@@ -422,17 +409,17 @@
                 </ul>
             </div>
         </div>
-        <div class="facilities_full_cs">
+        <div class="facilities_full_cs facilities_full_cp">
             <div class="uk-container2 uk-container-center facilities_cs">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
-                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="center:true">
+                <div class="uk-slidenav-position facilities_slidenav_cs slider_facilities" data-uk-slider="center:true" >
                     <div class="dev-consumer-slader-navigation uk-clearfix">
                         <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                         <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs">
-                            <li class="facilities_1-li_cs">
+                        <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs facilities_ul_slider_cp">
+                            <li class="facilities_1-li_cs li_slider_cp">
                                 <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
                                     <a href="images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                         <div class="facilities_img_cs">
@@ -448,7 +435,7 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="facilities_1-li_cs">
+                            <li class="facilities_1-li_cs li_slider_cp">
                                 <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
                                     <a href="images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                         <div class="facilities_img_cs">

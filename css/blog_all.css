@@ -55,6 +55,29 @@ ul.ul_main_menu_ba li a {
     margin: 15px 20px 15px 20px;
 }
 
+.panel_bottom {
+    margin: 15px 20px;
+}
+
+.blog_panel .panel_bottom a{
+    font: 400 19.44px / 24px Roboto;
+    text-transform: uppercase;
+    color: #ff9700;
+    float: left;
+}
+
+.blog_panel .panel_bottom a:hover {
+    text-decoration: none;
+}
+
+
+.blog_panel span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #616161;
+    margin-left: 10px;
+}
+
 .overlay_ba {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     /* FF3.6-15 */
