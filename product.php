@@ -20,14 +20,14 @@ if(!isset($product)){
 
 <head>
     <? include($home_dir."/includes/top-scripts.php"); ?>
-    <link rel="stylesheet" href="css/pie-chart-master.css">
-    <link rel="stylesheet" href="css/simple-ripple-effect.css" />
-    <script src="js/easyPieChart/jquery.plugin.js"></script>
-    <script src="js/easyPieChart/jquery.easing.min.js"></script>
-    <script src="js/easyPieChart/easypiechart.js"></script>
-    <script src="js/easyPieChart/renderer/canvas.js"></script>
-    <script src="js/concrete_product.js"></script>
-    <script type="text/javascript" src="js/simple-ripple-effect.js"></script>
+    <link rel="stylesheet" href="/css/pie-chart-master.css">
+    <link rel="stylesheet" href="/css/simple-ripple-effect.css" />
+    <script src="/js/easyPieChart/jquery.plugin.js"></script>
+    <script src="/js/easyPieChart/jquery.easing.min.js"></script>
+    <script src="/js/easyPieChart/easypiechart.js"></script>
+    <script src="/js/easyPieChart/renderer/canvas.js"></script>
+    <script src="/js/concrete_product.js"></script>
+    <script type="text/javascript" src="/js/simple-ripple-effect.js"></script>
 </head>
 
 <body>
@@ -109,7 +109,7 @@ if(!isset($product)){
                                                 <ul class="uk-grid uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-small-1-1">
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="images/ic_person_outline_black_48dp_ORDER.png" alt="">
+                                                            <img class="dev-img-ico-correct" src="/images/ic_person_outline_black_48dp_ORDER.png" alt="">
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
                                                                 <input type="text" name="name" class="input-item-consumer-order-panel">
@@ -118,7 +118,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">
+                                                            <img class="dev-img-ico-correct" src="/images/ic_call_black_18dp.png" alt="">
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel">
@@ -127,7 +127,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="images/ic_local_offer_black_18dp.png" alt="">
+                                                            <img class="dev-img-ico-correct" src="/images/ic_local_offer_black_18dp.png" alt="">
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Марка бетона</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -136,7 +136,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="images/ic_layers_black_18dp.png" alt="">
+                                                            <img class="dev-img-ico-correct" src="/images/ic_layers_black_18dp.png" alt="">
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Объем</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -145,7 +145,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="images/ic_place_black_18dp.png" alt="">
+                                                            <img class="dev-img-ico-correct" src="/images/ic_place_black_18dp.png" alt="">
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Адрес объекта</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -178,7 +178,7 @@ if(!isset($product)){
                     <ul class="uk-grid uk-container-center uk-grid-width-medium-1-1 uk-grid-width-large-1-3 uk-grid-width-small-1-1 dev-order-li-correct">
                         <li>
                             <div class="uk-flex">
-                                <img class="dev-img-ico-correct" src="images/ic_person_outline_black_48dp_ORDER.png" alt="">
+                                <img class="dev-img-ico-correct" src="/images/ic_person_outline_black_48dp_ORDER.png" alt="">
                                 <div class="input-item">
                                     <label for="name" class="dev-order-label">Ваше Имя</label>
                                     <input type="text" name="name" class="dev-order-input">
@@ -187,7 +187,7 @@ if(!isset($product)){
                         </li>
                         <li>
                             <div class="uk-flex">
-                                <img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">
+                                <img class="dev-img-ico-correct" src="/images/ic_call_black_18dp.png" alt="">
                                 <div class="input-item">
                                     <label for="tel" class="dev-order-label">Ваш Телефон</label>
                                     <input type="tel" name="tel" class="dev-order-input" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -199,7 +199,7 @@ if(!isset($product)){
                         </li>
                     </ul>
                 </form>
-                <img class="des-concrete-pomp-img" src="images/GTL-b12.png" alt="">
+                <img class="des-concrete-pomp-img" src="/images/GTL-b12.png" alt="">
             </div>
         </div>
         <div class="des-our-app">
@@ -207,15 +207,15 @@ if(!isset($product)){
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
                 <div class="uk-slidenav-position slider_our_app" data-uk-slider>
                     <div class="dev-consumer-slader-navigation uk-clearfix">
-                        <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid-medium uk-grid-width-Xlarge-1-4 uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-1">
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -227,7 +227,7 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -239,7 +239,7 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -251,7 +251,7 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -263,7 +263,7 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -275,7 +275,7 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">
-                                        <img src="images/block.png" alt="Block">
+                                        <img src="/images/block.png" alt="Block">
                                     </div>
                                     <p>M 100 - П3
                                         <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
@@ -296,7 +296,7 @@ if(!isset($product)){
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add1.png" alt="">
+                                <img src="/images/add1.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Апробированый цемент</h4>
@@ -309,7 +309,7 @@ if(!isset($product)){
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add2.png" alt="">
+                                <img src="/images/add2.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Максимальное смешивание</h4>
@@ -322,7 +322,7 @@ if(!isset($product)){
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add3.png" alt="">
+                                <img src="/images/add3.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Качественные примеси</h4>
@@ -336,7 +336,7 @@ if(!isset($product)){
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add4.png" alt="">
+                                <img src="/images/add4.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Использование очищенной воды</h4>
@@ -355,19 +355,19 @@ if(!isset($product)){
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
                 <div class="uk-slidenav-position facilities_slidenav_cs slider_facilities" data-uk-slider="center:true" >
                     <div class="dev-consumer-slader-navigation uk-clearfix">
-                        <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs facilities_ul_slider_cp">
                             <li class="facilities_1-li_cs li_slider_cp">
                                 <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                    <a href="images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                    <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                         <div class="facilities_img_cs">
-                                            <img src="images/objects.png" alt="">
+                                            <img src="/images/objects.png" alt="">
                                         </div>
                                         <div class="facilities_panel_top_cs">
-                                            <img src="images/ic_zoom.png" alt="">
+                                            <img src="/images/ic_zoom.png" alt="">
                                         </div>
                                         <div class="facilities_panel_bottom_cs">
                                             <p>ЖК "Дом"</p>
@@ -378,12 +378,12 @@ if(!isset($product)){
                             </li>
                             <li class="facilities_1-li_cs li_slider_cp">
                                 <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                    <a href="images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                    <a href="/images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                         <div class="facilities_img_cs">
-                                            <img src="images/objects.png" alt="">
+                                            <img src="/images/objects.png" alt="">
                                         </div>
                                         <div class="facilities_panel_top_cs">
-                                            <img src="images/ic_zoom.png" alt="">
+                                            <img src="/images/ic_zoom.png" alt="">
                                         </div>
                                         <div class="facilities_panel_bottom_cs">
                                             <p>ЖК "Дом"</p>

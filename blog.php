@@ -30,7 +30,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <main class="uk-width-medium-3-4 uk-row-first">
                         <div class="uk-panel uk-panel-box">
                             <div class="uk-panel-teaser">
-                                <img src="images/beton_2_kategoriya.png" alt="КАК ПРАВИЛЬНО ЗАЛИВАТЬ БЕТОН ДЛЯ ФУНДАМЕНТА">
+                                <img src="/images/beton_2_kategoriya.png" alt="КАК ПРАВИЛЬНО ЗАЛИВАТЬ БЕТОН ДЛЯ ФУНДАМЕНТА">
                             </div>
                             <p>Ленточный фундамент чаще всего используют в частной застройке при возведении коттеджей, гаражей, бань. Он обходится дешевле фундамента сплошной конструкции, при этом функциональнее, чем фундамент свайного типа, и идеально подходит для строений с используемым подвалом.</p>
                             <p>Ленточный фундамент своими руками Необходимые материалы</p>
@@ -68,7 +68,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <li>
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="images/11ab0134867677.56e090a40fcce_cr.png" alt="">
+                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
                                                 <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
                                                 <div class="uk-comment-meta">12 сентября 2016</div>
                                             </header>
@@ -77,7 +77,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <li>
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="images/11ab0134867677.56e090a40fcce_cr.png" alt="">
+                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
                                                 <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
                                                 <div class="uk-comment-meta">12 сентября 2016</div>
                                             </header>
@@ -86,7 +86,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <li>
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="images/11ab0134867677.56e090a40fcce_cr.png" alt="">
+                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
                                                 <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
                                                 <div class="uk-comment-meta">12 сентября 2016</div>
                                             </header>
@@ -95,7 +95,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <li>
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="images/11ab0134867677.56e090a40fcce_cr.png" alt="">
+                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
                                                 <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
                                                 <div class="uk-comment-meta">12 сентября 2016</div>
                                             </header>
@@ -104,7 +104,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <li>
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="images/11ab0134867677.56e090a40fcce_cr.png" alt="">
+                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
                                                 <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
                                                 <div class="uk-comment-meta">12 сентября 2016</div>
                                             </header>
@@ -119,8 +119,8 @@ $page_suffix = " | КраснодарСтройСервис";
                     <h3>СВЕЖИЕ ЗАПИСИ</h3>
                     <div class="uk-slidenav-position slider_blog" data-uk-slider>
                         <div class="dev-consumer-slader-navigation uk-clearfix">
-                            <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                            <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                            <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                            <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                         </div>
                         <div class="uk-slider-container">
                             <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
@@ -128,7 +128,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <div class="uk-panel uk-panel-box" uk-clearfix>
                                         <div class="uk-panel-teaser">
                                             <figure class="uk-overlay">
-                                                <img src="images/news.jpg" alt="">
+                                                <img src="/images/news.jpg" alt="">
                                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
                                             </figure>
                                         </div>
@@ -146,26 +146,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <div class="uk-panel uk-panel-box" uk-clearfix>
                                         <div class="uk-panel-teaser">
                                             <figure class="uk-overlay">
-                                                <img src="images/news.jpg" alt="">
-                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
-                                            </figure>
-
-                                        </div>
-                                        <h3>Как правильно заливать бетон для фундамента</h3>
-                                        <p>
-                                            Перед началом заливки монолитного основания следует рассчитать
-                                        </p>
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
-                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-panel uk-panel-box" uk-clearfix>
-                                        <div class="uk-panel-teaser">
-                                            <figure class="uk-overlay">
-                                                <img src="images/news.jpg" alt="">
+                                                <img src="/images/news.jpg" alt="">
                                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
                                             </figure>
 
@@ -184,7 +165,26 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <div class="uk-panel uk-panel-box" uk-clearfix>
                                         <div class="uk-panel-teaser">
                                             <figure class="uk-overlay">
-                                                <img src="images/news.jpg" alt="">
+                                                <img src="/images/news.jpg" alt="">
+                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
+                                            </figure>
+
+                                        </div>
+                                        <h3>Как правильно заливать бетон для фундамента</h3>
+                                        <p>
+                                            Перед началом заливки монолитного основания следует рассчитать
+                                        </p>
+                                        <div class="uk-clearfix">
+                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
+                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-panel uk-panel-box" uk-clearfix>
+                                        <div class="uk-panel-teaser">
+                                            <figure class="uk-overlay">
+                                                <img src="/images/news.jpg" alt="">
                                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
                                             </figure>
                                         </div>

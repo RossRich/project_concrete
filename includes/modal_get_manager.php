@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/modal_get_manager.css">
-    <script src="jquery/jquery-3.1.0.min.js"></script>
-    <script src="js/uikit.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Document</title>
+    <? include($home_dir."/includes/top-scripts.php"); ?>
 </head>
 
 <body>
@@ -19,7 +13,7 @@
                 <div class="uk-modal-dialog  uk-clearfix">
                     <i class="uk-icon-close uk-modal-close"></i>
                     <div class="uk-thumbnail-expand">
-                        <img src="images/modal_get_manager.png" alt="">
+                        <img src="/images/modal_get_manager.png" alt="">
                     </div>
                     <h3>Вызов менеджера</h3>
                     <div class="des-input-manager">

@@ -57,7 +57,7 @@
 .des-panel-img {
     height: 324px;
     width: 492px;
-    background: url(../images/trac.png) no-repeat center center;
+    background: url(/images/trac.png) no-repeat center center;
     margin: 40px 0 0 40px;
 }
 

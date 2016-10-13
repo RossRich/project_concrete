@@ -27,24 +27,24 @@ $page_suffix = " | КраснодарСтройСервис";
                             <div class="con_text">
                                 <h5>Главный офис</h5>
                                 <p>
-                                   <img src="images/ic_con1.png" alt="">
+                                   <img src="/images/ic_con1.png" alt="">
                                    35000, г. Краснодар, ул. Московская 91/2
                                 </p>
                                 <p>
-                                  <img src="images/ic_con2.png" alt="">
+                                  <img src="/images/ic_con2.png" alt="">
                                    8 (918) 44-99-703 - Отдел продаж
                                 </p>
                                 <p>
-                                   <img src="images/ic_con2.png" alt="">
+                                   <img src="/images/ic_con2.png" alt="">
                                    8 (989) 265-65-90 - Бухгалтерия
                                 </p>
                                 <p>
-                                   <img src="images/ic_con3.png" alt="">
+                                   <img src="/images/ic_con3.png" alt="">
                                    info@kss-beton.ru
                                 </p>
                                 <h5 class="h5_2">Производство</h5>
                                 <p>
-                                   <img src="images/ic_con1.png" alt="">
+                                   <img src="/images/ic_con1.png" alt="">
                                    35000, г. Краснодар, ул. Калинина 1
                                 </p>
                              </div>

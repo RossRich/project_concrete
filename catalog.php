@@ -61,7 +61,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <ul class="uk-grid uk-container-center uk-grid-width-medium-1-1 uk-grid-width-large-1-3 uk-grid-width-small-1-1 dev-order-li-correct">
                         <li>
                             <div class="uk-flex">
-                                <img class="dev-img-ico-correct" src="images/ic_person_outline_black_48dp_ORDER.png" alt="">
+                                <img class="dev-img-ico-correct" src="/images/ic_person_outline_black_48dp_ORDER.png" alt="">
                                 <div class="input-item">
                                     <label for="name" class="dev-order-label">Ваше Имя</label>
                                     <input type="text" name="name" class="dev-order-input">
@@ -70,7 +70,7 @@ $page_suffix = " | КраснодарСтройСервис";
                         </li>
                         <li>
                             <div class="uk-flex">
-                                <img class="dev-img-ico-correct" src="images/ic_call_black_18dp.png" alt="">
+                                <img class="dev-img-ico-correct" src="/images/ic_call_black_18dp.png" alt="">
                                 <div class="input-item">
 
                                     <label for="tel" class="dev-order-label">Ваш Телефон</label>
@@ -92,7 +92,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add1.png" alt="">
+                                <img src="/images/add1.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Апробированый цемент</h4>
@@ -105,7 +105,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add2.png" alt="">
+                                <img src="/images/add2.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Максимальное смешивание</h4>
@@ -118,7 +118,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add3.png" alt="">
+                                <img src="/images/add3.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Качественные примеси</h4>
@@ -132,7 +132,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li class="ad_panel_cs">
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/add4.png" alt="">
+                                <img src="/images/add4.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>Использование очищенной воды</h4>
@@ -151,8 +151,8 @@ $page_suffix = " | КраснодарСтройСервис";
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
                 <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="center:true">
                     <div class="dev-consumer-slader-navigation uk-clearfix">
-                        <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs">
@@ -160,12 +160,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -177,12 +177,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -197,12 +197,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f03.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f03.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -214,12 +214,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f04.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f04.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -234,12 +234,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f05.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f05.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -251,12 +251,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f06.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f06.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -271,12 +271,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f07.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f07.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -288,12 +288,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f08.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f08.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -308,12 +308,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f09.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f09.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -325,12 +325,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f10.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f10.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -345,12 +345,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f11.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f11.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -362,12 +362,12 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </li>
                                     <li class="facilities_1-li_cs">
                                         <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="images/f12.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                            <a href="/images/f12.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
                                                 <div class="facilities_img_cs">
-                                                    <img src="images/objects.png" alt="">
+                                                    <img src="/images/objects.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_top_cs">
-                                                    <img src="images/ic_zoom.png" alt="">
+                                                    <img src="/images/ic_zoom.png" alt="">
                                                 </div>
                                                 <div class="facilities_panel_bottom_cs">
                                                     <p>ЖК "Дом"</p>
@@ -383,88 +383,7 @@ $page_suffix = " | КраснодарСтройСервис";
                 </div>
             </div>
         </div>
-        <div class="documents_full">
-            <div class="uk-container2 uk-container-center documents">
-                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2 main_ul">
-                    <li class="li_doc_div li_doc_div1">
-                        <div class="doc_div_1">
-                            <h5>ПРЕДОСТАВЛЯЕМ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</h5>
-                            <ul class="uk-grid uk-grid-collapse">
-                                <li class="uk-width-1-5">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Рапорт</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-3-10">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Путевой лист</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Справка — ЭСМ 7</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-5">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Счет</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-3-10">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Счет-фактуру</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <a href="">
-                                        <img src="images/ic_description.png" alt="">
-                                        <span>Акт выполненных работ</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="">
-                                <button>Скачать образцы</button>
-                            </a>
-                            <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>
-                            <ul class="uk-grid uk-grid-collapse">
-                                <li class="uk-width-1-2">
-                                    <img src="images/ic_monetization.png" alt="">
-                                    <span>Наличный расчет</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="images/ic_subject.png" alt="">
-                                    <span>Безналичный расчет</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="images/ic_credit_card.png" alt="">
-                                    <span>Банковской картой</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="images/ic_subject.png" alt="">
-                                    <span>Безналичный расчет с НДС</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="li_doc_div li_doc_div2">
-                        <div class="doc_div_2">
-                            <h4>Отдел продаж</h4>
-                            <a href="tel:8 918 44 99 703" class="phone_dep">8 (918) 44-99-703</a>
-                            <br>
-                            <a href="">
-                                <button>Вызов менеджера</button>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
+        <? include($home_dir."/includes/docs.php"); ?>
         <div class="prefooter"></div>
         <? include($home_dir."/includes/footer.php"); ?>
     </div>
