@@ -1,0 +1,14 @@
+<div>
+	<div class="loader" ng-show="showLoader">Загрузка карты...</div>
+    <ya-template-layout ya-key="labelTpl" ya-template-factory="templateFactory" ya-overrides="balloonEdit">
+        <div style="margin: 10px;">
+            <input name="value" value="$[properties.iconContent]">
+            <button name="save">Сохранить</button>
+        </div>
+    </ya-template-layout>
+    <ya-map style="width: 100%; height: 500px; display: block;" ya-zoom="10" ya-center="{{center | json:0}}" ya-after-init="afterInit($target)" ya-event-click="addPoint($event)" ya-event-boundschange="moveCenter($event)" ya-controls="smallMapDefaultSet">
+        <ya-control ya-type="button" ya-event-click="addBtn($event)" ya-params="Добавить" ya-options="{float:'right'}"></ya-control>
+        <ya-geo-object ng-repeat="obj in geoObjects" ya-template-factory="templateFactory" ya-event-contextmenu="delPoint($event, $index)" ya-source="obj.point" ya-event-dragend="movePoint($scope, $index)" ya-options="{preset:'islands#blackStretchyIcon',draggable:true,balloonContentLayout:'labelTpl'}"></ya-geo-object>
+    </ya-map>
+
+</div>

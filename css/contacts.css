@@ -1,6 +1,5 @@
 /*БЛОК ХЕДЕР*/
 
-
 /*-*/
 
 
@@ -36,18 +35,18 @@
     padding: 35px;
 }
 
-.con_text h5 {
+.con_text h5{
     color: #616161;
     font: 500 22.22px Roboto;
 }
 
-.con_text p {
+.con_text p{
     color: #616161;
     font: 400 19.44px / 61.111px Roboto;
     margin: 0;
 }
 
-.con_text img {
+.con_text img{
     margin-right: 25px;
 }
 
@@ -58,9 +57,7 @@
 
 /*БЛОК ФУТЕР*/
 
-
 /*ПРИЖАТИЕ ФУТЕРА*/
-
 
 /*
 .clr {
