@@ -77,13 +77,13 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                 </ul>
             </div>
         </div>
-        <? include($home_dir."/includes/consumer_about_us.php"); ?>
-        <? include($home_dir."/includes/our_partners.php"); ?>
-        <? include($home_dir."/includes/docs.php"); ?>
+        <? require($home_dir."/includes/consumer_about_us.php"); ?>
+        <? require($home_dir."/includes/our_partners.php"); ?>
+        <? require($home_dir."/includes/docs.php"); ?>
         <div class="prefooter"></div>
-        <? include($home_dir."/includes/footer.php"); ?>
+        <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? include($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>

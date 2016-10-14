@@ -12,7 +12,7 @@ $page_suffix = " | КраснодарСтройСервис";
 <html lang="ru">
 
 <head>
-    <? include($home_dir."/includes/top-scripts.php"); ?>
+    <? require($home_dir."/includes/top-scripts.php"); ?>
 </head>
 
 <body>
@@ -56,9 +56,9 @@ $page_suffix = " | КраснодарСтройСервис";
                 </div>
             </div>
         </div>
-        <? include($home_dir."/includes/footer.php"); ?>
+        <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? include($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>

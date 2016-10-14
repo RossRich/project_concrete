@@ -12,7 +12,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
 <html lang="ru">
 
 <head>
-    <? include($home_dir."/includes/top-scripts.php"); ?>
+    <? require($home_dir."/includes/top-scripts.php"); ?>
 </head>
 
 <body>
@@ -39,7 +39,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                 </ul>    
             </div>
         </div>
-        <? include($home_dir."/includes/advantages_trust.php"); ?>
+        <? require($home_dir."/includes/advantages_trust.php"); ?>
         <div class="uslugi_full_au">
             <div class="uslugi_parallax_au"  data-uk-parallax="{ scale: '2'}"></div>
             <div class="uk-container2 uk-container-center dev-container-correct uslugi_au">
@@ -131,11 +131,11 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                 
             </div>
         </div>
-        <? include($home_dir."/includes/consumer_about_us.php"); ?>
-        <? include($home_dir."/includes/our_partners.php"); ?>
-        <? include($home_dir."/includes/footer.php"); ?>
+        <? require($home_dir."/includes/consumer_about_us.php"); ?>
+        <? require($home_dir."/includes/our_partners.php"); ?>
+        <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? include($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>

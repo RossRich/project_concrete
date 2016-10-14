@@ -19,7 +19,7 @@ if(!isset($product)){
 <html lang="ru">
 
 <head>
-    <? include($home_dir."/includes/top-scripts.php"); ?>
+    <? require($home_dir."/includes/top-scripts.php"); ?>
     <link rel="stylesheet" href="/css/pie-chart-master.css">
     <link rel="stylesheet" href="/css/simple-ripple-effect.css" />
     <script src="/js/easyPieChart/jquery.plugin.js"></script>
@@ -397,11 +397,11 @@ if(!isset($product)){
                 </div>
             </div>
         </div>
-        <? include($home_dir."/includes/docs.php"); ?>
+        <? require($home_dir."/includes/docs.php"); ?>
         <div class="prefooter"></div>
-        <? include($home_dir."/includes/footer.php"); ?>
+        <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? include($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>
