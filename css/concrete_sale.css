@@ -10,7 +10,7 @@
 /*БЛОК СКИДКА*/
 
 .dev_container_order_cs {
-    background: url(../images/c-pump.png) center no-repeat;
+    background: url(/images/c-pump.png) center no-repeat;
     background-color: rgba(255, 151, 0, 0.8);
 /*    background-image: url(../images/c-pump.png);*/
     min-height: 516px;

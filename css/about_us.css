@@ -1,4 +1,4 @@
-/*БЛОК ХЕДЕР*/
+//*БЛОК ХЕДЕР*/
 
 /*-*/
 
@@ -62,7 +62,7 @@
 }
 
 .uslugi_parallax_au {
-    background: url(../images/tunnel.jpg) no-repeat center center ;
+    background: url(/images/tunnel.jpg) no-repeat center center ;
 /*    height: 500px;*/
     background-size: cover;
     position: absolute;

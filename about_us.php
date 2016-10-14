@@ -33,7 +33,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     </li>
                     <li>
                         <div class="uk-panel uk-panel-box">
-                            <img src="images/factory.png" alt="О компании">
+                            <img src="/images/factory.png" alt="О компании">
                         </div>
                     </li>
                 </ul>    
@@ -46,7 +46,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/ad1.png" alt="">
+                                <img src="/images/ad1.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h4>
@@ -59,7 +59,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/ad2.png" alt="">
+                                <img src="/images/ad2.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННЫЙ ПАРК СПЕЦТЕХНИКИ</h4>
@@ -72,7 +72,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/ad3.png" alt="">
+                                <img src="/images/ad3.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННАЯ ЛАБОРАТОРИЯ ЗАВОДА</h4>
@@ -85,7 +85,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/ad4.png" alt="">
+                                <img src="/images/ad4.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>ГАРАНТИЯ НИЗКОЙ ЦЕНЫ</h4>
@@ -106,21 +106,21 @@ $page_suffix = " | КраснодарСтройСервис";
                 <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
                     <li>     
                         <div class="us_block_au us_block_au1 ">  
-                            <img src="images/ic_navigate_right.png" alt="" >
+                            <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">БЕТОН И РАСТВОР</a></h4>
                                 <p>продажа качественного бетона, продажа качественного бетона, раствора</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au1 ">  
-                            <img src="images/ic_navigate_right.png" alt="" >
+                            <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
                                 <p>продажа щебня, песка, гальки и чего-то еще, продажа щебня, песка, гальки</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au1 ">  
-                            <img src="images/ic_navigate_right.png" alt="" >
+                            <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
                                 <p>Бетономашина, бетононасос, и еще бетономашина. Бетононасос, и еще</p>
@@ -129,26 +129,26 @@ $page_suffix = " | КраснодарСтройСервис";
                     </li>
                     <li>
                         <div class="us_block_au us_logo_au" >
-                            <img src="images/logo2.png" alt="КраснодарСтройСервис">
+                            <img src="/images/logo2.png" alt="КраснодарСтройСервис">
                         </div>
                     </li>
                     <li>
                         <div class="us_block_au us_block_au2">
-                            <img src="images/ic_navigate_left.png" alt="" >
+                            <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
                                 <h4><a href="">ФБС</a></h4>
                                 <p>продажа кеачественного бетона, продажа качественного бетона</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au2">
-                            <img src="images/ic_navigate_left.png" alt="" >
+                            <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
                                 <h4><a href="">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></h4>
                                 <p>продажа щебень, песок, галька и что то еще, продажа щебень, песок, галька</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au2">
-                            <img src="images/ic_navigate_left.png" alt="" >
+                            <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
                                 <h4><a href="">СТРОИТЕЛЬСТВО</a></h4>
                                 <p>услуги по строительству и жилых объекстов, услуги по строительству</p>
@@ -196,8 +196,8 @@ $page_suffix = " | КраснодарСтройСервис";
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct">КЛИЕНТЫ О НАС</h3>
                 <div class="uk-slidenav-position slider_consumer" data-uk-slider="center:true">
                     <div class="dev-consumer-slader-navigation uk-clearfix">
-                        <img class="dev-consumer-icon " src="images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container dev-consumer-about-us-slider-correct">
                         <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
@@ -213,7 +213,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                         <span>Прораб КСК Строй</span>
                                     </p>
                                     <div class="dev-consumer-about-us-panel-img-correct">
-                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                        <img src="/images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
                                     </div>
                                 </div>
                             </li>
@@ -229,7 +229,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                         <span>Прораб КСК Строй</span>
                                     </p>
                                     <div class="dev-consumer-about-us-panel-img-correct">
-                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                        <img src="/images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
                                     </div>
                                 </div>
                             </li>
@@ -245,7 +245,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                         <span>Прораб КСК Строй</span>
                                     </p>
                                     <div class="dev-consumer-about-us-panel-img-correct">
-                                        <img src="images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
+                                        <img src="/images/CONSUMER.png" class="dev-material-panel-img-correct" alt="потребитель">
                                     </div>
                                 </div>
                             </li>
@@ -282,8 +282,8 @@ $page_suffix = " | КраснодарСтройСервис";
                             </li>
                         </ul>
                     </div>
-                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next dev-partner-slider-index-right-correct dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="next" src="images/for_slider_nav_right.png">
-                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="previous" src="images/for_slider_nav_left.png">
+                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next dev-partner-slider-index-right-correct dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="next" src="/images/for_slider_nav_right.png">
+                    <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="previous" src="/images/for_slider_nav_left.png">
                 </div>
             </div>
         </div>

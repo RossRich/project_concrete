@@ -1,8 +1,10 @@
 ﻿.idea
-css/components/*
+/css/components/*
+/js/components/*
+/js/core/*
 *.psd
 .gitignore
 media-queries.css
 charts
-mdl-template-dashboard
-simple-ripple-effect-master
+/mdl-template-dashboard
+/simple-ripple-effect-master

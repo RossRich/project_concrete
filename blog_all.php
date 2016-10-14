@@ -43,7 +43,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-a">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -60,7 +60,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-b">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -77,7 +77,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-c">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -94,7 +94,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-d">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -111,7 +111,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-a">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -128,7 +128,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-b">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -145,7 +145,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-c">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -162,7 +162,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-a">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
@@ -179,7 +179,7 @@ $page_suffix = " | КраснодарСтройСервис";
                     <div data-uk-filter="filter-a">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
-                                <img src="images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
+                                <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba">12 сентября 2016</figcaption>
                             </figure>
                             <h3>Как правильно заливать бетон для фундамента</h3>
