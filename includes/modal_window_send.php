@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <script src="jquery/jquery-3.1.0.min.js"></script>
-    <script src="js/uikit.js"></script>
-    <title>Document</title>
+    <? include($home_dir."/includes/top-scripts.php"); ?>
 </head>
 
 <body>
@@ -18,13 +13,18 @@
                 <div class="uk-modal-dialog  uk-clearfix">
                     <i class="uk-icon-close uk-modal-close"></i>
                     <div class="uk-thumbnail-expand">
-                        <img src="images/modal_claud.png" alt="">
+                        <img src="/images/modal_claud.png" alt="">
                     </div>
                     <h3>Ваша заявка отправлена!</h3>
                     <p>В ближайшее время с Вами свяжится наш менеджер для уточнение информации если у вас возникли вопросы звоните 8 (918) 44-99-703</p>
                     <a class="uk-modal-close">Закрыть</a>
                 </div>
             </div>
+        </div>
+    </div>
+</body>
+
+</html>
         </div>
     </div>
 </body>

@@ -371,11 +371,11 @@
     transition: 0.7s;
 }
 
-.facilities_full_cp {
+/*.facilities_full_cp {
     background: #f5f5f5;
     padding-top: 24px;
     padding-bottom: 10px;
-}
+}*/
 
 .slider_facilities {
     position: relative;

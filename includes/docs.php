@@ -23,19 +23,19 @@ $docs = collection("Документы")->find()->toArray();
                     <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>
                     <ul class="uk-grid">
                         <li class="uk-width-1-2">
-                            <img src="images/ic_monetization.png" alt="">
+                            <img src="/images/ic_monetization.png" alt="">
                             <span>Наличный расчет</span>
                         </li>
                         <li class="uk-width-1-2">
-                            <img src="images/ic_subject.png" alt="">
+                            <img src="/images/ic_subject.png" alt="">
                             <span>Безналичный расчет</span>
                         </li>
                         <li class="uk-width-1-2">
-                            <img src="images/ic_credit_card.png" alt="">
+                            <img src="/images/ic_credit_card.png" alt="">
                             <span>Банковской картой</span>
                         </li>
                         <li class="uk-width-1-2">
-                            <img src="images/ic_subject.png" alt="">
+                            <img src="/images/ic_subject.png" alt="">
                             <span>Безналичный расчет с НДС</span>
                         </li>
                     </ul>

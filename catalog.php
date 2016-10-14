@@ -19,7 +19,7 @@ $page_suffix = " | КраснодарСтройСервис";
 <html lang="ru">
 
 <head>
-    <? include($home_dir."/includes/top-scripts.php"); ?>
+    <? require($home_dir."/includes/top-scripts.php"); ?>
 </head>
 
 <body>
@@ -86,77 +86,17 @@ $page_suffix = " | КраснодарСтройСервис";
                 <? require($home_dir."/includes/discount-form.php"); ?>
             </div>
         </div>
-        <div class="advantages_full advantages_full_cs">
-            <div class="uk-container2 uk-container-center advantages">
-                <h3 class="uk-text-center">ТЕХНОЛОГИЯ ПРОИЗВОДСТВА БЕТОНА И РАСТВОРОВ</h3>
-                <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
-                    <li class="ad_panel_cs">
-                        <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
-                            <div class="ad_logo">
-                                <img src="/images/add1.png" alt="">
-                            </div>
-                            <div class="ad_text">
-                                <h4>Апробированый цемент</h4>
-                                <p>Определяющим фактором производства бетонных</p>
-                                <p>смесей является качество цемента. Наша лаборатория</p>
-                                <p>тщательно проверяет качество используемого цемента</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="ad_panel_cs">
-                        <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
-                            <div class="ad_logo">
-                                <img src="/images/add2.png" alt="">
-                            </div>
-                            <div class="ad_text">
-                                <h4>Максимальное смешивание</h4>
-                                <p>Высокотехнологичное оборудование завода позволяет</p>
-                                <p>достигнуть максимального смешивания всех</p>
-                                <p>компонентов до необходимой однородности</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="ad_panel_cs">
-                        <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
-                            <div class="ad_logo">
-                                <img src="/images/add3.png" alt="">
-                            </div>
-                            <div class="ad_text">
-                                <h4>Качественные примеси</h4>
-                                <p>Не менее важным фактором является используемые</p>
-                                <p>наполнители. Мы оцениваем зерновой состав,</p>
-                                <p>содержание полевидных и глинистых примесей,</p>
-                                <p>степень загрязненности</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="ad_panel_cs">
-                        <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
-                            <div class="ad_logo">
-                                <img src="/images/add4.png" alt="">
-                            </div>
-                            <div class="ad_text">
-                                <h4>Использование очищенной воды</h4>
-                                <p>Мало учитываемый фактор - это качество воды. Но он</p>
-                                <p>не менее важен для производства бетона. Поэтому мы</p>
-                                <p>делаем анализ на содержание примесей для ее очистки</p>
-                                <p>в дальнейшем использовании</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <? require($home_dir."/includes/technology.php"); ?>
         <div class="facilities_full_cs">
             <div class="uk-container2 uk-container-center facilities_cs">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
-                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="center:true">
+                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="center:true, infinite:false">
                     <div class="dev-consumer-slader-navigation uk-clearfix">
                         <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs">
+                        <ul class="uk-slider uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs">
                             <li>
                                 <ul class="uk-grid uk-grid-width-1-1">
                                     <li class="facilities_1-li_cs">
@@ -384,92 +324,11 @@ $page_suffix = " | КраснодарСтройСервис";
                 </div>
             </div>
         </div>
-        <div class="documents_full">
-            <div class="uk-container2 uk-container-center documents">
-                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2 main_ul">
-                    <li class="li_doc_div li_doc_div1">
-                        <div class="doc_div_1">
-                            <h5>ПРЕДОСТАВЛЯЕМ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ</h5>
-                            <ul class="uk-grid uk-grid-collapse">
-                                <li class="uk-width-1-5">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Рапорт</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-3-10">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Путевой лист</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Справка — ЭСМ 7</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-5">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Счет</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-3-10">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Счет-фактуру</span>
-                                    </a>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <a href="">
-                                        <img src="/images/ic_description.png" alt="">
-                                        <span>Акт выполненных работ</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="">
-                                <button>Скачать образцы</button>
-                            </a>
-                            <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>
-                            <ul class="uk-grid uk-grid-collapse">
-                                <li class="uk-width-1-2">
-                                    <img src="/images/ic_monetization.png" alt="">
-                                    <span>Наличный расчет</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="/images/ic_subject.png" alt="">
-                                    <span>Безналичный расчет</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="/images/ic_credit_card.png" alt="">
-                                    <span>Банковской картой</span>
-                                </li>
-                                <li class="uk-width-1-2">
-                                    <img src="/images/ic_subject.png" alt="">
-                                    <span>Безналичный расчет с НДС</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="li_doc_div li_doc_div2">
-                        <div class="doc_div_2">
-                            <h4>Отдел продаж</h4>
-                            <a href="tel:8 918 44 99 703" class="phone_dep">8 (918) 44-99-703</a>
-                            <br>
-                            <a href="">
-                                <button>Вызов менеджера</button>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
+        <? require($home_dir."/includes/docs.php"); ?>
         <div class="prefooter"></div>
-        <? include($home_dir."/includes/footer.php"); ?>
+        <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? include($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>

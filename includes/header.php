@@ -3,8 +3,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
 ?>
 <? if($page_id == "index"){ ?>
 <div class="uk-cover uk-position-relative banner">
-    <video class="uk-cover-object uk-position-absolute" width="" height="" autoplay="autoplay" loop="loop" muted="muted" poster="images/video_background.jpg">
-        <source src="video/video_concrete.mp4" type="">
+    <video class="uk-cover-object uk-position-absolute" width="" height="" autoplay="autoplay" loop="loop" muted="muted" poster="/images/video_background.jpg">
+        <source src="/video/video_concrete.mp4" type="">
     </video>
      <div class="uk-position-cover banner_overlay">
         <div class="strip_top_menu">
@@ -21,7 +21,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </nav>
                 <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
                 <div class="on_map">
-                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="images/ic_place.png" alt=""></a>
+                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="/images/ic_place.png" alt=""></a>
                     <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a><span class="text">)</span></span>
                 </div>
             </div>
@@ -30,7 +30,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <div class="header_top_block">
                 <div class="left">
                     <div class="logo">
-                        <a href="/index.php"><img src="images/logo.png" alt=""></a>
+                        <a href="/index.php"><img src="/images/logo.png" alt=""></a>
                     </div>
                     <div class="text_logo">
                         <p class="p1">
@@ -68,9 +68,9 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <div class="slogan">
                 <h1>Срочная доставка бетона в Краснодаре</h1>
                 <p>бетон, раствор, строительные материалы всегда дешевле и быстрее</p>
-                <span class="orders">Принимаем заказы:  <img src="images/Shape-1.png" alt="">
-                <img src="images/Shape-2.png" alt="">
-                <img src="images/Shape-3.png" alt=""></span>
+                <span class="orders">Принимаем заказы:  <img src="/images/Shape-1.png" alt="">
+                <img src="/images/Shape-2.png" alt="">
+                <img src="/images/Shape-3.png" alt=""></span>
                 <br>
                 <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
             </div>
@@ -102,7 +102,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
         <div class="header_top_block">
             <div class="left">
                 <div class="logo">
-                    <a href="/index.php"><img src="images/logo.png" alt=""></a>
+                    <a href="/index.php"><img src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="text_logo">
                     <p class="p1">
