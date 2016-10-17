@@ -18,7 +18,7 @@
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="/images/ad2.png" alt="">
+                                <img src="/images/ad2.jpg" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННЫЙ ПАРК СПЕЦТЕХНИКИ</h4>
@@ -31,7 +31,7 @@
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="/images/ad3.png" alt="">
+                                <img src="images/ad3.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННАЯ ЛАБОРАТОРИЯ ЗАВОДА</h4>

@@ -1,9 +1,8 @@
-
         <footer class="uk-container-center dev-contauner-footer">
             <div class="uk-container-center dev-footer-correcr">
                 <div class="uk-container-center dev-footer-content uk-container2">
                     <div class="uk-grid uk-container-center uk-grid-collapse">
-                        <div class="uk-width-large-4-10 uk-width-medium-1-1 uk-width-small-1-1">
+                        <div class="uk-width-large-4-10 uk-hidden-medium uk-hidden-small uk-width-small-1-1">
                             <div class="dev-footer-container-correct">
                                 <div class="uk-grid">
                                     <div class="uk-width-5-10">
@@ -14,11 +13,11 @@
                                             <a href="/blog_all.php">Корпоративный блог</a>
                                             <a href="">Сотрудничество</a>
                                             <a href="/contacts.php">Контакты</a>
-                                            <div class="uk-flex">
-                                                <a href="<?=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-vk"></i></a>
-                                                <a href="<?=$social["ok"];?>" target="_blank"><i class="uk-icon-button uk-icon-odnoklassniki"></i></a>
-                                                <a href="<?=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-facebook"></i></a>
-                                            </div>
+                                            <!-- <div class="uk-flex">
+                                                <a href="<?//=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-vk"></i></a>
+                                                <a href="<?//=$social["ok"];?>" target="_blank"><i class="uk-icon-button uk-icon-odnoklassniki"></i></a>
+                                                <a href="<?//=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-facebook"></i></a>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="uk-width-5-10">
@@ -31,18 +30,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
+                                <!-- <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
                                 <p>
-                                    <a href="http://it-technologies.us/" target="_blank"><img src="images/IT.png" alt=""></a>Разработка и Маркетинг</p>
+                                    <a href="http://it-technologies.us/" target="_blank"><img src="images/IT.png" alt=""></a>Разработка и Маркетинг</p> -->
+                                    <? require_once($home_dir.'/includes/footer_social.php'); ?>
                             </div>
                         </div>
                         <div class="uk-width-large-6-10 uk-width-medium-1-1 uk-width-small-1-1">
                             <div class="des-footer-correct">
                                 <div class="uk-grid uk-grid-collapse">
-                                    <div class="uk-width-1-2 ">
+                                    <div class="uk-width-1-2 uk-hidden-small">
                                         <div class="dev-footer-container-correct">
                                             <span>Остались вопросы?</span>
-                                            <form action="">
+                                            <form action="" class="uk-clearfix">
                                                 <ul>
                                                     <li><i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-footer">
@@ -66,9 +66,13 @@
                                                 </ul>
                                                 <input type="submit" class="dev-but-footer" value="отправить">
                                             </form>
+                                            <div class="uk-visible-medium">
+                                                    <? require($home_dir.'/includes/footer_social.php'); ?>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="uk-width-1-2 dev-footer-container-correct">
+                                    <div class="uk-width-large-1-2 uk-width-medium-1-2  uk-width-small-1-1">
+                                      <div class="dev-footer-container-correct">
                                         <span>Главный офис:</span>
                                         <ul>
                                             <li><i class="uk-icon-map-marker uk-icon-small "></i><a href="about_us.html"><?=$address;?></a></li>
@@ -79,6 +83,10 @@
                                         <ul>
                                             <li><i class="uk-icon-justify uk-icon-map-marker uk-icon-small "></i><a href="about_us.html"><?=$address2;?></a></li>
                                         </ul>
+                                        <div class="uk-visible-small ">
+                                                <? require($home_dir.'/includes/footer_social.php'); ?>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

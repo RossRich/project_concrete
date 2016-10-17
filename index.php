@@ -9,7 +9,7 @@ $page_id = "index";
 $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
 $index_page_category = collection("Категории")->findOne(["items_index_page"=>true]);
 
-//var_dump($reviews);
+// var_dump($reviews);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -20,16 +20,16 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
 
 <body>
     <div class="wrapper uk-g">
-        <?php require($home_dir."/includes/header.php"); ?>
-        <? include($home_dir."/includes/advantages_trust.php"); ?>
-        <? 
-        if(isset($index_page_category) && !empty($index_page_category)){ 
+        <?//php require($home_dir."/includes/header.php"); ?>
+        <?// include($home_dir."/includes/advantages_trust.php"); ?>
+        <?
+        if(isset($index_page_category) && !empty($index_page_category)){
             $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->toArray();
         ?>
         <div class="dev-container-concreate">
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct"><?=$index_page_category["name_index_page"]?></h3>
-                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
+                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 " data-uk-grid-margin>
                     <? foreach($index_page_products as $index_page_product){ ?>
                     <li>
                         <div class="uk-panel uk-panel-box dev-panel-correct">
@@ -58,11 +58,11 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
             </div>
         </div>
         <div class="dev-container-material">
-            <div class="uk-container2 uk-container-center dev-container-correct mat">
+            <div class="uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ И УСЛУГИ ТЕХНИКИ</h3>
-                <ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4" data-uk-grid-match="target:'.dev-material-panel-head-correct'">
-                    <? 
-                    foreach($main_categorys as $main_category){ 
+                <ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="target:'.dev-material-panel-head-correct'">
+                    <?
+                    foreach($main_categorys as $main_category){
                         if($main_category["items_index_page"]) continue;
                     ?>
                     <li>
@@ -86,8 +86,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <div class="prefooter"></div>
         <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? require($home_dir."/includes/pop-up.php"); ?>
+    <? //require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>
-

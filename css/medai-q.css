@@ -1,24 +1,24 @@
-@media(max-width: 1219px){
-    .uk-container2{
+@media(max-width: 1219px) {
+    .uk-container2 {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .advantages .ad_panel h4{
+    .advantages .ad_panel h4 {
         line-height: 26px;
     }
-    .strip_top_menu .on_map .text{
+    .strip_top_menu .on_map .text {
         display: none;
     }
-    ul.ul_main_menu li a{
+    ul.ul_main_menu li a {
         font-size: 15px;
     }
-    .main_menu{
+    .main_menu {
         max-width: 980px;
     }
 }
 
-@media(max-width: 959px){
-    .uk-container{
+@media(max-width: 959px) {
+    .uk-container {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -26,40 +26,40 @@
         background: url(/images/video_background.jpg) center center no-repeat;
         background-size: cover;
     }
-    .banner video{
+    .banner video {
         display: none;
     }
     .banner .sliden .slogan h1 {
         line-height: 55px;
     }
-    .banner .sliden .slogan p{
+    .banner .sliden .slogan p {
         display: none;
     }
     .banner .sliden {
         margin-top: 20px;
     }
-    .banner .uk-sticky-placeholder{
+    .banner .uk-sticky-placeholder {
         display: none;
     }
-    .main_menu_full{
+    .main_menu_full {
         display: none;
     }
-    .banner .strip_top_menu nav{
+    .banner .strip_top_menu nav {
         display: none;
     }
-    .mob-menu{
+    .mob-menu {
         display: block;
     }
 }
 
-@media(max-width: 900px){
-    .advantages .ad_panel{
+@media(max-width: 900px) {
+    .advantages .ad_panel {
         line-height: 50px;
     }
-    .advantages .ad_panel p{
+    .advantages .ad_panel p {
         display: none;
     }
-    .advantages .ad_panel h4{
+    .advantages .ad_panel h4 {
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
@@ -67,53 +67,196 @@
     }
 }
 
-@media(max-width: 767px){
-    .advantages_full .mt35{
+@media(max-width: 767px) {
+    .advantages_full .mt35 {
         margin-top: 20px;
     }
-    .advantages h3{
+    .advantages h3 {
         margin-bottom: 25px;
     }
-    .advantages_full{
+    .advantages_full {
         text-align: center;
     }
-    .advantages .ad_logo{
+    .advantages .ad_logo {
         float: none;
     }
-    .banner .header_top .header_top_block{
+    .banner .header_top .header_top_block {
         padding: 0;
     }
-    .header_top .left{
+    .header_top .left {
         float: none;
         text-align: center;
     }
-    .header_top .left .logo{
+    .header_top .left .logo {
         float: none;
         margin-bottom: 15px;
     }
-    .header_top .right{
+    .header_top .right {
         float: none;
         text-align: center;
     }
-    
-}
-
-@media(max-width: 640px){
-    .banner .sliden{
-        margin-top: 0;
-    }
-    .header_top .left .text_logo .p2,
-    .header_top .right{
+    div.uk-visible-small p:nth-child(2) {
         display: none;
     }
 }
 
-@media(max-width: 479px){
-    .banner .uk-position-cover{
+@media(max-width: 640px) {
+    .banner .sliden {
+        margin-top: 0;
+    }
+    .header_top .left .text_logo .p2, .header_top .right {
+        display: none;
+    }
+}
+
+@media(max-width: 479px) {
+    .banner .uk-position-cover {
         padding-bottom: 50px;
     }
-    .banner .sliden .slogan h1{
+    .banner .sliden .slogan h1 {
         font-size: 34px;
         line-height: 43px;
     }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    /*Footer*/
+    .dev-footer-container-correct {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .dev-footer-container-correct>ul {
+        padding: 0;
+        margin-left: 0;
+    }
+    .dev-footer-container-correct>ul>li>i {
+        position: static;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        font-size: 14px;
+    }
+    .dev-footer-container-correct>ul>li>a>span {
+        font-size: 14px;
+    }
+    .des-social-ico-container {
+        width: 100%;
+    }
+    /*EndFooter*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Footer*/
+    .dev-footer-container-correct {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .dev-footer-container-correct>span {
+        font-size: 30px;
+    }
+    .dev-footer-container-correct>ul {
+        padding: 0;
+        margin-left: 0;
+    }
+    .dev-footer-container-correct>ul>li>i {
+        position: static;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        font-size: 20px;
+    }
+    .dev-footer-container-correct>ul>li>a>span {
+        font-size: 23px;
+    }
+    .des-social-ico-container {
+        width: 100%;
+    }
+    /*EndFooter*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 635px) {
+    /*About-us*/
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>h3 {
+        margin: 10px;
+        font-size: 18px;
+    }
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>p {
+        margin: 10px;
+        font-size: 14px;
+    }
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>.dev-consumer-about-us-panel-img-correct {
+        max-width: 76px;
+        max-height: 76px;
+        right: 10px;
+        bottom: -47px;
+    }
+    /*End about-us*/
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /*Footer*/
+    .dev-footer-container-correct {
+        padding-left: 50px;
+    }
+    /*EndFooter*/
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1025px) {
+    /*Footer*/
+    .dev-footer-container-correct {
+        padding-left: 25px;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        margin-left: 0;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        font-size: 14px;
+    }
+    .dev-footer-container-correct>ul>li>a>span {
+        font-size: 15px;
+    }
+    /*EndFooter*/
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+}
+
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
 }
