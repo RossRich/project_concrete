@@ -13,7 +13,7 @@ if(!isset($category)){
 $page_title = $category["name"];
 $page_suffix = " | КраснодарСтройСервис";
 
-//var_dump($products);
+//var_dump($products);л
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -89,234 +89,132 @@ $page_suffix = " | КраснодарСтройСервис";
         <div class="facilities_full_cs">
             <div class="uk-container2 uk-container-center facilities_cs">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
-                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="center:true, infinite:false">
+                <div class="uk-margin facilities_slidenav_cs" data-uk-slideset="{small: 2, medium: 4, large: 6}">
                     <div class="dev-consumer-slader-navigation uk-clearfix">
-                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slideset-item="next" >
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slideset-item="previous">
                     </div>
-                    <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 facilities_ul_slider_cs">
+                    <div class="uk-slidenav-position uk-margin">
+                        <ul class="uk-slideset uk-grid uk-flex-center uk-grid-width-1-1 uk-grid-width-large-1-3 uk-grid-width-medium-1-4 uk-grid-width-small-1-2 facilities_ul_slider_cs">
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f02.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f03.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f04.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f05.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f06.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f07.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f08.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f09.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f10.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                             <li>
-                                <ul class="uk-grid uk-grid-width-1-1">
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f11.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li class="facilities_1-li_cs">
-                                        <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                            <a href="/images/f12.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
-                                                <div class="facilities_img_cs">
-                                                    <img src="/images/objects.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_top_cs">
-                                                    <img src="/images/ic_zoom.png" alt="">
-                                                </div>
-                                                <div class="facilities_panel_bottom_cs">
-                                                    <p>ЖК "Дом"</p>
-                                                    <span>г. Краснодар</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="facilities_1-li_cs">
+                                    <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
+                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title="ЖК 'Дом'">
+                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <img class="uk-overlay-scale" src="/images/objects.png" width="" height="" alt="">
+                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p>ЖК "Дом"</p>
+                                        <span>г. Краснодар</span>
+                                        </figcaption>
+                                        </figure>
+                                        </a>
+                                    </div>
+                                </div> 
                             </li>
                         </ul>
                     </div>
