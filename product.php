@@ -43,7 +43,7 @@ if(!isset($product)){
                 <h3><?=$product["slogan"]?></h3>
                 <div class="des-content-panel box-wrapper">
                     <div class="uk-grid uk-grid-collapse">
-                        <div class="uk-width-1-2 uk-hidden-small uk-hidden-medium">
+                        <div class="uk-width-large-1-2 uk-hidden-small uk-hidden-medium">
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img" style="background-image:url(/<?=substr($product["photo"][0]["path"], 5)?>)"></div>
                             <? } else { ?>
@@ -83,8 +83,8 @@ if(!isset($product)){
                                 </ul>
                             </div>
                         </div>
-                        <div class="uk-width-1-2">
-                            <ul class="uk-grid uk-grid-collapse" data-uk-grid-margin>
+                        <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1">
+                            <ul class="uk-grid uk-grid-collapse">
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-discription">
                                         <h3><?=$product["name"]?></h3>
@@ -105,51 +105,41 @@ if(!isset($product)){
                                         </div>
                                         <div class="des-test-invisible">
                                             <h4>Для заказа товара пожалуйста заполните данные</h4>
-                                            <form action="handler.php">
-                                                <ul class="uk-grid uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-small-1-1">
+                                            <form action="">
+                                                <ul>
                                                     <li>
-                                                        <div class="uk-flex">
-                                                            <i class="uk-icon-user uk-icon-large dev-img-ico-correct"></i>
-                                                            <div class="input-item-consumer-order-panel">
-                                                                <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
-                                                                <input type="text" name="name" class="input-item-consumer-order-panel">
-                                                            </div>
+                                                        <i class="uk-icon-user uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
+                                                            <input type="text" name="name" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-flex">
-                                                            <i class="uk-icon-phone uk-icon-large dev-img-ico-correct"></i>
-                                                            <div class="input-item-consumer-order-panel">
-                                                                <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
-                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel">
-                                                            </div>
+                                                        <i class="uk-icon-phone uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
+                                                            <input type="tel" name="tel" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-flex">
-                                                            <i class="uk-icon-tags uk-icon-large dev-img-ico-correct"></i>
-                                                            <div class="input-item-consumer-order-panel">
-                                                                <label for="tel" class="dev-consumer-order-panel-label">Марка бетона</label>
-                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
-                                                            </div>
+                                                        <i class="uk-icon-tags uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="brand" class="dev-consumer-order-panel-label">Марка бетона</label>
+                                                            <input type="text" name="brand" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-flex">
-                                                            <i class="uk-icon-shopping-bag uk-icon-large dev-img-ico-correct"></i>
-                                                            <div class="input-item-consumer-order-panel">
-                                                                <label for="tel" class="dev-consumer-order-panel-label">Объем</label>
-                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
-                                                            </div>
+                                                        <i class="uk-icon-shopping-bag uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="capacity" class="dev-consumer-order-panel-label">Объем</label>
+                                                            <input type="number" name="capacity" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="uk-flex">
-                                                            <i class="uk-icon-map-marker uk-icon-large dev-img-ico-correct"></i>
-                                                            <div class="input-item-consumer-order-panel">
-                                                                <label for="tel" class="dev-consumer-order-panel-label">Адрес объекта</label>
-                                                                <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
-                                                            </div>
+                                                        <i class="uk-icon-map-marker uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="position" class="dev-consumer-order-panel-label">Адрес объекта</label>
+                                                            <input type="text" name="position" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -159,10 +149,14 @@ if(!isset($product)){
                                 </li>
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-bottom">
-                                        <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
-                                        <!--<button type="submit" class="dev-but-submit-correct-invisible uk-clearfix">ОТПРАВИТЬ</button>-->
-                                        <p><span>отдел продаж</span>
-                                        <br><?=$phone2?></p>
+                                        <ul class="uk-grid uk-grid-width-large-1-2 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
+                                            <li>
+                                                <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
+                                            </li>
+                                            <li>
+                                                <p><span>отдел продаж</span><br><?=$phone2?></p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>

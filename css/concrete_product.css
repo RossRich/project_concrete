@@ -68,6 +68,61 @@
     text-transform: uppercase;
 }
 
+
+.des-test-invisible>form>ul{
+    padding: 0;
+    margin-left: 35px;
+    margin-bottom: 0;
+}
+
+.des-test-invisible>form>ul>li{
+    list-style: none;
+    position: relative;
+    margin-top: 10px;
+}
+
+.des-test-invisible>form>ul>li>i{
+    position: absolute;
+    left: -35px;
+    top: 70%;
+    width: 30px;
+    text-align: center;
+}
+
+.des-test-invisible {
+    display: none;
+    min-height: 322px;
+}
+
+.des-test-visible {
+    display: block;
+    min-height: 322px;
+}
+
+.des-test-invisible ul {
+    /*margin-top: 0;*/
+}
+
+.des-panel-discription .des-test-invisible ul li {
+    /*height: 50px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin-bottom: 10px;*/
+}
+
+.des-test-invisible h4 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-transform: inherit;
+    font-size: 19px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.des-test-invisible>form>ul>li>i.des-ico-active{
+    color: #fff;
+}
+
 .input-item-consumer-order-panel{
     position: relative;
     height: 46px;
@@ -92,11 +147,11 @@
     /*    transition: height 0.5s;*/
 }
 
-.input-item-consumer-order-panel {
+.input-item-consumer-order-panel-input {
     position: relative;
     display: block;
     width: 100%;
-/*    height: 32px;*/
+    height: 50px;
     padding: 3px 0;
     line-height: 16px;
     font-size: 18px;
@@ -142,11 +197,6 @@
     color: #fff;
 }
 
-li>div[class="input-item-consumer-order-panel"] {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 .des-panel-proportion {
     margin-left: 40px;
@@ -173,13 +223,13 @@ li>div[class="input-item-consumer-order-panel"] {
 
 .des-panel-discription h4 {
     color: #616161;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
 }
 
 .des-panel-discription ul {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 .des-panel-discription ul.uk-tab li {
@@ -458,35 +508,7 @@ li>div[class="input-item-consumer-order-panel"] {
     background: #f5f5f5;
 }
 
-.des-test-invisible {
-    display: none;
-    min-height: 322px;
-}
 
-.des-test-visible {
-    display: block;
-    min-height: 322px;
-}
-
-.des-test-invisible ul {
-    margin-top: 0;
-}
-
-.des-panel-discription .des-test-invisible ul li {
-    height: 50px;
-    padding-bottom: 0;
-    padding-left: 30px;
-    margin-bottom: 10px;
-}
-
-.des-test-invisible h4 {
-    margin-top: 40px;
-    margin-bottom: 0;
-    text-transform: inherit;
-    font-size: 19px;
-    font-weight: 400;
-    color: #212121;
-}
 
 /*переопределение цвета для анимации*/
 
