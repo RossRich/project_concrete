@@ -3,6 +3,10 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .des-container-correct {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .advantages .ad_panel h4 {
         line-height: 26px;
     }
@@ -165,6 +169,11 @@
         line-height: 40px;
     }
     /*End index_Category-cards*/
+    /*Product_content-delivery*/
+    .des-contauner-content-delivery h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {
@@ -237,6 +246,11 @@
         width: 100%;
     }
     /*EndFooter*/
+    /*Product_content-delivery*/
+    .des-contauner-content-delivery h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 

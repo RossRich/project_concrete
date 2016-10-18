@@ -20,8 +20,8 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
 
 <body>
     <div class="wrapper uk-g">
-        <?//php require($home_dir."/includes/header.php"); ?>
-        <?// include($home_dir."/includes/advantages_trust.php"); ?>
+        <? require($home_dir."/includes/header.php"); ?>
+        <? require($home_dir."/includes/advantages_trust.php"); ?>
         <?
         if(isset($index_page_category) && !empty($index_page_category)){
             $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->toArray();
@@ -69,17 +69,17 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                         if($main_category["items_index_page"]) continue;
                     ?>
                     <li>
-                            <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                                    <div class="panel_body">
-                                        <h3 class="dev-material-panel-head-correct"><?=$main_category["name"]?></h3>
-                                        <div class="dev-material-panel-img-correct">
-                                            <img src="/<?=substr($main_category["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="ИНЕРТНЫЕ МАТЕРИАЛЫ">
-                                        </div>
-                                            <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
-                                        </div>
-                                        <hr class="dev-line-correct">
-                                        <a href="/product.php?id=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
-                            </div>
+                        <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
+                            <div class="panel_body">
+                                <h3 class="dev-material-panel-head-correct"><?=$main_category["name"]?></h3>
+                                <div class="dev-material-panel-img-correct">
+                                    <img src="/<?=substr($main_category["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="ИНЕРТНЫЕ МАТЕРИАЛЫ">
+                                </div>
+                                <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
+                                </div>
+                                <hr class="dev-line-correct">
+                                <a href="/product.php?id=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
+                        </div>
                     </li>
                     <? } ?>
                 </ul>
@@ -91,7 +91,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <div class="prefooter"></div>
         <? require($home_dir."/includes/footer.php"); ?>
     </div>
-    <? //require($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
 
 </html>

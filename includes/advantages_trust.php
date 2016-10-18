@@ -5,7 +5,7 @@
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="images/ad1.png" alt="">
+                                <img src="/images/ad1.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОВРЕМЕННОЕ ОБОРУДОВАНИЕ</h4>
@@ -18,7 +18,7 @@
                     <li>
                         <div class="uk-panel uk-panel-box uk-clearfix ad_panel">
                             <div class="ad_logo">
-                                <img src="/images/ad2.jpg" alt="">
+                                <img src="/images/ad2.png" alt="">
                             </div>
                             <div class="ad_text">
                                 <h4>СОБСТВЕННЫЙ ПАРК СПЕЦТЕХНИКИ</h4>
@@ -54,7 +54,6 @@
                             </div>
                         </div>
                     </li>
-
                 </ul>
             </div>
         </div>

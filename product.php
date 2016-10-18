@@ -35,7 +35,7 @@ if(!isset($product)){
         <? require($home_dir."/includes/header.php"); ?>
         <div class="des-delivery-concrete">
             <div class="des-container-correct des-contauner-content-delivery">
-                <ul class="uk-breadcrumb">
+                <ul class="uk-breadcrumb uk-hidden-small">
                     <li><a href="/">Главная</a></li>
                     <li><a href="/catalog.php?category=<?$category["_id"]?>"><?=$category["name"]?></a></li>
                     <li class="uk-active"><span><?=$product["name"]?></span></li>
@@ -109,7 +109,7 @@ if(!isset($product)){
                                                 <ul class="uk-grid uk-grid-width-medium-1-1 uk-grid-width-large-1-1 uk-grid-width-small-1-1">
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="/images/ic_person_outline_black_48dp_ORDER.png" alt="">
+                                                            <i class="uk-icon-user uk-icon-large dev-img-ico-correct"></i>
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
                                                                 <input type="text" name="name" class="input-item-consumer-order-panel">
@@ -118,7 +118,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="/images/ic_call_black_18dp.png" alt="">
+                                                            <i class="uk-icon-phone uk-icon-large dev-img-ico-correct"></i>
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel">
@@ -127,7 +127,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="/images/ic_local_offer_black_18dp.png" alt="">
+                                                            <i class="uk-icon-tags uk-icon-large dev-img-ico-correct"></i>
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Марка бетона</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -136,7 +136,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="/images/ic_layers_black_18dp.png" alt="">
+                                                            <i class="uk-icon-shopping-bag uk-icon-large dev-img-ico-correct"></i>
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Объем</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
@@ -145,7 +145,7 @@ if(!isset($product)){
                                                     </li>
                                                     <li>
                                                         <div class="uk-flex">
-                                                            <img class="dev-img-ico-correct" src="/images/ic_place_black_18dp.png" alt="">
+                                                            <i class="uk-icon-map-marker uk-icon-large dev-img-ico-correct"></i>
                                                             <div class="input-item-consumer-order-panel">
                                                                 <label for="tel" class="dev-consumer-order-panel-label">Адрес объекта</label>
                                                                 <input type="tel" name="tel" class="input-item-consumer-order-panel" pattern="[8]{0-9}([0-9]{3})[0-9]{2}-[0-9]{2}-[0-9]{3}">
