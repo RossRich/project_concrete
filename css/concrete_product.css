@@ -234,31 +234,6 @@
 
 }
 
-/*переопределение цвета для анимации*/
-
-
-.des-ico-active-order{
-    color: #ff9700;
-}
-
-.has-label .dev-order-label {
-    color: #ff9700;
-}
-
-.is-focused .dev-order-label {
-    color: #ff9700;
-}
-
-.has-label.input-item::after {
-    color: #ff9700;
-}
-
-.is-focused.input-item::after {
-    color: #ff9700!important;
-}
-
-/*.des-get-concrete-pomp-container>form>ul>li div.input-item*/
-
 .des-our-app {
     background: #dfdfdf;
 }
@@ -431,6 +406,29 @@
     font-size: 19px;
     font-weight: 400;
     color: #212121;
+}
+
+/*переопределение цвета для анимации*/
+
+
+.des-get-concrete-pomp>.des-get-concrete-pomp-container .des-ico-active-order{
+    color: #ff9700;
+}
+
+.has-label .dev-order-label {
+    color: #ff9700;
+}
+
+.is-focused .dev-order-label {
+    color: #ff9700;
+}
+
+.has-label.input-item::after {
+    color: #ff9700;
+}
+
+.is-focused.input-item::after {
+    color: #ff9700!important;
 }
 
 .input-item-consumer-order-panel {
