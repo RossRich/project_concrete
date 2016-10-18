@@ -104,7 +104,8 @@
     .banner .sliden {
         margin-top: 0;
     }
-    .header_top .left .text_logo .p2, .header_top .right {
+    .header_top .left .text_logo .p2,
+    .header_top .right {
         display: none;
     }
 }
@@ -122,7 +123,7 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     /*Footer*/
     .dev-footer-container-correct {
         width: 90%;
@@ -147,9 +148,68 @@
         width: 100%;
     }
     /*EndFooter*/
+    /*Discount-form*/
+    .dev-container-order-correct>h3 {
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+    .dev-container-order-correct .dev-but-submit-correct {
+        font-size: 18px;
+    }
+    /*End_Discount-form*/
+    /*Index_Category-cards*/
+    .dev-container-material>div>h3 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    /*End index_Category-cards*/
+}
+
+@media only screen and (min-width: 480px) and (max-width: 635px) {
+    /*About-us*/
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>h3 {
+        margin: 10px;
+        font-size: 18px;
+    }
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>p {
+        margin: 10px;
+        font-size: 14px;
+    }
+    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>.dev-consumer-about-us-panel-img-correct {
+        max-width: 76px;
+        max-height: 76px;
+        right: 10px;
+        bottom: -47px;
+    }
+    /*End about-us*/
+    /*Index_Category-cards*/
+    .dev-material-panel-head-correct {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .dev-material-panel-description {
+        font-size: 14px;
+    }
+    /*End index_Category-cards*/
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Index_Category-cards*/
+    .dev-container-material>div>h3 {
+        line-height: 40px;
+    }
+    /*End index_Category-cards*/
+    /*Discount-form*/
+    .dev-container-order-correct>h3 {
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .dev-container-order-correct .dev-but-submit-correct {
+        /*font-size: 18px;*/
+    }
+    /*End_Discount-form*/
     /*Footer*/
     .dev-footer-container-correct {
         width: 90%;
@@ -179,37 +239,23 @@
     /*EndFooter*/
 }
 
-@media only screen and (min-width: 480px) and (max-width: 635px) {
-    /*About-us*/
-    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>h3 {
-        margin: 10px;
-        font-size: 18px;
-    }
-    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>p {
-        margin: 10px;
-        font-size: 14px;
-    }
-    .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>.dev-consumer-about-us-panel-img-correct {
-        max-width: 76px;
-        max-height: 76px;
-        right: 10px;
-        bottom: -47px;
-    }
-    /*End about-us*/
-}
-
 
 /* iPads (portrait and landscape) ----------- */
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 769px) and (max-width: 959px) {
     /*Footer*/
     .dev-footer-container-correct {
         padding-left: 50px;
     }
     /*EndFooter*/
+    /*Discount-form*/
+    .dev-container-order-correct>h3 {
+        line-height: 40px;
+    }
+    /*End_Discount-form*/
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1025px) {
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
     /*Footer*/
     .dev-footer-container-correct {
         padding-left: 25px;
@@ -243,8 +289,21 @@
 
 /* Desktops and laptops ----------- */
 
-@media only screen and (min-width: 1224px) {
-    /* Styles */
+@media only screen and (min-width: 1024px) and (max-width:1176px) {
+    /*Footer*/
+    .dev-footer-container-correct {
+        padding-left: 25px;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        margin-left: 0;
+    }
+    .dev-footer-container-correct>ul>li>a {
+        font-size: 14px;
+    }
+    .dev-footer-container-correct>ul>li>a>span {
+        font-size: 15px;
+    }
+    /*EndFooter*/
 }
 
 
@@ -257,6 +316,7 @@
 
 /* iPhone 4 ----------- */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
     /* Styles */
 }

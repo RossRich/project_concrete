@@ -29,7 +29,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <div class="dev-container-concreate">
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct"><?=$index_page_category["name_index_page"]?></h3>
-                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 " data-uk-grid-margin>
+                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-margin>
                     <? foreach($index_page_products as $index_page_product){ ?>
                     <li>
                         <div class="uk-panel uk-panel-box dev-panel-correct">
@@ -58,23 +58,26 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
             </div>
         </div>
         <div class="dev-container-material">
-            <div class="uk-container-center dev-container-correct">
+            <div class="uk-container-center dev-container-correct uk-container2">
                 <h3 class="uk-text-center dev-h3-correct">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ И УСЛУГИ ТЕХНИКИ</h3>
-                <ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="target:'.dev-material-panel-head-correct'">
+                <ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="target:'.panel_body'" data-uk-grid-margin>
                     <?
+                    $main_categorys = collection("Категории")->find()->toArray();
                     foreach($main_categorys as $main_category){
                         if($main_category["items_index_page"]) continue;
                     ?>
                     <li>
-                        <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
-                            <h3 class="dev-material-panel-head-correct"><?=$main_category["name"]?></h3>
-                            <div class="dev-material-panel-img-correct">
-                                <img src="/<?=substr($main_category["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="ИНЕРТНЫЕ МАТЕРИАЛЫ">
+                            <div class="uk-panel uk-panel-box dev-panel-correct dev-material-panel-correct">
+                                    <div class="panel_body">
+                                        <h3 class="dev-material-panel-head-correct"><?=$main_category["name"]?></h3>
+                                        <div class="dev-material-panel-img-correct">
+                                            <img src="/<?=substr($main_category["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="ИНЕРТНЫЕ МАТЕРИАЛЫ">
+                                        </div>
+                                            <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
+                                        </div>
+                                        <hr class="dev-line-correct">
+                                        <a href="/product.php?id=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
                             </div>
-                            <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
-                            <hr class="dev-line-correct">
-                            <a href="/product.php?id=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
-                        </div>
                     </li>
                     <? } ?>
                 </ul>

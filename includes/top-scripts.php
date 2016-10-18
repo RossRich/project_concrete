@@ -10,14 +10,14 @@
 <link rel="stylesheet" href="/css/concrete_sale.css" />
 <link rel="stylesheet" href="/css/concrete_product.css">
 <link rel="stylesheet" href="/css/about_us.css" />
-<link rel="stylesheet" href="/css/contacts.css" />   
-<link rel="stylesheet" href="/css/blog_all.css" /> 
+<link rel="stylesheet" href="/css/contacts.css" />
+<link rel="stylesheet" href="/css/blog_all.css" />
 <link rel="stylesheet" href="/css/blog.css" />
 <!-- <link rel="stylesheet" href="/css/modal.css"> -->
 <!-- <link rel="stylesheet" href="/css/modal_get_manager.css"> -->
 <link rel="stylesheet" href="/css/medai-q.css" />
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
 
 <script src="/jquery/jquery-3.1.0.js"></script>
 <script src="/js/uikit.min.js"></script>
@@ -27,7 +27,3 @@
 <script src="/js/components/grid.js"></script>
 <script src="/js/components/lightbox.min.js"></script>
 <script src="/js/scripts.js"></script>
-
-
-
-
