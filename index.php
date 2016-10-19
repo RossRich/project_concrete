@@ -36,7 +36,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                             <div class="panel_body">
                                 <div class="dev-img-correct">
                                     <? if(isset($index_page_product["photo"]) && !empty($index_page_product["photo"])){ ?>
-                                    <!-- <? print_r($index_page_product["photo"][0]);?> -->
+                                    <!-- <? //print_r($index_page_product["photo"][0]);?> -->
                                     <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="<?=thumbnail_url($index_page_product["photo"][0]["path"], 160, 160, ["mode" => "best_fit"])?>" alt="<?=$index_page_product["name"]?>"></a>
                                     <? } else { ?>
                                     <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="/images/block.png" alt="Block"></a>

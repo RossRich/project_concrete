@@ -177,6 +177,9 @@ if(!isset($product)){
             </div>
         </div>
         <div class="des-our-app">
+        <? $products_for_page_product = collection("Продукция")->find()->toArray();
+        print_r($products_for_page_product);
+        ?>
             <div class="des-our-app-content des-container-correct">
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
                 <div class="uk-slidenav-position slider_our_app" data-uk-slider>
@@ -185,79 +188,26 @@ if(!isset($product)){
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-2">
+                        <ul class="uk-slider uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-2" data-uk-grid-match="target:'.panel_body'">
+                            <?foreach ($products_for_page_product as $key) {?>
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
+                                    <div class="panel_body">
+                                        <div class="dev-img-correct">
+                                        <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
+                                            <img src="<?=thumbnail_url($key['photo'][0]['path'], 160, 160, ['mode' => 'best_fit'])?>" alt="<?=$index_page_product['name'] ?>">
+                                        <?}else{?>
+                                            <img src="/images/block.png" alt="Block">
+                                        <? } ?>
+                                        </div>
+                                        <p><?=$key['name'] ?><br><?=$key['price'] ?> <span>руб. - <?=$key['count'] ?></span></p>
                                     </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
                                     <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
+                                    <a href="product.php?id<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>
+                                    <a href="product.php?id<?=$key['_id'] ?>" class="dev-but-about-correct">Подробнее</a>
                                 </div>
                             </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
-                                    </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
-                                    </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
-                                    </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
-                                    </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel uk-panel-box dev-panel-correct">
-                                    <div class="dev-img-correct">
-                                        <img src="/images/block.png" alt="Block">
-                                    </div>
-                                    <p>M 100 - П3
-                                        <br>2 500 <span>руб. - 1М<sup><small>3</small></sup></span></p>
-                                    <hr class="dev-line-correct">
-                                    <a href="" class="dev-but-order-correct">Заказать</a>
-                                    <a href="" class="dev-but-about-correct">Подробнее</a>
-                                </div>
-                            </li>
+                            <?}?>
                         </ul>
                     </div>
                 </div>
