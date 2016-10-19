@@ -55,10 +55,11 @@
 }
 
 .des-panel-img {
-    height: 324px;
-    width: 492px;
-    background: url(/images/trac.png) no-repeat center center;
-    margin: 40px 0 0 40px;
+    width: 100%;
+    max-width: 496px;
+    height: auto;
+    margin: 40px auto 0 auto;
+    text-align: center;
 }
 
 .des-content-panel h4 {
@@ -267,7 +268,7 @@
 }
 
 .des-panel-discription ul#des-panel-id li {
-    padding: 0;
+    /*padding: 0;*/
 }
 
 .des-panel-discription ul#des-panel-id li p {
@@ -279,21 +280,23 @@
 }
 
 .des-content-panel ul.uk-grid li.uk-width-1-1 {
-    padding-bottom: 0;
+    /*padding-bottom: 0;*/
 }
 
 .des-panel-bottom {
-    margin: 20px;
+    padding: 0 40px 40px 40px;
+    /*margin: 20px;*/
 }
 
 .des-panel-bottom input {
     height: 40px;
     width: 160px;
-    float: left;
+
+    /*float: left;*/
     padding: 0;
     margin: 0;
     border: none;
-    margin: 20px 0 40px 20px;
+    /*margin: 20px 0 40px 20px;*/
     border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .19);
 }
@@ -308,12 +311,14 @@
 
 .des-panel-bottom p {
     /*    margin: 0;*/
-    text-align: left;
+    /*text-align: left;*/
+    text-align: center;
     font-weight: 400;
     font-size: 22px;
     color: #616161;
-    float: right;
-    margin: 20px 50px 40px 0;
+    /*margin: 0 auto;*/
+    /*float: right;*/
+    /*margin: 20px 50px 40px 0;*/
 }
 
 .des-panel-bottom p span {
@@ -323,7 +328,7 @@
 }
 
 .des-panel-li-fix {
-    height: 130px;
+    /*min-height: 130px;*/
 }
 
 .des-get-concrete-pomp {
@@ -371,25 +376,26 @@
 .des-our-app-content h3 {
     text-align: center;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 0;
+    line-height: 35px
 }
 
 .des-our-app-content {
     padding: 80px 0 80px 0;
 }
 
-.slider_our_app {
+/*.slider_our_app {
     position: relative;
     top: -42px;
-}
+}*/
 
 .des-our-app .uk-slider-container {
     padding: 12px;
 }
 
 .des-our-app-content ul.uk-slider {
-    margin-left: -17px;
+    /*margin-left: -17px;*/
 }
 
 .des-our-app-content div.dev-panel-correct p {
@@ -531,5 +537,3 @@ div.des-get-concrete-pomp>div.des-get-concrete-pomp-container .has-label.input-i
 div.des-get-concrete-pomp>div.des-get-concrete-pomp-container .is-focused.input-item::after {
     background: #ff9700;
 }
-
-

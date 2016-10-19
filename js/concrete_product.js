@@ -18,8 +18,8 @@ jQuery(function($) {
         });
 
     });
-    
-    
+
+
     $('.input-item-consumer-order-panel-input').focus(function() {
         $(this).parent().addClass('is-focused has-label');
 

@@ -45,9 +45,13 @@ if(!isset($product)){
                     <div class="uk-grid uk-grid-collapse">
                         <div class="uk-width-large-1-2 uk-hidden-small uk-hidden-medium">
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
-                            <div class="des-panel-img" style="background-image:url(/<?=substr($product["photo"][0]["path"], 5)?>)"></div>
+                            <div class="des-panel-img">
+                              <img src="/<?=substr($product["photo"][0]["path"], 5)?>" alt="">
+                            </div>
                             <? } else { ?>
-                            <img src="/images/block.png" alt="Block">
+                                <div class="des-panel-img">
+                            <img src="/images/no_image_block.png" alt="Block">
+                          </div>
                             <? } ?>
                             <h4>пропорции бетона</h4>
                             <div class="des-panel-proportion">
@@ -149,7 +153,7 @@ if(!isset($product)){
                                 </li>
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-bottom">
-                                        <ul class="uk-grid uk-grid-width-large-1-2 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
+                                        <ul class="uk-grid uk-grid-width-large-1-2 uk-grid-width-medium-1-2 uk-grid-width-small-1-2" data-uk-grid-margin>
                                             <li>
                                                 <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
                                             </li>
@@ -176,12 +180,12 @@ if(!isset($product)){
             <div class="des-our-app-content des-container-correct">
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
                 <div class="uk-slidenav-position slider_our_app" data-uk-slider>
-                    <div class="dev-consumer-slader-navigation uk-clearfix">
+                    <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
                         <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                     </div>
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid-medium uk-grid-width-Xlarge-1-4 uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-1">
+                        <ul class="uk-slider uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-2">
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="dev-img-correct">

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="/css/components/slider.gradient.min.css">
 <link rel="stylesheet" href="/css/components/slidenav.gradient.css">
 <link rel="stylesheet" href="/css/main.css" />
-<!-- <link rel="stylesheet" href="/css/concrete_sale.css" />-->
+<link rel="stylesheet" href="/css/concrete_sale.css" />
 <link rel="stylesheet" href="/css/concrete_product.css">
 <link rel="stylesheet" href="/css/contacts.css" />
 <link rel="stylesheet" href="/css/blog_all.css" />
