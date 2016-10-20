@@ -1,5 +1,4 @@
 <?$our_partner=collection("Наши партнеры")->find(["visibility"=>true])->toArray();
-print_r($our_partner);
 ?>
 
 <div class="dev-contauner-our-partner dev-container-material uk-container-center">

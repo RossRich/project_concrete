@@ -8,11 +8,11 @@ $page_suffix = " | КраснодарСтройСервис";
 $id = $_REQUEST["id"];
 $product = collection("Продукция")->findOne(["_id"=>$id]);
 $category = collection("Категории")->findOne(["_id"=>$product["category"]]);
-print_r($category);
+//print_r($category);
 $page_title = $product["name"];
 if(!isset($product)){
-    // header('Location: /');
-    // die;
+    header('Location: /');
+    die;
 }
 //var_dump($home_dir);
 ?>

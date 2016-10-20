@@ -22,7 +22,9 @@
                                     </p>
                                     <div class="dev-consumer-about-us-panel-img-correct">
                                         <? if(isset($review["photo"]) && !empty($review["photo"])){ ?>
-                                        <img src="/<?=substr($review["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="потребитель">
+                                        <img src="/<?=substr($review["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="<?=$review["name"]?>">
+                                        <? } else {?>
+                                        <i class="uk-icon-user-secret uk-icon-large"></i>      
                                         <? } ?>
                                     </div>
                                 </div>

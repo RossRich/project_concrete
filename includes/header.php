@@ -1,5 +1,6 @@
 <?
 $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->toArray();
+print_r($main_categorys);
 ?>
 <? if($page_id == "index"){ ?>
 <div class="uk-cover uk-position-relative banner">
@@ -52,12 +53,12 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </div>
             </div>
         </div>
-        <div class="uk-sticky-placeholder main_menu_full" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39;}" style="margin: 0px;">
+        <div class="uk-sticky-placeholder main_menu_full" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39, clsactive:'dev-active-sticky-placeholder'}" style="margin: 0px;">
             <div class="uk-container uk-container-center uk-clearfix main_menu">
                 <nav>
                     <ul class="ul_main_menu list">
                         <? foreach($main_categorys as $main_category){ ?>
-                        <li><a href="concrete_sale.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
+                        <li><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
                         <? } ?>
                     </ul>
                 </nav>

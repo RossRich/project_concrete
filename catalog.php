@@ -4,16 +4,17 @@ require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 
 $id = $_REQUEST["category"];
+print_r($_REQUEST);
 $category = collection("Категории")->findOne(["_id"=>$id]);
 $products = collection("Продукция")->find(["category"=>$id])->toArray();
 if(!isset($category)){
-    // header('Location: /');
-    // die;
+    //header('Location: /');
+    //sdie;
 }
 $page_title = $category["name"];
 $page_suffix = " | КраснодарСтройСервис";
 
-//var_dump($products);л
+//var_dump($products);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
