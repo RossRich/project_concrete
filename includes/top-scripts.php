@@ -25,4 +25,5 @@
 <script src="/js/components/slider.min.js"></script>
 <script src="/js/components/grid.js"></script>
 <script src="/js/components/lightbox.min.js"></script>
+<script src="/js/components/slideset.min.js"></script>
 <script src="/js/scripts.js"></script>

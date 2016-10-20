@@ -94,10 +94,10 @@ jQuery(document).ready(function($) {
         // Remove rippling component after half second
         setTimeout(function() {
             $('.box-wrapper').css('background', '#ff9700');
-            $('.dev-but-submit-correct').val("отправить");
+            $('ul>li>div.des-panel-bottom>ul>li>input').val("отправить");
             $('.des-test-visible').css("display","none");
             $('.des-test-invisible').css("display","block");
-            $('.dev-but-submit-correct').css({
+            $('ul>li>div.des-panel-bottom>ul>li>input').css({
                 "background": "#FFF",
                 "color":"#000",
                 "border":0

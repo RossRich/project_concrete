@@ -205,6 +205,59 @@
         font-weight: 500;
         line-height: 29px;
     }
+
+    /*Blog_article*/
+    div.des-blog{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    div.des-blog>h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    div.des-blog>div.des-blog-content > main > div.uk-panel-box{
+        padding: 10px;
+    }
+
+    div.des-blog>div.des-blog-content > main > div.uk-panel-box> div.uk-panel-teaser{
+        margin-left: -10px;
+        margin-top: -10px;
+        margin-right: -10px;
+        margin-bottom: 10px;
+    }
+
+    div.des-blog>div.des-blog-content>main>div.uk-panel>p{
+        text-align: justify;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    div.des-blog>div.des-blog-content > main > div.uk-panel-box> div.social>ul>li{
+        text-align: center !important;
+    }
+
+    /*Blog_slider*/
+    div.des-blog-slider ul>li>div.uk-panel>div.panel-body>h3{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    div.des-blog-slider ul>li>div.uk-panel>div.panel-body>p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    /*Blog_slider*/
+    div.des-blog-slider>div.slider_blog{
+        top:0;
+    }
+
+
+    div.des-blog-slider>h3{
+        margin-bottom: 50px;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {
@@ -299,6 +352,39 @@
     }
      div.des-our-app>div.des-our-app-content>div>div>ul>li>div.uk-panel>a.dev-but-about-correct{
         font-size: 11px;
+    }
+
+    /*Blog_article*/
+    div.des-blog>h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    div.des-blog>div.des-blog-content > main > div.uk-panel-box{
+        padding: 10px;
+    }
+
+    div.des-blog>div.des-blog-content > main > div.uk-panel-box> div.uk-panel-teaser{
+        margin-left: -10px;
+        margin-top: -10px;
+        margin-right: -10px;
+        margin-bottom: 10px;
+    }
+
+    div.des-blog>div.des-blog-content>main>div.uk-panel>p{
+        text-align: justify;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    /*Blog_slider*/
+    div.des-blog-slider>div.slider_blog{
+        top:0;
+    }
+
+
+    div.des-blog-slider>h3{
+        margin-bottom: 50px;
     }
 }
 
