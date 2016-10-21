@@ -84,7 +84,7 @@
 
 .facilities_overlay_icon {
     background-color: rgba(255, 151, 0, 0.5);
-    height: 220px;
+    /*height: 190px;*/
 }
 .facilities_panel_bottom {
    background-color: rgba(33, 33, 33, 0.6);
