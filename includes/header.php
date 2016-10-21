@@ -49,7 +49,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     <br>
                     <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                     <br>
-                    <a href="#" class="call">Вызов менеджера</a>
+                    <a href="!#" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <br>
                 <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                 <br>
-                <a href="#" class="call">Вызов менеджера</a>
+                <a href="#!" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера1</a>
             </div>
         </div>
     </div>
@@ -139,3 +139,4 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
     </div>
 </div>
 <? } ?>
+<? require($home_dir."/includes/modal_get_manager.php"); ?>
