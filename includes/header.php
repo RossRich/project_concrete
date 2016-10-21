@@ -1,6 +1,6 @@
 <?
 $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->toArray();
-print_r($main_categorys);
+//print_r($main_categorys);
 ?>
 <? if($page_id == "index"){ ?>
 <div class="uk-cover uk-position-relative banner">

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="/css/main.css" />
 <link rel="stylesheet" href="/css/concrete_sale.css" />
 <link rel="stylesheet" href="/css/concrete_product.css">
+<link rel="stylesheet" href="/css/about_us.css">
 <link rel="stylesheet" href="/css/contacts.css" />
 <link rel="stylesheet" href="/css/blog_all.css" />
 <link rel="stylesheet" href="/css/blog.css" />
