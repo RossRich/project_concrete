@@ -442,20 +442,20 @@ ul.ul_main_menu>li:hover>a:before {
     font-style: normal;
 }
 
-.advantages .ad_panel {
+.advantages .plus_panel {
     padding: 0;
 }
 
-.advantages .ad_logo {
+.advantages .plus_logo {
     float: left;
     margin-right: 20px;
 }
 
-.advantages .ad_text {
+.advantages .plus_text {
     overflow: hidden;
 }
 
-.advantages .ad_panel h4 {
+.advantages .plus_panel h4 {
     text-transform: uppercase;
     font-size: 22.22px;
     color: #212121;
@@ -465,8 +465,9 @@ ul.ul_main_menu>li:hover>a:before {
     margin-bottom: 21px;
 }
 
-.advantages .ad_panel p {
+.advantages .plus_panel p {
     font-size: 16.67px;
+    line-height: 27.78px;
 }
 
 

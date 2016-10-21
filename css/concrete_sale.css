@@ -36,16 +36,16 @@
 .advantages_full_cs .advantages_cs {
     padding-bottom: 0;
 }
-/*.advantages_full_cs ul .ad_panel_cs {
+/*.advantages_full_cs ul .plus_panel_cs {
     padding: 0 18px 42px 18px;
 }*/
 .advantages_full_cs h3 {
     margin-bottom: 54px;
 }
-.advantages_full_cs .ad_panel_cs h4 {
+.advantages_full_cs .plus_panel_cs h4 {
     margin-bottom: 16px;
 }
-.advantages_full_cs .ad_panel_cs .ad_text p {
+.advantages_full_cs .plus_panel_cs .plus_text p {
     margin-bottom: 8px;
     margin-top: 0;
 }

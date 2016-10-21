@@ -7,7 +7,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .advantages .ad_panel h4 {
+    .advantages .plus_panel h4 {
         line-height: 26px;
     }
     .strip_top_menu .on_map .text {
@@ -57,13 +57,13 @@
 }
 
 @media(max-width: 900px) {
-    .advantages .ad_panel {
+    .advantages .plus_panel {
         line-height: 50px;
     }
-    .advantages .ad_panel p {
+    .advantages .plus_panel p {
         display: none;
     }
-    .advantages .ad_panel h4 {
+    .advantages .plus_panel h4 {
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
@@ -81,7 +81,7 @@
     .advantages_full {
         text-align: center;
     }
-    .advantages .ad_logo {
+    .advantages .plus_logo {
         float: none;
     }
     .banner .header_top .header_top_block {
