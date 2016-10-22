@@ -95,6 +95,7 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
             $('.box-wrapper').css('background', '#ff9700');
             $('ul>li>div.des-panel-bottom>ul>li>input').val("отправить");
+            $('ul>li>div.des-panel-bottom>ul>li>input').attr("type","submit");
             $('.des-test-visible').css("display","none");
             $('.des-test-invisible').css("display","block");
             $('ul>li>div.des-panel-bottom>ul>li>input').css({

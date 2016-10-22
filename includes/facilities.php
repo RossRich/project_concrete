@@ -1,6 +1,6 @@
 <?
 
-$facilities = collection("Объекты")->find()->toArray();
+//$facilities = collection("Объекты")->find()->toArray();
 
 ?>
 
@@ -31,9 +31,9 @@ $facilities = collection("Объекты")->find()->toArray();
                                         </a>
                                     </div>
                                 </div>
-                            </li>  
+                            </li>
 
-                            <? } ?>     
+                            <? } ?>
 
                         </ul>
                     </div>

@@ -47,10 +47,8 @@ $docs = collection("Документы")->find()->toArray();
                         <h4>Отдел продаж</h4>
                         <a href="tel:<?=$phone2?>" class="phone_dep"><?=$phone2?></a>
                         <br>
-                        <a href="">
-                            <button>Вызов менеджера</button>
-                        </a>
-                    </div>    
+                            <button data-uk-modal="{target:'#id', center:true}">Вызов менеджера</button>
+                    </div>
                 </div>
             </li>
         </ul>

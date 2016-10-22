@@ -110,41 +110,41 @@ if(!isset($product)){
                                         </div>
                                         <div class="des-test-invisible">
                                             <h4>Для заказа товара пожалуйста заполните данные</h4>
-                                            <form action="">
+                                            <?php form('checkout'); ?>
                                                 <ul>
                                                     <li>
                                                         <i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
-                                                            <input type="text" name="name" class="input-item-consumer-order-panel-input">
+                                                            <input type="text" name="form[name]" class="input-item-consumer-order-panel-input" required>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-phone uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
-                                                            <input type="tel" name="tel" class="input-item-consumer-order-panel-input">
+                                                            <input type="tel" name="form[tel]" class="input-item-consumer-order-panel-input" required>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-tags uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="brand" class="dev-consumer-order-panel-label">Марка бетона</label>
-                                                            <input type="text" name="brand" class="input-item-consumer-order-panel-input">
+                                                            <input type="text" name="form[brand]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-shopping-bag uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="capacity" class="dev-consumer-order-panel-label">Объем</label>
-                                                            <input type="number" name="capacity" class="input-item-consumer-order-panel-input">
+                                                            <input type="number" name="form[capacity]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-map-marker uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="position" class="dev-consumer-order-panel-label">Адрес объекта</label>
-                                                            <input type="text" name="position" class="input-item-consumer-order-panel-input">
+                                                            <input type="text" name="form[position]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                 </ul>
