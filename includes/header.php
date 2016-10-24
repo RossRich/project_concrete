@@ -21,6 +21,12 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </ul>
                 </nav>
                 <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
+                <div class="uk-hidden-medium uk-hidden-large uk-hidden-xlarge mob_connect">
+                    <a href=""><img src="/images/Shape-1.png" alt=""></a>
+                    <a href=""><img src="/images/Shape-2.png" alt=""></a>
+                    <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
+                </div>
+                
                 <div class="on_map">
                     <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="/images/ic_place.png" alt=""></a>
                     <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a><span class="text">)</span></span>
@@ -69,9 +75,11 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <div class="slogan">
                 <h1>Срочная доставка бетона в Краснодаре</h1>
                 <p>бетон, раствор, строительные материалы всегда дешевле и быстрее</p>
-                <span class="orders">Принимаем заказы:  <img src="/images/Shape-1.png" alt="">
-                <img src="/images/Shape-2.png" alt="">
-                <img src="/images/Shape-3.png" alt=""></span>
+                <span class="orders">Принимаем заказы:  
+                <a href=""><img src="/images/Shape-1.png" alt=""></a>
+                <a href=""><img src="/images/Shape-2.png" alt=""></a>
+                <a href=""><img src="/images/Shape-3.png" alt=""></a>
+                </span>
                 <br>
                 <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
             </div>
@@ -93,6 +101,11 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </ul>
             </nav>
             <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
+            <div class="uk-hidden-large uk-hidden-xlarge mob_connect">
+                    <a href=""><img src="/images/Shape-1.png" alt=""></a>
+                    <a href=""><img src="/images/Shape-2.png" alt=""></a>
+                    <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
+                </div>
             <div class="on_map">
                 <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="images/ic_place.png" alt=""></a>
                 <span><?=$address?> (<a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a>)</span>

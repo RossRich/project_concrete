@@ -1,10 +1,5 @@
+/*само мобильное меню сбоку*/
 
-a.mob-menu:hover{
-    color: #f5f5f5;
-    text-decoration: none;
-}
-a.mob-menu:active{
-}
 
 .nav_mob_menu{
     padding-top: 20px;
@@ -33,4 +28,28 @@ a.mob-menu:active{
 .uk-nav-parent-icon > .uk-parent > a:after {
     position: relative;
     bottom: 1px;
+}
+
+
+
+/*верхняя полоса при уменьшении*/
+
+
+
+a.mob-menu:hover{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+a.mob-menu:active{
+}
+a.mob-menu{
+    margin-right: 5px;
+}
+.mob-menu i {
+    margin-right: 5px;
+}
+
+
+.mob_connect {
+    float: left;
 }

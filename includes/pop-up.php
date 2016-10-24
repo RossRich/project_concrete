@@ -8,7 +8,7 @@
         <nav class="nav_mob_menu">
             <ul class="uk-nav uk-nav-parent-icon list" data-uk-nav>
                 <? foreach($main_categorys as $main_category){ ?>
-                    <li><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
+                    <li ><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
                     <? } 
                 ?>
                 <li class="uk-parent">
