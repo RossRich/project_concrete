@@ -1,9 +1,12 @@
 <div id="mob-menu" class="uk-offcanvas">
     <div class="uk-offcanvas-bar">
-        <a href="/" class="logo"></a>
+        <div class="mob_menu_logo">
+            <a href="/index.php" class="">
+                <img src="/images/logo.png" alt="КраснодарСтройСервис">
+            </a>
+        </div>
         <nav class="nav_mob_menu">
             <ul class="uk-nav uk-nav-parent-icon list" data-uk-nav>
-                <li><a href="/index.php">Главная</a></li>
                 <? foreach($main_categorys as $main_category){ ?>
                     <li><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
                     <? } 
