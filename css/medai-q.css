@@ -1,4 +1,4 @@
-@media(max-width: 1219px) {
+@media(max-width: 1220px) {
     .uk-container2 {
         padding-left: 15px;
         padding-right: 15px;
@@ -19,6 +19,7 @@
     .main_menu {
         max-width: 980px;
     }
+    
 }
 
 @media(max-width: 959px) {

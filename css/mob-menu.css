@@ -1,0 +1,31 @@
+
+a.mob-menu:hover{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+a.mob-menu:active{
+}
+
+.nav_mob_menu{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.nav_mob_menu ul li a{
+    text-transform: uppercase;
+    color: #f5f5f5;
+    font-size: 12.5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.nav_mob_menu ul li a:hover{
+    text-decoration: none;
+    color: #ff9700;
+}
+.nav_mob_menu ul.mob_sub_menu li a{
+    margin-left: 30px;
+}
+.uk-nav-parent-icon > .uk-parent > a:after {
+    position: relative;
+    bottom: 1px;
+}

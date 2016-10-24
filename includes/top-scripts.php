@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/css/blog.css" />
 <!-- <link rel="stylesheet" href="/css/modal.css"> -->
 <link rel="stylesheet" href="/css/modal_get_manager.css">
+<link rel="stylesheet" href="/css/mob-menu.css" />
 <link rel="stylesheet" href="/css/medai-q.css" />
 
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
