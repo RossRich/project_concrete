@@ -96,6 +96,8 @@ jQuery(document).ready(function($) {
             $('.box-wrapper').css('background', '#ff9700');
             $('ul>li>div.des-panel-bottom>ul>li>input').val("отправить");
             $('ul>li>div.des-panel-bottom>ul>li>input').attr("type","submit");
+            $('ul>li>div.des-panel-bottom>ul>li>input').attr("form","checkout_form");
+            $('ul>li>div.des-panel-bottom>ul>li>input').removeClass("ripple-effect");
             $('.des-test-visible').css("display","none");
             $('.des-test-invisible').css("display","block");
             $('ul>li>div.des-panel-bottom>ul>li>input').css({

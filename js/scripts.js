@@ -5,10 +5,10 @@ jQuery(function($) {
         $(this).parent().addClass('is-focused has-label');
 
         var name = $(this).attr("name");
-        if (name == "name") {
+        if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-order");
         }
-        if (name == "tel") {
+        if (name == "form[tel]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-order");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-order");
         }
@@ -31,10 +31,10 @@ jQuery(function($) {
     $('.dev-footer-input').focus(function() {
         $(this).parent().addClass('is-focused has-label');
         var name = $(this).attr("name");
-        if (name == "name") {
+        if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
         }
-        if (name == "tel" || name == "adr") {
+        if (name == "form[tel]" || name == "form[adr]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
         }
@@ -73,10 +73,10 @@ jQuery(function($) {
     $('.dev-get-manager-input').focus(function() {
         $(this).parent().addClass('is-focused has-label');
         var name = $(this).attr("name");
-        if (name == "name") {
+        if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
         }
-        if (name == "tel" || name == "adr") {
+        if (name == "form[tel]" || name == "form[adr]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
         }

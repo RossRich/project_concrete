@@ -7,7 +7,7 @@
 <div class="facilities_full_cs">
             <div class="uk-container2 uk-container-center facilities_cs">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct h3_cs">ОБЪЕКТЫ, ПОСТРОЕННЫЕ ИЗ НАШЕГО БЕТОНА</h3>
-                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="infinite:true">
+                <div class="uk-slidenav-position facilities_slidenav_cs" data-uk-slider="infinite:false">
                     <div class="dev-consumer-slader-navigation uk-clearfix">
                         <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="next">
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="previous">

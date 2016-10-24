@@ -24,18 +24,22 @@ jQuery(function($) {
         $(this).parent().addClass('is-focused has-label');
 
         var name = $(this).attr("name");
-        if (name == "name") {
+        console.log(name);
+        if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active");
-        } else if (name == "tel") {
+            // var test=$(this).parent().siblings(".uk-icon-user").attr('class');
+            // console.log(test);
+        } else if (name == "form[tel]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active");
-        } else if (name=="capacity"){
-            // console.log(name);
+        } else if (name=="form[capacity]"){
             $(this).parent().siblings(".uk-icon-tags").addClass("des-ico-active");
-        }else if (name=="brand"){
+            // var test=$(this).parent().siblings(".uk-icon-tags").attr('class');
+            // console.log(test);
+        }else if (name=="form[brand]"){
             // console.log(name);
             $(this).parent().siblings(".uk-icon-shopping-bag").addClass("des-ico-active");
-        }else if (name=="position"){
+        }else if (name=="form[position]"){
             $(this).parent().siblings(".uk-icon-map-marker").addClass("des-ico-active");
         }
     });

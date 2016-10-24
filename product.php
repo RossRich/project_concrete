@@ -110,7 +110,7 @@ if(!isset($product)){
                                         </div>
                                         <div class="des-test-invisible">
                                             <h4>Для заказа товара пожалуйста заполните данные</h4>
-                                            <?php form('checkout'); ?>
+                                            <?php form('checkout', ['id' => 'checkout_form']); ?>
                                                 <ul>
                                                     <li>
                                                         <i class="uk-icon-user uk-icon-medium"></i>
