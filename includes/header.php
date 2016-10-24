@@ -53,7 +53,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </div>
             </div>
         </div>
-        <div class="uk-sticky-placeholder main_menu_full" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39, clsactive:'dev-active-sticky-placeholder'}" style="margin: 0px;">
+        <div class="uk-sticky-placeholder main_menu_full main_menu_full_index" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39, clsactive:'dev-active-sticky-placeholder'}" style="margin: 0px;">
             <div class="uk-container uk-container-center uk-clearfix main_menu">
                 <nav>
                     <ul class="ul_main_menu list">
@@ -63,7 +63,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </ul>
                 </nav>
             </div>
-            <div class="hr"></div>
+<!--            <div class="hr"></div>-->
         </div>
         <div class="uk-container uk-container-center uk-text-center sliden">
             <div class="slogan">
@@ -121,11 +121,11 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <br>
                 <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                 <br>
-                <a href="#!" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера1</a>
+                <a href="#!" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</a>
             </div>
         </div>
     </div>
-    <div class="uk-sticky-placeholder main_menu_full main_menu_full_header" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39;}" style="margin: 0px;">
+    <div class="uk-sticky-placeholder main_menu_full main_menu_full_header " data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39;}" style="margin: 0px;">
         <div class="uk-container uk-container-center uk-clearfix main_menu">
             <nav>
                 <ul class="ul_main_menu list">
@@ -135,7 +135,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </ul>
             </nav>
         </div>
-        <div class="hr"></div>
+<!--        <div class="hr"></div>-->
     </div>
 </div>
 <? } ?>

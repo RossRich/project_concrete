@@ -1,6 +1,6 @@
 <?
 
-//$facilities = collection("Объекты")->find()->toArray();
+$facilities = collection("Объекты")->find()->toArray();
 
 ?>
 
