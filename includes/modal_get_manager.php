@@ -7,20 +7,21 @@
                     </div>
                     <h3>Вызов менеджера</h3>
                     <div class="des-input-manager">
-                        <? form('call_manger');?>
+                        <? form('call_manger', ['id' => 'form_header_send_manager']); ?>
+                       <!-- <form id="form_header_send_manager"> -->
                             <ul>
                                 <li>
                                     <i class="uk-icon-user uk-icon-medium"></i>
                                     <div class="input-item-form">
                                         <label for="name" class="dev-get-manager-label">Ваше Имя</label>
-                                        <input type="text" name="form[name]" class="dev-get-manager-input" required>
+                                        <input type="text" name="form[name]" class="dev-get-manager-input" required1>
                                     </div>
                                 </li>
                                 <li>
                                     <i class="uk-icon-phone uk-icon-medium"></i>
                                     <div class="input-item-form">
                                         <label for="tel" class="dev-get-manager-label">Ваш Телефон</label>
-                                        <input type="tel" name="form[tel]" class="dev-get-manager-input" required>
+                                        <input type="tel" name="form[tel]" class="dev-get-manager-input" required1>
                                     </div>
                                 </li>
                                 <li>

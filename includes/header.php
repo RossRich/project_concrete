@@ -121,7 +121,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <br>
                 <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                 <br>
-                <a href="#!" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера1</a>
+                <a href="#!" class="call" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</a>
             </div>
         </div>
     </div>

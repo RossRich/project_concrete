@@ -22,12 +22,12 @@
 }
 
 .des-input-manager>form>ul {
-    margin-left: 35px; 
-    margin-bottom: 0;   
+    margin-left: 35px;
+    margin-bottom: 0;
     padding: 0;
 }
 
-.des-input-manager>form>ul>li{
+.des-input-manager>form>ul>li {
     position: relative;
     list-style: none;
     display: inline-block;
@@ -39,7 +39,7 @@
     margin-top: 0;
 }
 
-.des-input-manager>form>ul>li:last-child{
+.des-input-manager>form>ul>li:last-child {
     margin-top: 40px;
 }
 
@@ -49,7 +49,7 @@
     top: 35%;
 }
 
-.des-input-manager>form>ul>li>button{
+.des-input-manager>form>ul>li>button {
     float: right;
     font-size: 15px;
     font-weight: 500;
@@ -59,7 +59,7 @@
     background: none;
 }
 
-.des-input-manager>form>ul>li>a{
+.des-input-manager>form>ul>li>a {
     float: right;
     margin-right: 25px;
     font-weight: 400;
@@ -130,7 +130,6 @@
 .des-ico-active-footer {
     color: #ff9700;
 }
-
 
 .is-focused.input-item-form::after {
     background: #ff9700;

@@ -16,10 +16,14 @@
 <!-- <link rel="stylesheet" href="/css/modal.css"> -->
 <link rel="stylesheet" href="/css/modal_get_manager.css">
 <link rel="stylesheet" href="/css/medai-q.css" />
+<link rel="stylesheet" href="/css/components/notify.min.css" />
+<!-- <link rel="stylesheet" href="/jquery-validation/form-validation_final/css/style.css" /> -->
+
+
 
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
 
-<script src="/jquery/jquery-3.1.0.js"></script>
+<script src="/js/jquery-3.1.0.min.js"></script>
 <script src="/js/uikit.min.js"></script>
 <script src="/js/components/sticky.js"></script>
 <script src="/js/components/parallax.min.js"></script>
@@ -27,4 +31,7 @@
 <script src="/js/components/grid.js"></script>
 <script src="/js/components/lightbox.min.js"></script>
 <script src="/js/components/slideset.min.js"></script>
+<script src="/js/components/notify.min.js"></script>
 <script src="/js/scripts.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/js_validation_castom.js"></script>

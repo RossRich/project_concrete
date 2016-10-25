@@ -1,6 +1,6 @@
 <?
 
-//$facilities = collection("Объекты")->find()->toArray();
+$facilities = collection("Объекты")->find()->toArray();
 
 ?>
 
@@ -14,15 +14,17 @@
                     </div>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-2 facilities_ul_slider_cs">
-
                             <? foreach($facilities as $facility){ ?>
-
                             <li>
                                 <div class="facilities_1-li_cs">
                                     <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
                                         <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["name"]?>'>
                                         <figure class="uk-overlay uk-overlay-hover">
-                                        <img class="uk-overlay-scale" src="/images/f01p500.jpg" width="" height="" alt="<?=$facility["name"]?>">
+                                        <? if(isset($facility['photo'])&&!empty($facility['photo'])){?>
+                                            <img class="uk-overlay-scale" src="<?=thumbnail_url($facility['photo'][0]['path'], 500, 560, ['mode'=>'crope']) ?>" alt="<?=$facility['name']?>">
+                                        <?}else{?>
+                                            <img class="uk-overlay-scale" src="/images/f01p500.jpg" width="" height="" alt="<?=$facility["name"]?>">
+                                        <?}?>
                                         <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
                                         <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p><?=$facility["name"]?></p>
                                         <span><?=$facility["city"]?></span>
@@ -32,9 +34,7 @@
                                     </div>
                                 </div>
                             </li>
-
                             <? } ?>
-
                         </ul>
                     </div>
                 </div>
