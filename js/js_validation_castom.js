@@ -25,24 +25,21 @@ $(function() {
         focusCleanup: true,
         focusInvalid: false,
         // invalidHandler: function(event, validator) {
-
         //         console.log("ale");
-
         // }
         onkeyup: function(element) {
             $(".js-form-message").text("");
-            if(validator.numberOfInvalids()>1){
-                alert(1);
-            }
         },
         success: "valid",
         submitHandler: function() {
-        },
+          if($('#form_header_send_manager').valid()){
+            alert("1!")
+          }
+           }
         // highlight: function(element, errorClass) {
         //     $(element).fadeOut(function() {
         //         $(element).fadeIn();
         //     });
         // }
     });
-
 });

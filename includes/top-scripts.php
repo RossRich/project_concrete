@@ -34,4 +34,4 @@
 <script src="/js/components/notify.min.js"></script>
 <script src="/js/scripts.js"></script>
 <script src="/js/jquery.validate.min.js"></script>
-<script src="/js/js_validation_castom.js"></script>
+<!-- <script src="/js/js_validation_castom.js"></script> -->

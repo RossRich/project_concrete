@@ -1,5 +1,5 @@
 <script>
-
+    $(document).ready(function(){
     setTimeout(function(){
 
         if (!window.FormData) return;
@@ -12,7 +12,7 @@
             disableForm = function(status) {
                 for(var i=0, max=form.elements.length;i<max;i++) form.elements[i].disabled = status;
             },
-            success     = function(){
+            success = function(){
                 if (msgsuccess) {
                     UIkit.notify($(msgsuccess).text(), {status:'success'});
                 } else {
@@ -25,7 +25,7 @@
               
                 disableForm(false);
             },
-            fail        = function(){
+            fail = function(){
                 if (msgfail) {
                     UIkit.notify($(msgfail).text(), {status:'danger'});
                 } else {
@@ -37,64 +37,108 @@
         if (msgsuccess) msgsuccess.style.display = "none";
         if (msgfail)    msgfail.style.display = "none";
 
-        form.addEventListener("submit", function(e) {       
-          
-            e.preventDefault();
+//        form.addEventListener("submit", function(e) {       
+//          
+//            e.preventDefault();
           
 			
-            var check = true;	
-            $(this).find("[required1]").each(function(i, e) {
-              if ($(e).val() == "") {
-                check = false;
-                $(e).addClass("empty");
-              };
-            });
-            if (!check) {
-              UIkit.notify($(msgfail).text(), {status:'danger'});
-              return false;
-            };
-            if($(this).find(".phone_us").length){
-                $phone_val = $(this).find(".phone_us").val();
-                if ($phone_val.indexOf("_") != -1 || ($(this).find(".phone_us").val().length != 17 && $(this).find(".phone_us").val().length != 0)) {
-                    UIkit.notify($(phone_fail).text(), {status:'danger'});
-                    return false;
-                };
-            };
+//            var check = true;	
+//            $(this).find("[required1]").each(function(i, e) {
+//              if ($(e).val() == "") {
+//                check = false;
+//                $(e).addClass("empty");
+//              };
+//            });
+//            if (!check) {
+//              UIkit.notify($(msgfail).text(), {status:'danger'});
+//              return false;
+//            };
+//            if($(this).find(".phone_us").length){
+//                $phone_val = $(this).find(".phone_us").val();
+//                if ($phone_val.indexOf("_") != -1 || ($(this).find(".phone_us").val().length != 17 && $(this).find(".phone_us").val().length != 0)) {
+//                    UIkit.notify($(phone_fail).text(), {status:'danger'});
+//                    return false;
+//                };
+//            };
+//            
+//            if (msgsuccess) msgsuccess.style.display = "none";
+//            if (msgfail)    msgfail.style.display = "none";
+
             
-            if (msgsuccess) msgsuccess.style.display = "none";
-            if (msgfail)    msgfail.style.display = "none";
+            
+            
+            // form_validation_heared
 
-            var xhr = new XMLHttpRequest(), data = new FormData(form);
-
-            xhr.onload = function(){
-
-                if (this.status == 200 && this.responseText!='false') {
-<?php if (isset($options["success"])) : ?>
-                    if (<?php echo $options["success"]; ?>) form.reset();
-                    disableForm(false);
-<?php else : ?>
-                    success();
-                    form.reset();
-<?php endif; ?>                    
-                } else {
-<?php if (isset($options["fail"])) : ?>
-                    <?php echo $options["fail"]; ?>;
-                    disableForm(false);
-<?php else : ?>
-                    fail();
-<?php endif; ?>
+        $("#<?=$options['id']?>").validate({
+            rules: {
+                "form[name]": {
+                    required: true,
+                    minlength: 2
+                },
+                "form[tel]": {
+                    required: true,
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 10
                 }
-            };
+            },
+            messages: {
+                "form[name]": {
+                    required: "Поле обязательное для заполнения",
+                    minlength: "Минимальный размер 2 символа"
+                },
+                "form[tel]": {
+                    required: "Поле обязательное для заполнения",
+                    digits: "Номер телефона состоит только из цифр",
+                    minlength: "Введети номер телефона без \"+7\"",
+                    maxlength: "В номере телефона более 10 символов"
+                }
+            },
+            focusCleanup: true,
+            focusInvalid: false,
+            submitHandler: function() {
+                if($('#<?=$options['id']?>').valid()){
+            
+            
+                    var xhr = new XMLHttpRequest(), data = new FormData(form);
 
-            disableForm(true);
+                    xhr.onload = function(){
 
-            xhr.open('POST', "@route('/api/forms/submit/'.$name)", true);
-            xhr.send(data);
+                        if (this.status == 200 && this.responseText!='false') {
+                            <?php if (isset($options["success"])) : ?>
+                            
+                        if (<?php echo $options["success"]; ?>) form.reset();
+                            
+                        disableForm(false);
+                            <?php else : ?>
+                        //success();
+                        //form.reset();
+                            <?php endif; ?>                    
+                        } else {
+                            <?php if (isset($options["fail"])) : ?>
+                            <?php echo $options["fail"]; ?>;
+                            disableForm(false);
+                            <?php else : ?>
+                        //fail();
+                            < ?php endif; ?>
+                        }   
+                        };
+                    disableForm(true);
+                    xhr.open('POST', "@route('/api/forms/submit/'.$name)", true);
+                    xhr.send(data);
+                }
+           },
+            highlight: function(element, errorClass) {
+                $(element).fadeOut(function() {
+                    $(element).fadeIn();
+                });
+            }
+        });
 
-        }, false);
+//        }, false);
 
     }, 100);
-
+    });
 </script>
 
 <form id="{{ $options["id"] }}" name="{{ $name }}" class="{{ $options["class"] }}" action="@route('/api/forms/submit/'.$name)" method="post" onsubmit="return false;">
