@@ -22,14 +22,16 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </nav>
                 <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
                 <div class="uk-hidden-medium uk-hidden-large uk-hidden-xlarge mob_connect">
+<!--
                     <a href=""><img src="/images/Shape-1.png" alt=""></a>
                     <a href=""><img src="/images/Shape-2.png" alt=""></a>
+-->
                     <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
                 </div>
                 
                 <div class="on_map">
-                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="/images/ic_place.png" alt=""></a>
-                    <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a><span class="text">)</span></span>
+                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" ><img src="/images/ic_place.png" alt=""></a>
+                    <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext">На карте</a><span class="text">)</span></span>
                 </div>
             </div>
         </div>

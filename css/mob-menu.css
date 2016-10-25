@@ -36,20 +36,24 @@
 
 
 
-a.mob-menu:hover{
-    color: #f5f5f5;
-    text-decoration: none;
-}
 a.mob-menu:active{
 }
 a.mob-menu{
     margin-right: 5px;
+    color: #bdbdbd;
+    font: 300 18px Roboto;
+    line-height: 19px;
+}
+a.mob-menu:hover{
+    color: #bdbdbd;
+    text-decoration: none;
 }
 .mob-menu i {
     margin-right: 5px;
+    height: 18px;
 }
-
-
 .mob_connect {
     float: left;
 }
+
+    
