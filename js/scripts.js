@@ -12,7 +12,6 @@ jQuery(function($) {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-order");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-order");
         }
-
     });
 
     $('.dev-order-input').blur(function() {
@@ -26,6 +25,20 @@ jQuery(function($) {
         $parent.removeClass('is-focused');
     });
 
+    // сброс формы
+
+    $('#des_discount_form').on('reset', function(e) {
+        var element = $('.dev-order-input').parent();
+        element.removeClass('has-label');
+        element.siblings(".uk-icon-user").removeClass("des-ico-active-order");
+        element.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
+        element.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
+        // call modal window after reset form
+        modalWindowApply();
+    });
+
+
+
 
     // foote
     $('.dev-footer-input').focus(function() {
@@ -34,7 +47,7 @@ jQuery(function($) {
         if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
         }
-        if (name == "form[tel]" || name == "form[adr]") {
+        if (name == "form[tel]" || name == "form[email]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
         }
@@ -68,6 +81,19 @@ jQuery(function($) {
         }
     });
 
+    // сброс формы
+
+    $('#des_footer_form').on('reset', function(e) {
+        var element = $('.dev-footer-input').parent();
+        element.removeClass('has-label');
+        element.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
+        element.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
+        element.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
+        element.siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
+
+        // call modal window after reset form
+        modalWindowApply();
+    });
 
     // modal.dialog
     $('.dev-get-manager-input').focus(function() {
@@ -84,7 +110,7 @@ jQuery(function($) {
                 domElement.attr("placeholder", "+7");
             }, 400);
 
-        } else if (name == "form[adr]") {
+        } else if (name == "form[email]") {
             domElement.parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
         }
     });
@@ -102,4 +128,20 @@ jQuery(function($) {
         $parent.removeClass('is-focused');
     });
 
+
 });
+
+
+function modalWindowApply() {
+    $.extend(UIkit.components.modal.defaults, {
+        
+        center: true
+    });
+    var modal = UIkit.modal("#des-id-modal-apply",{center:true});
+     
+    if (modal.isActive()) {
+        modal.hide();
+    } else {
+        modal.show();
+    }
+}

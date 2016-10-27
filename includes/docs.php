@@ -2,7 +2,7 @@
 $docs = collection("Документы")->find()->toArray();
 ?>
 <div class="documents_full">
-    <div class="uk-container2 uk-container-center documents">
+    <div class="uk-container-center documents">
         <ul class="uk-grid uk-grid-collapse .uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2  main_ul">
             <li class="li_doc_div li_doc_div1">
                 <div class="doc_div_1">

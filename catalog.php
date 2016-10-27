@@ -30,10 +30,11 @@ $page_suffix = " | КраснодарСтройСервис";
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct">Доставка бетона и раствора в Краснодаре</h3>
                 <? if(!empty($products)){ ?>
-                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4">
+                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-match="target:'.panel_body'">
                     <? foreach($products as $product){ ?>
                     <li>
                         <div class="uk-panel uk-panel-box dev-panel-correct">
+                            <div class="panel_body">
                             <div class="dev-img-correct">
                                 <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                                 <a href="/product.php?id=<?=$product["_id"]?>"><img src="<?=thumbnail_url($product["photo"][0]["path"], 200, 200, ["mode" => "best_fit"])?>" alt="<?=$product["name"]?>"></a>
@@ -41,8 +42,9 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <a href="/product.php?id=<?=$product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
                                 <? } ?>
                             </div>
-                            <h3><?=$product["name"]?><br><?=$product["price"]?> руб. - <?=$product["count"]?></h3>
-                            <hr class="dev-line-correct">
+                            <h3><?=$product["name"]?><br><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$product["count"]?></span></h3>
+                            </div>
+                            <span class="des-line"></span>
                             <a href="/product.php?id=<?=$product["_id"]?>&order" class="dev-but-order-correct">Заказать</a>
                             <a href="/product.php?id=<?=$product["_id"]?>" class="dev-but-about-correct">Подробнее</a>
                         </div>

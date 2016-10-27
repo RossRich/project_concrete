@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/css/contacts.css" />
 <link rel="stylesheet" href="/css/blog_all.css" />
 <link rel="stylesheet" href="/css/blog.css" />
-<!-- <link rel="stylesheet" href="/css/modal.css"> -->
+<link rel="stylesheet" href="/css/modal.css">
 <link rel="stylesheet" href="/css/modal_get_manager.css">
 <link rel="stylesheet" href="/css/medai-q.css" />
 <link rel="stylesheet" href="/css/components/notify.min.css" />

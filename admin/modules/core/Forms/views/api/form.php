@@ -18,7 +18,7 @@
                 } else {
                     alert("@lang('Form submission was successfull.')");
                 }
-              
+                
               	@if(isset($options["callback"]))
                   {{ $options["callback"] }}
                 @endif
@@ -80,6 +80,14 @@
                     digits: true,
                     minlength: 10,
                     maxlength: 10
+                },
+                "form[email]": {
+                    required: true,
+                    email: true,
+                    maxlength: 35
+                },
+                "form[contact]": {
+                    required: true
                 }
             },
             messages: {
@@ -92,6 +100,14 @@
                     digits: "Номер телефона состоит только из цифр",
                     minlength: "Введети номер телефона без \"+7\"",
                     maxlength: "В номере телефона более 10 символов"
+                },
+                "form[email]": {
+                    required: "Email-обязательное поле",
+                    email: "Введите корректный Email",
+                    maxlength: "Неверный Email, попробуйте другой"
+                },
+                "form[contact]": {
+                    required: "Поле обязательное для заполнения",
                 }
             },
             focusCleanup: true,
@@ -120,12 +136,17 @@
                             disableForm(false);
                             <?php else : ?>
                         //fail();
-                            < ?php endif; ?>
+                            <?php endif; ?>
                         }   
                         };
                     disableForm(true);
                     xhr.open('POST', "@route('/api/forms/submit/'.$name)", true);
                     xhr.send(data);
+                    form.reset();
+                    setTimeout(function(){
+                        disableForm(false);
+                    },5000);
+                    
                 }
            },
             highlight: function(element, errorClass) {

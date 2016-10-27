@@ -42,9 +42,9 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                     <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
                                     <? } ?>
                                 </div>
-                                <h3><?=$index_page_product["name"]?><br><?=$index_page_product["price"]?> руб. - <?=$index_page_product["count"]?></h3>
+                                <h3><?=$index_page_product["name"]?><br><span class="des-panel-head-bold"><?=$index_page_product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$index_page_product["count"]?></span></h3>
                             </div>
-                            <hr class="dev-line-correct">
+                            <span class="des-line"></span>
                             <a href="/product.php?id=<?=$index_page_product["_id"]?>&order" class="dev-but-order-correct">Заказать</a>
                             <a href="/product.php?id=<?=$index_page_product["_id"]?>" class="dev-but-about-correct">Подробнее</a>
                         </div>
@@ -57,7 +57,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <div class="dev-container-order">
         <div class="uk-container2 uk-container-center dev-container-order-correct">
             <h3 class="uk-text-center dev-order-head dev-h3-correct">ПОЛУЧИТЕ ГАРАНТИРОВАННУЮ СКИДКУ ПРИ ЗАКАЗЕ НА САЙТЕ</h3>
-            <? require($home_dir."/includes/discount-form.php"); ?>
+              <? require($home_dir."/includes/discount-form.php"); ?>
             </div>
         </div>
         <div class="dev-container-material">
@@ -78,7 +78,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                 </div>
                                 <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
                                 </div>
-                                <hr class="dev-line-correct">
+                                <span class="des-line"></span>
                                 <a href="/catalog.php?category=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
                         </div>
                     </li>

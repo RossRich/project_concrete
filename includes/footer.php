@@ -42,25 +42,25 @@
                                     <div class="uk-width-1-2 uk-hidden-small">
                                         <div class="dev-footer-container-correct">
                                             <span>Остались вопросы?</span>
-                                            <? form('consumer_questions'); ?>
+                                            <? form('consumer_questions',['id'=>'des_footer_form']); ?>
                                                 <ul>
                                                     <li><i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-footer">
                                                             <label for="name" class="dev-footer-label">Ваше Имя</label>
-                                                            <input type="text" name="form[name]" class="dev-footer-input" required>
+                                                            <input type="text" name="form[name]" class="dev-footer-input">
                                                         </div>
                                                     </li>
                                                     <li><i class="uk-icon-envelope uk-icon-medium"></i>
                                                         <div class="input-footer">
-                                                            <label for="adr" class="dev-footer-label">Email или Телефон</label>
-                                                            <input type="tel" name="form[adr]" class="dev-footer-input" required>
+                                                            <label for="adr" class="dev-footer-label">Email</label>
+                                                            <input type="email" name="form[email]" class="dev-footer-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-pencil uk-icon-medium des-footer-img-crutch"></i>
                                                         <div class="dev-footer-textarea-correct">
                                                             <label class="dev-footer-label-correct" for="text">Ваше сообщение</label>
-                                                            <textarea class="dev-footer-textarea" rows="4" cols="24" name="form[text]" required></textarea>
+                                                            <textarea class="dev-footer-textarea" rows="4" cols="24" name="form[text]"></textarea>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -95,3 +95,4 @@
                 </div>
             </div>
         </footer>
+            <? require($home_dir."/includes/modal_window_send.php"); ?>

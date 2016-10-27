@@ -1,4 +1,4 @@
-.des-modal-container>div.uk-modal-dialog {
+.des-modal-send-container>div.uk-modal-dialog {
     max-height: 487px;
     max-width: 286px;
     margin: 0 auto;
@@ -7,29 +7,29 @@
     border-radius: 5px;
 }
 
-.des-modal-container>div.uk-modal-dialog>i.uk-icon-close {
+.des-modal-send-container>div.uk-modal-dialog>i.uk-icon-close {
     position: absolute;
     right: 20px;
 }
-.des-modal-container>div.uk-modal-dialog>div{
+.des-modal-send-container>div.uk-modal-dialog>div{
     display: block;
     margin: -20px -20px 20px -20px;
     width: auto;
 }
 
-.des-modal-container>div.uk-modal-dialog>h3{
+.des-modal-send-container>div.uk-modal-dialog>h3{
     font-size: 19px;
     font-weight: 500;
     color: #212121;
 }
 
-.des-modal-container>div.uk-modal-dialog>p{
+.des-modal-send-container>div.uk-modal-dialog>p{
     font-size: 16px;
     font-weight: 400;
     color: #616161;
 }
 
-.des-modal-container>div.uk-modal-dialog>a{
+.des-modal-send-container>div.uk-modal-dialog>a{
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;

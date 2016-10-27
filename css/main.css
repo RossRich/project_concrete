@@ -1,5 +1,4 @@
-
-.dev-active-sticky-placeholder{
+.dev-active-sticky-placeholder {
     z-index: 980;
     box-sizing: border-box;
     background: #403C3C;
@@ -532,14 +531,31 @@ a.dev-but-about-correct {
 a.dev-but-about-correct:hover {
     text-decoration: none;
 }
-
+/*
 .dev-line-correct {
     width: 100%;
-}
+}*/
 
 .dev-panel-correct:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     transition: 0.7s;
+}
+
+/*panel concrete header*/
+
+div.dev-panel-correct>div.panel_body>h3{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+}
+div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .dev-container-concreate {
@@ -675,6 +691,14 @@ li>div[class="input-item"] {
 }
 
 
+/*label validator*/
+
+div.dev-container-order>div.dev-container-order-correct>form>ul>li>div>div.input-item>label.error {
+    color: #da2c2c;
+    font-size: 16px;
+}
+
+
 /*БЛОК МАТЕРИАЛЫ И УСЛУГИ*/
 
 .dev-container-material {
@@ -708,22 +732,32 @@ li>div[class="input-item"] {
     margin: 15px 15px;
 }
 
+
 /*.wrapper-panel{
     height: 100%;
 }*/
 
-.panel_body{
+.panel_body {
     height: 80%;
 }
+
+
 /*.panel_footer{
     height: 20%;
 }*/
+
+
 /*
 .dev-material-panel-head-font-size-correct {
     font-size: 14.58px;
     line-height: 22px;
 }
 */
+
+div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
+    font-size: 15px;
+    font-weight: 400;
+}
 
 
 /*БЛОК КЛИЕНТЫ*/
@@ -792,10 +826,9 @@ li>div[class="input-item"] {
     /*margin: -58px 0 0 200px;*/
 }
 
-div.dev-consumer-about-us-panel-img-correct>i{
+div.dev-consumer-about-us-panel-img-correct>i {
     font-size: 500%;
 }
-
 
 .dev-consumer-about-us-panel-correct:hover {
     box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
@@ -865,6 +898,11 @@ div.dev-consumer-about-us-panel-img-correct>i{
 
 .documents_full {
     background-image: linear-gradient(to right, #bdbdbd 50%, #fea018 50%);
+}
+
+.documents {
+    padding: 0;
+    max-width: 1130px;
 }
 
 .documents .doc_div_1 {
@@ -966,14 +1004,6 @@ div.dev-consumer-about-us-panel-img-correct>i{
     box-shadow: 6px 11px 18.8px 1.20px rgba(0, 0, 0, 0.24);
     background-color: #eeeeee;
     transition: 0.7s;
-}
-
-
-/*БЛОК ПЕРЕД ФУТЕРОМ*/
-
-.prefooter {
-    height: 80px;
-    background-color: #f5f5f5;
 }
 
 
@@ -1287,4 +1317,36 @@ dev-footer-textarea:hover {
 
 .des-ico-active-footer {
     color: #ff9700!important;
+}
+
+
+/*label validation footer*/
+
+div.dev-footer-container-correct>form>ul>li>div>label.error{
+  color: #fdfcff;
+}
+
+/*LINE FOR CARDS*/
+
+ul>li>div.uk-panel span.des-line{
+    margin-left: -20px;
+    margin-right: -20px;
+    display: block;
+}
+
+ul>li>div.uk-panel span.des-line:after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*line correct for material card*/
+
+div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des-line{
+    margin-left: 0;
+    margin-right: 0;
 }

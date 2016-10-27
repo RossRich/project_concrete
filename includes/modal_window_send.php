@@ -1,15 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <? include($home_dir."/includes/top-scripts.php"); ?>
-</head>
-
 <body>
-    <button class="uk-button" data-uk-modal="{target:'#id', center:true}">Модальное окно "Ваша заявка отправлена"</button>
+    <button class="uk-button" data-uk-modal="{target:'#des-id-modal-apply', center:true}">Модальное окно "Ваша заявка отправлена"</button> -->
     <div class="des-modal-dialog">
-        <div id="id" class="uk-modal">
-            <div class="des-modal-container">
+        <div id="des-id-modal-apply" class="uk-modal">
+            <div class="des-modal-send-container">
                 <div class="uk-modal-dialog  uk-clearfix">
                     <i class="uk-icon-close uk-modal-close"></i>
                     <div class="uk-thumbnail-expand">
@@ -22,11 +17,9 @@
             </div>
         </div>
     </div>
-</body>
+<!-- </body>
 
 </html>
-        </div>
-    </div>
 </body>
 
-</html>
+</html> -->

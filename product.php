@@ -116,14 +116,14 @@ if(!isset($product)){
                                                         <i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
-                                                            <input type="text" name="form[name]" class="input-item-consumer-order-panel-input" required>
+                                                            <input type="text" name="form[name]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-phone uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
-                                                            <input type="tel" name="form[tel]" class="input-item-consumer-order-panel-input" required>
+                                                            <input type="tel" name="form[contact]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
@@ -183,7 +183,7 @@ if(!isset($product)){
         ?>
             <div class="des-our-app-content des-container-correct">
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
-                <div class="uk-slidenav-position slider_our_app" data-uk-slider>
+                <div class="uk-slidenav-position slider_our_app" data-uk-slider="{infinite: false}">
                     <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
                         <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
@@ -201,9 +201,9 @@ if(!isset($product)){
                                             <img src="/images/block.png" alt="Block">
                                         <? } ?>
                                         </div>
-                                        <p><?=$key['name'] ?><br><?=$key['price'] ?> <span>руб. - <?=$key['count'] ?></span></p>
+                                        <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
-                                    <hr class="dev-line-correct">
+                                    <span class="des-line"></span>
                                     <a href="product.php?id<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>
                                     <a href="product.php?id<?=$key['_id'] ?>" class="dev-but-about-correct">Подробнее</a>
                                 </div>
