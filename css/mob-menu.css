@@ -39,15 +39,10 @@
     float: left;
 }
 
-a.mob-menu:active{
-}
 a.mob-menu{
     margin-right: 5px;
     font: 300 18px Roboto;
     line-height: 19px;
-}
-.mob-menu .mspan {
-    /*color: #bdbdbd;*/
 }
 a.mob-menu:hover{
     text-decoration: none;

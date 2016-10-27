@@ -94,7 +94,7 @@
 
 .banner .top_cont {
     padding-top: 7px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 .banner .strip_top_menu {
     min-height: 37px;
@@ -404,8 +404,8 @@ ul.ul_main_menu>li:hover>a:before {
     height: 2px;
     content: '';
     background: rgba(255, 255, 255, 0.5);
-    position: relative;
-    top: 3px;
+    /*position: relative;*/
+    /*top: 3px;*/
 }
 .main_menu_full_header{
     background-color: rgba(33, 33, 33, 0.5);

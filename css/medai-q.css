@@ -112,7 +112,13 @@
         float: none;
         text-align: center;
     }
-    div.uk-visible-small p:nth-child(2) {
+
+    .banner_index .header_top .right {
+        display: none;
+    }
+
+
+    div.mob_connect p:nth-child(2) {
         display: none;
     }
     .header .header_top {
@@ -121,6 +127,9 @@
     }
     .right {
         margin-top: 20px;
+    }
+    .header_top .left .text_logo .p2 {
+        display: none;
     }
 
 }
@@ -166,6 +175,11 @@
         /*padding-top: 10px;*/
         background: rgba(0, 0, 0, 0.8);
     }
+
+    .header .strip_top_menu .top_cont {
+          background: rgba(21, 21, 21, 0.8);
+    }
+
     .strip_top_menu .mob_connect {
         float: right;    
     }
@@ -182,9 +196,6 @@
         clear: both;
         z-index: 900;
         width:100%;
-    }
-    .slogan_block {
-        display: none;
     }
 
 
