@@ -32,7 +32,7 @@
 }
 
 .con_text {
-    padding: 35px;
+    padding: 35px 5px 35px 35px;
 }
 
 .con_text h5{
@@ -52,6 +52,12 @@
 
 .con_text .h5_2 {
     margin-top: 52px;
+}
+
+
+
+iframe {
+    min-height: 515px;
 }
 
 

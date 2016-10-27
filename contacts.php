@@ -22,7 +22,7 @@ $page_suffix = " | КраснодарСтройСервис";
             <div class="uk-container2 uk-container-center contacts">
                 <h3 class="uk-text-center">Контакты</h3>
                 <div class="uk-panel uk-panel-box con_panel">
-                    <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
+                    <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
                         <li>
                             <div class="con_text">
                                 <h5>Главный офис</h5>
@@ -50,7 +50,9 @@ $page_suffix = " | КраснодарСтройСервис";
                              </div>
                          </li>
                         <li>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" width="100%" height="100%"></iframe>
+                            <div class="map_frame">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" width="100%" height="100%"></iframe>
+                            </div>
                         </li>
                     </ul>
                 </div>
