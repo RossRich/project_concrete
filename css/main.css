@@ -1,7 +1,7 @@
 .dev-active-sticky-placeholder {
     z-index: 980;
     box-sizing: border-box;
-    background: #403C3C;
+    background-color: rgba(33, 33, 33, 0.5);
 }
 
 @font-face {
@@ -39,11 +39,6 @@
 
 /*ОБЩЕЕ*/
 
-.mob-menu {
-    display: none;
-    color: #fff;
-    float: left;
-}
 
 .wrapper {
     height: 100%;
@@ -85,24 +80,28 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.header_index {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+31 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 31%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
 
 /*СЕРАЯ ПОЛОСА МЕНЮ*/
 
 .banner .top_cont {
     padding-top: 7px;
+    padding-bottom: 8px;
 }
-
 .banner .strip_top_menu {
     min-height: 37px;
+    position: relative;
 }
-
 .banner .strip_top_menu nav {
     max-width: 1130px;
     float: left;
-    /*
-    margin: 0 auto;
-    padding: 0 auto;
-    */
 }
 
 
@@ -111,15 +110,15 @@
 ul.ul_top_menu>li {
     display: inline-block;
     position: relative;
+    z-index: 999; 
 }
-
 ul.ul_top_menu>li>a {
     border-bottom: none;
+    
 }
-
 ul.ul_top_menu>li>a:before {
     background-color: #ff9700;
-    bottom: -5px;
+    bottom: -10px;
     content: '';
     display: inline-block;
     height: 2px;
@@ -130,6 +129,7 @@ ul.ul_top_menu>li>a:before {
     transform: scaleX(0);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
+    z-index: 999;
 }
 
 ul.ul_top_menu>li:hover>a:before {
@@ -154,11 +154,13 @@ ul.ul_top_menu li a {
     opacity: 0.9;
     font-size: 12.5px;
     padding: 0 13px 0 13px;
+    
 }
 
 ul.ul_top_menu a:hover {
     color: #ff9700;
     text-decoration: inherit;
+       
 }
 
 .strip_top_menu .on_map {
@@ -184,7 +186,6 @@ ul.ul_top_menu a:hover {
 /*ШАПКА С ЛОГО*/
 
 .banner .header_top {
-    /*    max-width: 1130px;*/
     min-height: 130px;
 }
 
@@ -270,31 +271,23 @@ ul.ul_top_menu a:hover {
 /*ПЛАВАЮЩЕЕ МЕНЮ*/
 
 .main_menu_full {
-    /*    background-color: rgba(0, 0, 0, 0.5);*/
     height: 55px;
-    /*    min-height: 55px;*/
 }
-
 .main_menu {
     max-width: 1130px;
-    min-height: 18px;
-    padding: 17px 0 15px 0;
+    padding: 17px 0 17px 0;
 }
-
 .main_menu nav {
     max-width: 1130px;
     margin: 0;
     padding: 0;
 }
-
 ul.ul_main_menu {
     text-align: center;
 }
-
 ul.ul_main_menu li {
     display: inline-block;
 }
-
 ul.ul_main_menu li a {
     display: inline-block;
     text-transform: uppercase;
@@ -302,21 +295,17 @@ ul.ul_main_menu li a {
     font-size: 19.17px;
     padding: 0 17px 0 17px;
 }
-
 ul.ul_main_menu a:hover {
     text-decoration: none;
     color: #ff9700;
 }
-
 ul.ul_main_menu>li {
     display: inline-block;
     position: relative;
 }
-
 ul.ul_main_menu>li>a {
     border-bottom: none;
 }
-
 ul.ul_main_menu>li>a:before {
     background-color: #ff9700;
     bottom: -17px;
@@ -330,26 +319,25 @@ ul.ul_main_menu>li>a:before {
     transform: scaleX(0);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
+    z-index: 999;
 }
-
 ul.ul_main_menu>li:hover>a:before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
-
 .hr_menu {
     opacity: 0.5;
     margin: 0;
     padding: 0;
 }
-
-.hr {
-    width: 100%;
-    height: 2px;
+.banner .header_index .main_menu_full:after {
     display: block;
+    position:relative;
+    top:-2px;
+    height: 2px;
+    content: '';
     background: rgba(255, 255, 255, 0.5);
-    /*    margin: 0;*/
 }
 
 
@@ -367,7 +355,6 @@ ul.ul_main_menu>li:hover>a:before {
     font-style: normal;
     font-size: 41.67px;
     margin-bottom: 17px;
-    /*    font: 300 41.67px / 41.667px Roboto;*/
 }
 
 .banner .sliden .slogan p {
@@ -377,7 +364,6 @@ ul.ul_main_menu>li:hover>a:before {
     font-style: normal;
     font-size: 23.61px;
     margin-bottom: 29px;
-    /*    font: 500 23.61px / 41.667px Roboto;*/
 }
 
 .banner .sliden .slogan .orders {
@@ -409,14 +395,26 @@ ul.ul_main_menu>li:hover>a:before {
 /*БЛОК ХЕДЕР ДЛЯ ОСТАЛЬНЫХ СТРАНИЦ*/
 
 .header {
-    min-height: 223px;
     background-color: #212121;
     background-image: none;
 }
-
-.main_menu_full_header {
+.header .strip_top_menu:after {
+    display: block;
+    height: 2px;
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    /*position: relative;*/
+    /*top: 3px;*/
+}
+.main_menu_full_header{
     background-color: rgba(33, 33, 33, 0.5);
 }
+/*.header .main_menu_full:after {*/
+    /*display: block;*/
+    /*height: 2px;*/
+    /*content: '';*/
+    /*background: none;*/
+/*}*/
 
 
 /*БЛОК ПРЕИМУЩЕСТВА*/

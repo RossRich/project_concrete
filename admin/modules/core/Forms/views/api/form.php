@@ -41,6 +41,27 @@
 //          
 //            e.preventDefault();
           
+//            var check = true;	
+//            $(this).find("[required1]").each(function(i, e) {
+//              if ($(e).val() == "") {
+//                check = false;
+//                $(e).addClass("empty");
+//              };
+//            });
+//            if (!check) {
+//              UIkit.notify($(msgfail).text(), {status:'danger'});
+//              return false;
+//            };
+//            if($(this).find(".phone_us").length){
+//                $phone_val = $(this).find(".phone_us").val();
+//                if ($phone_val.indexOf("_") != -1 || ($(this).find(".phone_us").val().length != 17 && $(this).find(".phone_us").val().length != 0)) {
+//                    UIkit.notify($(phone_fail).text(), {status:'danger'});
+//                    return false;
+//                };
+//            };
+//            
+//            if (msgsuccess) msgsuccess.style.display = "none";
+//            if (msgfail)    msgfail.style.display = "none";
 			
 //            var check = true;	
 //            $(this).find("[required1]").each(function(i, e) {
