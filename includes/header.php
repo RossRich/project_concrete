@@ -3,13 +3,14 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
 //print_r($main_categorys);
 ?>
 <? if($page_id == "index"){ ?>
-<div class="uk-cover uk-position-relative banner">
+<div class="uk-cover uk-position-relative banner banner_index">
     <video class="uk-cover-object uk-position-absolute" width="" height="" autoplay="autoplay" loop="loop" muted="muted" poster="/images/video_background.jpg">
         <source src="/video/video_concrete.mp4" type="">
     </video>
      <div class="uk-position-cover banner_overlay">
-        <div class="strip_top_menu">
-            <div class="uk-container uk-container-center uk-clearfix top_cont">
+         <div class="header_index">
+             <div class="strip_top_menu">
+                 <div class="uk-container uk-container-center uk-clearfix top_cont">
                 <nav>
                     <ul class="ul_top_menu list">
                         <li><a href="/about_us.php">О компании</a></li>
@@ -21,11 +22,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </ul>
                 </nav>
                 <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
-                <div class="uk-hidden-medium uk-hidden-large uk-hidden-xlarge mob_connect">
-<!--
-                    <a href=""><img src="/images/Shape-1.png" alt=""></a>
-                    <a href=""><img src="/images/Shape-2.png" alt=""></a>
--->
+                <div class="mob_connect">
                     <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
                 </div>
                 
@@ -34,8 +31,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext">На карте</a><span class="text">)</span></span>
                 </div>
             </div>
-        </div>
-        <div class="uk-container uk-container-center header_top">
+             </div>
+             <div class="uk-container uk-container-center header_top">
             <div class="header_top_block">
                 <div class="left">
                     <div class="logo">
@@ -61,8 +58,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </div>
             </div>
         </div>
-        <div class="uk-sticky-placeholder main_menu_full main_menu_full_index" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39, clsactive:'dev-active-sticky-placeholder'}" style="margin: 0px;">
-            <div class="uk-container uk-container-center uk-clearfix main_menu">
+             <div class="uk-sticky-placeholder main_menu_full main_menu_full_index" data-uk-sticky="{media: 1024, showup: true, animation: &#39;uk-animation-slide-top&#39, clsactive:'dev-active-sticky-placeholder'}" style="margin: 0px;">
+                 <div class="uk-container uk-container-center uk-clearfix main_menu">
                 <nav>
                     <ul class="ul_main_menu list">
                         <? foreach($main_categorys as $main_category){ ?>
@@ -71,19 +68,21 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </ul>
                 </nav>
             </div>
-<!--            <div class="hr"></div>-->
-        </div>
-        <div class="uk-container uk-container-center uk-text-center sliden">
+             </div>
+         </div>
+         <div class="uk-container uk-container-center uk-text-center sliden">
             <div class="slogan">
                 <h1>Срочная доставка бетона в Краснодаре</h1>
                 <p>бетон, раствор, строительные материалы всегда дешевле и быстрее</p>
-                <span class="orders">Принимаем заказы:  
-                <a href=""><img src="/images/Shape-1.png" alt=""></a>
-                <a href=""><img src="/images/Shape-2.png" alt=""></a>
-                <a href=""><img src="/images/Shape-3.png" alt=""></a>
-                </span>
-                <br>
-                <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
+                <div class="slogan_block">
+                    <span class="orders">Принимаем заказы:
+                    <a href=""><img src="/images/Shape-1.png" alt=""></a>
+                    <a href=""><img src="/images/Shape-2.png" alt=""></a>
+                    <a href=""><img src="/images/Shape-3.png" alt=""></a>
+                    </span>
+                    <br>
+                    <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
+                </div>
             </div>
         </div>
     </div>
@@ -102,15 +101,13 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     <li><a href="/contacts.php">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
-            <div class="uk-hidden-large uk-hidden-xlarge mob_connect">
-                    <a href=""><img src="/images/Shape-1.png" alt=""></a>
-                    <a href=""><img src="/images/Shape-2.png" alt=""></a>
+            <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i><span class="mspan"> МЕНЮ</span></a>
+                <div class="mob_connect">
                     <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
                 </div>
             <div class="on_map">
-                <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU"><img src="images/ic_place.png" alt=""></a>
-                <span><?=$address?> (<a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU">На карте</a>)</span>
+                <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" ><img src="/images/ic_place.png" alt=""></a>
+                <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext">На карте</a><span class="text">)</span></span>
             </div>
         </div>
     </div>
@@ -150,7 +147,6 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </ul>
             </nav>
         </div>
-<!--        <div class="hr"></div>-->
     </div>
 </div>
 <? } ?>

@@ -31,22 +31,27 @@
 }
 
 
-
 /*верхняя полоса при уменьшении*/
 
-
+.mob-menu {
+    display: none;
+    color: #f2f2f2;
+    float: left;
+}
 
 a.mob-menu:active{
 }
 a.mob-menu{
     margin-right: 5px;
-    color: #bdbdbd;
     font: 300 18px Roboto;
     line-height: 19px;
 }
+.mob-menu .mspan {
+    /*color: #bdbdbd;*/
+}
 a.mob-menu:hover{
-    color: #bdbdbd;
     text-decoration: none;
+    color: #f2f2f2;
 }
 .mob-menu i {
     margin-right: 5px;
@@ -56,4 +61,14 @@ a.mob-menu:hover{
     float: left;
 }
 
-    
+ /* телефон */
+
+
+
+.strip_top_menu .mob_connect a.phone_orders {
+    font: 400 18px Roboto;
+    color: #ff9700;
+    line-height: 19px;
+}
+.strip_top_menu .mob_connect a.phone_orders {
+    text-decoration: none;
