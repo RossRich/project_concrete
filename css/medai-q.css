@@ -76,6 +76,9 @@
 }
 
 @media(max-width: 900px) {
+    .advantages {
+        padding-bottom: 80px;
+    }
     .advantages .plus_panel {
         line-height: 50px;
     }
@@ -161,7 +164,11 @@
     .header .strip_top_menu  .on_map {
         display: none;
     }
+    .advantages .plus_panel h4 {
+        vertical-align: top;
+        margin-top: 15px;
 
+    }
 }
 
 @media(max-width: 479px) {
