@@ -760,6 +760,10 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 
 /*БЛОК КЛИЕНТЫ*/
 
+.about_us_container {
+    padding-bottom: 20px;
+}
+
 .dev-consumer-about-us {
     background: url(/images/bgpotreb.jpg);
     background-size: 1400px 528px;
@@ -773,10 +777,10 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 }
 
 
-/*.slider_consumer {
+.slider_consumer {
     position: relative;
     top: -44px;
-}*/
+}
 
 .dev-consumer-icon {
     position: relative;

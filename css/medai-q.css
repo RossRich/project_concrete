@@ -139,6 +139,12 @@
         display: none;
     }
 
+/*блок клиенты*/
+    .dev-consumer-about-us .slider_consumer {
+        top: 20px;
+        margin-bottom: 70px;
+    }
+
 }
 
 @media(max-width: 640px) {

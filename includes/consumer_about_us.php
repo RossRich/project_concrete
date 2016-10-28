@@ -1,5 +1,5 @@
 <div class="dev-consumer-about-us" data-uk-parallax="{bgp: '100'}">
-            <div class="uk-container2 uk-container-center dev-container-correct">
+            <div class="uk-container2 uk-container-center dev-container-correct about_us_container">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct">КЛИЕНТЫ О НАС</h3>
                 <div class="uk-slidenav-position slider_consumer" data-uk-slider="center:false">
                     <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
