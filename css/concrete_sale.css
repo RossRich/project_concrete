@@ -74,7 +74,7 @@
  /**/
 .facilities_panel_cs {
     padding: 0;
-    margin: 30px;
+    /*margin: 30px;*/
     /*height: 360px;*/
 }
 .facilities_panel_cs img{
@@ -150,7 +150,7 @@
     position: absolute;
     top: 285px;
     left: 0px;
-    z-index: 2;    
+    z-index: 2;
     width: 100%;
 }
 .facilities_panel_bottom_cs p {
@@ -164,11 +164,11 @@
 }
 .facilities_panel_cs:hover
 .facilities_panel_top_cs {
-    visibility: visible; 
+    visibility: visible;
     -webkit-transition:0.7s
     transition: 0.7s ;
 }
-.facilities_panel_cs:hover 
+.facilities_panel_cs:hover
 .facilities_panel_bottom_cs {
     background-color: #ff9700;
     -webkit-transition: 0.2s
@@ -180,7 +180,7 @@
     transform: scale(1.1);
     transition: 0.7s;
 }
-.facilities_panel_cs:hover 
+.facilities_panel_cs:hover
 .facilities_panel_top_cs img {
     transition: 0.7s;
 }

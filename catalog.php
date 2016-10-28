@@ -30,7 +30,7 @@ $page_suffix = " | КраснодарСтройСервис";
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct">Доставка бетона и раствора в Краснодаре</h3>
                 <? if(!empty($products)){ ?>
-                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-match="target:'.panel_body'">
+                <ul class="uk-grid uk-container-center uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-match="target:'.panel_body'" data-uk-grid-margin>
                     <? foreach($products as $product){ ?>
                     <li>
                         <div class="uk-panel uk-panel-box dev-panel-correct">
