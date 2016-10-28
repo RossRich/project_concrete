@@ -204,6 +204,9 @@
         z-index: 900;
         width:100%;
     }
+    .slogan_block {
+        display: none;
+    }
 
 
 }
