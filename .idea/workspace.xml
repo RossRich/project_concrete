@@ -35,8 +35,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="31" column="142" selection-start-line="31" selection-start-column="109" selection-end-line="31" selection-end-column="149" />
+            <state relative-caret-position="191">
+              <caret line="57" column="81" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="81" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -48,10 +48,10 @@
       <file leaf-file-name="medai-q.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/medai-q.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
+            <state relative-caret-position="373">
+              <caret line="368" column="26" selection-start-line="368" selection-start-column="26" selection-end-line="368" selection-end-column="26" />
               <folding>
-                <marker date="1477664221765" expanded="true" signature="2720:2732" ph="..." />
+                <marker date="1477666565886" expanded="true" signature="2817:2829" ph="..." />
               </folding>
             </state>
           </provider>
@@ -60,8 +60,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6126">
-              <caret line="779" column="0" selection-start-line="779" selection-start-column="0" selection-end-line="782" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="580" column="1" selection-start-line="577" selection-start-column="0" selection-end-line="580" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -235,15 +235,15 @@
       <workItem from="1477561310041" duration="11823000" />
       <workItem from="1477573966322" duration="2316000" />
       <workItem from="1477578608174" duration="1529000" />
-      <workItem from="1477640554327" duration="11201000" />
+      <workItem from="1477640554327" duration="13225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26869000" />
+    <option name="totallyTimeSpent" value="28893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -483,17 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="142" selection-start-line="31" selection-start-column="109" selection-end-line="31" selection-end-column="149" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/consumer_about_us.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -502,20 +491,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="57" column="81" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="81" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6126">
-          <caret line="779" column="0" selection-start-line="779" selection-start-column="0" selection-end-line="782" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="580" column="1" selection-start-line="577" selection-start-column="0" selection-end-line="580" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/medai-q.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
+        <state relative-caret-position="373">
+          <caret line="368" column="26" selection-start-line="368" selection-start-column="26" selection-end-line="368" selection-end-column="26" />
           <folding>
-            <marker date="1477664221765" expanded="true" signature="2720:2732" ph="..." />
+            <marker date="1477666565886" expanded="true" signature="2817:2829" ph="..." />
           </folding>
         </state>
       </provider>

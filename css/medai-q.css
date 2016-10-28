@@ -62,13 +62,15 @@
     .mob-menu {
         display: block;
     }
-
-
     .strip_top_menu .top_cont {
         height: 40px;
         padding-bottom: 10px;
         padding-top: 10px;
         /*background: rgba(0, 0, 0, 0.8);*/
+    }
+    .dev-container-order-correct {
+        /*max-width: 1130px;*/
+        padding-top: 70px;
     }
 
 
@@ -258,12 +260,12 @@
     /*Discount-form*/
     .dev-container-order-correct>h3 {
         margin-bottom: 25px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 29px;
+        /*font-size: 18px;*/
+        /*font-weight: 500;*/
+        /*line-height: 29px;*/
     }
     .dev-container-order-correct .dev-but-submit-correct {
-        font-size: 18px;
+        /*font-size: 18px;*/
     }
     /*End_Discount-form*/
     /*Index_Category-cards*/
@@ -361,6 +363,12 @@
     div.des-blog-slider>h3{
         margin-bottom: 50px;
     }
+
+    /*Discount-form*/
+    .dev-container-order-correct>h3 {
+        line-height: 33px;
+    }
+    /*End_Discount-form*/
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {
@@ -400,7 +408,7 @@
     /*Discount-form*/
     .dev-container-order-correct>h3 {
         line-height: 40px;
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
     .dev-container-order-correct .dev-but-submit-correct {
         /*font-size: 18px;*/

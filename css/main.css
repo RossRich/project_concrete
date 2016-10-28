@@ -490,7 +490,7 @@ ul.ul_main_menu>li:hover>a:before {
 .dev-container-correct {
     max-width: 1130px;
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .dev-img-correct {
@@ -577,7 +577,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 
 .dev-container-order-correct {
     /*max-width: 1130px;*/
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .dev-img-ico-correct {
