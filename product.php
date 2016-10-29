@@ -8,7 +8,7 @@ $page_suffix = " | КраснодарСтройСервис";
 $id = $_REQUEST["id"];
 $product = collection("Продукция")->findOne(["_id"=>$id]);
 $category = collection("Категории")->findOne(["_id"=>$product["category"]]);
-//print_r($category);
+// print_r($category);
 $page_title = $product["name"];
 if(!isset($product)){
     header('Location: /');
@@ -38,7 +38,7 @@ if(!isset($product)){
             <div class="des-container-correct des-contauner-content-delivery">
                 <ul class="uk-breadcrumb uk-hidden-small">
                     <li><a href="/">Главная</a></li>
-                    <li><a href="/catalog.php?category=<?$category["_id"]?>"><?=$category["name"]?></a></li>
+                    <li><a href="/catalog.php?category=<?=$category["_id"]?>"><?=$category["name"]?></a></li>
                     <li class="uk-active"><span><?=$product["name"]?></span></li>
                 </ul>
                 <h3><?=$product["slogan"]?></h3>

@@ -33,7 +33,12 @@
 }
 .about_us p {
     color: #616161;
-    font: 400 19.44px / 30px Roboto;
+    font: 400 16px / 26px Roboto;
+    /*text-align: justify;*/
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
 }
 .about_us img {
     position: relative;

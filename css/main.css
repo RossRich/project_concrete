@@ -490,7 +490,7 @@ ul.ul_main_menu>li:hover>a:before {
 .dev-container-correct {
     max-width: 1130px;
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .dev-img-correct {
@@ -577,7 +577,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 
 .dev-container-order-correct {
     /*max-width: 1130px;*/
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .dev-img-ico-correct {
@@ -760,6 +760,10 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 
 /*БЛОК КЛИЕНТЫ*/
 
+.about_us_container {
+    padding-bottom: 20px;
+}
+
 .dev-consumer-about-us {
     background: url(/images/bgpotreb.jpg);
     background-size: 1400px 528px;
@@ -773,10 +777,10 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 }
 
 
-/*.slider_consumer {
+.slider_consumer {
     position: relative;
     top: -44px;
-}*/
+}
 
 .dev-consumer-icon {
     position: relative;
@@ -812,15 +816,21 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 }
 
 .dev-consumer-about-us-slider-correct {
-    padding: 10px 0 50px 10px;
+    padding: 10px 0 60px 10px;
 }
 
 .dev-consumer-about-us-panel-img-correct {
-    max-height: 100px;
-    max-width: 100px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     bottom: -50px;
     right: 22px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+
     /*margin: -58px 0 0 200px;*/
 }
 
@@ -830,6 +840,14 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .dev-consumer-about-us-panel-correct:hover {
     box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dev-consumer-about-us-panel-img-correct img {
+    border-radius: 50%;
+}
+
+.dev-consumer-about-us-panel-img-correct i  {
+    line-height: 100px;
 }
 
 
