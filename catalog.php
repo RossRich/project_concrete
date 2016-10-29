@@ -45,8 +45,8 @@ $page_suffix = " | КраснодарСтройСервис";
                             <h3><?=$product["name"]?><br><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <a href="/product.php?id=<?=$product["_id"]?>&order" class="dev-but-order-correct">Заказать</a>
-                            <a href="/product.php?id=<?=$product["_id"]?>" class="dev-but-about-correct">Подробнее</a>
+                            <!-- <a href="/product.php?id=<?=$product["_id"]?>&order" class=""></a> -->
+                            <a href="/product.php?id=<?=$product["_id"]?>" class="dev-but-order-correct">Заказать</a>
                         </div>
                     </li>
                     <? } ?>

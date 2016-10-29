@@ -45,8 +45,8 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                 <h3><?=$index_page_product["name"]?><br><span class="des-panel-head-bold"><?=$index_page_product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$index_page_product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <a href="/product.php?id=<?=$index_page_product["_id"]?>&order" class="dev-but-order-correct">Заказать</a>
-                            <a href="/product.php?id=<?=$index_page_product["_id"]?>" class="dev-but-about-correct">Подробнее</a>
+                            <a href="/product.php?id=<?=$index_page_product["_id"]?>" class="dev-but-order-correct">Заказать</a>
+                            <!-- <a href="/product.php?id=<?//=$index_page_product["_id"]?>" class="dev-but-about-correct">Подробнее</a> -->
                         </div>
                     </li>
                     <? } ?>

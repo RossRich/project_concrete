@@ -110,11 +110,11 @@
 ul.ul_top_menu>li {
     display: inline-block;
     position: relative;
-    z-index: 999; 
+    z-index: 999;
 }
 ul.ul_top_menu>li>a {
     border-bottom: none;
-    
+
 }
 ul.ul_top_menu>li>a:before {
     background-color: #ff9700;
@@ -154,13 +154,13 @@ ul.ul_top_menu li a {
     opacity: 0.9;
     font-size: 12.5px;
     padding: 0 13px 0 13px;
-    
+
 }
 
 ul.ul_top_menu a:hover {
     color: #ff9700;
     text-decoration: inherit;
-       
+
 }
 
 .strip_top_menu .on_map {
@@ -512,19 +512,20 @@ a.dev-but-order-correct {
     text-transform: uppercase;
     font-size: 16.75px;
     font-weight: 400;
+    float: right;
 }
 
 a.dev-but-order-correct:hover {
     text-decoration: none;
 }
 
-a.dev-but-about-correct {
+/*a.dev-but-about-correct {
     color: #616161;
     font-size: 13px;
     text-transform: uppercase;
     float: right;
     font-weight: 400;
-}
+}*/
 
 a.dev-but-about-correct:hover {
     text-decoration: none;
