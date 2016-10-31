@@ -28,7 +28,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                             <p>КраснодарСтройСервис – лидер краснодарского рынка по производству бетона и строительных материалов. Наша кампания осуществляет производство, реализацию и доставку высококачественных бетонных, известняковых и песчано-цементных смесей, фундаментных блоков (ФБС), инертных материалов (все виды гравия, щебеня, песка и керамзита), газобетона, шлакоблоков, кирпича и др. по всему Краснодарскому краю.</p>
                             <p>Многочисленный автопарк спец. техники, позволяет осуществлять выполнение заказов в кратчайшие сроки, в нем вы можете взять в аренду миксера, бетононасос (заливка конструкций любой сложности), также можем поставить на объект строительства башенный кран, роторный насос. Сотрудники компании имеют большой опыт работы в различных областях строительства, который помогает успешно реализовывать проекты наших заказчиков. </p>
                             <p>Выдаем сертификаты и всю необходимую лицензированную документацию, принимаем все виды оплат.</p>
-                            
+
                         </div>
                     </li>
                     <li>
@@ -36,7 +36,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                             <img src="/images/factory.png" alt="О компании">
                         </div>
                     </li>
-                </ul>    
+                </ul>
             </div>
         </div>
         <? require($home_dir."/includes/advantages_trust.php"); ?>
@@ -45,28 +45,28 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
             <div class="uk-container2 uk-container-center dev-container-correct uslugi_au">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct uslugi_h3_au">КраснодарСтройСервис</h3>
                 <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
-                    <li>     
-                        <div class="us_block_au us_block_au1 ">  
+                    <li>
+                        <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">БЕТОН И РАСТВОР</a></h4>
                                 <p>продажа качественного бетона, продажа качественного бетона, раствора</p>
                             </div>
                         </div>
-                        <div class="us_block_au us_block_au1 ">  
+                        <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
                                 <p>продажа щебня, песка, гальки и чего-то еще, продажа щебня, песка, гальки</p>
                             </div>
                         </div>
-                        <div class="us_block_au us_block_au1 ">  
+                        <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
                                 <h4><a href="">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
                                 <p>Бетономашина, бетононасос, и еще бетономашина. Бетононасос, и еще</p>
                             </div>
-                        </div>                      
+                        </div>
                     </li>
                     <li>
                         <div class="us_block_au us_logo_au" >
@@ -128,7 +128,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                        </div>
                    </li>
                </ul>
-                
+
             </div>
         </div>
         <? require($home_dir."/includes/consumer_about_us.php"); ?>

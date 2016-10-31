@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cockpit installation</title>
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <script src="../assets/vendor/jquery.js"></script>
     <script src="../assets/vendor/uikit/js/uikit.min.js"></script>
     <link rel="stylesheet" href="style.css">

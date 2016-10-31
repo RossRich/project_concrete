@@ -8,7 +8,7 @@ $page_suffix = " | КраснодарСтройСервис";
 $id = $_REQUEST["id"];
 $product = collection("Продукция")->findOne(["_id"=>$id]);
 $category = collection("Категории")->findOne(["_id"=>$product["category"]]);
-//print_r($category);
+// print_r($category);
 $page_title = $product["name"];
 if(!isset($product)){
     header('Location: /');
@@ -38,7 +38,7 @@ if(!isset($product)){
             <div class="des-container-correct des-contauner-content-delivery">
                 <ul class="uk-breadcrumb uk-hidden-small">
                     <li><a href="/">Главная</a></li>
-                    <li><a href="/catalog.php?category=<?$category["_id"]?>"><?=$category["name"]?></a></li>
+                    <li><a href="/catalog.php?category=<?=$category["_id"]?>"><?=$category["name"]?></a></li>
                     <li class="uk-active"><span><?=$product["name"]?></span></li>
                 </ul>
                 <h3><?=$product["slogan"]?></h3>
@@ -47,15 +47,15 @@ if(!isset($product)){
                         <div class="uk-width-large-1-2 uk-hidden-small uk-hidden-medium">
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img">
-                              <img src="/<?=substr($product["photo"][0]["path"], 5)?>" alt="">
+                              <img src="<?=thumbnail_url($product["photo"][0]["path"], 496, 286, ["mode"=>"best_fit"])?>" alt="">
                             </div>
                             <? } else { ?>
-                                <div class="des-panel-img">
+                          <div class="des-panel-img">
                             <img src="/images/no_image_block.png" alt="Block">
                           </div>
                             <? } ?>
-                            <h4>пропорции бетона</h4>
-                            <div class="des-panel-proportion">
+                            <!-- <h4>пропорции бетона</h4> -->
+                            <div class="des-panel-proportion uk-hidden">
                                 <ul class="uk-grid uk-grid-width-1-4 uk-grid-collapse">
                                     <li>
                                         <div class="chart" data-percent="20" data-scale-color="#ffb400">

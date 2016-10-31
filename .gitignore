@@ -1,4 +1,5 @@
-﻿.idea
+﻿*.idea
+/.idea
 /css/components/*
 /js/components/*
 /js/core/*
@@ -11,3 +12,4 @@ charts
 /jquery
 /video
 *.orig
+html-test.php
