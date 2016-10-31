@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="/css/components/sticky.css" />
 <link rel="stylesheet" href="/css/components/slider.gradient.min.css">
 <link rel="stylesheet" href="/css/components/slidenav.gradient.css">
+<link rel="stylesheet" href="/css/components/notify.min.css" />
 <link rel="stylesheet" href="/css/main.css" />
 <link rel="stylesheet" href="/css/concrete_sale.css" />
 <link rel="stylesheet" href="/css/concrete_product.css">
@@ -17,7 +18,7 @@
 <link rel="stylesheet" href="/css/modal_get_manager.css">
 <link rel="stylesheet" href="/css/mob-menu.css" />
 <link rel="stylesheet" href="/css/medai-q.css" />
-<link rel="stylesheet" href="/css/components/notify.min.css" />
+
 <!-- <link rel="stylesheet" href="/jquery-validation/form-validation_final/css/style.css" /> -->
 
 

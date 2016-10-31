@@ -21,7 +21,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
         <div class="about_us_full">
             <div class="uk-container2 uk-container-center about_us">
                 <h3 class="uk-text-center">О компании</h3>
-                <ul class="uk-grid uk-grid-collapse  uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
+                <ul class="uk-grid uk-grid-collapse  uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
                     <li>
                         <div class="uk-panel uk-panel-box au_panel">
                            <h4>КраснодарСтройСервис</h4>
@@ -32,7 +32,7 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                         </div>
                     </li>
                     <li>
-                        <div class="uk-panel uk-panel-box">
+                        <div class="uk-panel uk-panel-box au_img">
                             <img src="/images/factory.png" alt="О компании">
                         </div>
                     </li>
