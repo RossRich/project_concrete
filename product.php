@@ -204,8 +204,8 @@ if(!isset($product)){
                                         <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
                                     <span class="des-line"></span>
-                                    <a href="product.php?id<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>
-                                    <a href="product.php?id<?=$key['_id'] ?>" class="dev-but-about-correct">Подробнее</a>
+                                    <a href="product.php?id=<?=$key['_id'] ?>" class="dev-but-order-correct">Заказать</a>
+                                    <!-- <a href="product.php?id<?//=$key['_id'] ?>" class="dev-but-about-correct">Подробнее</a> -->
                                 </div>
                             </li>
                             <?}?>

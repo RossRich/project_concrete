@@ -15,16 +15,16 @@
                                     <p class="dev-consumer-about-us-panel-description-correct ">
                                         <?=$review["text"]?>
                                     </p>
-                                    <p class="dev-consumer-about-us-panel-authot">
+                                    <p class="dev-consumer-about-us-panel-authot uk-hidden-small">
                                         <?=$review["name"]?>
                                         <br>
                                         <span><?=$review["job"]?></span>
                                     </p>
-                                    <div class="dev-consumer-about-us-panel-img-correct">
+                                    <div class="dev-consumer-about-us-panel-img-correct uk-hidden-small">
                                         <? if(isset($review["photo"]) && !empty($review["photo"])){ ?>
                                         <img src="/<?=substr($review["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="<?=$review["name"]?>">
                                         <? } else {?>
-                                        <i class="uk-icon-user-secret uk-icon-large"></i>      
+                                        <i class="uk-icon-user-secret uk-icon-large"></i>
                                         <? } ?>
                                     </div>
                                 </div>

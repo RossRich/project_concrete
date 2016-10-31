@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>@lang('Authenticate Please!')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" href="@base("/favicon.ico")" type="image/x-icon">
+    <link rel="icon" href="@base('/assets/images/favicon.ico')" type="image/x-icon">
 
     @assets($app['app.assets.base'], 'app.base', 'cache:assets', 30, $app['cockpit/version'])
     {{ $app->assets(['assets:vendor/uikit/js/components/form-password.min.js'], $app['cockpit/version']) }}
@@ -68,7 +68,7 @@
 
                     <p class="uk-text-center uk-margin-large-bottom app-login-logo" style="position:relative;">
                         <i class="uk-icon-spinner uk-icon-spin"></i>
-                        <img src="@base('/assets/images/logo.svg')" style="height: 75px;" alt="logo">
+                        <img src="@base('/assets/images/logo.png')" style="height: 75px;" alt="logo">
                     </p>
 
                     <div class="uk-form-row">

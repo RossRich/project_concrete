@@ -19,7 +19,7 @@ $facilities = collection("Объекты")->find()->toArray();
                                 <div class="facilities_1-li_cs">
                                     <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
                                         <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["name"]?>'>
-                                        <figure class="uk-overlay uk-overlay-hover">
+                                        <figure class="uk-overlay uk-overlay-hover uk-thumbnail-expand">
                                         <? if(isset($facility['photo'])&&!empty($facility['photo'])){?>
                                             <img class="uk-overlay-scale" src="<?=thumbnail_url($facility['photo'][0]['path'], 500, 560, ['mode'=>'crope']) ?>" alt="<?=$facility['name']?>">
                                         <?}else{?>
