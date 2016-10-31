@@ -487,6 +487,10 @@ ul.ul_main_menu>li:hover>a:before {
     font-style: normal;
 }
 
+.h3_catalog {
+    line-height: normal;
+}
+
 .dev-container-correct {
     max-width: 1130px;
     padding-top: 80px;

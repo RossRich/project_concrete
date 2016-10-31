@@ -70,6 +70,9 @@
         /*max-width: 1130px;*/
         padding-top: 70px;
     }
+    .au_img {
+        text-align: center;
+    }
 }
 
 @media(max-width: 900px) {
@@ -140,6 +143,15 @@
         top: 20px;
         margin-bottom: 70px;
     }
+    /*блок услуги в о нас*/
+    .uslugi_au {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .us_logo_au img {
+        margin-top:40px;
+        margin-bottom:40px;
+    }
 }
 
 @media(max-width: 640px) {
@@ -207,6 +219,55 @@
     }
     .slogan_block {
         display: none;
+    }
+    /*блок услуги в о нас*/
+    .about_us .au_panel p {
+        font: 400 12px/22px Roboto;
+        text-align: justify;
+    }
+    .us_block_au1 img,  .us_block_au2 img {
+        display: none;
+    }
+    .us_text1, .us_text2 {
+        text-align: center;
+    }
+    .uslugi_au {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    /*контакты*/
+    .contacts {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe {
+        min-height: 300px;
+    }
+    .con_text {
+        padding-left: 7px;
+    }
+    .con_text h5 {
+        text-align: center;
+    }
+    .con_text img {
+        margin-right: 7px;
+    }
+    /*документы менеджер*/
+    /*.sub_doc_div_2 h4, .sub_doc_div_2 a, .sub_doc_div_2 button*/
+    .sub_doc_div_2 {
+        text-align: center;
+    }
+}
+@media(max-width: 400px) {
+    .uslugi_h3_au {
+        font-size: 25px;
+    }
+    /*контакты*/
+    .con_text p {
+        font-size: 12px;
+    }
+    .documents .doc_div_2 .phone_dep {
+        font-size: 30px;
     }
 }
 
