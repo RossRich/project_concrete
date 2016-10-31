@@ -77,7 +77,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                     <img src="/<?=substr($main_category["photo"][0]["path"], 5)?>" class="dev-material-panel-img-correct" alt="">
                                 </div>
                                 <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
-                                </div>
+                            </div>
                                 <span class="des-line"></span>
                                 <a href="/catalog.php?category=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
                         </div>

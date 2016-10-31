@@ -768,62 +768,50 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
 .about_us_container {
     padding-bottom: 20px;
 }
-
 .dev-consumer-about-us {
     background: url(/images/bgpotreb.jpg);
     background-size: 1400px 528px;
     background-repeat: no-repeat;
 }
-
 .dev-consumer-about-us-head-correct {
     font-weight: 400;
     text-align: center;
     padding-bottom: 0;
 }
-
-
 .slider_consumer {
     position: relative;
     top: -44px;
 }
-
 .dev-consumer-icon {
     position: relative;
     padding: 0 13px 35px 0;
     float: right;
 }
-
 .dev-consumer-about-us-panel-correct {
-    max-height: 266px;
-    max-width: 355px;
+    /*max-height: 266px;*/
+    /*max-width: 355px;*/
     padding: 0 0;
 }
-
 .dev-consumer-about-us-panel-head-correct {
     margin: 20px 20px;
     font-weight: 500;
     text-transform: inherit;
     font-size: 19px;
 }
-
 .dev-consumer-about-us-panel-description-correct {
     margin: 20px 20px;
     font-weight: 400;
     font-size: 16px;
 }
-
 .dev-consumer-about-us-panel-authot {
     margin-left: 20px;
 }
-
 .dev-consumer-about-us-panel-authot span {
     color: #9e9e9e;
 }
-
 .dev-consumer-about-us-slider-correct {
     padding: 10px 0 60px 10px;
 }
-
 .dev-consumer-about-us-panel-img-correct {
     height: 100px;
     width: 100px;
@@ -835,22 +823,16 @@ div.dev-container-material>div>ul>li>div.dev-material-panel-correct>div>h3{
     border: 1px solid white;
     box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
     text-align: center;
-
-    /*margin: -58px 0 0 200px;*/
 }
-
 div.dev-consumer-about-us-panel-img-correct>i {
     font-size: 500%;
 }
-
 .dev-consumer-about-us-panel-correct:hover {
     box-shadow: -0.5px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
-
 .dev-consumer-about-us-panel-img-correct img {
     border-radius: 50%;
 }
-
 .dev-consumer-about-us-panel-img-correct i  {
     line-height: 100px;
 }
@@ -1370,4 +1352,65 @@ ul>li>div.uk-panel span.des-line:after{
 div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des-line{
     margin-left: 0;
     margin-right: 0;
+}
+
+
+
+/**/
+/*СТРАНИЦА СОТРУДНИЧЕСТВО*/
+/**/
+
+.ps_h3 {
+    line-height: normal;
+    text-transform: uppercase;
+    /*padding: 0;*/
+    color: #212121;
+    font-size: 27px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+}
+.partnership .partnership_panel {
+    padding: 30px;
+}
+.partnership .partnership_panel p {
+    font: 400 18px/28px Roboto;
+}
+
+
+
+/**/
+/*СТРАНИЦА ОТЗЫВЫ КЛИЕНТОВ*/
+/**/
+.comments {
+    padding-top:80px;
+    padding-bottom:120px;
+}
+.comments .dev-consumer-about-us-panel-correct {
+    max-width: 1130px;
+    /*width:100%;*/
+    margin-bottom: 90px;
+    margin-top: 30px;
+}
+.comments .dev-consumer-about-us-panel-head-correct {
+    font-size: 21px;
+}
+.comments .dev-consumer-about-us-panel-description-correct {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.comments .dev-consumer-about-us-panel-authot {
+    font-size: 16px;
+    line-height: 28px;
+}
+.comments .comment_date {
+    display: block;
+    float: right;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px;
+}
+.comments .dev-material-panel-head-correct {
+    float: left;
 }
