@@ -1,5 +1,10 @@
-﻿/.idea
-/.idea/workspace.xml
+﻿.idea
+/.idea
+/.idea/*.xml
+/.idea/*.iml
+/.idea/copyright/*.xml
+
+
 /css/components/*
 /js/components/*
 /js/core/*
