@@ -19,3 +19,4 @@ charts
 *.orig
 html-test.php
 admin/*
+uploads/*
