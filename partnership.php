@@ -19,7 +19,7 @@ $page_suffix = " | КраснодарСтройСервис";
 <div class="wrapper">
     <? require($home_dir."/includes/header.php"); ?>
     <div class="contacts_full">
-        <div class="uk-container2 uk-container-center contactpartnership">
+        <div class="uk-container2 uk-container-center contacts partnership">
             <h3 class="uk-text-center ps_h3">Сотрудничество с нашей компанией</h3>
             <div class="uk-panel uk-panel-box con_panel partnership_panel">
                 <p>
