@@ -235,7 +235,7 @@
     /*о компании */
     .about_us .au_panel p {
         font: 400 14px/22px Roboto;
-        text-align: justify;
+        /*text-align: justify;*/
     }
     .about_us h4 {
         font-size: 24px;
@@ -289,6 +289,11 @@
     }
     .comments .comment_date {
         display: none;
+    }
+    /*страница сотрудничество*/
+    .partnership .agree_text {
+        padding: 15px;
+        font: 400 14px/24px Roboto;
     }
 }
 
