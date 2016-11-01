@@ -14,7 +14,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <nav>
                     <ul class="ul_top_menu list">
                         <li><a href="/about_us.php">О компании</a></li>
-                        <li><a href="#">Наши объекты</a></li>
+                        <li><a href="/facilities_page.php">Наши объекты</a></li>
                         <li><a href="/comments.php">Отзывы клиентов</a></li>
                         <li><a href="/blog_all.php">Корпоративный блог</a></li>
                         <li><a href="/partnership.php">Сотрудничество</a></li>
@@ -94,7 +94,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <nav>
                 <ul class="ul_top_menu list">
                     <li><a href="/about_us.php">О компании</a></li>
-                    <li><a href="#">Наши объекты</a></li>
+                    <li><a href="/facilities_page.php">Наши объекты</a></li>
                     <li><a href="/comments.php">Отзывы клиентов</a></li>
                     <li><a href="/blog_all.php">Корпоративный блог</a></li>
                     <li><a href="/partnership.php">Сотрудничество</a></li>

@@ -232,11 +232,15 @@
     .slogan_block {
         display: none;
     }
-    /*блок услуги в о нас*/
+    /*о компании */
     .about_us .au_panel p {
-        font: 400 13px/22px Roboto;
+        font: 400 14px/22px Roboto;
         text-align: justify;
     }
+    .about_us h4 {
+        font-size: 24px;
+    }
+    /*блок "услуги" в "о нас" */
     .us_block_au1 img,  .us_block_au2 img {
         display: none;
     }
@@ -265,11 +269,31 @@
         margin-right: 7px;
     }
     /*документы менеджер*/
-    /*.sub_doc_div_2 h4, .sub_doc_div_2 a, .sub_doc_div_2 button*/
     .sub_doc_div_2 {
         text-align: center;
     }
+    /*страница отзывы*/
+    .comments .dev-consumer-about-us-panel-head-correct {
+        font-size: 18px;
+        margin: 20px 15px 15px 15px;
+    }
+    .comments .dev-consumer-about-us-panel-description-correct {
+        font-size: 16px;
+        margin: 15px;
+        line-height: 26px;
+    }
+    .comments .dev-consumer-about-us-panel-authot {
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 26px;
+    }
+    .comments .comment_date {
+        display: none;
+    }
 }
+
+
+
 @media(max-width: 400px) {
     .uslugi_h3_au {
         font-size: 25px;

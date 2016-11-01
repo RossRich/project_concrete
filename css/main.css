@@ -1403,6 +1403,8 @@ div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des
 .comments .dev-consumer-about-us-panel-authot {
     font-size: 16px;
     line-height: 28px;
+    margin-right: 150px;
+    float: right;
 }
 .comments .comment_date {
     display: block;
