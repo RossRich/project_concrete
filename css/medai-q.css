@@ -309,6 +309,12 @@
     .dev-container-order-correct .dev-but-submit-correct {
         /*font-size: 18px;*/
     }
+    .dev-container-order-correct>h3 {
+        line-height: 33px;
+    }
+    .dev-but-submit-correct{
+        margin-top: 35px;
+    }
     /*End_Discount-form*/
     /*Index_Category-cards*/
     .dev-container-material>div>h3 {
@@ -393,11 +399,6 @@
     div.des-blog-slider>h3 {
         margin-bottom: 50px;
     }
-    /*Discount-form*/
-    .dev-container-order-correct>h3 {
-        line-height: 33px;
-    }
-    /*End_Discount-form*/
     /*About-us*/
     .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>.dev-consumer-about-us-panel-img-correct {
         max-width: 76px;
@@ -413,6 +414,7 @@
     .facilities_full_cs{
       margin-bottom: 80px;
     }
+    
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {
@@ -461,6 +463,9 @@
     }
     .dev-container-order-correct .dev-but-submit-correct {
         /*font-size: 18px;*/
+    }
+    .dev-but-submit-correct{
+        margin-top: 35px;
     }
     /*End_Discount-form*/
     /*Footer*/
@@ -559,6 +564,9 @@
     .dev-container-order-correct>h3 {
         line-height: 40px;
     }
+    .dev-but-submit-correct{
+        margin-top: 35px;
+    }
     /*End_Discount-form*/
     /*Product_det-concrete_pomp*/
     div.des-get-concrete-pomp>div.des-get-concrete-pomp-container>h3 {
@@ -587,6 +595,11 @@
         font-size: 15px;
     }
     /*EndFooter*/
+    /*Discount-form*/
+    .dev-but-submit-correct{
+        margin-top: 10px;
+    }
+    /*End_Discount-form*/
 }
 
 

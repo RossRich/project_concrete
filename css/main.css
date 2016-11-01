@@ -301,7 +301,7 @@ ul.ul_main_menu a:hover {
 }
 ul.ul_main_menu>li {
     display: inline-block;
-    position: relative;
+    position: relatizve;
 }
 ul.ul_main_menu>li>a {
     border-bottom: none;
@@ -326,6 +326,8 @@ ul.ul_main_menu>li:hover>a:before {
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+
 .hr_menu {
     opacity: 0.5;
     margin: 0;

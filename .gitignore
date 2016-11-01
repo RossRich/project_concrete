@@ -15,3 +15,4 @@ charts
 /video
 *.orig
 html-test.php
+admin/*
