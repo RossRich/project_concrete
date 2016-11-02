@@ -4,7 +4,6 @@ require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 
 $id = $_REQUEST["category"];
-//print_r($_REQUEST);
 $category = collection("Категории")->findOne(["_id"=>$id]);
 $products = collection("Продукция")->find(["category"=>$id])->toArray();
 if(!isset($category)){
