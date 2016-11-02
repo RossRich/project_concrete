@@ -64,29 +64,38 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
             <div class="uslugi_parallax_au"  data-uk-parallax="{ scale: '2'}"></div>
             <div class="uk-container2 uk-container-center dev-container-correct uslugi_au">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct uslugi_h3_au">КраснодарСтройСервис</h3>
-                <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3" data-uk-grid-match="target:'.us_block_au'">
+                <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
                     <li>
-                        <div class="us_block_au us_block_au1 ">
-                            <img src="/images/ic_navigate_right.png" alt="" >
-                            <div class="us_textblock_au us_text1">
-                                <h4><a href="catalog.php?category=<?=$conc["_id"]?>">БЕТОН И РАСТВОР</a></h4>
-                                <p class="usl_p">Продажа и доставка качественного бетона, раствора</p>
-                            </div>
-                        </div>
-                        <div class="us_block_au us_block_au1 ">
-                            <img src="/images/ic_navigate_right.png" alt="" >
-                            <div class="us_textblock_au us_text1">
-                                <h4><a href="catalog.php?category=<?=$inert["_id"]?>">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
-                                <p class="usl_p">Продажа и доставка щебня, песка, гальки и других </p>
-                            </div>
-                        </div>
-                        <div class="us_block_au us_block_au1 ">
-                            <img src="/images/ic_navigate_right.png" alt="" >
-                            <div class="us_textblock_au us_text1">
-                                <h4><a href="catalog.php?category=<?=$cars["_id"]?>">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
-                                <p class="usl_p">Автобетоносмесители, бетононасосы, башенные краны, роторные насосы</p>
-                            </div>
-                        </div>
+                        <ul class="uk-grid uk-grid-collapse uk-grid-width-1-1" data-uk-grid-match="target:'.us_block_au'">
+                            <li>
+                                <div class="us_block_au us_block_au1 ">
+                                    <img src="/images/ic_navigate_right.png" alt="" >
+                                    <div class="us_textblock_au us_text1">
+                                        <h4><a href="catalog.php?category=<?=$conc["_id"]?>">БЕТОН И РАСТВОР</a></h4>
+                                        <p class="usl_p">Продажа и доставка качественного бетона, раствора</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="us_block_au us_block_au1 ">
+                                    <img src="/images/ic_navigate_right.png" alt="" >
+                                    <div class="us_textblock_au us_text1">
+                                        <h4><a href="catalog.php?category=<?=$inert["_id"]?>">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
+                                        <p class="usl_p">Продажа и доставка щебня, песка, гальки </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="us_block_au us_block_au1 ">
+                                    <img src="/images/ic_navigate_right.png" alt="" >
+                                    <div class="us_textblock_au us_text1">
+                                        <h4><a href="catalog.php?category=<?=$cars["_id"]?>">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
+                                        <p class="usl_p">Автобетоносмесители, бетононасосы, башенные краны, роторные насосы</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                        </ul>
                     </li>
                     <li>
                         <div class=" us_logo_au" >
@@ -94,28 +103,35 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
                         </div>
                     </li>
                     <li>
-                        <div class="us_block_au us_block_au2">
-                            <img src="/images/ic_navigate_left.png" alt="" >
-                            <div class="us_textblock_au us_text2">
-                                <h4><a href="catalog.php?category=<?=$fbs["_id"]?>">ФБС</a></h4>
-                                <p class="usl_p">Продажа и доставка Фундаментных блоков стеновых различных размеров</p>
-                            </div>
-                        </div>
-                        <div class="us_block_au us_block_au2">
-                            <img src="/images/ic_navigate_left.png" alt="" >
-                            <div class="us_textblock_au us_text2">
-                                <h4><a href="catalog.php?category=<?=$mater["_id"]?>">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></h4>
-                                <p class="usl_p">Продажа и доставка материалов для стройки</p>
-                            </div>
-                        </div>
-
-                        <div class="us_block_au us_block_au2">
-                            <img src="/images/ic_navigate_left.png" alt="" >
-                            <div class="us_textblock_au us_text2">
-                                <h4><a href="/facilities_page.php">СТРОИТЕЛЬСТВО</a></h4>
-                                <p class="usl_p">Услуги по строительству жилых и нежилых объектов</p>
-                            </div>
-                        </div>
+                        <ul class="uk-grid uk-grid-collapse uk-grid-width-1-1" data-uk-grid-match="target:'.us_block_au'">
+                            <li>
+                                <div class="us_block_au us_block_au2">
+                                    <img src="/images/ic_navigate_left.png" alt="" >
+                                    <div class="us_textblock_au us_text2">
+                                        <h4><a href="catalog.php?category=<?=$fbs["_id"]?>">ФБС</a></h4>
+                                        <p class="usl_p">Продажа и доставка Фундаментных блоков стеновых различных размеров</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="us_block_au us_block_au2">
+                                    <img src="/images/ic_navigate_left.png" alt="" >
+                                    <div class="us_textblock_au us_text2">
+                                        <h4><a href="catalog.php?category=<?=$mater["_id"]?>">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></h4>
+                                        <p class="usl_p">Продажа и доставка материалов для стройки</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="us_block_au us_block_au2">
+                                    <img src="/images/ic_navigate_left.png" alt="" >
+                                    <div class="us_textblock_au us_text2">
+                                        <h4><a href="/facilities_page.php">СТРОИТЕЛЬСТВО</a></h4>
+                                        <p class="usl_p">Услуги по строительству жилых и нежилых объектов</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
