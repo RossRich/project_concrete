@@ -20,12 +20,13 @@
     text-transform: uppercase;
     color: #212121;
     font: 400 27.78px Roboto;
+    margin-bottom: 32px;
 }
 .about_us ul li {
     padding: 0;
 }
 .au_panel {
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 .about_us h4 {
     color: #616161;
@@ -40,9 +41,15 @@
     -ms-hyphens: auto;
 
 }
-.about_us img {
-    position: relative;
-    top: 6px;
+.about_us .au_img {
+    /*position: relative;*/
+    /*top: 6px;*/
+    background: url(/images/factory.png);
+    background-size: cover;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /*margin-top: 55px;*/
 }
 
 

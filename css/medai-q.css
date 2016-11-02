@@ -76,6 +76,7 @@
 }
 
 @media(max-width: 900px) {
+    /*блок преимущества*/
     .advantages {
         padding-bottom: 80px;
     }
@@ -90,6 +91,10 @@
         vertical-align: middle;
         margin-bottom: 0;
         font-size: 20px;
+    }
+    /*блок объекты*/
+    .slide_nav_fac{
+        visibility: hidden;
     }
 }
 

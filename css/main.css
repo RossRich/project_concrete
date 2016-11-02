@@ -992,6 +992,11 @@ div.dev-consumer-about-us-panel-img-correct>i {
     color: #212121;
     font: 400 41.67px Roboto;
 }
+.documents .doc_div_2 .phone_dep:hover {
+    color: #212121;
+    font: 400 41.67px Roboto;
+    text-decoration: none;
+}
 
 .documents .doc_div_2 button {
     text-transform: uppercase;
@@ -1171,7 +1176,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
     width: 100%;
 }
 
-dev-footer-textarea:hover {
+.dev-footer-textarea:hover {
     border-bottom: 2px solid #f69201;
 }
 
@@ -1374,11 +1379,11 @@ div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des
 }
 .partnership .agree_text {
     padding: 30px;
-    font: 400 18px/28px Roboto;
+    font: 400 16px/26px Roboto;
 }
 
 .partnership .agree_logo{
-    background: url(/images/agree.jpg);
+    background: url(/images/agree.jpg) center;
     background-size: cover;
     content: '';
     width: 100%;
