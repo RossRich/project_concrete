@@ -6,8 +6,28 @@ $page_title = "О компании";
 $page_suffix = " | КраснодарСтройСервис";
 
 $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
-//var_dump($home_dir);
+$main_categorys = collection("Категории")->find()->sort(["sort"=>1])->toArray();
+
+$conc = collection ("Категории")->findOne(["name"=>"Продажа бетона"]);
+$inert = collection ("Категории")->findOne(["name"=>"Инертные материалы"]);
+$cars = collection ("Категории")->findOne(["name"=>"Аренда спецтехники"]);
+$fbs = collection ("Категории")->findOne(["name"=>"ФБС"]);
+$mater = collection ("Категории")->findOne(["name"=>"Строительные материалы"]);
+
+//var_dump($conc["_id"]);
+//var_dump($inert["_id"]);
+//var_dump($cars["_id"]);
+//var_dump($fbs["_id"]);
+//var_dump($mater["_id"]);
 ?>
+
+<?php //foreach($main_categorys as $item): ?>
+<!--    <div>-->
+<!--        --><?php //echo $item["name"]." ". $item["_id"];?>
+<!---->
+<!--    </div>-->
+<?php //endforeach;?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -32,8 +52,8 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                         </div>
                     </li>
                     <li>
-                        <div class="uk-panel uk-panel-box au_img">
-                            <img src="/images/factory.png" alt="О компании">
+                        <div class="au_img">
+<!--                            <img src="/images/factory.png" alt="О компании">-->
                         </div>
                     </li>
                 </ul>
@@ -44,32 +64,32 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
             <div class="uslugi_parallax_au"  data-uk-parallax="{ scale: '2'}"></div>
             <div class="uk-container2 uk-container-center dev-container-correct uslugi_au">
                 <h3 class="dev-consumer-about-us-head-correct dev-h3-correct uslugi_h3_au">КраснодарСтройСервис</h3>
-                <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
+                <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3" data-uk-grid-match="target:'.us_block_au'">
                     <li>
                         <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
-                                <h4><a href="">БЕТОН И РАСТВОР</a></h4>
-                                <p>продажа качественного бетона, продажа качественного бетона, раствора</p>
+                                <h4><a href="catalog.php?category=<?=$conc["_id"]?>">БЕТОН И РАСТВОР</a></h4>
+                                <p class="usl_p">Продажа и доставка качественного бетона, раствора</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
-                                <h4><a href="">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
-                                <p>продажа щебня, песка, гальки и чего-то еще, продажа щебня, песка, гальки</p>
+                                <h4><a href="catalog.php?category=<?=$inert["_id"]?>">ИНЕРТНЫЕ МАТЕРИАЛЫ</a></h4>
+                                <p class="usl_p">Продажа и доставка щебня, песка, гальки и других </p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au1 ">
                             <img src="/images/ic_navigate_right.png" alt="" >
                             <div class="us_textblock_au us_text1">
-                                <h4><a href="">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
-                                <p>Бетономашина, бетононасос, и еще бетономашина. Бетононасос, и еще</p>
+                                <h4><a href="catalog.php?category=<?=$cars["_id"]?>">АРЕНДА СПЕЦТЕХНИКИ</a></h4>
+                                <p class="usl_p">Автобетоносмесители, бетононасосы, башенные краны, роторные насосы</p>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="us_block_au us_logo_au" >
+                        <div class=" us_logo_au" >
                             <img src="/images/logo2.png" alt="КраснодарСтройСервис">
                         </div>
                     </li>
@@ -77,22 +97,23 @@ $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
                         <div class="us_block_au us_block_au2">
                             <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
-                                <h4><a href="">ФБС</a></h4>
-                                <p>продажа кеачественного бетона, продажа качественного бетона</p>
+                                <h4><a href="catalog.php?category=<?=$fbs["_id"]?>">ФБС</a></h4>
+                                <p class="usl_p">Продажа и доставка Фундаментных блоков стеновых различных размеров</p>
                             </div>
                         </div>
                         <div class="us_block_au us_block_au2">
                             <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
-                                <h4><a href="">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></h4>
-                                <p>продажа щебень, песок, галька и что то еще, продажа щебень, песок, галька</p>
+                                <h4><a href="catalog.php?category=<?=$mater["_id"]?>">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a></h4>
+                                <p class="usl_p">Продажа и доставка материалов для стройки</p>
                             </div>
                         </div>
+
                         <div class="us_block_au us_block_au2">
                             <img src="/images/ic_navigate_left.png" alt="" >
                             <div class="us_textblock_au us_text2">
-                                <h4><a href="">СТРОИТЕЛЬСТВО</a></h4>
-                                <p>услуги по строительству и жилых объекстов, услуги по строительству</p>
+                                <h4><a href="/facilities_page.php">СТРОИТЕЛЬСТВО</a></h4>
+                                <p class="usl_p">Услуги по строительству жилых и нежилых объектов</p>
                             </div>
                         </div>
                     </li>

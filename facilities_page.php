@@ -21,7 +21,7 @@ $page_suffix = " | КраснодарСтройСервис";
     <div class="contacts_full">
         <div class="uk-container2 uk-container-center contacts partnership facilities_page">
             <h3 class="uk-text-center ps_h3">Наши объекты</h3>
-            <div class="uk-panel uk-panel-box con_panel partnership_panel">
+            <div class="uk-panel uk-panel-box con_panel agree_text">
                 <p>
                     Наша компания осуществляла поставки бетона на многие объекты, в основном новостройки Краснодара.
                 </p>
