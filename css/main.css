@@ -972,7 +972,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 }
 
 .documents .doc_div_2 {
-    background: url(../images/manager.png) right no-repeat;
+    background: url(/images/manager.png) right no-repeat;
     background-color: #fea018;
     background-size: cover;
     height: 100%;
@@ -1372,11 +1372,17 @@ div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des
     font-weight: normal;
     font-style: normal;
 }
-.partnership .partnership_panel {
+.partnership .agree_text {
     padding: 30px;
-}
-.partnership .partnership_panel p {
     font: 400 18px/28px Roboto;
+}
+
+.partnership .agree_logo{
+    background: url(/images/agree.jpg);
+    background-size: cover;
+    content: '';
+    width: 100%;
+    height: 100%;
 }
 
 
