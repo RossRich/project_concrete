@@ -1,8 +1,6 @@
-.dev-active-sticky-placeholder {
-    z-index: 980;
-    box-sizing: border-box;
-    background-color: rgba(33, 33, 33, 0.5);
-}
+
+
+
 
 @font-face {
     font-family: 'Roboto';
@@ -131,7 +129,6 @@ ul.ul_top_menu>li>a:before {
     width: 100%;
     z-index: 999;
 }
-
 ul.ul_top_menu>li:hover>a:before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
@@ -146,7 +143,6 @@ ul.list {
     padding: 0;
     list-style: none;
 }
-
 ul.ul_top_menu li a {
     display: inline-block;
     text-transform: uppercase;
@@ -156,28 +152,24 @@ ul.ul_top_menu li a {
     padding: 0 13px 0 13px;
 
 }
-
 ul.ul_top_menu a:hover {
     color: #ff9700;
     text-decoration: inherit;
 
 }
-
 .strip_top_menu .on_map {
     float: right;
     font-size: 12px;
     line-height: 1.5;
 }
-
 .strip_top_menu .on_map a {
     text-decoration: underline;
     color: #f5f5f5;
 }
-
 .strip_top_menu .on_map a:hover {
     text-decoration: none;
+    color: #ff9700;
 }
-
 .strip_top_menu .on_map img {
     margin: 0 10px;
 }
@@ -188,44 +180,36 @@ ul.ul_top_menu a:hover {
 .banner .header_top {
     min-height: 130px;
 }
-
 .banner .header_top .header_top_block {
     /*    min-height: 64px;*/
     padding: 33px 0 0 0;
 }
-
 .header_top .left {
     float: left;
 }
-
 .header_top .left .logo {
     float: left;
     margin: 0 35px 0 20px;
 }
-
 .header_top .left .text_logo {
     display: inline-block;
 }
-
 .header_top .left .text_logo .p1 {
     display: inline-block;
     font-size: 19.44px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 .header_top .left .text_logo span {
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
 }
-
 .header_top .left .text_logo .p2 {
     display: inline-block;
     font-size: 16.67px;
     margin: 0;
 }
-
 .header_top .right {
     float: right;
     display: block;
@@ -233,35 +217,29 @@ ul.ul_top_menu a:hover {
     position: relative;
     top: -5px;
 }
-
 .header_top .right .free_numb {
     display: inline-block;
     margin-bottom: 7px;
     font-size: 13.89px;
 }
-
 .header_top .right .phone {
     display: inline-block;
     margin-bottom: 8px;
     font-size: 25px;
     color: #f5f5f5;
 }
-
 .header_top .right .phone:hover {
     text-decoration: none;
 }
-
 .header_top .right .free_numb, .phone {
     position: relative;
     right: -4px;
 }
-
 .header_top .right .call {
     font-size: 16.67px;
     color: #ff9700;
     text-decoration: underline;
 }
-
 .header_top .right .call:hover {
     text-decoration: none;
     color: #ef8e02;
@@ -308,7 +286,7 @@ ul.ul_main_menu>li>a {
 }
 ul.ul_main_menu>li>a:before {
     background-color: #ff9700;
-    bottom: -17px;
+    bottom: -16px;
     content: '';
     display: inline-block;
     height: 2px;
@@ -335,9 +313,18 @@ ul.ul_main_menu>li:hover>a:before {
     display: block;
     position:relative;
     top:-2px;
-    height: 2px;
+    height: 1px;
     content: '';
     background: rgba(255, 255, 255, 0.5);
+}
+/*при плавании*/
+.dev-active-sticky-placeholder {
+    z-index: 980;
+    box-sizing: border-box;
+    background-color: rgba(33, 33, 33, 0.5);
+}
+.dev-active-sticky-placeholder.main_menu_full:after{
+    height: 0!important;
 }
 
 
@@ -400,11 +387,11 @@ ul.ul_main_menu>li:hover>a:before {
 }
 .header .strip_top_menu:after {
     display: block;
-    height: 2px;
+    height: 1px;
     content: '';
     background: rgba(255, 255, 255, 0.5);
-    /*position: relative;*/
-    /*top: 3px;*/
+    position: relative;
+    top: 1px;
 }
 .main_menu_full_header{
     background-color: rgba(33, 33, 33, 0.5);
