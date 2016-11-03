@@ -80,8 +80,6 @@
     text-align: left;
 }
 
-.des-blog > div.des-blog-content > aside > main >div.categories>ul {}
-
 .des-blog > div.des-blog-content > aside > main >div.categories>ul>li {
     margin: 0;
     padding: 10px 0 10px 20px;
@@ -222,7 +220,7 @@ div.des-blog-slider ul>li>div.uk-panel {
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-    
+
     color: #f5f5f5;
     font: 400 15.28px Roboto;
 }
