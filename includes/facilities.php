@@ -19,9 +19,9 @@ $facilities = collection("Объекты")->find()->toArray();
                                 <div class="facilities_1-li_cs">
                                     <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
                                         <? if(isset($facility['photo'])&&!empty($facility['photo'])){?>
-                                            <a href="/<?=substr($facility['photo'][0]['path'], 5)?>" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["name"]?>'>
+                                            <a href="/<?=substr($facility['photo'][0]['path'], 5)?>" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["description"]?>'>
                                         <?}else{?>
-                                            <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["name"]?>'>
+                                            <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["description"]?>'>
                                         <?}?>
 
 

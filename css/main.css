@@ -840,6 +840,9 @@ div.dev-consumer-about-us-panel-img-correct>i {
     margin: auto auto;
     line-height: 150px;
 }
+/*.des-img-container img{*/
+    /*max-height: 50px;*/
+/*}*/
 
 
 /*.des_test_align_vertical_img{
