@@ -6,6 +6,8 @@ $id = $_REQUEST["id"];
 // print_r($id);
 $page_title = "Статья | Корпоративный блог";
 $page_suffix = " | КраснодарСтройСервис";
+
+
 //var_dump($home_dir);
 $categorys=collection('Категории')->find()->limit(4)->toArray();
 $post=collection('Блог')->findOne(['_id'=>$id]);

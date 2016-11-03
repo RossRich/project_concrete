@@ -1,6 +1,5 @@
 /*БЛОК ХЕДЕР*/
 
-
 /*-*/
 
 
@@ -15,7 +14,7 @@
     padding-bottom: 80px;
 }
 
-.h3_ba {
+.h3_ba{
     text-transform: uppercase;
     color: #212121;
     font: 400 27.78px Roboto;
@@ -23,24 +22,11 @@
 
 .main_menu_full_ba {
     background: none;
+    
 }
 
 ul.ul_main_menu_ba li a {
     color: #616161;
-}
-
-div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active:after{
-position: absolute;
-  display: block;
-  height: 2px;
-  width: 100%;
-  content: ' ';
-  background: #ff9700;
-  bottom: -17px;
-}
-
-div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active>a {
-    color: #ff9700;
 }
 
 .hr_ba {
@@ -48,7 +34,7 @@ div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active>a {
 }
 
 .blog_grid_ba {
-    margin-top: 40px;
+    margin-top: 40px;    
 }
 
 .blog_panel {
@@ -73,7 +59,7 @@ div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active>a {
     margin: 15px 20px;
 }
 
-.blog_panel .panel_bottom a {
+.blog_panel .panel_bottom a{
     font: 400 19.44px / 24px Roboto;
     text-transform: uppercase;
     color: #ff9700;
@@ -84,7 +70,8 @@ div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active>a {
     text-decoration: none;
 }
 
-.blog_panel span {
+
+.blog_panel span{
     font-size: 15px;
     font-weight: 400;
     color: #616161;
@@ -92,17 +79,17 @@ div.blog_all_full>div.blog_all>div>div>nav>ul>li.uk-active>a {
 }
 
 .overlay_ba {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
-    /* IE6-9 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    
     color: #f5f5f5;
     font: 400 15.28px Roboto;
 }
+
+
+
 
 
 /*БЛОК ФУТЕР*/

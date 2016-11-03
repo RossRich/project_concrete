@@ -257,12 +257,6 @@
     background-color: #ff9700;
 }
 
-div.des-panel-discription>div.des-test-visible>ul>li.uk-active>a:before{
--webkit-transform: scaleX(1);
--ms-transform: scaleX(1);
-transform: scaleX(1);
-}
-
 .des-panel-discription ul.uk-tab li:hover>a:before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);

@@ -1,7 +1,7 @@
 <title><? echo $page_title.$page_suffix; ?></title>
 <meta charset="UTF8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/admin/assets/images/favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" href="/css/uikit.css" />
 <link rel="stylesheet" href="/css/components/sticky.css" />
 <link rel="stylesheet" href="/css/components/slider.gradient.min.css">
