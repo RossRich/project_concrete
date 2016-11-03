@@ -8,8 +8,18 @@ $page_title = "Статья | Корпоративный блог";
 $page_suffix = " | КраснодарСтройСервис";
 //var_dump($home_dir);
 $categorys=collection('Категории')->find()->limit(4)->toArray();
-$posts=collection('Блог')->findOne(['_id'=>$id]);
-print_r($posts);
+$post=collection('Блог')->findOne(['_id'=>$id]);
+
+
+// counter
+if (!isset($_COOKIE['Ind_Counter'])) $_COOKIE['Ind_Counter'] = 0;
+$_COOKIE['Ind_Counter']++;
+SetCookie('Ind_Counter', $_COOKIE['Ind_Counter'], 0x6FFFFFFF);
+$counter=$_COOKIE['Ind_Counter'];
+
+$entry = ['counter' => $counter];
+cockpit('collections:save_entry', 'Блог', $entry);
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -26,19 +36,23 @@ print_r($posts);
                 <ul class="uk-breadcrumb uk-text-center uk-hidden-medium uk-hidden-small">
                     <li><a href="index.html">Главная </a></li>
                     <li><a href="/blog_all.php">Корпоративный блог</a></li>
-                    <li class="uk-active"><span><?=$posts['head']?></span></li>
+                    <li class="uk-active"><span><?=$post['head']?></span></li>
                 </ul>
-                <h3><?=$posts['head']?></h3>
+                <h3><?=$post['head']?></h3>
                 <div class="uk-grid uk-grid-collapse uk-container-center des-blog-content">
                     <main class="uk-width-large-3-4 uk-width-medium-1-1 uk-row-first">
                         <div class="uk-panel uk-panel-box">
                             <div class="uk-panel-teaser">
                                 <div class="uk-thumbnail-expand">
-                                    <img src="/images/beton_2_kategoriya.png" alt="КАК ПРАВИЛЬНО ЗАЛИВАТЬ БЕТОН ДЛЯ ФУНДАМЕНТА">
+                                  <? if(isset($post['photo']) && !empty($post['photo'])){?>
+                                  <img src="<?=thumbnail_url($post['photo'][0]['path'], 847, 503, ['mode'=>'best_fit'])?>" alt="<?=$post['head']?>">
+                                  <? }else{ ?>
+                                    <img src="/images/beton_2_kategoriya.png" alt="">
+                                    <? } ?>
                                 </div>
                             </div>
                             <p>
-                              <?=$posts['content']?>
+                              <?=$post['content']?>
                             </p>
                             <div class="social">
                                 <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
@@ -57,11 +71,15 @@ print_r($posts);
                                 <h3>Категории</h3>
                                 <ul class="uk-list uk-list-space ">
                                   <? foreach($categorys as $category){?>
-                                    <li class="active">Бетон</li>
-                                    <li>Инертные материалы</li>
+                                    <? if($category['_id']==$post['category']){ ?>
+                                    <li class="active"><?=$category['name']?></li>
+                                    <? }else{ ?>
+                                    <li class=""><?=$category['name']?></li>
+                                      <? } ?>
+                                    <!-- <li>Инертные материалы</li>
                                     <li>Строительные материалы</li>
                                     <li>Спецтехника</li>
-                                    <li>Строительство</li>
+                                    <li>Строительство</li> -->
                                     <? } ?>
                                 </ul>
                             </div>

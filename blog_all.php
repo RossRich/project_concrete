@@ -8,6 +8,8 @@ $page_suffix = " | КраснодарСтройСервис";
 $categorys=collection('Категории')->find()->limit(4)->toArray();
 $posts=collection('Блог')->find(['active'=>true])->sort(["date"=>1])->toArray();
 print_r($posts);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +63,7 @@ print_r($posts);
                         </div>
                     </div>
                     <? } ?>
-                    
+
                     <div data-uk-filter="filter-inert">
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                             <figure class="uk-overlay">
