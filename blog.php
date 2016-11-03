@@ -4,6 +4,8 @@ require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $page_title = "Статья | Корпоративный блог";
 $page_suffix = " | КраснодарСтройСервис";
+
+
 //var_dump($home_dir);
 ?>
 <!DOCTYPE html>
