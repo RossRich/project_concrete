@@ -18,19 +18,25 @@ $facilities = collection("Объекты")->find()->toArray();
                             <li>
                                 <div class="facilities_1-li_cs">
                                     <div class="uk-panel uk-panel-box dev-panel-correct facilities_panel_cs">
-                                        <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["name"]?>'>
-                                        <figure class="uk-overlay uk-overlay-hover">
                                         <? if(isset($facility['photo'])&&!empty($facility['photo'])){?>
-                                            <img class="uk-overlay-scale" src="<?=thumbnail_url($facility['photo'][0]['path'], 500, 560, ['mode'=>'crope']) ?>" alt="<?=$facility['name']?>">
+                                            <a href="/<?=substr($facility['photo'][0]['path'], 5)?>" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["description"]?>'>
                                         <?}else{?>
-                                            <img class="uk-overlay-scale" src="/images/f01p500.jpg" width="" height="" alt="<?=$facility["name"]?>">
+                                            <a href="/images/f01.jpg" data-uk-lightbox="{group:'my-group'}" title='<?=$facility["description"]?>'>
                                         <?}?>
-                                        <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
-                                        <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p><?=$facility["name"]?></p>
-                                        <span><?=$facility["city"]?></span>
-                                        </figcaption>
-                                        </figure>
-                                        </a>
+
+
+                                                <figure class="uk-overlay uk-overlay-hover">
+                                                <? if(isset($facility['photo'])&&!empty($facility['photo'])){?>
+                                                    <img class="uk-overlay-scale" src="<?=thumbnail_url($facility['photo'][0]['path'], 500, 560, ['mode'=>'crope']) ?>" alt="<?=$facility['name']?>">
+                                                <?}else{?>
+                                                    <img class="uk-overlay-scale" src="/images/f01p500.jpg" width="" height="" alt="<?=$facility["name"]?>">
+                                                <?}?>
+                                                <div class="uk-overlay-panel uk-overlay-icon facilities_overlay_icon"></div>
+                                                <figcaption class="uk-overlay-panel uk-overlay-bottom uk-ignore facilities_panel_bottom"><p><?=$facility["name"]?></p>
+                                                <span><?=$facility["city"]?></span>
+                                                </figcaption>
+                                                </figure>
+                                            </a>
                                     </div>
                                 </div>
                             </li>

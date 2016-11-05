@@ -836,7 +836,6 @@ div.dev-consumer-about-us-panel-img-correct>i {
     color: #000;
     margin-bottom: 0;
 }
-
 .dev-contauner-our-partner>.dev-contauner-our-partner-correct .des-img-container {
     width: 96%;
     max-width: 152px;
@@ -844,6 +843,9 @@ div.dev-consumer-about-us-panel-img-correct>i {
     margin: auto auto;
     line-height: 150px;
 }
+/*.des-img-container img{*/
+    /*max-height: 50px;*/
+/*}*/
 
 
 /*.des_test_align_vertical_img{
