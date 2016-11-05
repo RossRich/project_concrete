@@ -17,8 +17,8 @@
                    <? } ?>
                 </ul>
             </div>
-            <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next" src="/images/new_but_for_slider_right.png">
-            <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="previous" src="/images/new_but_for_slider_left.png">
+            <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next" src="/images/for_slider_nav_right.png">
+            <img class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous dev-partner-slider-index-height-correct dev-partner-ico-img-correct" data-uk-slider-item="previous" src="/images/for_slider_nav_left.png">
         </div>
     </div>
 </div>

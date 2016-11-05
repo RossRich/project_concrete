@@ -1,7 +1,3 @@
-
-
-
-
 @font-face {
     font-family: 'Roboto';
     src: url('/fonts/subset-Roboto-Medium.eot');
@@ -33,7 +29,15 @@
     font-weight: normal;
     font-style: normal;
 }
-
+* a{
+  cursor: pointer;
+}
+* input{
+  cursor: pointer;
+}
+* button{
+  cursor: pointer;
+}
 
 /*ОБЩЕЕ*/
 
@@ -485,10 +489,10 @@ ul.ul_main_menu>li:hover>a:before {
 }
 
 .dev-img-correct {
-    max-width: 160px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto 20px auto;
+    margin: -20px -20px 20px -20px;
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*margin: 0 auto 20px auto;*/
 }
 
 .dev-panel-correct {
@@ -539,7 +543,7 @@ div.dev-panel-correct>div.panel_body>h3{
     font-weight: 500;
 }
 div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-bold{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -719,7 +723,7 @@ div.dev-container-order>div.dev-container-order-correct>form>ul>li>div>div.input
 }
 
 .dev-material-panel-but-correct {
-    margin: 15px 15px;
+    margin: 0px 15px 15px 15px;
 }
 
 
@@ -1034,6 +1038,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .dev-footer-container-correct p {
     font-size: 15px;
     color: #e7e7e7;
+    margin-top: 30px;
 }
 
 .dev-footer-container-correct a {
@@ -1043,7 +1048,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 }
 
 .dev-footer-container-correct a:hover {
-    color: #ff9700;
+    /*color: #ff9700;*/
 }
 
 .dev-footer-correcr span {
@@ -1107,7 +1112,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .dev-contauner-footer div.uk-flex>div>a>i {
     margin-top: 15px;
-    margin-right: 18px;
+    margin-right: 20px;
     color: #000;
     background: #bdbdbd;
 }
@@ -1127,8 +1132,8 @@ div.dev-consumer-about-us-panel-img-correct>i {
     border-radius: 2px;
     border: 2px solid #ff9700;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 14px;
     float: right;
     /*   margin-top: 25px;
  margin-right: 20px;*/
@@ -1170,7 +1175,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .dev-footer-container-correct>form>ul {
     padding: 0;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .dev-footer-container-correct>form>ul>li {
@@ -1190,7 +1195,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
     width: 30px;
     text-align: center;
     font-size: 150%;
-    left: -35px;
+    left: -40px;
     top: 50%;
 }
 
@@ -1335,8 +1340,8 @@ ul>li>div.uk-panel span.des-line:after{
     height: 1px;
     width: 100%;
     background: #e0e0e0;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 /*line correct for material card*/

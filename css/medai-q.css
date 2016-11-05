@@ -459,6 +459,10 @@
     .dev-container-order-correct>h3 {
         line-height: 33px;
     }
+
+    .dev-but-submit-correct{
+      margin-top: 35px;
+    }
     /*End_Discount-form*/
 }
 
@@ -503,6 +507,9 @@
     }
     .dev-container-order-correct .dev-but-submit-correct {
         /*font-size: 18px;*/
+    }
+    .dev-but-submit-correct{
+      margin-top: 35px;
     }
     /*End_Discount-form*/
     /*Footer*/
@@ -603,6 +610,9 @@
     .dev-container-order-correct>h3 {
         line-height: 40px;
     }
+    .dev-but-submit-correct{
+      margin-top: 35px;
+    }
     /*End_Discount-form*/
     /*Product_det-concrete_pomp*/
     div.des-get-concrete-pomp>div.des-get-concrete-pomp-container>h3{
@@ -611,7 +621,7 @@
         margin-bottom: 20px;
     }
 
-    
+
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1023px) {

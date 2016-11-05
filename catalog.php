@@ -8,7 +8,7 @@ $category = collection("Категории")->findOne(["_id"=>$id]);
 $products = collection("Продукция")->find(["category"=>$id])->toArray();
 if(!isset($category)){
     header('Location: /');
-    sdie;
+    die;
 }
 $page_title = $category["name"];
 $page_suffix = " | КраснодарСтройСервис";
@@ -27,7 +27,7 @@ $page_suffix = " | КраснодарСтройСервис";
         <? require($home_dir."/includes/header.php"); ?>
         <div class="dev-container-concreate">
             <div class="uk-container2 uk-container-center dev-container-correct">
-                <h3 class="uk-text-center dev-h3-correct h3_catalog">Доставка бетона и раствора в Краснодаре</h3>
+                <h3 class="uk-text-center dev-h3-correct h3_catalog"><?=$category['haed_in_catalog']?></h3>
                 <? if(!empty($products)){ ?>
                 <ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid-match="target:'.panel_body'" data-uk-grid-margin>
                     <? foreach($products as $product){ ?>
@@ -36,7 +36,7 @@ $page_suffix = " | КраснодарСтройСервис";
                             <div class="panel_body">
                             <div class="dev-img-correct">
                                 <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
-                                <a href="/product.php?id=<?=$product["_id"]?>"><img src="<?=thumbnail_url($product["photo"][0]["path"], 200, 200, ["mode" => "best_fit"])?>" alt="<?=$product["name"]?>"></a>
+                                <a href="/product.php?id=<?=$product["_id"]?>"><img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="<?=$product["name"]?>"></a>
                                 <? } else { ?>
                                 <a href="/product.php?id=<?=$product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
                                 <? } ?>

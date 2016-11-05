@@ -3,40 +3,41 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $id = $_REQUEST["id"];
-// print_r($id);
 $page_title = "Статья | Корпоративный блог";
 $page_suffix = " | КраснодарСтройСервис";
-
-
-//var_dump($home_dir);
 $categorys=collection('Категории')->find()->limit(4)->toArray();
+
+// print_r($posts['_id']);
 $post=collection('Блог')->findOne(['_id'=>$id]);
-
-
+// print_r($posts[$id]);
 // counter
+$counterDateStore = cockpit('datastore:findOne', 'counter', ['id' =>$id]);
+if(isset($id) && $id!=null){
 if (!isset($_COOKIE['Ind_Counter'])) $_COOKIE['Ind_Counter'] = 0;
 $_COOKIE['Ind_Counter']++;
 SetCookie('Ind_Counter', $_COOKIE['Ind_Counter'], 0x6FFFFFFF);
 $counter=$_COOKIE['Ind_Counter'];
-
-$entry = ['counter' => $counter];
-cockpit('collections:save_entry', 'Блог', $entry);
-
+print_r('counter'." ".$counter);
+if(isset($counterDateStore['_id']) && $counterDateStore['_id']!=null){
+  $entry = ['_id'=>$counterDateStore['_id'], 'id'=>$id, 'counter' =>$counter];
+}else{
+  $entry = ['id'=>$id, 'counter' =>$counter];
+}
+cockpit('datastore:save_entry', 'counter', $entry);
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <? require($home_dir."/includes/top-scripts.php"); ?>
 </head>
-
 <body>
     <div class="wrapper">
         <? require($home_dir."/includes/header.php"); ?>
         <main>
             <div class="uk-container uk-container-center des-blog">
                 <ul class="uk-breadcrumb uk-text-center uk-hidden-medium uk-hidden-small">
-                    <li><a href="index.html">Главная </a></li>
+                    <li><a href="/index.php">Главная</a></li>
                     <li><a href="/blog_all.php">Корпоративный блог</a></li>
                     <li class="uk-active"><span><?=$post['head']?></span></li>
                 </ul>
@@ -78,61 +79,31 @@ cockpit('collections:save_entry', 'Блог', $entry);
                                     <? }else{ ?>
                                     <li class=""><?=$category['name']?></li>
                                       <? } ?>
-                                    <!-- <li>Инертные материалы</li>
-                                    <li>Строительные материалы</li>
-                                    <li>Спецтехника</li>
-                                    <li>Строительство</li> -->
                                     <? } ?>
                                 </ul>
                             </div>
                             <div class="popular">
                                 <h3>популярное</h3>
                                 <ul class="uk-list uk-list-space">
+                                   <?
+                                   $posts=collection('Блог')->find(['active'=>true])->limit(5)->toArray();
+                                    foreach($posts as $item){?>
                                     <li>
+                                      <a href="/blog.php?id=<?=$item['_id']?>">
                                         <div class="uk-panel uk-panel-box">
                                             <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
-                                                <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
-                                                <div class="uk-comment-meta">12 сентября 2016</div>
+                                              <?if(isset($item['photo']) && $item['photo']!=null){?>
+                                                <img class="uk-comment-avatar uk-border-circle  uk-clearfix" src="<?=thumbnail_url($item['photo'][0]['path'])?>" alt="<?=$item['head']?>">
+                                                <? } else {?>
+                                                  <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="default">
+                                                  <? } ?>
+                                                <h4 class="uk-comment-title"><?=$item['head']?></h4>
+                                                <div class="uk-comment-meta"><?=$item['date']?></div>
                                             </header>
                                         </div>
+                                        </a>
                                     </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">
-                                            <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
-                                                <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
-                                                <div class="uk-comment-meta">12 сентября 2016</div>
-                                            </header>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">
-                                            <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
-                                                <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
-                                                <div class="uk-comment-meta">12 сентября 2016</div>
-                                            </header>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">
-                                            <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
-                                                <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
-                                                <div class="uk-comment-meta">12 сентября 2016</div>
-                                            </header>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-panel-box">
-                                            <header class="uk-comment-header">
-                                                <img class="uk-comment-avatar uk-border-circle" src="/images/11ab0134867677.56e090a40fcce_cr.png" alt="">
-                                                <h4 class="uk-comment-title">ЗАЛИВКА БЕТОНА</h4>
-                                                <div class="uk-comment-meta">12 сентября 2016</div>
-                                            </header>
-                                        </div>
-                                    </li>
+                                    <? } ?>
                                 </ul>
                             </div>
                         </main>
@@ -140,99 +111,37 @@ cockpit('collections:save_entry', 'Блог', $entry);
                 </div>
                 <div class="des-blog-slider uk-container-center">
                     <h3>СВЕЖИЕ ЗАПИСИ</h3>
-                    <div class="uk-slidenav-position slider_blog" data-uk-slider>
+                    <div class="uk-slidenav-position slider_blog" data-uk-slider="{infinite: false}">
                         <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
                             <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
                             <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
                         </div>
                         <div class="uk-slider-container">
                             <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1" data-uk-grid-match="target:'.panel_body'">
+                              <?php foreach(collection("Блог")->find(['active'=>true])->sort(["date"=>-1]) as $item): ?>
                                 <li>
                                     <div class="uk-panel uk-panel-box">
                                         <div class="panel_body">
                                         <div class="uk-panel-teaser">
                                             <figure class="uk-overlay uk-thumbnail-expand">
                                                 <img src="/images/news.jpg" alt="">
-                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
+                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba"><?=$item['date']?></figcaption>
                                             </figure>
                                         </div>
-                                        <h3>Как правильно заливать бетон для фундамента</h3>
+                                        <h3><?=$item['head']?></h3>
                                         <p>
-                                            Перед началом заливки монолитного основания следует рассчитать
+                                            <?=$item['discription']?>
                                         </p>
                                         </div>
                                         <span class="des-line"></span>
                                         <div class="uk-clearfix">
-                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
-                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
+                                          <?  $watch = cockpit('datastore:findOne', 'counter', ['id' => $item[_id]]); ?>
+                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span><?=$watch['counter']?></span></div>
+                                            <div class="uk-float-left"><a href="/blog.php?id=<?=$item['_id']?>">Подробнее</a></div>
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="uk-panel uk-panel-box">
-                                        <div class="panel_body">
-                                            <div class="uk-panel-teaser">
-                                                <figure class="uk-overlay">
-                                                    <img src="/images/news.jpg" alt="">
-                                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
-                                                </figure>
-
-                                            </div>
-                                            <h3>Как правильно заливать бетон для фундамента</h3>
-                                            <p>
-                                                Перед началом заливки монолитного основания следует рассчитать
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit ipsam fugiat quas unde at consequuntur commodi esse quaerat quidem culpa, earum atque officiis modi aliquid quisquam dolorem ipsa deleniti.
-                                            </p>
-                                            </div>
-                                        <span class="des-line"></span>
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
-                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-panel uk-panel-box">
-                                        <div class="panel_body">
-                                        <div class="uk-panel-teaser">
-                                            <figure class="uk-overlay uk-thumbnail-expand">
-                                                <img src="/images/news.jpg" alt="">
-                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
-                                            </figure>
-                                        </div>
-                                        <h3>Как правильно заливать бетон для фундамента</h3>
-                                        <p>
-                                            Перед началом заливки монолитного основания следует рассчитать
-                                        </p>
-                                        </div>
-                                        <span class="des-line"></span>
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
-                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="uk-panel uk-panel-box">
-                                        <div class="panel_bodyy">
-                                        <div class="uk-panel-teaser">
-                                            <figure class="uk-overlay uk-thumbnail-expand">
-                                                <img src="/images/news.jpg" alt="">
-                                                <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba">12 сентября 2016</figcaption>
-                                            </figure>
-                                        </div>
-                                        <h3>Как правильно заливать бетон для фундамента</h3>
-                                        <p>
-                                            Перед началом заливки монолитного основания следует рассчитать
-                                        </p>
-                                        </div>
-                                        <span class="des-line"></span>
-                                        <div class="uk-clearfix">
-                                            <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span>523</span></div>
-                                            <div class="uk-float-left"><a href="blog.html">Подробнее</a></div>
-                                        </div>
-                                    </div>
-                                </li>
+                                <?php endforeach;?>
                             </ul>
                         </div>
                         <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
@@ -245,5 +154,4 @@ cockpit('collections:save_entry', 'Блог', $entry);
     </div>
     <? require($home_dir."/includes/pop-up.php"); ?>
 </body>
-
 </html>

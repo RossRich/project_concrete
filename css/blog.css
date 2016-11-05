@@ -109,7 +109,9 @@
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
+.des-blog > div.des-blog-content > aside > main >div.popular>ul>li>a{
+  text-decoration: none;
+}
 .des-blog > div.des-blog-content > aside > main >div.popular div.uk-panel {
     border-right: 2px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .24), 0 1px 4px rgba(0, 0, 0, .16);
@@ -126,6 +128,10 @@
     width: 50px;
 }
 
+.des-blog > div.des-blog-content > aside > main >div.popular>ul>li>a>div>header>div.uk-comment-meta{
+  text-align: center;
+  margin-top: 10px;
+}
 .des-blog-slider {
 /*    margin-bottom: 80px;*/
     margin-top: 80px;
