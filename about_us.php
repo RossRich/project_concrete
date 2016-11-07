@@ -109,7 +109,7 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
                                     <img src="/images/ic_navigate_left.png" alt="" >
                                     <div class="us_textblock_au us_text2">
                                         <h4><a href="catalog.php?category=<?=$fbs["_id"]?>">ФБС</a></h4>
-                                        <p class="usl_p">Продажа и доставка Фундаментных блоков стеновых различных размеров</p>
+                                        <p class="usl_p">Продажа и доставка фундаментных блоков различных размеров</p>
                                     </div>
                                 </div>
                             </li>

@@ -191,6 +191,24 @@
         margin-top: 15px;
 
     }
+
+    /*объкты*/
+    .facilities_panel_cs:hover {
+        box-shadow: none;
+    }
+    .facilities_1-li_cs{
+        padding: 0;
+    }
+    .facilities_panel_cs:hover
+    .facilities_overlay_icon {
+        /*background-color: rgba(0, 0, 0, 0);*/
+        display: none;
+    }
+    .facilities_panel_cs:hover
+    .facilities_panel_bottom {
+        background-color: rgba(33, 33, 33, 0.6);
+        color: #F5F5F5;
+    }
 }
 
 @media(max-width: 479px) {
