@@ -1,0 +1,30 @@
+.not_found {
+    padding-bottom: 365px;
+}
+.not_found .agree_text{
+    padding: 35px 35px 10px 35px;
+    background-color: #616161;
+    overflow: hidden;
+}
+.not_found .agree_text img{
+    float: left;
+    margin-right: 40px;
+}
+.not_found .agree_text p {
+    color: #f5f5f5;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.not_found .agree_text a {
+    text-decoration: underline;
+    color: #ef8e02;
+}
+.not_found .agree_text a:hover {
+    text-decoration: none;
+}
+
+
+
+
+

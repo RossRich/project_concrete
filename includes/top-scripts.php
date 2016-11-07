@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="/css/contacts.css" />
 <link rel="stylesheet" href="/css/blog_all.css" />
 <link rel="stylesheet" href="/css/blog.css" />
+<link rel="stylesheet" href="/css/404.css" />
 <link rel="stylesheet" href="/css/modal.css">
 <link rel="stylesheet" href="/css/modal_get_manager.css">
 <link rel="stylesheet" href="/css/mob-menu.css" />

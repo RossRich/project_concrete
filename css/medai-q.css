@@ -79,6 +79,10 @@
     .au_img {
         text-align: center;
     }
+    /*    pg not finds*/
+    .not_found .agree_text img{
+    display: none;
+    }
 }
 
 @media(max-width: 900px) {
