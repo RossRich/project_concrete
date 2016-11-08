@@ -36,15 +36,23 @@ $page_suffix = " | КраснодарСтройСервис";
                             <div class="panel_body">
                             <div class="dev-img-correct">
                                 <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
-                                <a href="/product.php?id=<?=$product["_id"]?>"><img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="<?=$product["name"]?>"></a>
+                                <a href="/product.php?id=<?=$product["_id"]?>">
+                                   <? if($category['name']=='Инертные материалы'){?>
+                                       <img src="<?=thumbnail_url($product["photo"][0]["path"],300,180,['made'=>'crope'])?>" alt="<?=$product["name"]?>">
+                                   <? } else {?>
+                                        <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="<?=$product["name"]?>">
+                                    <? } ?>
+                                </a>
                                 <? } else { ?>
-                                <a href="/product.php?id=<?=$product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
+                                <a href="/product.php?id=<?=$product["_id"]?>">
+                                    <img src="/images/block.png" alt="Block">
+                                </a>
                                 <? } ?>
                             </div>
                             <h3><?=$product["name"]?><br><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <!-- <a href="/product.php?id=<?=$product["_id"]?>&order" class=""></a> -->
+                            <!-- <a href="/product.php?id=<?//=$product["_id"]?>&order" class=""></a> -->
                             <a href="/product.php?id=<?=$product["_id"]?>" class="dev-but-order-correct">Заказать</a>
                         </div>
                     </li>
@@ -58,7 +66,7 @@ $page_suffix = " | КраснодарСтройСервис";
         </div>
         <div class="dev-container-order dev_container_order_cs">
             <div class="uk-container2 uk-container-center dev-container-order-correct">
-                <h3 class="uk-text-center dev-order-head dev-h3-correct">ПОЛУЧИТЕ ГАРАНТИРОВАННУЮ СКИДКУ ПРИ ЗАКАЗЕ НА САЙТЕ</h3>
+                <h3 class="uk-text-center dev-order-head dev-h3-correct">ПОЛУЧИТЕ СКИДКУ НА АРЕНДУ БЕТОНАНАСОСА ПРИ ЗАКАЗЕ БЕТОНА</h3>
                 <? require($home_dir."/includes/discount-form.php"); ?>
             </div>
         </div>

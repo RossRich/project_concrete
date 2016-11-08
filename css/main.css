@@ -490,9 +490,14 @@ ul.ul_main_menu>li:hover>a:before {
 
 .dev-img-correct {
     margin: -20px -20px 20px -20px;
+    text-align: center;
+    
     /*width: 100%;*/
     /*height: auto;*/
     /*margin: 0 auto 20px auto;*/
+}
+.dev-img-correct>a>img{
+/*    width: 85%;*/
 }
 
 .dev-panel-correct {
@@ -505,7 +510,7 @@ ul.ul_main_menu>li:hover>a:before {
 a.dev-but-order-correct {
     color: #ff9700;
     text-transform: uppercase;
-    font-size: 16.75px;
+    font-size: 18px;
     font-weight: 400;
     float: right;
 }
@@ -539,7 +544,7 @@ a.dev-but-about-correct:hover {
 
 div.dev-panel-correct>div.panel_body>h3{
     font-size: 19px;
-    line-height: 25px;
+    line-height: 29px;
     font-weight: 500;
 }
 div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-bold{
@@ -585,20 +590,20 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 .dev-but-submit-correct {
     width: 100%;
     text-transform: uppercase;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 2px;
-    background-color: #fdaa31;
-    padding: 13px 0;
+    background-color: #ff9700;
+    padding: 10px 0;
     /*padding: 7px 65px;*/
-    margin: 10px 0;
+    margin: 20px 0;
     color: #212121;
-    font: 400 22px Roboto;
+    font: 400 17px Roboto;
 }
 
 .dev-but-submit-correct:hover {
     background-color: #212121;
     color: #fdaa31;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 2px;
     border-color: #212121;
     transition: 0.7s;
@@ -618,7 +623,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 
 .input-item::after, .input-item::before {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     bottom: 6px;
@@ -1030,7 +1035,8 @@ div.dev-consumer-about-us-panel-img-correct>i {
 }
 
 .dev-footer-content {
-    padding: 40px;
+    padding: 40px 40px 0 40px;
+    
 }
 
 .dev-footer-container-correct {

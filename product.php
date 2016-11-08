@@ -47,7 +47,11 @@ if(!isset($product)){
                         <div class="uk-width-large-1-2 uk-hidden-small uk-hidden-medium">
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img">
-                              <img src="<?=thumbnail_url($product["photo"][0]["path"], 496, 286, ["mode"=>"best_fit"])?>" alt="">
+                             <? if($category['name']=='Продажа бетона'){ ?>
+                                 <img src="/images/trac.png" alt="Block">
+                             <? } else {?>
+                              <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="">
+                              <? } ?>
                             </div>
                             <? } else { ?>
                           <div class="des-panel-img">
@@ -93,7 +97,7 @@ if(!isset($product)){
                                 <li class="uk-width-1-1">
                                     <div class="des-panel-discription">
                                         <h3><?=$product["name"]?></h3>
-                                        <h4 class="des-unique-h4"><?=$product["price"]?> руб. <?=$product["count"]?></h4>
+                                        <h4 class="des-unique-h4"><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. <?=$product["count"]?></span></h4>
                                         <div class="des-test-visible">
                                             <ul class="uk-tab" data-uk-tab="{connect:'#des-panel-id'}">
                                                 <li class="uk-active"><a href="">ХАРАКТЕРИСТИКИ</a></li>
@@ -127,17 +131,10 @@ if(!isset($product)){
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <i class="uk-icon-tags uk-icon-medium"></i>
-                                                        <div class="input-item-consumer-order-panel">
-                                                            <label for="brand" class="dev-consumer-order-panel-label">Марка бетона</label>
-                                                            <input type="text" name="form[brand]" class="input-item-consumer-order-panel-input">
-                                                        </div>
-                                                    </li>
-                                                    <li>
                                                         <i class="uk-icon-shopping-bag uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="capacity" class="dev-consumer-order-panel-label">Объем</label>
-                                                            <input type="number" name="form[capacity]" class="input-item-consumer-order-panel-input">
+                                                            <input type="text" name="form[capacity]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
@@ -145,6 +142,13 @@ if(!isset($product)){
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="position" class="dev-consumer-order-panel-label">Адрес объекта</label>
                                                             <input type="text" name="form[position]" class="input-item-consumer-order-panel-input">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <i class="uk-icon-tags uk-icon-medium"></i>
+                                                        <div class="input-item-consumer-order-panel">
+                                                            <label for="brand" class="dev-consumer-order-panel-label">Комментарий к заказу</label>
+                                                            <input type="text" name="form[brand]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                 </ul>

@@ -27,8 +27,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </div>
                 
                 <div class="on_map">
-                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" ><img src="/images/ic_place.png" alt=""></a>
-                    <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext">На карте</a><span class="text">)</span></span>
+                    <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blank"><img src="/images/ic_place.png" alt=""></a>
+                    <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blank" class="atext">На карте</a><span class="text">)</span></span>
                 </div>
             </div>
              </div>
@@ -106,8 +106,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     <a href="tel:<?=$phone?>" class="phone_orders"><?=$phone?></a>
                 </div>
             <div class="on_map">
-                <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" ><img src="/images/ic_place.png" alt=""></a>
-                <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext">На карте</a><span class="text">)</span></span>
+                <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blank"><img src="/images/ic_place.png" alt=""></a>
+                <span><span class="text"><?=$address?> (</span><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" class="atext" target="_blank">На карте</a><span class="text">)</span></span>
             </div>
         </div>
     </div>
