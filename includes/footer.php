@@ -8,31 +8,21 @@
                                     <div class="uk-width-5-10">
                                         <div class="uk-flex uk-flex-column">
                                             <a href="/about_us.php">О компании</a>
-                                            <a href="/">Наши объекты</a>
-                                            <a href="">Отзывы клиентов</a>
+                                            <a href="/facilities_page.php">Наши объекты</a>
+                                            <a href="/comments.php">Отзывы клиентов</a>
                                             <a href="/blog_all.php">Корпоративный блог</a>
-                                            <a href="">Сотрудничество</a>
+                                            <a href="/partnership.php">Сотрудничество</a>
                                             <a href="/contacts.php">Контакты</a>
-                                            <!-- <div class="uk-flex">
-                                                <a href="<?//=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-vk"></i></a>
-                                                <a href="<?//=$social["ok"];?>" target="_blank"><i class="uk-icon-button uk-icon-odnoklassniki"></i></a>
-                                                <a href="<?//=$social["fb"];?>" target="_blank"><i class="uk-icon-button uk-icon-facebook"></i></a>
-                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="uk-width-5-10">
                                         <div class="uk-flex uk-flex-column">
-                                            <a href="">Продажа бетона</a>
-                                            <a href="">Инертные материалы</a>
-                                            <a href="">Аренда спецтехники</a>
-                                            <a href="">ФБС</a>
-                                            <a href="">Строительные материалы</a>
+                                           <? foreach($main_categorys as $category){ ?>
+                                            <a href="/catalog.php?category=<?=$category['_id']?>"><?=$category['name']?></a>
+                                            <? } ?>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
-                                <p>
-                                    <a href="http://it-technologies.us/" target="_blank"><img src="images/IT.png" alt=""></a>Разработка и Маркетинг</p> -->
                                     <? require_once($home_dir.'/includes/footer_social.php'); ?>
                             </div>
                         </div>
@@ -73,15 +63,15 @@
                                     </div>
                                     <div class="uk-width-large-1-2 uk-width-medium-1-2  uk-width-small-1-1">
                                       <div class="dev-footer-container-correct">
-                                        <span>Главный офис:</span>
+                                        <span class="des-mob-style">Главный офис:</span>
                                         <ul>
-                                            <li><i class="uk-icon-map-marker uk-icon-small "></i><a href="about_us.html"><?=$address;?></a></li>
-                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href=""><span><?=$phone;?></span> - Отдел продаж</a></li>
-                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href=""><span><?=$phone2;?></span> - Бухгалтерия</a></li>
+                                            <li><i class="uk-icon-map-marker uk-icon-small "></i><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" type="map" target="_blank"><?=$address;?></a></li>
+                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="#!" type="tel"><span><?=$phone2;?></span> - Отдел продаж</a></li>
+                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="#!" type="tel"><span><?=$phone3;?></span> - Бухгалтерия</a></li>
                                         </ul>
-                                        <span>Производство:</span>
+                                        <span class="des-mob-style">Производство:</span>
                                         <ul>
-                                            <li><i class="uk-icon-justify uk-icon-map-marker uk-icon-small "></i><a href="about_us.html"><?=$address2;?></a></li>
+                                            <li><i class="uk-icon-justify uk-icon-map-marker uk-icon-small "></i><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blank"><?=$address2;?></a></li>
                                         </ul>
                                         <div class="uk-visible-small ">
                                                 <? require($home_dir.'/includes/footer_social.php'); ?>

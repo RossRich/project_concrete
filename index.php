@@ -24,8 +24,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <? require($home_dir."/includes/advantages_trust.php"); ?>
         <?
         if(isset($index_page_category) && !empty($index_page_category)){
-            $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->toArray();
-        ?>
+            $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->toArray();?>
         <div class="dev-container-concreate">
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct"><?=$index_page_category["name_index_page"]?></h3>
@@ -34,9 +33,8 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                     <li>
                         <div class="uk-panel uk-panel-box dev-panel-correct">
                             <div class="panel_body">
-                                <div class="dev-img-correct uk-thumbnail-expand">
+                                <div class="dev-img-correct">
                                     <? if(isset($index_page_product["photo"]) && !empty($index_page_product["photo"])){ ?>
-                                    <!-- <? //print_r($index_page_product["photo"][0]);?> -->
                                     <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="<?=thumbnail_url($index_page_product["photo"][0]["path"])?>" alt="<?=$index_page_product["name"]?>"></a>
                                     <? } else { ?>
                                     <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
@@ -46,7 +44,6 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                             </div>
                             <span class="des-line"></span>
                             <a href="/product.php?id=<?=$index_page_product["_id"]?>" class="dev-but-order-correct">Заказать</a>
-                            <!-- <a href="/product.php?id=<?//=$index_page_product["_id"]?>" class="dev-but-about-correct">Подробнее</a> -->
                         </div>
                     </li>
                     <? } ?>

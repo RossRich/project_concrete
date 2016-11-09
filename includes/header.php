@@ -5,7 +5,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
 <? if($page_id == "index"){ ?>
 <div class="uk-cover uk-position-relative banner banner_index">
     <video class="uk-cover-object uk-position-absolute" width="" height="" autoplay="autoplay" loop="loop" muted="muted" poster="/images/video_background.jpg">
-        <source src="/video/video_concrete.mp4" type="">
+        <source src="/video/h2644.mp4" type="">
     </video>
      <div class="uk-position-cover banner_overlay">
          <div class="header_index">
@@ -40,9 +40,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </div>
                     <div class="text_logo">
                         <p class="p1">
-                            <span>К</span>раснодар
-                            <span>С</span>трой
-                            <span>С</span>ервис
+                            <span>КраснодарСтройСервис</span>
                         </p>
                         <br>
                         <p class="p2">Лидер Краснодарского рынка по производству
@@ -50,7 +48,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     </div>
                 </div>
                 <div class="right">
-                    <span class="free_numb">Бесплатный номер</span>
+                    <span class="free_numb">Отдел продаж</span>
                     <br>
                     <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                     <br>

@@ -191,6 +191,24 @@
         margin-top: 15px;
 
     }
+
+    /*объкты*/
+    .facilities_panel_cs:hover {
+        box-shadow: none;
+    }
+    .facilities_1-li_cs{
+        padding: 0;
+    }
+    .facilities_panel_cs:hover
+    .facilities_overlay_icon {
+        /*background-color: rgba(0, 0, 0, 0);*/
+        display: none;
+    }
+    .facilities_panel_cs:hover
+    .facilities_panel_bottom {
+        background-color: rgba(33, 33, 33, 0.6);
+        color: #F5F5F5;
+    }
 }
 
 @media(max-width: 479px) {
@@ -315,7 +333,7 @@
     }
     /*контакты*/
     .con_text p {
-        font-size: 12px;
+        font-size: 15px;
     }
     .documents .doc_div_2 .phone_dep {
         font-size: 30px;
@@ -333,7 +351,7 @@
         width: 90%;
         padding: 0;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
     }
     .dev-footer-container-correct>ul {
         padding: 0;
@@ -348,8 +366,16 @@
     .dev-footer-container-correct>ul>li>a>span {
         font-size: 14px;
     }
+    div.dev-footer-container-correct>span.des-mob-style{
+        text-align: center;
+        display: block;
+    }
     .des-social-ico-container {
         width: 100%;
+    }
+    
+    .des-social-ico-container{
+        text-align: center;
     }
     /*EndFooter*/
     /*Discount-form*/
@@ -361,6 +387,11 @@
     }
     .dev-container-order-correct .dev-but-submit-correct {
         /*font-size: 18px;*/
+    }
+    
+    .dev_container_order_cs{
+        background: none;
+        background-color: rgba(255, 151, 0, 0.8);
     }
     /*End_Discount-form*/
     /*Index_Category-cards*/
@@ -388,7 +419,7 @@
         color: #616161;
         font-weight: 400;
         font-size: 20px;
-        text-align: justify;
+        text-align: left;
         line-height: 25px;
     }
     ul>li>div.des-panel-bottom {
@@ -429,7 +460,7 @@
     }
 
     div.des-blog>div.des-blog-content>main>div.uk-panel>p{
-        text-align: justify;
+        text-align: left;
         font-size: 16px;
         line-height: 25px;
     }
@@ -449,6 +480,7 @@
         line-height: 25px;
         text-align: justify;
     }
+
     /*Blog_slider*/
     div.des-blog-slider>div.slider_blog{
         top:0;
@@ -459,6 +491,11 @@
         margin-bottom: 50px;
     }
 
+    /*    catalog slider*/
+    div.des-our-app>div.des-our-app-content>.slider_our_app{
+        top: 0!important;
+    }
+    
     /*Discount-form*/
     .dev-container-order-correct>h3 {
         line-height: 33px;
@@ -515,13 +552,17 @@
     .dev-but-submit-correct{
       margin-top: 35px;
     }
+    .dev_container_order_cs{
+        background: none;
+        background-color: rgba(255, 151, 0, 0.8);
+    }
     /*End_Discount-form*/
     /*Footer*/
     .dev-footer-container-correct {
         width: 90%;
         padding: 0;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
     }
     .dev-footer-container-correct>span {
         font-size: 30px;
@@ -541,6 +582,13 @@
     }
     .des-social-ico-container {
         width: 100%;
+    }
+    div.dev-footer-container-correct>span.des-mob-style{
+        text-align: center;
+        display: block;
+    }
+    .des-social-ico-container{
+        text-align: center;
     }
     /*EndFooter*/
     /*Product_content-delivery*/
@@ -585,7 +633,7 @@
     }
 
     div.des-blog>div.des-blog-content>main>div.uk-panel>p{
-        text-align: justify;
+        text-align: left;
         font-size: 16px;
         line-height: 25px;
     }
@@ -609,6 +657,9 @@
     .dev-footer-container-correct {
         padding-left: 50px;
     }
+    .des-social-ico-container{
+        text-align: center;
+    }
     /*EndFooter*/
     /*Discount-form*/
     .dev-container-order-correct>h3 {
@@ -616,6 +667,10 @@
     }
     .dev-but-submit-correct{
       margin-top: 35px;
+    }
+    .dev_container_order_cs{
+        background: none;
+        background-color: rgba(255, 151, 0, 0.8);
     }
     /*End_Discount-form*/
     /*Product_det-concrete_pomp*/

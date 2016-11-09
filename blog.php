@@ -6,18 +6,13 @@ $id = $_REQUEST["id"];
 $page_title = "Статья | Корпоративный блог";
 $page_suffix = " | КраснодарСтройСервис";
 $categorys=collection('Категории')->find()->limit(4)->toArray();
-
-// print_r($posts['_id']);
 $post=collection('Блог')->findOne(['_id'=>$id]);
-// print_r($posts[$id]);
-// counter
 $counterDateStore = cockpit('datastore:findOne', 'counter', ['id' =>$id]);
 if(isset($id) && $id!=null){
 if (!isset($_COOKIE['Ind_Counter'])) $_COOKIE['Ind_Counter'] = 0;
 $_COOKIE['Ind_Counter']++;
 SetCookie('Ind_Counter', $_COOKIE['Ind_Counter'], 0x6FFFFFFF);
 $counter=$_COOKIE['Ind_Counter'];
-print_r('counter'." ".$counter);
 if(isset($counterDateStore['_id']) && $counterDateStore['_id']!=null){
   $entry = ['_id'=>$counterDateStore['_id'], 'id'=>$id, 'counter' =>$counter];
 }else{
@@ -36,7 +31,7 @@ cockpit('datastore:save_entry', 'counter', $entry);
         <? require($home_dir."/includes/header.php"); ?>
         <main>
             <div class="uk-container uk-container-center des-blog">
-                <ul class="uk-breadcrumb uk-text-center uk-hidden-medium uk-hidden-small">
+                <ul class="uk-breadcrumb uk-text-center uk-hidden-small">
                     <li><a href="/index.php">Главная</a></li>
                     <li><a href="/blog_all.php">Корпоративный блог</a></li>
                     <li class="uk-active"><span><?=$post['head']?></span></li>
@@ -46,13 +41,14 @@ cockpit('datastore:save_entry', 'counter', $entry);
                     <main class="uk-width-large-3-4 uk-width-medium-1-1 uk-row-first">
                         <div class="uk-panel uk-panel-box">
                             <div class="uk-panel-teaser">
-                                <div class="uk-thumbnail-expand">
+                                <figure class="uk-overlay uk-thumbnail-expand">
                                   <? if(isset($post['photo']) && !empty($post['photo'])){?>
                                   <img src="<?=thumbnail_url($post['photo'][0]['path'], 847, 503, ['mode'=>'best_fit'])?>" alt="<?=$post['head']?>">
                                   <? }else{ ?>
                                     <img src="/images/beton_2_kategoriya.png" alt="">
                                     <? } ?>
-                                </div>
+                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba"><?=$post['date']?></figcaption>
+                                </figure>
                             </div>
                             <p>
                               <?=$post['content']?>
@@ -86,7 +82,7 @@ cockpit('datastore:save_entry', 'counter', $entry);
                                 <h3>популярное</h3>
                                 <ul class="uk-list uk-list-space">
                                    <?
-                                   $posts=collection('Блог')->find(['active'=>true])->limit(5)->toArray();
+                                   $posts=collection('Блог')->find(['active'=>true])->limit(5)->sort(["date"=>-1])->toArray();
                                     foreach($posts as $item){?>
                                     <li>
                                       <a href="/blog.php?id=<?=$item['_id']?>">
@@ -124,7 +120,13 @@ cockpit('datastore:save_entry', 'counter', $entry);
                                         <div class="panel_body">
                                         <div class="uk-panel-teaser">
                                             <figure class="uk-overlay uk-thumbnail-expand">
-                                                <img src="/images/news.jpg" alt="">
+                                                <a href="/blog.php?id=<?=$item['_id']?>">
+                                               <? if(isset($item['photo']) && $item['photo']!=null){ ?>
+                                                   <img src="<?=thumbnail_url($item['photo'][0]['path'],480,320,['mode'=>'crope'])?>" alt="<?=$item['head']?>">
+                                               <? }else{ ?>
+                                                    <img src="/images/news.jpg" alt="default">
+                                                <? } ?>
+                                                </a>
                                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom dev-slired-panel-overlay_ba"><?=$item['date']?></figcaption>
                                             </figure>
                                         </div>

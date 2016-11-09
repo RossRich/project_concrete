@@ -319,13 +319,13 @@ ul.ul_main_menu>li:hover>a:before {
     top:-2px;
     height: 1px;
     content: '';
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
 }
 /*при плавании*/
 .dev-active-sticky-placeholder {
     z-index: 980;
     box-sizing: border-box;
-    background-color: rgba(33, 33, 33, 0.5);
+    background-color: rgba(33, 33, 33, 0.8);
 }
 .dev-active-sticky-placeholder.main_menu_full:after{
     height: 0!important;
@@ -536,7 +536,7 @@ a.dev-but-about-correct:hover {
 }*/
 
 .dev-panel-correct:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     transition: 0.7s;
 }
 
@@ -592,7 +592,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
     text-transform: uppercase;
     border: 1px solid;
     border-radius: 2px;
-    background-color: #ff9700;
+    background-color: #fdaa31;
     padding: 10px 0;
     /*padding: 7px 65px;*/
     margin: 20px 0;
@@ -1056,7 +1056,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 }
 
 .dev-footer-container-correct a:hover {
-    /*color: #ff9700;*/
+    color: #ff9700;
 }
 
 .dev-footer-correcr span {
@@ -1093,6 +1093,9 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .dev-footer-container-correct>ul>li:last-child {
     margin-bottom: 30px;
 }
+.dev-footer-container-correct>ul>li:first-child:hover>a{
+    color: #ff9700;
+}
 
 .dev-footer-container-correct>ul>li>i {
     color: #bdbdbd;
@@ -1103,6 +1106,9 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .dev-footer-container-correct>ul>li>a {
     margin-left: 10px;
+}
+.dev-footer-container-correct>ul>li>a:hover{
+    color: #f5f5f5;
 }
 
 .dev-footer-container-correct>ul>li>a:hover {
@@ -1138,7 +1144,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
     background: #212121;
     color: #ff9700;
     border-radius: 2px;
-    border: 2px solid #ff9700;
+    border: 1px solid #ff9700;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
@@ -1150,10 +1156,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .dev-but-footer:hover {
     background-color: #ff9700;
     color: #212121;
-    border: 2px solid;
-    border-radius: 2px;
-    border-color: #212121;
-    transition: 0.7s;
+    transition: 0.2s;
 }
 
 .dev-footer-label-correct {
@@ -1168,7 +1171,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
     overflow: auto;
     background: #212121;
     border: 0;
-    border-bottom: 2px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
     font-size: 16px;
     color: #f5f5f5;
     width: 100%;
@@ -1203,7 +1206,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
     width: 30px;
     text-align: center;
     font-size: 150%;
-    left: -40px;
+    left: -45px;
     top: 50%;
 }
 
@@ -1221,7 +1224,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .input-footer::after, .input-footer::before {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     bottom: 14px;

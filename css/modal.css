@@ -28,6 +28,14 @@
     font-weight: 400;
     color: #616161;
 }
+.des-modal-send-container>div.uk-modal-dialog>p>a{
+    color: #ff9700;
+}
+
+.des-modal-send-container>div.uk-modal-dialog>p>a:hover{
+    color: #ff9700;
+    text-decoration: none;
+}
 
 .des-modal-send-container>div.uk-modal-dialog>a{
     font-size: 15px;
@@ -36,8 +44,7 @@
     color: #ff9700;
     float: right;
 }
-/*
-.des-modal-container>div.uk-modal-dialog>a:hover{
-    text-decoration: none
+
+.des-modal-send-container>div.uk-modal-dialog>a:hover{
+    text-decoration: none;
 }
-*/

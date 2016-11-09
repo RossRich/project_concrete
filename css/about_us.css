@@ -84,6 +84,7 @@
 }
 .uslugi_au {
     padding-top: 60px;
+    padding-bottom: 20px;
     position: relative;
     z-index: 2;
 }
@@ -102,7 +103,7 @@
     margin: 17% 0;    
 }
 .us_textblock_au {
-    margin-bottom: 18px
+    margin-bottom: 40px;
 }
 .us_textblock_au h4 a {
     text-transform: capitalize;

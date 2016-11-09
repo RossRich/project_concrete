@@ -6,4 +6,4 @@
 </div>
 </div>
 <p>2016&nbsp;&copy;&nbsp;КраснодарСтройСервис. Все права защищены.</p>
-<p><a href="http://it-technologies.us/" target="_blank"><img src="images/IT.png" alt=""></a>Разработка и Маркетинг</p>
+<p><a href="http://it-technologies.us/" target="_blank"><img src="images/IT.png" alt="">Разработка и Маркетинг</a></p>

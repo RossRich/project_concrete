@@ -45,12 +45,14 @@ $posts=collection('Блог')->find(['active'=>true])->sort(["date"=>-1])->toArr
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                            <div class="panel_body">
                             <figure class="uk-overlay uk-thumbnail-expand">
+                              <a href="/blog.php/?id=<?=$post['_id']?>">
                                <? if(isset($post['photo']) && !empty($post['photo'])){?>
                                <img src="<?=thumbnail_url($post['photo'][0]['path'], 353, 300, ['mode'=>'crope'])?>" alt="<?=$post['head']?>">
                                <? }else{ ?>
                                 <img src="/images/news.jpg" class="" width="353" height="300" alt="Заливка бетона">
                                 <? } ?>
                                 <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom overlay_ba"><?=$post['date']?></figcaption>
+                                </a>
                             </figure>
                             <h3><?=$post['head']?></h3>
                             <p>

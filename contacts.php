@@ -27,25 +27,34 @@ $page_suffix = " | КраснодарСтройСервис";
                             <div class="con_text">
                                 <h5>Главный офис</h5>
                                 <p>
+                                  <a href="https://www.google.com/maps/d/embed?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blanck">
                                    <img src="/images/ic_con1.png" alt="">
-                                   35000, г. Краснодар, ул. Московская 91/2
+                                        <?=$address;?>
+                                    </a>
                                 </p>
                                 <p>
+                                 <a href="#!" type="tel">
                                   <img src="/images/ic_con2.png" alt="">
-                                   8 (918) 44-99-703 - Отдел продаж
+                                        <?=$phone2;?> - Отдел продаж
+                                    </a>
                                 </p>
                                 <p>
-                                   <img src="/images/ic_con2.png" alt="">
-                                   8 (989) 265-65-90 - Бухгалтерия
+                                   <a href="#!" type="tel"><img src="/images/ic_con2.png" alt="">
+                                        <?=$phone3;?> - Бухгалтерия
+                                    </a>
                                 </p>
                                 <p>
+                                  <a href="#!" type="email">
                                    <img src="/images/ic_con3.png" alt="">
-                                   info@kss-beton.ru
+                                   <?=$email;?>
+                                   </a>
                                 </p>
                                 <h5 class="h5_2">Производство</h5>
                                 <p>
+                                  <a href="https://www.google.com/maps/d/embed?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blanck">
                                    <img src="/images/ic_con1.png" alt="">
-                                   35000, г. Краснодар, ул. Калинина 1
+                                        <?=$address2;?>
+                                    </a>
                                 </p>
                              </div>
                          </li>

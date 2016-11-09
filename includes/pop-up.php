@@ -15,10 +15,10 @@
                     <a href="#">О компании</a>
                     <ul class="uk-nav-sub list mob_sub_menu">
                         <li><a href="/about_us.php">О нас</a></li>
-                        <li><a href="">Наши объекты</a></li>
-                        <li><a href="">Отзывы клиентов</a></li>
+                        <li><a href="/facilities_page.php">Наши объекты</a></li>
+                        <li><a href="/comments.php">Отзывы клиентов</a></li>
                         <li><a href="/blog_all.php">Корпоративный блог</a></li>
-                        <li><a href="">Сотрудничество</a></li>
+                        <li><a href="/partnership.php">Сотрудничество</a></li>
                     </ul>
                 </li>    
                 <li><a href="/contacts.php">Контакты</a></li>    

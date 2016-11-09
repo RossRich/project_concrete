@@ -90,7 +90,9 @@ jQuery(function($) {
         element.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
         element.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
         element.siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
-
+        $('.dev-footer-textarea').parent().siblings(".uk-icon-pencil").removeClass("des-ico-active-footer");
+        $('.dev-footer-textarea').siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
+        $('.dev-footer-textarea').removeClass("des-textarea-active-footer");
         // call modal window after reset form
         modalWindowApply();
     });
@@ -127,6 +129,17 @@ jQuery(function($) {
         }
         $parent.removeClass('is-focused');
     });
+    
+    $('#form_header_send_manager').on('reset', function(e) {
+        var domElement = $('.dev-get-manager-input');
+        var element = domElement.parent();
+        element.removeClass('is-focused has-label');
+        element.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
+        element.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
+        domElement.attr("placeholder", "");
+        // call modal window after reset form
+        modalWindowApply();
+    });
 
 
 });
@@ -134,7 +147,6 @@ jQuery(function($) {
 
 function modalWindowApply() {
     $.extend(UIkit.components.modal.defaults, {
-        
         center: true
     });
     var modal = UIkit.modal("#des-id-modal-apply",{center:true});

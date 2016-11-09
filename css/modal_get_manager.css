@@ -82,7 +82,7 @@
 .input-item-form::after,
 .input-item-form::before {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 100%;
     position: absolute;
     bottom: 3px;

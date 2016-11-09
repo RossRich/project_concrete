@@ -44,7 +44,7 @@ if(!isset($product)){
                 <h3><?=$product["slogan"]?></h3>
                 <div class="des-content-panel box-wrapper">
                     <div class="uk-grid uk-grid-collapse">
-                        <div class="uk-width-large-1-2 uk-hidden-small uk-hidden-medium">
+                        <div class="uk-width-large-1-2 uk-hidden-small">
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img">
                              <? if($category['name']=='Продажа бетона'){ ?>
@@ -189,8 +189,8 @@ if(!isset($product)){
                 <h3 class="dev-h3-correct">ВОЗМОЖНО ВАМ ПОТРЕБУЕТСЯ</h3>
                 <div class="uk-slidenav-position slider_our_app" data-uk-slider="{infinite: false}">
                     <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
-                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="next">
+                        <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="previous">
                     </div>
                     <div class="uk-slider-container">
                         <ul class="uk-slider uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-3 uk-grid-width-small-1-2" data-uk-grid-match="target:'.panel_body'">
@@ -199,17 +199,18 @@ if(!isset($product)){
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="panel_body">
                                         <div class="dev-img-correct">
+                                        <a href="/product.php?id=<?=$key['_id']?>">
                                         <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
-                                            <img src="<?=thumbnail_url($key['photo'][0]['path'], 160, 160, ['mode' => 'best_fit'])?>" alt="<?=$index_page_product['name'] ?>">
+                                            <img src="<?=thumbnail_url($key['photo'][0]['path'])?>" alt="<?=$index_page_product['name'] ?>">
                                         <?}else{?>
                                             <img src="/images/block.png" alt="Block">
                                         <? } ?>
+                                        </a>
                                         </div>
                                         <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
                                     <span class="des-line"></span>
                                     <a href="product.php?id=<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>
-                                    <!-- <a href="product.php?id<?//=$key['_id'] ?>" class="dev-but-about-correct">Подробнее</a> -->
                                 </div>
                             </li>
                             <?}?>

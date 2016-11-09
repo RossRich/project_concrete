@@ -38,7 +38,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                 <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                                 <a href="/product.php?id=<?=$product["_id"]?>">
                                    <? if($category['name']=='Инертные материалы'){?>
-                                       <img src="<?=thumbnail_url($product["photo"][0]["path"],300,180,['made'=>'crope'])?>" alt="<?=$product["name"]?>">
+                                       <img src="<?=thumbnail_url($product["photo"][0]["path"],480,320,['made'=>'crope'])?>" alt="<?=$product["name"]?>">
                                    <? } else {?>
                                         <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="<?=$product["name"]?>">
                                     <? } ?>

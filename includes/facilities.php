@@ -13,7 +13,7 @@ $facilities = collection("Объекты")->find()->toArray();
                         <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="previous">
                     </div>
                     <div class="uk-slider-container">
-                        <ul class="uk-slider uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-3 facilities_ul_slider_cs">
+                        <ul class="uk-slider uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-3 facilities_ul_slider_cs">
                             <? foreach($facilities as $facility){ ?>
                             <li>
                                 <div class="facilities_1-li_cs">
