@@ -33,18 +33,18 @@ $page_suffix = " | КраснодарСтройСервис";
                                     </a>
                                 </p>
                                 <p>
-                                 <a href="#!" type="tel">
+                                 <a href="tel:<?=$phone2;?>" type="tel">
                                   <img src="/images/ic_con2.png" alt="">
                                         <?=$phone2;?> - Отдел продаж
                                     </a>
                                 </p>
                                 <p>
-                                   <a href="#!" type="tel"><img src="/images/ic_con2.png" alt="">
+                                   <a href="tel:<?=$phone3;?>" type="tel"><img src="/images/ic_con2.png" alt="">
                                         <?=$phone3;?> - Бухгалтерия
                                     </a>
                                 </p>
                                 <p>
-                                  <a href="#!" type="email">
+                                  <a href="mailto:<?=$email;?>" type="email">
                                    <img src="/images/ic_con3.png" alt="">
                                    <?=$email;?>
                                    </a>
