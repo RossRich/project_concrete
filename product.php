@@ -48,7 +48,7 @@ if(!isset($product)){
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img">
                              <? if($category['name']=='Продажа бетона'){ ?>
-                                 <img src="/images/trac.png" alt="Block">
+                                 <img src="images/concrete/kartochka.png" alt="Block">
                              <? } else {?>
                               <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="">
                               <? } ?>
