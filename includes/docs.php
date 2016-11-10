@@ -1,6 +1,6 @@
 <?
 $docs = collection("Документы")->find(["visibility"=>true])->toArray();
-$download = collection ("Документы")->findOne(["name"=>"Скачать образцы"]);
+$download = collection("Документы")->findOne(['name'=>'образцы']);
 ?>
 <div class="documents_full">
     <div class="uk-container-center documents">
@@ -18,7 +18,7 @@ $download = collection ("Документы")->findOne(["name"=>"Скачать 
                         </li>
                         <? } ?>
                     </ul>
-                    <a href="/<?=$download?>">
+                    <a href="/<?=substr($download['doc'][0]['path'], 5); ?>" download>
                         <button>Скачать образцы</button>
                     </a>
                     <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>

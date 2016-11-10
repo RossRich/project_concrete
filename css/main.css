@@ -598,6 +598,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
     margin: 20px 0;
     color: #212121;
     font: 400 17px Roboto;
+    outline: none;
 }
 
 .dev-but-submit-correct:hover {
@@ -693,7 +694,7 @@ li>div[class="input-item"] {
 /*label validator*/
 
 div.dev-container-order>div.dev-container-order-correct>form>ul>li>div>div.input-item>label.error {
-    color: #da2c2c;
+    color: #fff;
     font-size: 16px;
 }
 
