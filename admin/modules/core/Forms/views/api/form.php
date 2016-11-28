@@ -107,6 +107,11 @@
                     email: true,
                     maxlength: 35
                 },
+            	"form[mail]": {
+                    required: true,
+                    email: true,
+                    maxlength: 35
+                },
                 "form[contact]": {
                     required: true
                 }
@@ -127,6 +132,11 @@
                     email: "Введите корректный Email",
                     maxlength: "Неверный Email, попробуйте другой"
                 },
+            	"form[mail]": {
+                    required: "Email-обязательное поле",
+                    email: "Введите корректный Email",
+                    maxlength: "Неверный Email, попробуйте другой"
+                },
                 "form[contact]": {
                     required: "Поле, обязательное для заполнения",
                 }
@@ -135,17 +145,12 @@
             focusInvalid: false,
             submitHandler: function() {
                 if($('#<?=$options['id']?>').valid()){
-            
-            
                     var xhr = new XMLHttpRequest(), data = new FormData(form);
-
+						console.log(data);
                     xhr.onload = function(){
-
                         if (this.status == 200 && this.responseText!='false') {
                             <?php if (isset($options["success"])) : ?>
-                            
                         if (<?php echo $options["success"]; ?>) form.reset();
-                            
                         disableForm(false);
                             <?php else : ?>
                         //success();

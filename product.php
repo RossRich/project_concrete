@@ -211,7 +211,7 @@ if(!isset($product)){
                                     </div>
                                     <span class="des-line"></span>
                                     <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
-                                    <!-- <a href="product.php?id=<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>-->
+                                    <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                                   
                                 </div>
                             </li>
