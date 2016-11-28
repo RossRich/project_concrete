@@ -8,9 +8,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^k/(.*)$ index.php?k=$1 [L,QSA,NC]
 
-#RewriteRule ^serv/([a-z0-9\-\_]+)/k/([a-z0-9\-\_]+)$ serv.php?id=$1&k=$2 [L,QSA,NC]
-#RewriteRule ^serv/([a-z0-9\-\_]+)$ serv.php?id=$1 [L,QSA,NC]
-
 RewriteRule ^o-kompanii about_us.php [L,QSA,NC]
 RewriteRule ^nashi-objekty facilities_page.php [L,QSA,NC]
 RewriteRule ^otzyvy-klientov comments.php [L,QSA,NC]
@@ -18,18 +15,11 @@ RewriteRule ^korporativnyj-blog blog_all.php [L,QSA,NC]
 RewriteRule ^sotrudnichestvo partnership.php [L,QSA,NC]
 RewriteRule ^kontakty contacts.php [L,QSA,NC]
 
-
 RewriteRule ^blog/([a-z0-9\-\_]+)$ blog.php?id=$1 [L,QSA,NC]
 RewriteRule ^catalog/([a-z0-9\-\_]+)$ catalog.php?category=$1 [L,QSA,NC]
-
-#RewriteRule ^catalog/([a-z0-9\-\_]+)$ catalog.php?category=$1/([a-z0-9\-\_]+)$ product.php?id=$1 [L,QSA,NC]
-
 RewriteRule ^catalog/([a-z0-9\-\_]+)/([a-z0-9\-\_]+)$ product.php?id=$2 [L,QSA,NC]
 
-#RewriteRule ^prod/([a-z0-9\-\_]+)$ product.php?id=$1 [L,QSA,NC]
-
-
-#RewriteRule ^work/([a-z0-9\-\_]+)$ work.php?id=$1 [L,QSA,NC]
+ErrorDocument 404 /404.php
 
 RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
 #RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L] 
