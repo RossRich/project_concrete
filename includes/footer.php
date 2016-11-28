@@ -32,7 +32,7 @@
                                     <div class="uk-width-1-2 uk-hidden-small">
                                         <div class="dev-footer-container-correct">
                                             <span>Остались вопросы?</span>
-                                            <? form('consumer_questions',['id'=>'des_footer_form']); ?>
+                                            <? form('footer-form',['id'=>'des_footer_form']); ?>
                                                 <ul>
                                                     <li><i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-footer">

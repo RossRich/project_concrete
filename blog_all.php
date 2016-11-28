@@ -3,7 +3,7 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $page_title = "Корпоративный блог | Корпоративный блог";
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 
 $categorys=collection('Категории')->find()->limit(4)->toArray();
 $posts=collection('Блог')->find(['active'=>true])->sort(["date"=>-1])->toArray();
@@ -45,7 +45,7 @@ $posts=collection('Блог')->find(['active'=>true])->sort(["date"=>-1])->toArr
                         <div class="uk-panel uk-panel-box dev-panel-correct blog_panel" >
                            <div class="panel_body">
                             <figure class="uk-overlay uk-thumbnail-expand">
-                              <a href="/blog.php/?id=<?=$post['_id']?>">
+                              <a href="/blog/<?=$post['head_slug']?>">
                                <? if(isset($post['photo']) && !empty($post['photo'])){?>
                                <img src="<?=thumbnail_url($post['photo'][0]['path'], 353, 300, ['mode'=>'crope'])?>" alt="<?=$post['head']?>">
                                <? }else{ ?>
@@ -66,7 +66,7 @@ $posts=collection('Блог')->find(['active'=>true])->sort(["date"=>-1])->toArr
                                     $counterBlogAll = cockpit('datastore:findOne', 'counter', ['id' => $postId]);
                                 ?>
                                 <div class="uk-float-right"><i class="uk-icon-eye uk-icon-small"></i><span><?=$counterBlogAll['counter']?></$counterBlog?></span></div>
-                                <div class="uk-float-left"><a href="/blog.php/?id=<?=$post['_id']?>">Подробнее</a></div>
+                                <div class="uk-float-left"><a href="/blog/<?=$post['head_slug']?>">Подробнее</a></div>
                             </div>
                         </div>
                     </div>

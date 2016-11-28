@@ -4,9 +4,9 @@ require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $id = $_REQUEST["id"];
 $page_title = "Статья | Корпоративный блог";
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 $categorys=collection('Категории')->find()->limit(4)->toArray();
-$post=collection('Блог')->findOne(['_id'=>$id]);
+$post=collection('Блог')->findOne(['head_slug'=>$id]);
 $counterDateStore = cockpit('datastore:findOne', 'counter', ['id' =>$id]);
 if(isset($id) && $id!=null){
 if (!isset($_COOKIE['Ind_Counter'])) $_COOKIE['Ind_Counter'] = 0;
@@ -32,8 +32,8 @@ cockpit('datastore:save_entry', 'counter', $entry);
         <main>
             <div class="uk-container uk-container-center des-blog">
                 <ul class="uk-breadcrumb uk-text-center uk-hidden-small">
-                    <li><a href="/index.php">Главная</a></li>
-                    <li><a href="/blog_all.php">Корпоративный блог</a></li>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/korporativnyj-blog">Корпоративный блог</a></li>
                     <li class="uk-active"><span><?=$post['head']?></span></li>
                 </ul>
                 <h3><?=$post['head']?></h3>
@@ -109,8 +109,8 @@ cockpit('datastore:save_entry', 'counter', $entry);
                     <h3>СВЕЖИЕ ЗАПИСИ</h3>
                     <div class="uk-slidenav-position slider_blog" data-uk-slider="{infinite: false}">
                         <div class="dev-consumer-slader-navigation uk-clearfix uk-hidden-small">
-                            <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="previous">
-                            <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="next">
+                            <img class="dev-consumer-icon " src="/images/ic_keyboard_arrow_right18dp.png" data-uk-slider-item="next">
+                            <img class="dev-consumer-icon" src="/images/ic_keyboard_arrow_left_18dp.png" data-uk-slider-item="previous">
                         </div>
                         <div class="uk-slider-container">
                             <ul class="uk-slider uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1" data-uk-grid-match="target:'.panel_body'">

@@ -3,7 +3,7 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $page_title = "Сотрудничество";
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 
 //$partnership = collection("Сотрудничество")->find()->toArray();
 

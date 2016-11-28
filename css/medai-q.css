@@ -83,6 +83,9 @@
     .not_found .agree_text img{
     display: none;
     }
+    .advantages_new .mt35 {
+        margin-top: 0;
+    }
 }
 
 @media(max-width: 900px) {
@@ -102,6 +105,11 @@
         margin-bottom: 0;
         font-size: 20px;
     }
+    /*.advantages_new .mt35 {*/
+        /*margin-top: 0;*/
+    /*}*/
+
+
     /*блок объекты*/
     .slide_nav_fac{
         visibility: hidden;
@@ -109,7 +117,11 @@
 }
 
 @media(max-width: 767px) {
-    .advantages_full .mt35 {
+    /*.advantages_new .mt35 {*/
+        /*margin-top: 0;*/
+    /*}*/
+
+    .advantages .mt35 {
         margin-top: 20px;
     }
     .advantages h3 {
@@ -130,12 +142,13 @@
     }
     .header_top .left .logo {
         float: none;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin: 15px 0 15px 0;
+
     }
     .header_top .right {
         float: none;
         text-align: center;
+
     }
 
     .banner_index .header_top .right {
@@ -167,9 +180,20 @@
         padding-left: 60px;
     }
     .us_logo_au img {
-        margin-top:40px;
+        margin-top:0;
         margin-bottom:40px;
     }
+    .us_block_au1 img,  .us_block_au2 img {
+        display: none;
+    }
+    .us_text1, .us_text2 {
+        text-align: center;
+    }
+    .uslugi_au {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
 }
 
 @media(max-width: 640px) {
@@ -269,16 +293,16 @@
         font-size: 24px;
     }
     /*блок "услуги" в "о нас" */
-    .us_block_au1 img,  .us_block_au2 img {
-        display: none;
-    }
-    .us_text1, .us_text2 {
-        text-align: center;
-    }
-    .uslugi_au {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+    /*.us_block_au1 img,  .us_block_au2 img {*/
+        /*display: none;*/
+    /*}*/
+    /*.us_text1, .us_text2 {*/
+        /*text-align: center;*/
+    /*}*/
+    /*.uslugi_au {*/
+        /*padding-right: 10px;*/
+        /*padding-left: 10px;*/
+    /*}*/
     /*контакты*/
     .contacts {
         padding-left: 0;
@@ -328,15 +352,19 @@
 
 
 @media(max-width: 400px) {
-    .uslugi_h3_au {
-        font-size: 25px;
-    }
+    /*.uslugi_h3_au {*/
+        /*font-size: 25px;*/
+    /*}*/
     /*контакты*/
     .con_text p {
         font-size: 15px;
     }
     .documents .doc_div_2 .phone_dep {
         font-size: 30px;
+    }
+
+    .advantages_new .plus_text {
+        line-height: normal;
     }
 }
 
