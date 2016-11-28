@@ -1,4 +1,12 @@
 jQuery(function($) {
+	
+	//	maska
+ 	$("[data-phone-mask]").inputmask(
+ 		"mask", {
+ 			"mask": "+7 (999) 999-9999",
+ 			showMaskOnFocus: true,
+ 			showMaskOnHover: false
+ 		});
 
     // index
     $('.dev-order-input').focus(function() {
@@ -47,7 +55,7 @@ jQuery(function($) {
         if (name == "form[name]") {
             $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
         }
-        if (name == "form[tel]" || name == "form[email]") {
+        if (name == "form[mail]" || name == "form[email]") {
             $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
             $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
         }
@@ -109,7 +117,7 @@ jQuery(function($) {
         if (name == "form[tel]") {
             domElement.parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
             setTimeout(function() {
-                domElement.attr("placeholder", "+7");
+//                domElement.attr("placeholder", "БЕЗ +7");
             }, 400);
 
         } else if (name == "form[email]") {

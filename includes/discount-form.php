@@ -20,7 +20,7 @@
                     <i class="uk-icon-phone uk-icon-large dev-img-ico-correct"></i>
                     <div class="input-item">
                         <label for="tel" class="dev-order-label">Ваш Телефон</label>
-                        <input type="tel" name="form[tel]" class="dev-order-input">
+                        <input type="text" data-phone-mask name="form[tel]" class="dev-order-input">
                     </div>
                 </div>
             </li>

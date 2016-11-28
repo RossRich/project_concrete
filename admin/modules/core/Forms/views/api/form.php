@@ -112,7 +112,7 @@
 																							required: true,
 																							email: true,
 																							maxlength: 35
-																			},
+																},
                 "form[contact]": {
                     required: true
                 }

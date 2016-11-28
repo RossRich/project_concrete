@@ -27,6 +27,8 @@
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
 
 <script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/jquery.inputmask.js"></script>
+<script src="/js/jquery.inputmask.bundle.js"></script>
 <script src="/js/uikit.min.js"></script>
 <script src="/js/components/sticky.js"></script>
 <script src="/js/components/parallax.min.js"></script>

@@ -20,8 +20,8 @@
                                 <li>
                                     <i class="uk-icon-phone uk-icon-medium"></i>
                                     <div class="input-item-form">
-                                        <label for="tel" class="dev-get-manager-label">Ваш Телефон</label>
-                                        <input type="tel" name="form[tel]" class="dev-get-manager-input">
+                                        <label for="form[tel]" class="dev-get-manager-label">Ваш Телефон</label>
+                                        <input type="text" data-phone-mask name="form[tel]" class="dev-get-manager-input">
                                     </div>
                                 </li>
                                 <li>

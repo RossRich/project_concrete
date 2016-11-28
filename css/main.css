@@ -83,8 +83,7 @@
 }
 
 .header_index {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+31 */
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 31%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+31 */ /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 31%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
@@ -127,15 +126,14 @@ ul.ul_top_menu>li>a:before {
     left: 0;
     position: absolute;
     -webkit-transform: scaleX(0);
-    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     z-index: 999;
 }
 ul.ul_top_menu>li:hover>a:before {
     -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
@@ -297,15 +295,14 @@ ul.ul_main_menu>li>a:before {
     left: 0;
     position: absolute;
     -webkit-transform: scaleX(0);
-    -ms-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     z-index: 999;
 }
 ul.ul_main_menu>li:hover>a:before {
     -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 .hr_menu {
@@ -456,8 +453,8 @@ ul.ul_main_menu>li:hover>a:before {
 }
 
 .advantages .plus_panel p {
-    font-size: 16.67px;
-    line-height: 27.78px;
+			font-size: 16px;
+			line-height: 18px;
 }
 
 /*блок преимущества новый*/
@@ -617,6 +614,7 @@ a.dev-but-about-correct:hover {
 
 .dev-panel-correct:hover {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
@@ -689,6 +687,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
     border: 1px solid;
     border-radius: 2px;
     border-color: #212121;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
@@ -700,8 +699,12 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 
 .input-item::after {
     background: #FFF;
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .input-item::after, .input-item::before {
@@ -736,25 +739,35 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
     font-size: 16px;
     font-weight: 400;
     display: block;
+    -webkit-transform: translateY(40px);
     transform: translateY(40px);
 }
 
 .has-label .dev-order-label {
+    -webkit-transform: translateY(0) scale(1);
     transform: translateY(0) scale(1);
     font-size: 12px;
     color: #FFF;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .has-label.input-item::after {
     background: #FFF;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
 .is-focused.input-item::after {
     background: #FFF;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .des-ico-active-order {
@@ -762,6 +775,7 @@ div.dev-panel-correct>div.panel_body>h3>span.des-panel-head-count{
 }
 
 .is-focused .dev-order-label {
+    -webkit-transform: translateY(0) scale(1);
     transform: translateY(0) scale(1);
     font-size: 12px;
     color: #fff;
@@ -981,6 +995,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 /*БЛОК ДОКУМЕНТЫ*/
 
 .documents_full {
+    background-image: -webkit-linear-gradient(left, #bdbdbd 50%, #fea018 50%);
     background-image: linear-gradient(to right, #bdbdbd 50%, #fea018 50%);
 }
 
@@ -1047,6 +1062,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .documents .doc_div_1 button:hover {
     background-color: #616161;
     color: #f5f5f5;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
@@ -1092,6 +1108,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .documents .doc_div_2 button:hover {
     box-shadow: 6px 11px 18.8px 1.20px rgba(0, 0, 0, 0.24);
     background-color: #eeeeee;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
@@ -1239,6 +1256,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 .dev-but-footer:hover {
     background-color: #ff9700;
     color: #212121;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -1301,8 +1319,12 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .input-footer::after {
     background: #f69201;
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .input-footer::after, .input-footer::before {
@@ -1339,28 +1361,39 @@ div.dev-consumer-about-us-panel-img-correct>i {
     font-size: 16px;
     font-weight: 400;
     display: block;
+    -webkit-transform: translateY(36px);
     transform: translateY(36px);
 }
 
 .has-label .dev-footer-label {
+    -webkit-transform: translateY(10px) scale(1);
     transform: translateY(10px) scale(1);
     font-size: 12px;
     color: #f69201;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .has-label.input-footer::after {
     background: #f69201;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
 .is-focused.input-footer::after {
     background: #f69201;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .is-focused .dev-footer-label {
+    -webkit-transform: translateY(10px) scale(1);
     transform: translateY(10px) scale(1);
     font-size: 12px;
     color: #f69201;

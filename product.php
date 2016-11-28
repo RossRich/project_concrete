@@ -117,6 +117,8 @@ if(!isset($product)){
                                             <?php form('checkout', ['id' => 'checkout_form']); ?>
                                                 <ul>
                                                     <li>
+                                                       	<label for="" name="form[product]" class="hidden-name-product uk-hidden"><?=$product["name"]?></label>
+                                                       	<label for="" name="form[price]" class="hidden-name-product uk-hidden"><?=$product["price"]?></label>
                                                         <i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
@@ -126,8 +128,8 @@ if(!isset($product)){
                                                     <li>
                                                         <i class="uk-icon-phone uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
-                                                            <label for="tel" class="dev-consumer-order-panel-label">Email или телефон</label>
-                                                            <input type="tel" name="form[contact]" class="input-item-consumer-order-panel-input">
+                                                            <label for="form[contact]" class="dev-consumer-order-panel-label">Телефон</label>
+                                                            <input type="text" data-phone-mask name="form[contact]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
@@ -160,7 +162,7 @@ if(!isset($product)){
                                     <div class="des-panel-bottom">
                                         <ul class="uk-grid uk-grid-width-large-1-2 uk-grid-width-medium-1-2 uk-grid-width-small-1-2" data-uk-grid-margin>
                                             <li>
-                                                <input type="button" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
+                                                <input type="submit" class="dev-but-submit-correct ripple-effect uk-clearfix" name="butOrder" value="ЗАКАЗАТЬ" data-ripple-limit=".box-wrapper" data-ripple-color="#fdaa31">
                                             </li>
                                             <li>
                                                 <p><span>отдел продаж</span><br><?=$phone2?></p>
@@ -198,15 +200,17 @@ if(!isset($product)){
                             <li>
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="panel_body">
+                                       <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <div class="dev-img-correct">
-                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
+                                        
                                         <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
                                             <img src="<?=thumbnail_url($key['photo'][0]['path'])?>" alt="<?=$index_page_product['name'] ?>">
                                         <?}else{?>
                                             <img src="/images/block.png" alt="Block">
                                         <? } ?>
-                                        </a>
+                                        
                                         </div>
+                                        </a>
                                         <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
                                     <span class="des-line"></span>
