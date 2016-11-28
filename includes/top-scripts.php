@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="/css/mob-menu.css" />
 <link rel="stylesheet" href="/css/medai-q.css" />
 
+<link rel="shortcut icon" href="/admin/assets/images/favicon.ico" type="image/x-icon">
+
 <!-- <link rel="stylesheet" href="/jquery-validation/form-validation_final/css/style.css" /> -->
 
 

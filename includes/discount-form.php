@@ -1,6 +1,6 @@
 <!-- <div class="uk-container2 uk-container-center dev-container-order-correct">
     <h3 class="uk-text-center dev-order-head dev-h3-correct">ПОЛУЧИТЕ ГАРАНТИРОВАННУЮ СКИДКУ ПРИ ЗАКАЗЕ НА САЙТЕ</h3> -->
-		<? if(isset($page_id) && $page_id=='index'){ ?>
+<? if(isset($page_id) && $page_id=='index'){ ?>
     <? form('discount', ['id'=>'des_discount_form']);?>
       <? }else{ ?>
        <? form('discount_nasos', ['id'=>'des_discount_form']);?>

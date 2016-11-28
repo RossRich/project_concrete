@@ -479,6 +479,28 @@ ul.ul_main_menu>li:hover>a:before {
     padding-bottom: 65px;
 }
 
+/*блок преимущества новый*/
+
+/*.advantages {*/
+    /*padding-bottom: 80px;*/
+/*}*/
+
+
+
+
+
+/*.advantages .plus_panel h4 {*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*margin-bottom: 0;*/
+    /*font-size: 20px;*/
+/*}*/
+
+.advantages_new {
+    padding-top: 80px;
+    padding-bottom: 65px;
+}
+
 .advantages_new h3 {
     line-height: 32px;
     text-transform: uppercase;
@@ -589,20 +611,21 @@ a.dev-but-order-correct {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
-    float: right;
+    float: left;
 }
 
 a.dev-but-order-correct:hover {
     text-decoration: none;
 }
 
-/*a.dev-but-about-correct {
+a.dev-but-about-correct {
     color: #616161;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     float: right;
     font-weight: 400;
-}*/
+
+}
 
 a.dev-but-about-correct:hover {
     text-decoration: none;

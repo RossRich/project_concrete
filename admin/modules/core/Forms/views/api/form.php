@@ -99,20 +99,20 @@
                 },
                 "form[tel]": {
                     required: true,
-                    digits: true,
-                    minlength: 10,
-                    maxlength: 10
+//                    digits: true,
+//                    minlength: 10,
+//                    maxlength: 10
                 },
                 "form[email]": {
                     required: true,
                     email: true,
                     maxlength: 35
                 },
-																"form[mail]": {
-																							required: true,
-																							email: true,
-																							maxlength: 35
-																},
+            				"form[mail]": {
+                    required: true,
+                    email: true,
+                    maxlength: 35
+                },
                 "form[contact]": {
                     required: true
                 }
@@ -124,9 +124,9 @@
                 },
                 "form[tel]": {
                     required: "Поле, обязательное для заполнения",
-                    digits: "Номер телефона состоит только из цифр",
-                    minlength: "Введите номер телефона без \"+7\"",
-                    maxlength: "В номере телефона более 10 символов"
+//                    digits: "Номер телефона состоит только из цифр",
+//                    minlength: "Введите номер телефона без \"+7\"",
+//                    maxlength: "В номере телефона более 10 символов"
                 },
                 "form[email]": {
                     required: "Email-обязательное поле",
@@ -146,17 +146,12 @@
             focusInvalid: false,
             submitHandler: function() {
                 if($('#<?=$options['id']?>').valid()){
-            
-            
                     var xhr = new XMLHttpRequest(), data = new FormData(form);
-
+						console.log(data);
                     xhr.onload = function(){
-
                         if (this.status == 200 && this.responseText!='false') {
                             <?php if (isset($options["success"])) : ?>
-                            
                         if (<?php echo $options["success"]; ?>) form.reset();
-                            
                         disableForm(false);
                             <?php else : ?>
                         //success();

@@ -75,6 +75,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                             </div>
                             <span class="des-line"></span>
                             <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
+                            <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                         </div>
                     </li>
                     <? } ?>

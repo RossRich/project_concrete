@@ -117,8 +117,8 @@ if(!isset($product)){
                                             <?php form('checkout', ['id' => 'checkout_form']); ?>
                                                 <ul>
                                                     <li>
-                                                       	<label for="" name="form[product]" class="hidden-name-product uk-hidden"><?=$product["name"]?></label>
-                                                       	<label for="" name="form[price]" class="hidden-name-product uk-hidden"><?=$product["price"]?></label>
+                                                       	<input for="" name="form[product]" class="hidden-name-product uk-hidden" value="<?=$product["name"]?>">
+                                                       	<input for="" name="form[price]" class="hidden-name-product uk-hidden" value="<?=$product["price"]?>">
                                                         <i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
                                                             <label for="name" class="dev-consumer-order-panel-label">Ваше Имя</label>
@@ -202,7 +202,7 @@ if(!isset($product)){
                                     <div class="panel_body">
                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <div class="dev-img-correct">
-                                        
+                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
                                             <img src="<?=thumbnail_url($key['photo'][0]['path'])?>" alt="<?=$index_page_product['name'] ?>">
                                         <?}else{?>
@@ -215,7 +215,7 @@ if(!isset($product)){
                                     </div>
                                     <span class="des-line"></span>
                                     <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
-                                    <!-- <a href="product.php?id=<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>-->
+                                    <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                                   
                                 </div>
                             </li>
