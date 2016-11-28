@@ -3,11 +3,12 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $page_title = "Главная";
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 $page_id = "index";
 
 $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
 $index_page_category = collection("Категории")->findOne(["items_index_page"=>true]);
+
 
 // var_dump($reviews);
 ?>
@@ -16,6 +17,36 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
 
 <head>
     <? require($home_dir."/includes/top-scripts.php"); ?>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41038489 = new Ya.Metrika({
+                        id:41038489,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        ecommerce:"dataLayer"
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41038489" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -35,15 +66,15 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                             <div class="panel_body">
                                 <div class="dev-img-correct">
                                     <? if(isset($index_page_product["photo"]) && !empty($index_page_product["photo"])){ ?>
-                                    <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="<?=thumbnail_url($index_page_product["photo"][0]["path"])?>" alt="<?=$index_page_product["name"]?>"></a>
+                                    <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>"><img src="<?=thumbnail_url($index_page_product["photo"][0]["path"])?>" alt="<?=$index_page_product["name"]?>"></a>
                                     <? } else { ?>
-                                    <a href="/product.php?id=<?=$index_page_product["_id"]?>"><img src="/images/block.png" alt="Block"></a>
+                                    <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>"><img src="/images/block.png" alt="Block"></a>
                                     <? } ?>
                                 </div>
                                 <h3><?=$index_page_product["name"]?><br><span class="des-panel-head-bold"><?=$index_page_product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$index_page_product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <a href="/product.php?id=<?=$index_page_product["_id"]?>" class="dev-but-order-correct">Заказать</a>
+                            <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
                         </div>
                     </li>
                     <? } ?>
@@ -76,7 +107,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                 <p class="dev-material-panel-description"><?=$main_category["description"]?></p>
                             </div>
                                 <span class="des-line"></span>
-                                <a href="/catalog.php?category=<?=$main_category["_id"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
+                                <a href="/catalog/<?=$main_category["name_slug"]?>" class="dev-material-panel-but-correct dev-but-order-correct">Подробнее</a>
                         </div>
                     </li>
                     <? } ?>

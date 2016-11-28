@@ -2,11 +2,11 @@
 $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 
 
 $id = $_REQUEST["id"];
-$product = collection("Продукция")->findOne(["_id"=>$id]);
+$product = collection("Продукция")->findOne(["name_slug"=>$id]);
 $category = collection("Категории")->findOne(["_id"=>$product["category"]]);
 // print_r($category);
 $page_title = $product["name"];
@@ -38,7 +38,7 @@ if(!isset($product)){
             <div class="des-container-correct des-contauner-content-delivery">
                 <ul class="uk-breadcrumb uk-hidden-small">
                     <li><a href="/">Главная</a></li>
-                    <li><a href="/catalog.php?category=<?=$category["_id"]?>"><?=$category["name"]?></a></li>
+                    <li><a href="/catalog/<?=$main_category["name_slug"]?>"><?=$category["name"]?></a></li>
                     <li class="uk-active"><span><?=$product["name"]?></span></li>
                 </ul>
                 <h3><?=$product["slogan"]?></h3>
@@ -48,7 +48,7 @@ if(!isset($product)){
                             <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
                             <div class="des-panel-img">
                              <? if($category['name']=='Продажа бетона'){ ?>
-                                 <img src="images/concrete/kartochka.png" alt="Block">
+                                 <img src="/images/concrete/kartochka.png" alt="Block">
                              <? } else {?>
                               <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="">
                               <? } ?>
@@ -133,21 +133,21 @@ if(!isset($product)){
                                                     <li>
                                                         <i class="uk-icon-shopping-bag uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
-                                                            <label for="capacity" class="dev-consumer-order-panel-label">Объем</label>
+                                                            <label for="capacity" class="dev-consumer-order-panel-label">Объем (необязательно)</label>
                                                             <input type="text" name="form[capacity]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-map-marker uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
-                                                            <label for="position" class="dev-consumer-order-panel-label">Адрес объекта</label>
+                                                            <label for="position" class="dev-consumer-order-panel-label">Адрес объекта (необязательно)</label>
                                                             <input type="text" name="form[position]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <i class="uk-icon-tags uk-icon-medium"></i>
                                                         <div class="input-item-consumer-order-panel">
-                                                            <label for="brand" class="dev-consumer-order-panel-label">Комментарий к заказу</label>
+                                                            <label for="brand" class="dev-consumer-order-panel-label">Комментарий к заказу (необязательно)</label>
                                                             <input type="text" name="form[brand]" class="input-item-consumer-order-panel-input">
                                                         </div>
                                                     </li>
@@ -199,7 +199,7 @@ if(!isset($product)){
                                 <div class="uk-panel uk-panel-box dev-panel-correct">
                                     <div class="panel_body">
                                         <div class="dev-img-correct">
-                                        <a href="/product.php?id=<?=$key['_id']?>">
+                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
                                             <img src="<?=thumbnail_url($key['photo'][0]['path'])?>" alt="<?=$index_page_product['name'] ?>">
                                         <?}else{?>
@@ -210,7 +210,9 @@ if(!isset($product)){
                                         <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
                                     <span class="des-line"></span>
-                                    <a href="product.php?id=<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>
+                                    <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
+                                    <!-- <a href="product.php?id=<?=$key['_id'] ?>&order" class="dev-but-order-correct">Заказать</a>-->
+                                  
                                 </div>
                             </li>
                             <?}?>

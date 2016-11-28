@@ -6,10 +6,11 @@
 
         var form        = document.getElementById("{{ $options['id'] }}"),
             msgsuccess  = form.getElementsByClassName("form-message-success").item(0),
-            msgfail     = form.getElementsByClassName("form-message-fail").item(0),
+            msgfail     = form.getElementsByClassName("form-message-fail").ictem(0),
             phone_fail  = form.getElementsByClassName("form-phone-fail").item(0),
             email_fail  = form.getElementsByClassName("form-email-fail").item(0),
             disableForm = function(status) {
+													
                 for(var i=0, max=form.elements.length;i<max;i++) form.elements[i].disabled = status;
             },
             success = function(){
@@ -107,6 +108,11 @@
                     email: true,
                     maxlength: 35
                 },
+																"form[mail]": {
+																							required: true,
+																							email: true,
+																							maxlength: 35
+																			},
                 "form[contact]": {
                     required: true
                 }
@@ -123,6 +129,11 @@
                     maxlength: "В номере телефона более 10 символов"
                 },
                 "form[email]": {
+                    required: "Email-обязательное поле",
+                    email: "Введите корректный Email",
+                    maxlength: "Неверный Email, попробуйте другой"
+                },
+																"form[mail]": {
                     required: "Email-обязательное поле",
                     email: "Введите корректный Email",
                     maxlength: "Неверный Email, попробуйте другой"

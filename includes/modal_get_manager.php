@@ -3,7 +3,7 @@
                 <div class="uk-modal-dialog  uk-clearfix">
                     <i class="uk-icon-close uk-modal-close"></i>
                     <div class="uk-thumbnail-expand">
-                        <img src="images/modal_get_manager.png" alt="">
+                        <img src="/images/modal_get_manager.png" alt="">
                     </div>
                     <h3>Вызов менеджера</h3>
                     <div class="des-input-manager">

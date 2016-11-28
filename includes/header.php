@@ -13,12 +13,12 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                  <div class="uk-container uk-container-center uk-clearfix top_cont">
                 <nav>
                     <ul class="ul_top_menu list">
-                        <li><a href="/about_us.php">О компании</a></li>
-                        <li><a href="/facilities_page.php">Наши объекты</a></li>
-                        <li><a href="/comments.php">Отзывы клиентов</a></li>
-                        <li><a href="/blog_all.php">Корпоративный блог</a></li>
-                        <li><a href="/partnership.php">Сотрудничество</a></li>
-                        <li><a href="/contacts.php">Контакты</a></li>
+                        <li><a href="/o-kompanii">О компании</a></li>
+                        <li><a href="/nashi-objekty">Наши объекты</a></li>
+                        <li><a href="/otzyvy-klientov">Отзывы клиентов</a></li>
+                        <li><a href="/korporativnyj-blog">Корпоративный блог</a></li>
+                        <li><a href="/sotrudnichestvo">Сотрудничество</a></li>
+                        <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </nav>
                 <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i> МЕНЮ</a>
@@ -36,11 +36,11 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <div class="header_top_block">
                 <div class="left">
                     <div class="logo">
-                        <a href="/index.php"><img src="/images/logo.png" alt=""></a>
+                        <a href="/"><img src="/images/logo.png" alt=""></a>
                     </div>
                     <div class="text_logo">
                         <p class="p1">
-                            <span>КраснодарСтройСервис</span>
+                            <span>КРАСНОДАРСТРОЙСЕРВИС</span>
                         </p>
                         <br>
                         <p class="p2">Лидер Краснодарского рынка по производству
@@ -61,7 +61,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <nav>
                     <ul class="ul_main_menu list">
                         <? foreach($main_categorys as $main_category){ ?>
-                        <li><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
+                        <li><a href="/catalog/<?=$main_category["name_slug"]?>"><?=$main_category["name"]?></a></li>
                         <? } ?>
                     </ul>
                 </nav>
@@ -91,12 +91,12 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
         <div class="uk-container uk-container-center uk-clearfix top_cont">
             <nav>
                 <ul class="ul_top_menu list">
-                    <li><a href="/about_us.php">О компании</a></li>
-                    <li><a href="/facilities_page.php">Наши объекты</a></li>
-                    <li><a href="/comments.php">Отзывы клиентов</a></li>
-                    <li><a href="/blog_all.php">Корпоративный блог</a></li>
-                    <li><a href="/partnership.php">Сотрудничество</a></li>
-                    <li><a href="/contacts.php">Контакты</a></li>
+                    <li><a href="/o-kompanii">О компании</a></li>
+                    <li><a href="/nashi-objekty">Наши объекты</a></li>
+                    <li><a href="/otzyvy-klientov">Отзывы клиентов</a></li>
+                    <li><a href="/korporativnyj-blog">Корпоративный блог</a></li>
+                    <li><a href="/sotrudnichestvo">Сотрудничество</a></li>
+                    <li><a href="/kontakty">Контакты</a></li>
                 </ul>
             </nav>
             <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i><span class="mspan"> МЕНЮ</span></a>
@@ -113,13 +113,11 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
         <div class="header_top_block">
             <div class="left">
                 <div class="logo">
-                    <a href="/index.php"><img src="/images/logo.png" alt=""></a>
+                    <a href="/"><img src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="text_logo">
                     <p class="p1">
-                        <span>К</span>раснодар
-                        <span>С</span>трой
-                        <span>С</span>ервис
+                        КРАСНОДАРСТРОЙСЕРВИС
                     </p>
                     <br>
                     <p class="p2">Лидер Краснодарского рынка по производству
@@ -127,7 +125,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 </div>
             </div>
             <div class="right">
-                <span class="free_numb">Бесплатный номер</span>
+                <span class="free_numb">Отдел продаж</span>
                 <br>
                 <a href="tel:<?=$phone?>" class="phone"><?=$phone?></a>
                 <br>
@@ -140,7 +138,7 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <nav>
                 <ul class="ul_main_menu list">
                     <? foreach($main_categorys as $main_category){ ?>
-                    <li><a href="catalog.php?category=<?=$main_category["_id"]?>"><?=$main_category["name"]?></a></li>
+                    <li><a href="/catalog/<?=$main_category["name_slug"]?>"><?=$main_category["name"]?></a></li>
                     <? } ?>
                 </ul>
             </nav>

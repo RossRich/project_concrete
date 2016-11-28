@@ -3,7 +3,7 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 $page_title = "О компании";
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 
 $reviews = collection("Отзывы")->find(["active"=>true])->toArray();
 $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->toArray();
@@ -44,8 +44,8 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
                 <ul class="uk-grid uk-grid-collapse  uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
                     <li>
                         <div class="uk-panel uk-panel-box au_panel">
-                           <h4>КраснодарСтройСервис</h4>
-                            <p>КраснодарСтройСервис – лидер краснодарского рынка по производству бетона и строительных материалов. Наша кампания осуществляет производство, реализацию и доставку высококачественных бетонных, известняковых и песчано-цементных смесей, фундаментных блоков (ФБС), инертных материалов (все виды гравия, щебеня, песка и керамзита), газобетона, шлакоблоков, кирпича и др. по всему Краснодарскому краю.</p>
+                           <h4>КРАСНОДАРСТРОЙСЕРВИС</h4>
+                            <p>КРАСНОДАРСТРОЙСЕРВИС – лидер краснодарского рынка по производству бетона и строительных материалов. Наша кампания осуществляет производство, реализацию и доставку высококачественных бетонных, известняковых и песчано-цементных смесей, фундаментных блоков (ФБС), инертных материалов (все виды гравия, щебеня, песка и керамзита), газобетона, шлакоблоков, кирпича и др. по всему Краснодарскому краю.</p>
                             <p>Многочисленный автопарк спец. техники, позволяет осуществлять выполнение заказов в кратчайшие сроки, в нем вы можете взять в аренду миксера, бетононасос (заливка конструкций любой сложности), также можем поставить на объект строительства башенный кран, роторный насос. Сотрудники компании имеют большой опыт работы в различных областях строительства, который помогает успешно реализовывать проекты наших заказчиков. </p>
                             <p>Выдаем сертификаты и всю необходимую лицензированную документацию, принимаем все виды оплат.</p>
 
@@ -63,7 +63,7 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
         <div class="uslugi_full_au">
             <div class="uslugi_parallax_au"  data-uk-parallax="{ scale: '2'}"></div>
             <div class="uk-container2 uk-container-center dev-container-correct uslugi_au">
-                <h3 class="dev-consumer-about-us-head-correct dev-h3-correct uslugi_h3_au">КраснодарСтройСервис</h3>
+                <h3 class="dev-consumer-about-us-head-correct dev-h3-correct uslugi_h3_au">КРАСНОДАРСТРОЙСЕРВИС</h3>
                 <ul class="uk-grid uk-grid-collapse uk-container-center uk-grid-width-small-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
                     <li>
                         <ul class="uk-grid uk-grid-collapse uk-grid-width-1-1" data-uk-grid-match="target:'.us_block_au'">
@@ -142,25 +142,25 @@ $mater = collection ("Категории")->findOne(["name"=>"Строитель
                <ul class="uk-grid uk-grid-collapse  uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4">
                    <li>
                        <div class="uk-panel uk-panel-box uk-text-center ach_panel">
-                           <span>350</span>
+                           <span>150</span>
                            <p>человек  делают бетон для Вас</p>
                        </div>
                    </li>
                    <li>
                        <div class="uk-panel uk-panel-box uk-text-center ach_panel">
-                           <span>15</span>
+                           <span>5</span>
                            <p>лет безупречной работы</p>
                        </div>
                    </li>
                    <li>
                        <div class="uk-panel uk-panel-box uk-text-center ach_panel">
-                           <span>25 000</span>
+                           <span>5 000</span>
                            <p>кубометров бетона каждый месяц</p>
                        </div>
                    </li>
                    <li>
                        <div class="uk-panel uk-panel-box uk-text-center ach_panel">
-                           <span>50</span>
+                           <span>25</span>
                            <p>единиц техники для вашего обслуживания</p>
                        </div>
                    </li>

@@ -32,7 +32,7 @@
                                     <div class="uk-width-1-2 uk-hidden-small">
                                         <div class="dev-footer-container-correct">
                                             <span>Остались вопросы?</span>
-                                            <? form('consumer_questions',['id'=>'des_footer_form']); ?>
+                                            <? form('questionsConsumer',['id'=>'des_footer_form']); ?>
                                                 <ul>
                                                     <li><i class="uk-icon-user uk-icon-medium"></i>
                                                         <div class="input-footer">
@@ -42,8 +42,8 @@
                                                     </li>
                                                     <li><i class="uk-icon-envelope uk-icon-medium"></i>
                                                         <div class="input-footer">
-                                                            <label for="adr" class="dev-footer-label">Email</label>
-                                                            <input type="email" name="form[email]" class="dev-footer-input">
+                                                            <label for="form[mail]" class="dev-footer-label">Email</label>
+                                                            <input type="email" name="form[mail]" class="dev-footer-input">
                                                         </div>
                                                     </li>
                                                     <li>

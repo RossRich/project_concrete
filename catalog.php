@@ -4,14 +4,14 @@ require_once($home_dir."/admin/bootstrap.php");
 require_once($home_dir."/includes/regions.php");
 
 $id = $_REQUEST["category"];
-$category = collection("Категории")->findOne(["_id"=>$id]);
-$products = collection("Продукция")->find(["category"=>$id])->toArray();
+$category = collection("Категории")->findOne(["name_slug"=>$id]);
+$products = collection("Продукция")->find(["category"=>$category["_id"]])->sort(["price"=>-1])->toArray();
 if(!isset($category)){
-    header('Location: /');
-    die;
+    //header('Location: /');
+    //die;
 }
 $page_title = $category["name"];
-$page_suffix = " | КраснодарСтройСервис";
+$page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
 
 //var_dump($products);
 ?>
@@ -36,7 +36,7 @@ $page_suffix = " | КраснодарСтройСервис";
                             <div class="panel_body">
                             <div class="dev-img-correct">
                                 <? if(isset($product["photo"]) && !empty($product["photo"])){ ?>
-                                <a href="/product.php?id=<?=$product["_id"]?>">
+                                <a href="/catalog/<?=$category["name_slug"]?>/<?=$product["name_slug"]?>">
                                    <? if($category['name']=='Инертные материалы'){?>
                                        <img src="<?=thumbnail_url($product["photo"][0]["path"],480,320,['made'=>'crope'])?>" alt="<?=$product["name"]?>">
                                    <? } else {?>
@@ -44,7 +44,7 @@ $page_suffix = " | КраснодарСтройСервис";
                                     <? } ?>
                                 </a>
                                 <? } else { ?>
-                                <a href="/product.php?id=<?=$product["_id"]?>">
+                                <a href="/catalog/<?=$category["name_slug"]?>/<?=$product["name_slug"]?>">
                                     <img src="/images/block.png" alt="Block">
                                 </a>
                                 <? } ?>
@@ -53,7 +53,7 @@ $page_suffix = " | КраснодарСтройСервис";
                             </div>
                             <span class="des-line"></span>
                             <!-- <a href="/product.php?id=<?//=$product["_id"]?>&order" class=""></a> -->
-                            <a href="/product.php?id=<?=$product["_id"]?>" class="dev-but-order-correct">Заказать</a>
+                            <a href="/catalog/<?=$category["name_slug"]?>/<?=$product["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
                         </div>
                     </li>
                     <? } ?>
