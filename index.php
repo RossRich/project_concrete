@@ -74,7 +74,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
                                 <h3><?=$index_page_product["name"]?><br><span class="des-panel-head-bold"><?=$index_page_product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$index_page_product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
+                            <a href="#modalOrder" class="dev-but-order-correct" data-uk-modal>Заказать</a>
                             <a href="/catalog/<?=$index_page_category["name_slug"]?>/<?=$index_page_product["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                         </div>
                     </li>
@@ -122,6 +122,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <? require($home_dir."/includes/footer.php"); ?>
     </div>
     <? require($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/modalOrder.php"); ?>
 </body>
 
 </html>

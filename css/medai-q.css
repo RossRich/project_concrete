@@ -533,6 +533,23 @@
       margin-top: 35px;
     }
     /*End_Discount-form*/
+	
+/*	modalOreder*/
+	.modalOrder .des-mod-order .label{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.modalOrder .des-mod-order.has-text .label{
+		font-size: 11px;
+		line-height: 13px;
+	}
+	
+	.modalOrder ul{
+		margin: 0 0 0 30px;
+	}
+	.modalOrder .des-mod-order i{
+		left: -40px;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {

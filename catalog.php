@@ -49,10 +49,10 @@ $page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
                                 <? } ?>
                             </div>
                             </a>
-                            <h3><?=$product["name"]?><br><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$product["count"]?></span></h3>
+                            <h3 class="head"><?=$product["name"]?><br><span class="des-panel-head-bold"><?=$product["price"]?></span><span class="des-panel-head-count"> руб. - <?=$product["count"]?></span></h3>
                             </div>
                             <span class="des-line"></span>
-                            <a href="/catalog/<?=$category["name_slug"]?>/<?=$product["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
+                            <a href="#modalOrder" class="dev-but-order-correct" data-uk-modal>Заказать</a>
                             <a href="/catalog/<?=$category["name_slug"]?>/<?=$product["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                         </div>
                     </li>
@@ -77,6 +77,7 @@ $page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
         <? require($home_dir."/includes/footer.php"); ?>
     </div>
     <? require($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/modalOrder.php"); ?>
 </body>
 
 </html>

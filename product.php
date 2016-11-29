@@ -202,7 +202,6 @@ if(!isset($product)){
                                     <div class="panel_body">
                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <div class="dev-img-correct">
-                                        <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>">
                                         <? if (isset($key['photo'])&&!empty($key['photo'])) {?>
                                             <img src="<?=thumbnail_url($key['photo'][0]['path'])?>" alt="<?=$index_page_product['name'] ?>">
                                         <?}else{?>
@@ -214,7 +213,7 @@ if(!isset($product)){
                                         <h3><?=$key["name"]?><br><span class="des-panel-head-bold"><?=$key["price"]?></span><span class="des-panel-head-count"> руб. - <?=$key["count"]?></span></h3>
                                     </div>
                                     <span class="des-line"></span>
-                                    <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-order-correct">Заказать</a>
+                                    <a href="#modalOrder" class="dev-but-order-correct" data-uk-modal>Заказать</a>
                                     <a href="/catalog/<?=$category["name_slug"]?>/<?=$key["name_slug"]?>" class="dev-but-about-correct">Подробнее</a>
                                   
                                 </div>
@@ -232,6 +231,7 @@ if(!isset($product)){
         <? require($home_dir."/includes/footer.php"); ?>
     </div>
     <? require($home_dir."/includes/pop-up.php"); ?>
+    <? require($home_dir."/includes/modalOrder.php"); ?>
 </body>
 
 </html>

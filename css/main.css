@@ -1578,3 +1578,139 @@ div.dev-container-material>div.dev-container-correct>ul>li>div.uk-panel span.des
 ul.list.list_fac{
     margin-left: 35px;
 }
+
+/*modalOrder*/
+
+.modalOrder{
+	background: #ff9700;
+	border-radius: 2px;
+}
+
+.modalOrder input.head{
+	width: 100%;
+	margin: 0;
+	font-size: 22px;
+	line-height: 24px;
+	text-align: center;
+	background-color: transparent;
+	color: #212121;
+	border: 0;
+	outline: 0;
+	cursor: none;
+}
+.modalOrder ul{
+	display: block;
+	padding: 0;
+	margin: 0 0 0 50px;
+	list-style: none;
+	
+}
+.modalOrder ul>li{
+	margin-top: 20px;
+}
+
+.modalOrder .des-mod-order {
+	width: 100%;
+	position: relative;
+}
+
+
+
+.modalOrder .des-mod-order i{
+	position: absolute;
+	left: -50px;
+	bottom: 0;
+	width: 30px;
+	text-align: center;
+}
+.modalOrder .des-mod-order.has-text i{
+	color: #f5f5f5;
+}
+.modalOrder .des-mod-order::after{
+	background: #f5f5f5;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: ease-in .3s;
+	transition: ease-in .3s
+}
+
+.modalOrder .has-text.des-mod-order::after{
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transition: ease-out .4s;
+	transition: ease-out .4s;
+}
+.modalOrder .des-mod-order::before{
+	position: absolute;
+	bottom: 0;
+	background: #212121;
+}
+.modalOrder .des-mod-order::after, .des-mod-order:before{
+	display: block;
+	content: '';
+	height: 1px;
+	width: 100%;
+}
+.modalOrder .des-mod-order .label {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	-webkit-transition: .3s;
+	transition: .3s;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+	background-color: transparent;
+	-webkit-transform: translateY(14px);
+	transform: translateY(14px);
+	-webkit-transition: ease-in .3s;
+	transition: ease-in .3s;
+}
+.modalOrder .des-mod-order.has-text .label{
+	font-size: 12px;
+	line-height: 16px;
+	color: #f5f5f5;
+	-webkit-transform: translateY(-11px);
+	transform: translateY(-11px);
+	-webkit-transition: ease-out .4s;
+	transition: ease-out .4s;
+}
+.modalOrder .des-mod-order .input {
+	width: 100%;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #212121;
+	height: 40px;
+}
+.modalOrder .des-mod-order textarea.input{
+	width: 100%;
+	resize: none;
+}
+.modalOrder .des-mod-order.has-text textarea.input{
+	margin-top: 15px;
+}
+
+ .modalOrder button{
+/*	width: 100%;*/
+		float: right;
+	background: #f5f5f5;
+	color: #212121;
+		outline: none;
+		border: 0;
+		padding: 10px 15px;
+		border-radius: 2px;
+		text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+		-webkit-transition: ease-in .3s;
+		transition: ease-in .3s;
+}
+
+.modalOrder button:hover{
+ box-shadow: 0 14px 22px -3px rgba(0, 0, 0, 0.24), 0 5px 29px 0 rgba(0, 0, 0, 0.16);
+	-webkit-transition: ease-out .4s;
+	transition: ease-out .4s;
+}  
