@@ -9,7 +9,7 @@ $id = $_REQUEST["id"];
 $product = collection("Продукция")->findOne(["name_slug"=>$id]);
 $category = collection("Категории")->findOne(["_id"=>$product["category"]]);
 // print_r($category);
-$page_title = $product["name"];
+$page_title = $product["slogan"];
 if(!isset($product)){
     header('Location: /');
     die;

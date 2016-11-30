@@ -36,13 +36,20 @@ jQuery(function ($) {
 	// сброс формы
 
 	$('#des_discount_form').on('reset', function (e) {
-		var element = $('.dev-order-input').parent();
+		var element = $('.dev-order-input').parent(),
+			formName = $(this).attr("name");
 		element.removeClass('has-label');
 		element.siblings(".uk-icon-user").removeClass("des-ico-active-order");
 		element.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
 		element.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
 		// call modal window after reset form
 		modalWindowApply();
+		//		ya.metric
+		if (formName == "discount") {
+			yaMetrika('discountOrderingOnline');
+		} else {
+			yaMetrika('discountRentaPump');
+		}
 	});
 
 
@@ -103,6 +110,7 @@ jQuery(function ($) {
 		$('.dev-footer-textarea').removeClass("des-textarea-active-footer");
 		// call modal window after reset form
 		modalWindowApply();
+		callManager('questionsFromUser');
 	});
 
 	// modal.dialog
@@ -147,6 +155,7 @@ jQuery(function ($) {
 		domElement.attr("placeholder", "");
 		// call modal window after reset form
 		modalWindowApply();
+		yaMetrika('callManager');
 	});
 
 	//	modalOrder
@@ -171,13 +180,23 @@ jQuery(function ($) {
 			order = modalOrderParser(htmlHead),
 			rpice = elem.children('span').eq(0).text(),
 			valuta = elem.children('span').eq(1).text();
-		$(modalWindow).find('input#modalHeadOrder').val(order);
-		$(modalWindow).find('input#modalHeadPrise').val(rpice+" "+valuta);
+		if (modalWindow == "#modalOrder") {
+			$(modalWindow).find('input#modalHeadOrder').val(order);
+			$(modalWindow).find('input#modalHeadPrise').val(rpice + " " + valuta);
+			yaMetrika('clickButtonOrder');
+		} else {
+			return true;
+		}
 	});
-
+	/*
+	 * reset modalOrder
+	 */
 	$('#formModalOrder').on('submit', function () {
 		$(this).find('.des-mod-order').removeClass('has-text');
-		setTimeout(function(){modalWindowApply()}, 300);
+		setTimeout(function () {
+			modalWindowApply();
+			yaMetrika("orderFast");
+		}, 300);
 	});
 
 
@@ -187,9 +206,11 @@ function modalOrderParser(html) {
 	var target = "<br>",
 		pos = -1,
 		order = "";
+	if (html != null && html != undefined) {
 		while ((pos = html.indexOf(target, pos + 1)) != -1) {
 			order = html.substring(0, pos);
 		}
+	}
 	return order;
 }
 
@@ -205,5 +226,14 @@ function modalWindowApply() {
 		modal.hide();
 	} else {
 		modal.show();
+	}
+}
+
+function yaMetrika(idGoal) {
+	if (idGoal != null && idGoal != undefined) {
+		yaCounter41038489.reachGoal('idGoal');
+	} else {
+		console.log("invalid argument");
+		return true;
 	}
 }

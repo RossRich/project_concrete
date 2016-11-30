@@ -1,7 +1,7 @@
         <div id="id" class="uk-modal">
             <div class="des-modal-container">
                 <div class="uk-modal-dialog  uk-clearfix">
-                    <i class="uk-icon-close uk-modal-close"></i>
+                    <i class="uk-icon-close uk-modal-close" onclick="yaCounter41038489.reachGoal('closeDialog'); return true;"></i>
                     <div class="uk-thumbnail-expand">
                         <img src="/images/modal_get_manager.png" alt="">
                     </div>
@@ -26,7 +26,7 @@
                                 </li>
                                 <li>
                                     <button type="submit">Отправить</button>
-                                    <a class="uk-modal-close">Закрыть</a>
+                                    <a class="uk-modal-close" onclick="yaCounter41038489.reachGoal('closeDialog'); return true;">Закрыть</a>
                                 </li>
                             </ul>
                         </form>

@@ -72,5 +72,6 @@ jQuery(function($) {
         } else {
             modal.show();
         }
+								yaCounter41038489.reachGoal('order');
     });
 });

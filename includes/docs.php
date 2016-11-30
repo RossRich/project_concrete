@@ -11,14 +11,14 @@ $download = collection("Документы")->findOne(['name'=>'образцы']
                     <ul class="uk-grid uk-grid-width-small-1-1 uk-grid-width-medium-1-1" data-uk-grid-match="target:'.doc_name'" >
                         <? foreach($docs as $doc){ ?>
                         <li class=" uk-width-large-<?=$doc["uk_width_1"]?>-<?=$doc["uk_width_2"]?> uk-clearfix doc_li">
-                            <a href="<?=substr($doc["doc"][0]["path"], 5)?>" class="doc_name">
+                            <a href="<?=substr($doc["doc"][0]["path"], 5)?>" class="doc_name" onclick="yaCounter41038489.reachGoal('downloadDoc'); return true;">
                                 <img src="/images/ic_description.png">
                                 <span><?=$doc["name"]?></span>
                             </a>
                         </li>
                         <? } ?>
                     </ul>
-                    <a href="/<?=substr($download['doc'][0]['path'], 5); ?>" download>
+                    <a href="/<?=substr($download['doc'][0]['path'], 5); ?>" onclick="yaCounter41038489.reachGoal('downloadDoc'); return true;" download>
                         <button>Скачать образцы</button>
                     </a>
                     <h5>ПРИНИМАЕМ ВСЕ ВИДЫ ОПЛАТЫ</h5>
@@ -46,9 +46,9 @@ $download = collection("Документы")->findOne(['name'=>'образцы']
                 <div class="doc_div_2">
                     <div class="sub_doc_div_2">
                         <h4>Отдел продаж</h4>
-                        <a href="tel:<?=$phone2?>" class="phone_dep"><?=$phone2?></a>
+                        <a href="tel:<?=$phone2?>" class="phone_dep" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone2?></a>
                         <br>
-                            <button data-uk-modal="{target:'#id', center:true}">Вызов менеджера</button>
+                            <button onclick="yaCounter41038489.reachGoal('openDialog'); return true;" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</button>
                     </div>
                 </div>
             </li>

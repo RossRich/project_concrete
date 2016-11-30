@@ -66,8 +66,8 @@
                                         <span class="des-mob-style">Главный офис:</span>
                                         <ul>
                                             <li><i class="uk-icon-map-marker uk-icon-small "></i><a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" type="map" target="_blank"><?=$address;?></a></li>
-                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="tel:<?=$phone2;?>" type="tel"><span><?=$phone2;?></span> - Отдел продаж</a></li>
-                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="tel:<?=$phone3;?>" type="tel"><span><?=$phone3;?></span> - Бухгалтерия</a></li>
+                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="tel:<?=$phone2;?>" type="tel" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><span><?=$phone2;?></span> - Отдел продаж</a></li>
+                                            <li><i class="uk-icon-phone uk-icon-small "></i><a href="tel:<?=$phone3;?>" type="tel" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><span><?=$phone3;?></span> - Бухгалтерия</a></li>
                                         </ul>
                                         <span class="des-mob-style">Производство:</span>
                                         <ul>

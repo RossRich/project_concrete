@@ -95,6 +95,7 @@ jQuery(document).ready(function($) {
         setTimeout(function() {
             $('.box-wrapper').css('background', '#ff9700');
             $('ul>li>div.des-panel-bottom>ul>li>input').val("отправить");
+												yaCounter41038489.reachGoal('clickButtonOrder');
             $('ul>li>div.des-panel-bottom>ul>li>input').attr("type","submit");
             $('ul>li>div.des-panel-bottom>ul>li>input').attr("form","checkout_form");
             $('ul>li>div.des-panel-bottom>ul>li>input').removeClass("ripple-effect");
