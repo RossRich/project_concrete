@@ -5,12 +5,11 @@
         if (!window.FormData) return;
 
         var form        = document.getElementById("{{ $options['id'] }}"),
-//            msgsuccess  = form.getElementsByClassName("form-message-success").item(0),
-//            msgfail     = form.getElementsByClassName("form-message-fail").ictem(0),
-//            phone_fail  = form.getElementsByClassName("form-phone-fail").item(0),
-//            email_fail  = form.getElementsByClassName("form-email-fail").item(0),
+            msgsuccess  = form.getElementsByClassName("form-message-success").item(0),
+            msgfail     = form.getElementsByClassName("form-message-fail").item(0),
+            phone_fail  = form.getElementsByClassName("form-phone-fail").item(0),
+            email_fail  = form.getElementsByClassName("form-email-fail").item(0),
             disableForm = function(status) {
-													
                 for(var i=0, max=form.elements.length;i<max;i++) form.elements[i].disabled = status;
             },
             success = function(){
@@ -35,8 +34,8 @@
                 disableForm(false);
             };
 
-//        if (msgsuccess) msgsuccess.style.display = "none";
-//        if (msgfail)    msgfail.style.display = "none";
+        if (msgsuccess) msgsuccess.style.display = "none";
+        if (msgfail)    msgfail.style.display = "none";
 
 //        form.addEventListener("submit", function(e) {       
 //          
@@ -99,16 +98,16 @@
                 },
                 "form[tel]": {
                     required: true,
-//                    digits: true,
-//                    minlength: 10,
-//                    maxlength: 10
+                    //digits: true,
+                    //minlength: 10,
+                    //maxlength: 10
                 },
                 "form[email]": {
                     required: true,
                     email: true,
                     maxlength: 35
                 },
-            				"form[mail]": {
+            	"form[mail]": {
                     required: true,
                     email: true,
                     maxlength: 35
@@ -124,16 +123,16 @@
                 },
                 "form[tel]": {
                     required: "Поле, обязательное для заполнения",
-//                    digits: "Номер телефона состоит только из цифр",
-//                    minlength: "Введите номер телефона без \"+7\"",
-//                    maxlength: "В номере телефона более 10 символов"
+                    //digits: "Номер телефона состоит только из цифр",
+                    //minlength: "Введите номер телефона без \"+7\"",
+                    //maxlength: "В номере телефона более 10 символов"
                 },
                 "form[email]": {
                     required: "Email-обязательное поле",
                     email: "Введите корректный Email",
                     maxlength: "Неверный Email, попробуйте другой"
                 },
-																"form[mail]": {
+            	"form[mail]": {
                     required: "Email-обязательное поле",
                     email: "Введите корректный Email",
                     maxlength: "Неверный Email, попробуйте другой"

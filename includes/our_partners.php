@@ -10,8 +10,10 @@
                 <? foreach ($our_partner as $key) {?>
                     <? $img_path=$key["logotip"][0]["path"]; ?>
                     <li>
-                        <div class="des-img-container">
-                            <img src="<?=thumbnail_url($img_path, 500, 300 , ["mode"=>"best_fit"]);?>" width="152" height="74" alt="<?=$key["partner"] ?>">
+                        <div class="w-block" style="background-color: #fff">
+                            <div class="des-img-container">
+                                <img src="<?=thumbnail_url($img_path, 500, 300 , ["mode"=>"best_fit"]);?>" width="152" height="74" alt="<?=$key["partner"] ?>">
+                            </div>
                         </div>
                     </li>
                    <? } ?>

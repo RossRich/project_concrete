@@ -25,7 +25,7 @@ $index_page_category = collection("Категории")->findOne(["items_index_p
         <? require($home_dir."/includes/advantages_trust.php"); ?>
         <?
         if(isset($index_page_category) && !empty($index_page_category)){
-            $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->toArray();?>
+            $index_page_products = collection("Продукция")->find(["category" => $index_page_category["_id"]])->sort(["sort"=>1])->toArray();?>
         <div class="dev-container-concreate">
             <div class="uk-container2 uk-container-center dev-container-correct">
                 <h3 class="uk-text-center dev-h3-correct"><?=$index_page_category["name_index_page"]?></h3>
