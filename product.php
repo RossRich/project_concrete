@@ -27,8 +27,9 @@ if(!isset($product)){
     <script src="/js/easyPieChart/jquery.easing.min.js"></script>
     <script src="/js/easyPieChart/easypiechart.js"></script>
     <script src="/js/easyPieChart/renderer/canvas.js"></script>
-    <script src="/js/concrete_product.js"></script>
+    
     <script type="text/javascript" src="/js/simple-ripple-effect.js"></script>
+    <script src="/js/concrete_product.js"></script>
 </head>
 
 <body>
@@ -38,7 +39,7 @@ if(!isset($product)){
             <div class="des-container-correct des-contauner-content-delivery">
                 <ul class="uk-breadcrumb uk-hidden-small">
                     <li><a href="/">Главная</a></li>
-                    <li><a href="/catalog/<?=$main_category["name_slug"]?>"><?=$category["name"]?></a></li>
+                    <li><a href="/catalog/<?=$category["name_slug"]?>"><?=$category["name"]?></a></li>
                     <li class="uk-active"><span><?=$product["name"]?></span></li>
                 </ul>
                 <h3><?=$product["slogan"]?></h3>
@@ -58,6 +59,11 @@ if(!isset($product)){
                             <img src="/images/no_image_block.png" alt="Block">
                           </div>
                             <? } ?>
+                            <div class="des-note-text uk-clearfix">
+                           	<p class="des-note">
+                           		Стоимость доставки от 200 руб до 400 руб в зависимости от объема заказа и удаленности объекта. При заказе от 100 м3 доставка бесплатная!
+                           	</p>
+                           </div>
                             <!-- <h4>пропорции бетона</h4> -->
                             <div class="des-panel-proportion uk-hidden">
                                 <ul class="uk-grid uk-grid-width-1-4 uk-grid-collapse">
