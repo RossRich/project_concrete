@@ -51,7 +51,7 @@ if(!isset($product)){
                              <? if($category['name']=='Продажа бетона'){ ?>
                                  <img src="/images/concrete/kartochka.png" alt="Block">
                              <? } else {?>
-                              <img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="">
+                              			<img src="<?=thumbnail_url($product["photo"][0]["path"])?>" alt="">
                               <? } ?>
                             </div>
                             <? } else { ?>
@@ -59,11 +59,13 @@ if(!isset($product)){
                             <img src="/images/no_image_block.png" alt="Block">
                           </div>
                             <? } ?>
-                            <div class="des-note-text uk-clearfix">
+                            <? if($category['name']=='Продажа бетона'){ ?>
+                            	<div class="des-note-text uk-clearfix">
                            	<p class="des-note">
                            		Стоимость доставки от 200 руб до 400 руб в зависимости от объема заказа и удаленности объекта. При заказе от 100 м3 доставка бесплатная!
                            	</p>
                            </div>
+                            <? } ?>
                             <!-- <h4>пропорции бетона</h4> -->
                             <div class="des-panel-proportion uk-hidden">
                                 <ul class="uk-grid uk-grid-width-1-4 uk-grid-collapse">
