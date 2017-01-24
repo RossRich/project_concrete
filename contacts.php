@@ -39,6 +39,12 @@ $page_suffix = " | КРАСНОДАРСТРОЙСЕРВИС";
                                     </a>
                                 </p>
                                 <p>
+                                 <a href="tel:<?=$phoneMobile;?>" type="tel">
+                                  <img src="/images/ic_con2.png" alt="">
+                                        <?=$phoneMobile;?> - Отдел продаж
+                                    </a>
+                                </p>
+                                <p>
                                    <a href="tel:<?=$phone3;?>" type="tel"><img src="/images/ic_con2.png" alt="">
                                         <?=$phone3;?> - Бухгалтерия
                                     </a>

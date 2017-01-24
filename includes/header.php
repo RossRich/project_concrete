@@ -50,7 +50,9 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                 <div class="right">
                     <span class="free_numb">Отдел продаж</span>
                     <br>
-                    <a href="tel:<?=$phone?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone?></a>
+                    <a href="tel:<?=$phoneMobile?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a>
+                    <br>
+                    <a href="tel:<?=$phoneCity?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneCity?></a>
                     <br>
                     <a href="!#" class="call" onclick="yaCounter41038489.reachGoal('openDialog'); return true;" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</a>
                 </div>
@@ -79,7 +81,8 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
                     <a href=""><img src="/images/Shape-3.png" alt=""></a>
                     </span>
                     <br>
-                    <a href="tel:<?=$phone?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone?></a>
+                    <a href="tel:<?=$phoneMobile?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a>
+                    <br><a href="tel:<?=$secPhoneMobile?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$secPhoneMobile?></a>
                 </div>
             </div>
         </div>
@@ -101,7 +104,9 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             </nav>
             <a href="#mob-menu" class="mob-menu" data-uk-offcanvas><i class="uk-icon-navicon"></i><span class="mspan"> МЕНЮ</span></a>
                 <div class="mob_connect">
-                    <a href="tel:<?=$phone?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone?></a>
+                    <a href="tel:<?=$phoneMobile?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a>
+                    <br>
+                    <a href="tel:<?=$phoneCity?>" class="phone_orders" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;">&nbsp;&nbsp;<?=$phoneCity?></a>
                 </div>
             <div class="on_map">
                 <a href="https://www.google.com/maps/d/viewer?mid=1fF7W5wh8kvybdq6pNXFrI7_CAnU" target="_blank"><img src="/images/ic_place.png" alt=""></a>
@@ -127,7 +132,9 @@ $main_categorys = collection("Категории")->find()->sort(["sort"=>1])->t
             <div class="right">
                 <span class="free_numb">Отдел продаж</span>
                 <br>
-                <a href="tel:<?=$phone?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone?></a>
+                <a href="tel:<?=$phoneMobile?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a>
+                <br>
+                <a href="tel:<?=$phoneCity?>" class="phone" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneCity?></a>
                 <br>
                 <a href="#!" class="call" onclick="yaCounter41038489.reachGoal('openDialog'); return true;" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</a>
             </div>

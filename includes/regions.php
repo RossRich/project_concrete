@@ -1,5 +1,7 @@
 <?
-$phone = cockpit('regions:region_field', 'Контакты', 'phone', 'value');
+$phoneCity = cockpit('regions:region_field', 'Контакты', 'phoneCity', 'value');
+$phoneMobile = cockpit('regions:region_field', 'Контакты', 'phoneMobile', 'value');
+$secPhoneMobile = cockpit('regions:region_field', 'Контакты', 'secPhobeMob', 'value');
 $phone2 = cockpit('regions:region_field', 'Контакты', 'phone2', 'value');
 $phone3 = cockpit('regions:region_field', 'Контакты', 'phone3', 'value');
 $email = cockpit('regions:region_field', 'Контакты', 'email', 'value');

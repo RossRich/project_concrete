@@ -257,18 +257,18 @@
         /*height: 40px;*/
         /*padding-bottom: 10px;*/
         /*padding-top: 10px;*/
-        background: rgba(0, 0, 0, 0.8);
+/*        background: rgba(0, 0, 0, 0.8);*/
     }
 
     .header .strip_top_menu .top_cont {
-          background: rgba(21, 21, 21, 0.8);
+/*          background: rgba(21, 21, 21, 0.8);*/
     }
 
     .strip_top_menu .mob_connect {
         float: right;
     }
     .strip_top_menu .mob_connect a.phone_orders {
-        font: 400 18px Roboto;
+        font: 400 14px Roboto;
         color: #ff9700;
         line-height: 19px;
     }
@@ -553,6 +553,7 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 635px) {
+				
     /*About-us*/
     .dev-consumer-about-us .dev-consumer-about-us-slider-correct ul>li>div.dev-consumer-about-us-panel-correct>h3 {
         margin: 10px;
@@ -581,6 +582,14 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	/*
+	*topMenu mobile mo
+	*/
+	.header .strip_top_menu:after{
+		height: 0;
+	}
+	
     /*Index_Category-cards*/
     .dev-container-material>div>h3 {
         line-height: 40px;

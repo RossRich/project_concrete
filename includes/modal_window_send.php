@@ -11,7 +11,9 @@
                         <img src="/images/modal_claud.png" alt="">
                     </div>
                     <h3>Ваша заявка отправлена!</h3>
-                    <p>В ближайшее время с Вами свяжется наш менеджер для уточнения информации. Если у вас возникли вопросы, звоните <a href="tel:8 (861) 241-80-80" type="tel" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;">8 (861) 241-80-80</a></p>
+                    <p>В ближайшее время с Вами свяжется наш менеджер для уточнения информации. Если у вас возникли вопросы, звоните <a href="tel:<?=$phoneCity?>" type="tel" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;">&nbsp;&nbsp;<?=$phoneCity?></a>
+                    <br>
+                    <a href="tel:<?=$phoneMobile?>" type="tel" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a></p>
                     <a class="uk-modal-close">Закрыть</a>
                 </div>
             </div>

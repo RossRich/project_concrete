@@ -371,7 +371,9 @@ ul.ul_main_menu>li:hover>a:before {
 }
 
 .banner .sliden .slogan .phone_orders {
-    font-size: 41.67px;
+				display: block;
+	margin-top: 10px;
+    font-size: 40px;
     color: #ff9700;
 }
 
@@ -1229,6 +1231,7 @@ div.dev-consumer-about-us-panel-img-correct>i {
 
 .dev-footer-container-correct>ul>li>a {
     margin-left: 10px;
+	font-size: 14px;
 }
 .dev-footer-container-correct>ul>li>a:hover{
     color: #f5f5f5;

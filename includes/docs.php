@@ -46,7 +46,9 @@ $download = collection("Документы")->findOne(['name'=>'образцы']
                 <div class="doc_div_2">
                     <div class="sub_doc_div_2">
                         <h4>Отдел продаж</h4>
-                        <a href="tel:<?=$phone2?>" class="phone_dep" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phone2?></a>
+                        <a href="tel:<?=$phoneMobile?>" class="phone_dep" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;"><?=$phoneMobile?></a>
+                        <br>
+                       	<a href="tel:<?=$phoneCity?>" class="phone_dep" onclick="yaCounter41038489.reachGoal('clickOnPhone'); return true;">&nbsp;&nbsp;<?=$phoneCity?></a>
                         <br>
                             <button onclick="yaCounter41038489.reachGoal('openDialog'); return true;" data-uk-modal="{target:'#id', center:true}">Вызов менеджера</button>
                     </div>
