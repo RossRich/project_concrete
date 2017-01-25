@@ -240,8 +240,8 @@
         padding-bottom: 50px;
     }
     .banner .sliden .slogan h1 {
-        font-size: 34px;
-        line-height: 43px;
+        font-size: 30px;
+        line-height: 40px;
     }
     .strip_top_menu .on_map .atext {
         display: none;
@@ -260,6 +260,16 @@
 /*        background: rgba(0, 0, 0, 0.8);*/
     }
 
+	.header_top .left .text_logo span{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	.banner .sliden .slogan .phone_orders{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	
     .header .strip_top_menu .top_cont {
 /*          background: rgba(21, 21, 21, 0.8);*/
     }
@@ -281,7 +291,7 @@
         z-index: 900;
         width:100%;
     }
-    .slogan_block {
+    .banner .sliden .slogan .orders{
         display: none;
     }
     /*о компании */
